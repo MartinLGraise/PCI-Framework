@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.pdf
+*.aux
+*.log
+*.out
+
+# Python
+__pycache__/
+*.pyc
+.env
