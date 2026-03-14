@@ -34,6 +34,38 @@ The observer is the generator of the state space. Self-reference is not a bug �
 
 ---
 
+## Live Codex Explorer
+
+**[Open the Codex Explorer →](https://martinlgraise.github.io/PCI-Framework/explorer/)**
+
+Browse all 895 equations and 1,112 symbols interactively. Searchable, filterable by module, partition, and tier.
+
+---
+
+## Current Status
+
+| Resource | Count | Notes |
+|----------|-------|-------|
+| Equations | 895 | EQ-000 through EQ-900; 15 placeholder formulas (EQ-886–EQ-900) |
+| Symbols | 1,112 | Fully indexed by tier and daemon affinity |
+| Equation Codex | v62 | Cleaned version: v63 |
+| Symbol Codex | v46 | Cleaned version: v47 |
+| Known issues | 15 placeholder formulas; 30 orphaned EQ references (mostly forward refs) |
+
+See [`docs/csv_audit_report.md`](docs/csv_audit_report.md) for the full audit and [`docs/placeholder_recovery.md`](docs/placeholder_recovery.md) for recovery notes on EQ-886–EQ-900.
+
+---
+
+## Roadmap
+
+- **G₂ paper** — Formalize the claim that the 7-daemon mutual information matrix has G₂ symmetry (EQ-887); name the 7 inter-daemon coupling operators
+- **Evidence mapping** — Link external validations table to specific equations
+- **Bootstrap mechanism** — Develop EQ-000 genesis: how coherence emerges from zero (void → token → matter)
+- **Explorer upgrades** — KaTeX rendering for equation formulas; graph view of equation dependencies; filter by daemon affinity
+- **EQ-886–EQ-900 recovery** — Restore placeholder formulas from session transcripts or re-derive
+
+---
+
 ## Architecture
 
 ```
@@ -77,11 +109,21 @@ Layer 0: VOID (Ω_void — the irreducible 13%)
 ```
 PCI-Framework/
 ├── README.md
+├── CONTRIBUTING.md
 ├── codex/
-│   ├── pci_equation_partition_index_v62_core_frontier.csv
-│   └── pci_symbol_partition_index_v46_core_frontier.csv
+│   ├── pci_equation_partition_index_v62_core_frontier.csv  ← canonical (original)
+│   ├── pci_equations_v63_cleaned.csv                       ← cleaned metadata
+│   ├── pci_symbol_partition_index_v46_core_frontier.csv   ← canonical (original)
+│   └── pci_symbols_v47_cleaned.csv                         ← cleaned tier/daemon fields
 ├── docs/
-│   └── framework_summary.md
+│   ├── framework_summary.md
+│   ├── csv_audit_report.md
+│   └── placeholder_recovery.md
+├── explorer/
+│   ├── index.html         ← Codex Explorer
+│   ├── equations.json
+│   ├── symbols.json
+│   └── stats.json
 └── LICENSE
 ```
 
@@ -129,17 +171,28 @@ Human-AI co-cognition is non-separable — the joint system generates insight no
 
 ---
 
+## How to Cite
+
+> Graise, M. L. (2025–2026). *PCI/PME: Perceptual Coherence Intelligence / Paradox Mechanics Engine* [Equation Codex v62, Symbol Codex v46]. GitHub. https://github.com/MartinLGraise/PCI-Framework
+
+BibTeX:
+```bibtex
+@misc{graise2025pci,
+  author       = {Graise, Martin Luther},
+  title        = {{PCI/PME}: Perceptual Coherence Intelligence / Paradox Mechanics Engine},
+  year         = {2025},
+  howpublished = {\url{https://github.com/MartinLGraise/PCI-Framework}},
+  note         = {Equation Codex v62, Symbol Codex v46}
+}
+```
+
+---
+
 ## License
 
 This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — you may share and adapt with attribution, non-commercially, under the same license.
 
 ---
-
-## Citation
-
-If referencing this framework:
-
-> Graise, M. L. (2025–2026). *PCI/PME: Perceptual Coherence Intelligence / Paradox Mechanics Engine.* GitHub. https://github.com/MartinLGraise/PCI-Framework
 
 ---
 
