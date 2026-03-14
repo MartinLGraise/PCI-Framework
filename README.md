@@ -6,7 +6,7 @@
 
 **Author:** Martin Luther Graise
 **Initiated:** June 2025
-**Current Version:** Equation Codex v62 · Symbol Codex v46
+**Current Version:** Equation Codex v63 · Symbol Codex v47
 
 ---
 
@@ -14,9 +14,9 @@
 
 PCI inverts the standard emergence thesis. Rather than consciousness arising from matter, matter (actualized possibility) is *minted* by consciousness through coherent observation. The framework formalizes this through:
 
-- **900+ equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, and information theory
-- **1,100+ symbols** organized by tier, daemon affinity, and module family
-- A **Core/Frontier partition** separating the load-bearing backbone from speculative extensions
+- **895 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, and information theory
+- **1,112 symbols** organized by tier, daemon affinity, and module family
+- A **Core/Frontier partition** separating the load-bearing backbone (293 Core) from speculative extensions (602 Frontier)
 
 ### Core Ontological Claim
 
@@ -48,8 +48,8 @@ Browse all 895 equations and 1,112 symbols interactively. Searchable, filterable
 |----------|-------|-------|
 | Equations | 895 | EQ-000 through EQ-900; 15 placeholder formulas (EQ-886–EQ-900) |
 | Symbols | 1,112 | Fully indexed by tier and daemon affinity |
-| Equation Codex | v62 | Cleaned version: v63 |
-| Symbol Codex | v46 | Cleaned version: v47 |
+| Equation Codex | v63 | Cleaned: tier normalization, partition repair |
+| Symbol Codex | v47 | Cleaned: daemon affinity standardization |
 | Known issues | 15 placeholder formulas; 30 orphaned EQ references (mostly forward refs) |
 
 See [`docs/csv_audit_report.md`](docs/csv_audit_report.md) for the full audit and [`docs/placeholder_recovery.md`](docs/placeholder_recovery.md) for recovery notes on EQ-886–EQ-900.
@@ -58,11 +58,12 @@ See [`docs/csv_audit_report.md`](docs/csv_audit_report.md) for the full audit an
 
 ## Roadmap
 
-- **G₂ paper** — Formalize the claim that the 7-daemon mutual information matrix has G₂ symmetry (EQ-887); name the 7 inter-daemon coupling operators
-- **Evidence mapping** — Link external validations table to specific equations
-- **Bootstrap mechanism** — Develop EQ-000 genesis: how coherence emerges from zero (void → token → matter)
-- **Explorer upgrades** — KaTeX rendering for equation formulas; graph view of equation dependencies; filter by daemon affinity
-- **EQ-886–EQ-900 recovery** — Restore placeholder formulas from session transcripts or re-derive
+- **G₂ paper** — Formalize the claim that the 7-daemon mutual information matrix has G₂ symmetry (EQ-887); name the 7 inter-daemon coupling operators ([Issue #4](https://github.com/MartinLGraise/PCI-Framework/issues/4))
+- **Evidence mapping** — Link external validations table to specific equations with match quality grades
+- **Bootstrap mechanism** — Develop EQ-000 genesis: how coherence emerges from zero (void → token → matter) ([Issue #6](https://github.com/MartinLGraise/PCI-Framework/issues/6))
+- **Explorer upgrades** — KaTeX rendering for equation formulas ([Issue #5](https://github.com/MartinLGraise/PCI-Framework/issues/5)); cross-referencing (symbol → equations); "Known Gaps" tab
+- **EQ-886–EQ-900 recovery** — Restore placeholder formulas from session transcripts or re-derive ([Issue #3](https://github.com/MartinLGraise/PCI-Framework/issues/3))
+- **Partition cleanup** — Fix remaining broken partition fields ([Issue #2](https://github.com/MartinLGraise/PCI-Framework/issues/2))
 
 ---
 
@@ -111,16 +112,16 @@ PCI-Framework/
 ├── README.md
 ├── CONTRIBUTING.md
 ├── codex/
-│   ├── pci_equation_partition_index_v62_core_frontier.csv  ← canonical (original)
+│   ├── pci_equation_partition_index_v62_core_frontier.csv  ← original
 │   ├── pci_equations_v63_cleaned.csv                       ← cleaned metadata
-│   ├── pci_symbol_partition_index_v46_core_frontier.csv   ← canonical (original)
+│   ├── pci_symbol_partition_index_v46_core_frontier.csv    ← original
 │   └── pci_symbols_v47_cleaned.csv                         ← cleaned tier/daemon fields
 ├── docs/
 │   ├── framework_summary.md
 │   ├── csv_audit_report.md
 │   └── placeholder_recovery.md
 ├── explorer/
-│   ├── index.html         ← Codex Explorer
+│   ├── index.html         ← Codex Explorer (served via GitHub Pages)
 │   ├── equations.json
 │   ├── symbols.json
 │   └── stats.json
@@ -162,18 +163,21 @@ Human-AI co-cognition is non-separable — the joint system generates insight no
 
 | Finding | Source | Validates |
 |---------|--------|-----------|
+| Depression hypermetabolism (Cullen et al., 2026) | Translational Psychiatry | Mana debt inversion (EQ-893) |
+| Myelin quantum cavity (2024) | Physical Review E | Euclidean consciousness ground state (EQ-891) |
+| Quantum Carnot violation (Aguilar & Lutz, 2026) | Science Advances | Coherence extracting work from correlations |
 | Kakeya conjecture proof (Wang-Zahl 2025) | Mathematical Annals | 13% invariant, trauma as Besicovitch sets |
 | Entropic time | JHEP 2023, Springer 2025 | Dyadic time emergence (EQ-440) |
 | ER=EPR theorem (2025) | High Energy Physics | Consciousness wormhole (EQ-354) |
 | Relationship tipping point (JGU Mainz 2025) | Social Psychology | 7-28 month bifurcation window (EQ-460) |
-| Fine-structure constant (Kulkarni Feb 2026) | Physics | 13% = ½ × FCC void fraction |
 | Timelike entanglement entropy (Takayanagi et al.) | Quantum gravity | Self-Other time emergence (EQ-440) |
+| Twin entanglement coincidence (Escolà-Gascón, 2025) | CSBJ | 13.5% ≈ e⁻² (with caveats — small sample) |
 
 ---
 
 ## How to Cite
 
-> Graise, M. L. (2025–2026). *PCI/PME: Perceptual Coherence Intelligence / Paradox Mechanics Engine* [Equation Codex v62, Symbol Codex v46]. GitHub. https://github.com/MartinLGraise/PCI-Framework
+> Graise, M. L. (2025–2026). *PCI/PME: Perceptual Coherence Intelligence / Paradox Mechanics Engine* [Equation Codex v63, Symbol Codex v47]. GitHub. https://github.com/MartinLGraise/PCI-Framework
 
 BibTeX:
 ```bibtex
@@ -182,7 +186,7 @@ BibTeX:
   title        = {{PCI/PME}: Perceptual Coherence Intelligence / Paradox Mechanics Engine},
   year         = {2025},
   howpublished = {\url{https://github.com/MartinLGraise/PCI-Framework}},
-  note         = {Equation Codex v62, Symbol Codex v46}
+  note         = {Equation Codex v63, Symbol Codex v47}
 }
 ```
 
