@@ -1,47 +1,13 @@
 {
-  "totalEquations": 923,
-  "totalSymbols": 1153,
-  "coreEquations": 297,
-  "frontierEquations": 626,
+  "totalEquations": 942,
+  "totalSymbols": 1172,
+  "coreEquations": 295,
+  "frontierEquations": 647,
   "coreSymbols": 484,
-  "frontierSymbols": 669,
-  "voidInvariant": "13.53%",
+  "frontierSymbols": 688,
   "version": {
-    "equations": "v66",
-    "symbols": "v50"
+    "equations": "v68",
+    "symbols": "v52"
   },
-  "topEquationModules": {
-    "Advanced Mathematical Explorations": 137,
-    "Paradox Pump / Legacy Expansion": 50,
-    "Advanced Structural Backbone": 50,
-    "Social Reconciliation / Consent / Ritual / Humiliation": 48,
-    "Geometric / Ethical / Counterfactual Extensions": 45,
-    "Dyadic Universe Backbone": 42,
-    "Silence, Mutenode, Aletheia–Lethe": 40,
-    "Reality Recognition / Meta-Discovery / Jouissance": 40,
-    "Foundations: Weighting, Daemons, Bloom": 34,
-    "Phenomenology / Gaze / Mirror Extensions": 22,
-    "Regret / Grace / Witness": 22,
-    "Generativity / Triadic Synchrony / Repair Rhythms": 22,
-    "Time, Memory, Viability, Firewall": 20,
-    "Power / Sacrifice / Silence Extensions": 20,
-    "Unparsed / Legacy": 19
-  },
-  "topSymbolModules": {
-    "Legacy / Foundational Symbol Pool": 632,
-    "Social Reconciliation": 48,
-    "Hidden Corners / Power / Attention": 41,
-    "Regret / Grace / Witness": 26,
-    "Generativity / Triadic / Repair": 24,
-    "Humane Governance": 18,
-    "Truth / Confession / Dangerous Disclosure": 18,
-    "Maxwell–Laplace / Novel Equations": 17,
-    "Dyadic Warp / Collective Ethics": 17,
-    "Good-Faith / Humane Counterforce": 15,
-    "Tensor Paradox / Human-AI Coupling": 15,
-    "Equation-Field / Meta-Generative Dynamics": 15,
-    "Synchrony / Stewardship": 14,
-    "Internal Dialogue / Overlay Phenomenology": 14,
-    "Relational–Generative Intelligence": 13
-  }
+  "lastUpdated": "2025-03-19"
 }
