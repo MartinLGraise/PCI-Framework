@@ -1,12 +1,12 @@
 {
-  "totalEquations": 942,
+  "totalEquations": 950,
   "totalSymbols": 1172,
   "coreEquations": 295,
-  "frontierEquations": 647,
+  "frontierEquations": 655,
   "coreSymbols": 484,
   "frontierSymbols": 688,
   "version": {
-    "equations": "v68",
+    "equations": "v70",
     "symbols": "v52"
   },
   "lastUpdated": "2025-03-19"
