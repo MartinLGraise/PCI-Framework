@@ -71,10 +71,14 @@
 - **Canonical example** (β=1, γ=0.5, a₁=a₂=1): eigenvalues −7.667(×2), −6.667(×2), −5.667(×2), −3.500(×1). Gaps uniformly spaced Δ=1.
 - **Full resolution** (a₁ ≠ a₂): all 7 eigenvalues distinct
 
-### 3.4 The Prediction (Revised)
-- G₂ fixes the **topological structure** (3 doublets + 1 singlet = 4-level pattern) but the **ratios** are free parameters of (a₁, a₂)
-- **Revised FP-1**: Microtubule resonance data should show a 4-level / 3-doublet spectral fingerprint consistent with the G₂/SU(3) branching rule. The ratio a₁/a₂ is then extractable from data.
-- This is actually a stronger prediction than fixed ratios: the 4-level structure is a non-trivial topological signature. If data shows 5 or 3 levels, G₂ is ruled out.
+### 3.4 The Prediction (Corrected After Adversarial Review)
+- G₂ fixes the **branching topology** (1⊕3⊕3̄) but NOT the level count (allowed: 1, 2, 4, or 7 depending on parameter regime)
+- The singlet void mode is **structurally forced** by the null-space construction — not hand-labeled
+- Non-singlet modes must come in **conjugate pairs** (3 ↔ 3̄)
+- Gap ratios depend on only **two** independent Cartan parameters (rank of SU(3) = 2)
+- **Corrected FP-1**: Does resonance data fit a two-parameter family with a forced singlet and conjugate-paired 3⊕3̄ sector?
+- G₂ is ruled out if: data needs >2 splitting parameters, conjugate pairing absent, or branching doesn't match 1⊕3⊕3̄
+- **Key line**: G₂ does not fix the metric uniquely, but it does fix the topology of the spectral family.
 
 ---
 
@@ -95,7 +99,7 @@
 
 **Purpose**: Lay out 5 concrete, testable predictions so this is science, not metaphysics.
 
-- **FP-1** (REVISED): Microtubule resonance data shows a 4-level / 3-doublet spectral structure consistent with G₂/SU(3) branching 7 → 1 ⊕ 3 ⊕ 3̄. The coupling ratio a₁/a₂ is extractable from the data. If the data shows a different level count, G₂ is ruled out.
+- **FP-1** (CORRECTED): Microtubule resonance data fits a rank-2 Cartan spectral family with a structurally forced singlet and a conjugate-paired 3⊕3̄ sector. Falsified if data requires >2 independent splitting parameters, if conjugate pairing is absent, or if the branching topology doesn't match 1⊕3⊕3̄.
 - **FP-2**: The Golay-code neural motif (24-neuron, M₂₄-symmetric) exists in cortical microcircuits; detectable via calcium imaging
 - **FP-3**: Perturbational Complexity Index measurements saturate at C* = 1 − e⁻² ≈ 0.865 in maximally integrated networks
 - **FP-4**: Systems with constrained G₂-violating perturbations show measurably lower coherence than those preserving G₂

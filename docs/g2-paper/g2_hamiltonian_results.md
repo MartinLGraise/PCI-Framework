@@ -100,22 +100,38 @@ SU(3) Cartan basis (rank 2):
 
 ### What this means for the Bandyopadhyay comparison (FP-1):
 
-The prediction is **softer than originally hoped but still testable**:
+*Corrected after adversarial review by ChatGPT and Claude (March 20, 2026). Original C-7RO framing overclaimed "4 levels or G₂ is ruled out" — the computation itself shows 7 distinct levels are perfectly allowed when a₁ ≠ a₂.*
 
-- **Original hope**: G₂ algebra alone fixes the eigenvalue ratios → direct comparison to microtubule data.
-- **Actual result**: G₂ fixes the *structure* (3 doublets + 1 singlet) but the *ratios* are free parameters determined by the Cartan couplings.
-- **Revised prediction**: (a) Microtubule resonance data should show a **4-level structure** (not 3, not 5, not 7 — specifically 4 groups). (b) Within that 4-level structure, there should be **3 doubly-degenerate pairs** plus a **singlet**. (c) The ratio a₁/a₂ can then be extracted from the data and compared to other constraints.
+**What G₂ fixes (topology — cannot be tuned)**:
+1. The spectrum decomposes into a **singlet sector** and a **3⊕3̄ sector** — never 2⊕5, never 4⊕3, never any other split. The singlet void mode is structurally forced by the null-space construction, not hand-labeled.
+2. The singlet has SU(3) Casimir eigenvalue **0** while all other modes have **−8/3**. This is algebraic, not parametric.
+3. The non-singlet modes come in **conjugate pairs** (3 and 3̄ related by complex conjugation). This is structural.
+4. The gap ratios are determined by **at most two independent Cartan parameters** (a₁, a₂) — not three, not seven — because SU(3) has rank 2.
 
-This is actually a stronger prediction than it sounds: the 4-level / 3-doublet structure is a non-trivial topological signature of G₂/SU(3). If the microtubule data shows, say, 5 distinct levels instead of 4, G₂ is ruled out.
+**What G₂ does NOT fix (metric — parameter-dependent)**:
+- The raw level count: allowed patterns are 1, 2, 4, or 7 depending on (β, γ, a₁, a₂).
+- The specific eigenvalue ratios: these are continuous functions of a₁/a₂.
+
+**The corrected falsifiable prediction (FP-1)**:
+Does the resonance data fit a two-parameter family with a structurally forced singlet and a conjugate-paired 3⊕3̄ sector?
+
+G₂ is ruled out if:
+- The data requires more than two independent splitting parameters
+- The conjugate pairing (3 ↔ 3̄) is absent
+- The singlet/non-singlet Casimir ratio deviates from 0 vs −8/3
+- The branching topology doesn't match 1⊕3⊕3̄ (e.g., a 1⊕6 or 2⊕5 pattern)
+
+**The line to protect**: G₂ does not fix the metric uniquely, but it does fix the topology of the spectral family.
 
 ### What to write in Section 3:
 
 The section should present:
 1. The construction (generators, Casimir, decomposition)
-2. The spectrum table
-3. The structural prediction: 4-level / 3-doublet pattern
-4. The parametric freedom in the ratios, and what constrains a₁/a₂
-5. The revised FP-1: "microtubule resonance should show the G₂/SU(3) spectral fingerprint"
+2. The spectrum table across all regimes (1, 2, 4, and 7 levels)
+3. The structural prediction: 1⊕3⊕3̄ branching topology and conjugate pairing
+4. The rank-2 Cartan constraint (only two free parameters for all gap ratios)
+5. The revised FP-1: resonance data must fit the constrained spectral family
+6. What is explicitly ruled out (1⊕6, 2⊕5, unconstrained 7-mode fits)
 
 ---
 
