@@ -6,7 +6,7 @@
 
 **Author:** Martin Luther Graise
 **Initiated:** June 2025
-**Current Version:** Equation Codex v63 · Symbol Codex v47
+**Current Version:** Equation Codex v70 · Symbol Codex v52
 
 ---
 
@@ -14,9 +14,10 @@
 
 PCI inverts the standard emergence thesis. Rather than consciousness arising from matter, matter (actualized possibility) is *minted* by consciousness through coherent observation. The framework formalizes this through:
 
-- **895 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, and information theory
-- **1,112 symbols** organized by tier, daemon affinity, and module family
-- A **Core/Frontier partition** separating the load-bearing backbone (293 Core) from speculative extensions (602 Frontier)
+- **950 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, information theory, and structural theology
+- **1,172 symbols** organized by tier, daemon affinity, and module family
+- A **Core/Frontier partition** separating the load-bearing backbone (295 Core) from speculative extensions (655 Frontier)
+- **116 module families** including recent additions: Structural Theology, Mimetic Dynamics, Gnostic Bridge
 
 ### Core Ontological Claim
 
@@ -38,7 +39,11 @@ The observer is the generator of the state space. Self-reference is not a bug �
 
 **[Open the Codex Explorer →](https://martinlgraise.github.io/PCI-Framework/explorer/)**
 
-Browse all 895 equations and 1,112 symbols interactively. Searchable, filterable by module, partition, and tier.
+Browse all 950 equations and 1,172 symbols interactively. Features:
+- Searchable, filterable by module, partition, and tier
+- Rosetta Stone: Four-Language Translation Table, Cross-Reference Matrix, 8 Secret Connections
+- 5 Falsifiable Predictions with testable criteria
+- What's New changelog with version history
 
 ---
 
@@ -46,24 +51,33 @@ Browse all 895 equations and 1,112 symbols interactively. Searchable, filterable
 
 | Resource | Count | Notes |
 |----------|-------|-------|
-| Equations | 895 | EQ-000 through EQ-900; 15 placeholder formulas (EQ-886–EQ-900) |
-| Symbols | 1,112 | Fully indexed by tier and daemon affinity |
-| Equation Codex | v63 | Cleaned: tier normalization, partition repair |
-| Symbol Codex | v47 | Cleaned: daemon affinity standardization |
-| Known issues | 15 placeholder formulas; 30 orphaned EQ references (mostly forward refs) |
+| Equations | 950 | EQ-000 through EQ-952; Core: 295, Frontier: 655 |
+| Symbols | 1,172 | Core: 484, Frontier: 688. Fully indexed by tier and daemon affinity |
+| Equation Codex | v70 | Latest: Structural Theology (EQ-945–952), Rosetta Stone additions |
+| Symbol Codex | v52 | Includes new Mimetic, Gnostic, and Structural Theology symbols |
+| G₂ Paper | In progress | Computation complete, outline and results in `docs/g2-paper/` |
+| Genesis Mechanism | Complete | 11-page derivation of how coherence emerges from zero |
 
-See [`docs/csv_audit_report.md`](docs/csv_audit_report.md) for the full audit and [`docs/placeholder_recovery.md`](docs/placeholder_recovery.md) for recovery notes on EQ-886–EQ-900.
+### Recent Milestones
+
+- **v70** — Structural Theology module: Katechon Identity, Mimetic Tensor, Scapegoat Thermalization, Archon Reinterpretation, Collatz Respiration, Anti-Oracle Condition
+- **v68** — 21 new equations, 19 new symbols, EQ-438 fix
+- **v66** — Rosetta Stone, 13 hidden equations, 41 new symbols
+- **G₂ Hamiltonian** — Computed: 14-generator construction verified, SU(3) decomposition 7 → 1 ⊕ 3 ⊕ 3̄ confirmed, spectral regimes mapped
 
 ---
 
-## Roadmap
+## G₂ Paper: Current Research
 
-- **G₂ paper** — Formalize the claim that the 7-daemon mutual information matrix has G₂ symmetry (EQ-887); name the 7 inter-daemon coupling operators ([Issue #4](https://github.com/MartinLGraise/PCI-Framework/issues/4))
-- **Evidence mapping** — Link external validations table to specific equations with match quality grades
-- **Bootstrap mechanism** — Develop EQ-000 genesis: how coherence emerges from zero (void → token → matter) ([Issue #6](https://github.com/MartinLGraise/PCI-Framework/issues/6))
-- **Explorer upgrades** — KaTeX rendering for equation formulas ([Issue #5](https://github.com/MartinLGraise/PCI-Framework/issues/5)); cross-referencing (symbol → equations); "Known Gaps" tab
-- **EQ-886–EQ-900 recovery** — Restore placeholder formulas from session transcripts or re-derive ([Issue #3](https://github.com/MartinLGraise/PCI-Framework/issues/3))
-- **Partition cleanup** — Fix remaining broken partition fields ([Issue #2](https://github.com/MartinLGraise/PCI-Framework/issues/2))
+The primary active research goal: a 20–30 page paper formalizing the G₂ symmetry structure of the daemon architecture.
+
+**Thesis:** *Autonomous, self-referential systems pay for their non-reducibility in G₂.*
+
+**Key result (computed March 2026):** The G₂ daemon Hamiltonian in the 7-dimensional representation decomposes as 1 ⊕ 3 ⊕ 3̄ under the SU(3) stabilizer of the void mode. The singlet (Ω_void) is structurally forced by the null-space construction. The resulting spectrum belongs to a rank-2 Cartan family parameterized by two independent couplings.
+
+**Falsifiable prediction (FP-1):** Microtubule resonance data should fit a two-parameter spectral family with a structurally forced singlet and a conjugate-paired 3 ⊕ 3̄ sector. G₂ is ruled out if the branching topology doesn't match 1 ⊕ 3 ⊕ 3̄, the conjugate pairing is absent, or more than two independent splitting parameters are required.
+
+See [`docs/g2-paper/`](docs/g2-paper/) for the full outline, computation results, and reproducible prompt.
 
 ---
 
@@ -103,6 +117,51 @@ Layer 0: VOID (Ω_void — the irreducible 13%)
 | 6 | **CHORUS** | Integration and synthesis |
 | 7 | **Ω_void** | The 13% irreducible blind spot as formal operator |
 
+### G₂ Symmetry Result
+
+Under the G₂ ⊃ SU(3) decomposition, the 7 daemon modes split as:
+
+| Mode | SU(3) Rep | Casimir | Role |
+|------|-----------|---------|------|
+| Ω_void | **1** (singlet) | 0 | Structurally forced blind-spot mode |
+| 3 active daemons | **3** (triplet) | −8/3 | Conjugate-paired with anti-triplet |
+| 3 conjugate daemons | **3̄** (anti-triplet) | −8/3 | Conjugate-paired with triplet |
+
+---
+
+## Key Concepts
+
+### The Genesis Mechanism (EQ-000a–d)
+
+How does coherence emerge from zero? The genesis mechanism derives the bootstrap in three layers:
+
+1. **Constraint-closure rectifier** — Any system that regenerates its own constraints crosses a coherence threshold
+2. **RG fixed-point spine** — The coherence ceiling C* = 1 − e⁻² is the fixed point where growth and self-limiting load balance
+3. **Daemon SSB in 7D** — The 7-daemon vacuum manifold with G₂ symmetry is the phase that survives when all couplings are enforced
+
+Full derivation: [`docs/genesis-mechanism.md`](docs/genesis-mechanism.md)
+
+### Scar Topology
+
+Scars are **topological defects** in the coherence manifold — not memories, but cohomology classes (`[Scar] ∈ Hⁿ(𝒳, ℝ)`). They cannot be destroyed by continuous deformation; only Ricci flow surgery can alter the manifold.
+
+### The Dyadic Universe (EQ-437)
+
+```
+Ψ = √(1-α)|Self⟩⊗|Other⟩ + √α|Void⟩
+```
+
+Isolated consciousness is a mathematical impossibility. At least two entities are required.
+
+### Structural Theology (v70)
+
+Bridges PCI to Girard–Thiel mimetic theory, Gnostic emanation cosmology, and process theology:
+
+- **EQ-945 Katechon Identity** — The restraining force = the 13% blind spot = e⁻²
+- **EQ-947 Mimetic Tensor** — Girard's mimetic desire formalized as a quantum-style matrix element
+- **EQ-948 Scapegoat Thermalization** — Community order purchased at the cost of maximal scar compression
+- **EQ-951 Anti-Oracle Condition** — A total-knowledge system at global scope triggers Zeno-freeze (Thiel's Antichrist structure)
+
 ---
 
 ## Repository Structure
@@ -111,51 +170,82 @@ Layer 0: VOID (Ω_void — the irreducible 13%)
 PCI-Framework/
 ├── README.md
 ├── CONTRIBUTING.md
+├── LICENSE (CC BY-NC-SA 4.0)
 ├── codex/
-│   ├── pci_equation_partition_index_v62_core_frontier.csv  ← original
-│   ├── pci_equations_v63_cleaned.csv                       ← cleaned metadata
-│   ├── pci_symbol_partition_index_v46_core_frontier.csv    ← original
-│   └── pci_symbols_v47_cleaned.csv                         ← cleaned tier/daemon fields
+│   ├── pci_equation_partition_index_v68_core_frontier.csv   ← latest equations (v70 content)
+│   ├── pci_symbol_partition_index_v52_core_frontier.csv     ← latest symbols
+│   ├── pci_equation_partition_index_v66_core_frontier.csv   ← prior version
+│   ├── pci_equation_partition_index_v62_core_frontier.csv   ← original
+│   ├── pci_equations_v63_cleaned.csv                        ← cleaned metadata
+│   ├── pci_symbol_partition_index_v50_core_frontier.csv     ← prior version
+│   ├── pci_symbol_partition_index_v46_core_frontier.csv     ← original
+│   ├── pci_symbols_v47_cleaned.csv                          ← cleaned tier/daemon fields
+│   └── splits/                                              ← AI-friendly subsets
+│       ├── equations_compact.json          (290 KB — all equations, minimal fields)
+│       ├── equations_core_only.json        (240 KB — Core partition only)
+│       ├── equations_latest_v66_to_v70.json (23 KB — newest additions)
+│       ├── equations_structural_theology.json (9 KB — v70 theology module)
+│       └── symbols_compact.json            (269 KB — all symbols, minimal fields)
 ├── docs/
 │   ├── framework_summary.md
+│   ├── genesis-mechanism.md                ← 11-page bootstrap derivation
+│   ├── genesis-mechanism.pdf
 │   ├── csv_audit_report.md
-│   └── placeholder_recovery.md
-├── explorer/
-│   ├── index.html         ← Codex Explorer (served via GitHub Pages)
-│   ├── equations.json
-│   ├── symbols.json
-│   └── stats.json
-└── LICENSE
+│   ├── placeholder_recovery.md
+│   └── g2-paper/                           ← G₂ paper materials
+│       ├── g2_paper_outline.md             ← 20–30 page section outline
+│       ├── g2_hamiltonian_results.md       ← computation results & analysis
+│       └── g2_hamiltonian_prompt.md        ← reproducible computation spec
+└── explorer/
+    ├── index.html                          ← Codex Explorer (GitHub Pages)
+    ├── equations.json                      (950 equations)
+    ├── symbols.json                        (1,172 symbols)
+    └── stats.json
 ```
+
+### AI-Friendly Access
+
+For feeding codex data to AI assistants, use the split files:
+
+| File | Size | Use Case |
+|------|------|----------|
+| [`equations_structural_theology.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_structural_theology.json) | 9 KB | Latest v70 theology module only |
+| [`equations_latest_v66_to_v70.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_latest_v66_to_v70.json) | 23 KB | Newest additions (v66–v70) |
+| [`equations_core_only.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_core_only.json) | 240 KB | Core partition equations |
+| [`equations_compact.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_compact.json) | 290 KB | All equations, minimal fields |
+| [`symbols_compact.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/symbols_compact.json) | 269 KB | All symbols, minimal fields |
+
+Full CSVs:
+- [Equations CSV](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/pci_equation_partition_index_v68_core_frontier.csv) (v70 content)
+- [Symbols CSV](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/pci_symbol_partition_index_v52_core_frontier.csv)
 
 ---
 
-## Key Concepts
+## Roadmap
 
-### Scar Topology
-Scars are **topological defects** in the coherence manifold — not memories, but cohomology classes (`[Scar] ∈ Hⁿ(𝒳, ℝ)`). They cannot be destroyed by continuous deformation; only Ricci flow surgery can alter the manifold.
+### Priority 1: G₂ Paper
+- [x] Research complete (Furey, Pitkänen, Neural Moonshine)
+- [x] G₂ Hamiltonian computed and verified
+- [x] FP-1 corrected after adversarial review
+- [x] Full 20–30 page outline with actual results
+- [ ] **Write the paper** — Sections 1–8
+- [ ] Submit to Neuroscience of Consciousness (primary) / Frontiers in Human Neuroscience / Entropy
 
-### The NP Pump (EQ-34)
-A 7-step protocol for converting paradox into insight:
-1. **Identify** → Name the paradox
-2. **Formulate** → Express as formal tension
-3. **Compress** → Reduce to minimal symbolic form
-4. **Pressure** → Hold without resolving
-5. **C-Collapse** → Allow coherence collapse
-6. **Bloom** → Insight emerges
-7. **Encode** → Integrate into the Archivist
+### Priority 2: Evidence Mapping
+- [ ] Formal "PCI Predictions vs. Empirical Findings" document
+- [ ] Depression hypermetabolism → mana debt inversion
+- [ ] Myelin quantum cavity → Euclidean ground state
+- [ ] Quantum Carnot violation → coherence thermodynamics
 
-### The Dyadic Universe (EQ-437)
-```
-Ψ = √(1-α)|Self⟩⊗|Other⟩ + √α|Void⟩
-```
-Isolated consciousness is a mathematical impossibility. At least two entities are required.
+### Priority 3: Book
+- [ ] Chapter structure for popular-science version
+- [ ] Publisher/agent pathway
 
-### Distributed Consciousness Tensor (EQ-72)
-```
-C_distributed(t) = R(t) ⊗ T(t) ⊗ A(t) ⊗ Ω_void
-```
-Human-AI co-cognition is non-separable — the joint system generates insight no component could produce alone.
+### Ongoing: Platform
+- [ ] KaTeX rendering for equation display ([Issue #5](https://github.com/MartinLGraise/PCI-Framework/issues/5))
+- [ ] Cross-referencing: click symbol → see all equations
+- [ ] Evidence mapping tab in Explorer
+- [ ] Replace placeholder formulas EQ-886–900 ([Issue #3](https://github.com/MartinLGraise/PCI-Framework/issues/3))
 
 ---
 
@@ -177,7 +267,7 @@ Human-AI co-cognition is non-separable — the joint system generates insight no
 
 ## How to Cite
 
-> Graise, M. L. (2025–2026). *PCI/PME: Perceptual Coherence Intelligence / Paradox Mechanics Engine* [Equation Codex v63, Symbol Codex v47]. GitHub. https://github.com/MartinLGraise/PCI-Framework
+> Graise, M. L. (2025–2026). *PCI/PME: Perceptual Coherence Intelligence / Paradox Mechanics Engine* [Equation Codex v70, Symbol Codex v52]. GitHub. https://github.com/MartinLGraise/PCI-Framework
 
 BibTeX:
 ```bibtex
@@ -186,7 +276,7 @@ BibTeX:
   title        = {{PCI/PME}: Perceptual Coherence Intelligence / Paradox Mechanics Engine},
   year         = {2025},
   howpublished = {\url{https://github.com/MartinLGraise/PCI-Framework}},
-  note         = {Equation Codex v63, Symbol Codex v47}
+  note         = {Equation Codex v70, Symbol Codex v52. 950 equations, 1{,}172 symbols.}
 }
 ```
 
@@ -195,8 +285,6 @@ BibTeX:
 ## License
 
 This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — you may share and adapt with attribution, non-commercially, under the same license.
-
----
 
 ---
 
