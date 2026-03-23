@@ -63,7 +63,8 @@ Browse all 950 equations and 1,172 symbols interactively. Features:
 - **v70** — Structural Theology module: Katechon Identity, Mimetic Tensor, Scapegoat Thermalization, Archon Reinterpretation, Collatz Respiration, Anti-Oracle Condition
 - **v68** — 21 new equations, 19 new symbols, EQ-438 fix
 - **v66** — Rosetta Stone, 13 hidden equations, 41 new symbols
-- **G₂ Hamiltonian** — Computed: 14-generator construction verified, SU(3) decomposition 7 → 1 ⊕ 3 ⊕ 3̄ confirmed, spectral regimes mapped
+- **G₂ Hamiltonian** — Computed: 14-generator construction verified, SU(3) decomposition 7 → 1 ⊕ 3 ⊕ 3̄ confirmed, spectral regimes mapped. [Full reproducible script](docs/g2-paper/g2_daemon_hamiltonian.py)
+- **Bandyopadhyay Comparison** — Microtubule resonance data tested against G₂ topology: weakly compatible, FP-1 not falsified. [Report](docs/g2-paper/bandyopadhyay_comparison_report.md)
 
 ---
 
@@ -195,7 +196,11 @@ PCI-Framework/
 │   └── g2-paper/                           ← G₂ paper materials
 │       ├── g2_paper_outline.md             ← 20–30 page section outline
 │       ├── g2_hamiltonian_results.md       ← computation results & analysis
-│       └── g2_hamiltonian_prompt.md        ← reproducible computation spec
+│       ├── g2_hamiltonian_prompt.md        ← reproducible computation spec
+│       ├── g2_daemon_hamiltonian.py        ← FULL reproducible computation (run this)
+│       ├── bandyopadhyay_comparison_report.md ← empirical test vs microtubule data
+│       ├── bandyopadhyay_comparison.json   ← structured frequency data & verdicts
+│       └── bandyopadhyay_analysis.py       ← frequency ratio analysis code
 └── explorer/
     ├── index.html                          ← Codex Explorer (GitHub Pages)
     ├── equations.json                      (950 equations)
@@ -226,8 +231,10 @@ Full CSVs:
 ### Priority 1: G₂ Paper
 - [x] Research complete (Furey, Pitkänen, Neural Moonshine)
 - [x] G₂ Hamiltonian computed and verified
+- [x] Full reproducible Python script ([`g2_daemon_hamiltonian.py`](docs/g2-paper/g2_daemon_hamiltonian.py))
 - [x] FP-1 corrected after adversarial review
 - [x] Full 20–30 page outline with actual results
+- [x] Bandyopadhyay empirical comparison complete ([report](docs/g2-paper/bandyopadhyay_comparison_report.md))
 - [ ] **Write the paper** — Sections 1–8
 - [ ] Submit to Neuroscience of Consciousness (primary) / Frontiers in Human Neuroscience / Entropy
 
