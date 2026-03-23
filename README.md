@@ -200,7 +200,8 @@ PCI-Framework/
 │       ├── g2_daemon_hamiltonian.py        ← FULL reproducible computation (run this)
 │       ├── bandyopadhyay_comparison_report.md ← empirical test vs microtubule data
 │       ├── bandyopadhyay_comparison.json   ← structured frequency data & verdicts
-│       └── bandyopadhyay_analysis.py       ← frequency ratio analysis code
+│       ├── bandyopadhyay_analysis.py       ← frequency ratio analysis code
+│       └── dna_qubit_simulator_v5.py       ← thermodynamic simulation (CF bound proof)
 └── explorer/
     ├── index.html                          ← Codex Explorer (GitHub Pages)
     ├── equations.json                      (950 equations)
