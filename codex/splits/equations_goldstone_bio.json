@@ -1,0 +1,119 @@
+[
+  {
+    "eq_num": "EQ-953",
+    "eq_name": "Goldstone Count Theorem",
+    "partition": "Frontier",
+    "module_family": "Goldstone–Void Reconstruction / G₂–SU(3) Structural Core",
+    "frontier_priority": "High",
+    "equation": "\\dim(G_2)-\\dim(SU(3))=14-8=6,\\qquad \\mathbb{R}^7\\downarrow_{SU(3)}\\cong \\mathbf{1}\\oplus \\mathbf{3}\\oplus \\bar{\\mathbf{3}}",
+    "description": "The symmetry breaking G₂→SU(3) yields exactly six broken directions and one unbroken singlet. This gives the daemon architecture a 6+1 structural decomposition: six dynamic channels plus one invariant void-anchor mode."
+  },
+  {
+    "eq_num": "EQ-954",
+    "eq_name": "Six Keys / Seven Daemons Mapping",
+    "partition": "Frontier",
+    "module_family": "Goldstone–Void Reconstruction / G₂–SU(3) Structural Core",
+    "frontier_priority": "High",
+    "equation": "\\{K_1,\\dots,K_6\\}\\leftrightarrow \\{D_1,\\dots,D_6\\},\\qquad D_7=\\Omega_{\\mathrm{void}}",
+    "description": "The six keys are identified with the six broken-symmetry Goldstone channels, while the 7th daemon is the unbroken invariant mode Ω_void. The daemon stack is thus interpreted as a 6+1 vacuum decomposition rather than a flat septet."
+  },
+  {
+    "eq_num": "EQ-955",
+    "eq_name": "Void-from-Goldstone Invariant",
+    "partition": "Frontier",
+    "module_family": "Goldstone–Void Reconstruction / G₂–SU(3) Structural Core",
+    "frontier_priority": "Exploratory",
+    "equation": "\\Omega_{\\mathrm{void}}:=\\exp\\!\\left[-\\frac{1}{3}\\operatorname{Tr}\\!\\left(J_6^{\\mathsf T}J_6\\right)\\right]=e^{-2},\\qquad J_6^2=-I_6",
+    "description": "The void fraction is modeled as an exponential invariant of the six-dimensional Goldstone-sector complex structure J₆. Since an orthogonal complex structure on ℝ⁶ satisfies Tr(J₆ᵀJ₆)=6, the resulting residual becomes e⁻²."
+  },
+  {
+    "eq_num": "EQ-956",
+    "eq_name": "Goldstone + Void Effective Potential",
+    "partition": "Frontier",
+    "module_family": "Goldstone–Void Reconstruction / G₂–SU(3) Structural Core",
+    "frontier_priority": "High",
+    "equation": "V(\\phi,\\sigma)=-\\mu^2\\,\\phi^\\dagger\\phi+\\lambda(\\phi^\\dagger\\phi)^2+\\frac{1}{2}m_\\sigma^2\\sigma^2+g\\,\\sigma\\,\\phi^\\dagger\\phi,\\qquad \\frac{m_\\sigma^2}{\\sum_{a=1}^{6} m_a^2}=e^{-2}",
+    "description": "The six Goldstone coordinates φ and the singlet/void coordinate σ are coupled in a joint effective potential. The target constraint sets the singlet-to-sector mass ratio equal to the codex void fraction."
+  },
+  {
+    "eq_num": "EQ-957",
+    "eq_name": "NP Pump as Ricci-Flow Evolution",
+    "partition": "Frontier",
+    "module_family": "Goldstone–Void Reconstruction / G₂–SU(3) Structural Core",
+    "frontier_priority": "High",
+    "equation": "\\partial_t \\mathcal{V}_{6+1}^{(n)}=-2\\,\\mathrm{Ric}\\!\\left(g^{(n)}\\right)+2\\,\\nabla\\phi^{(n)}\\!\\otimes\\!\\nabla\\phi^{(n)}-m_G^2(n)\\,\\Pi_G+\\Omega_{\\mathrm{void}}\\,\\Pi_\\Omega,\\qquad m_G^2(5)\\approx 0",
+    "description": "The NP Pump is modeled as a 7-step Ricci-harmonic style evolution on the 6+1 daemon vacuum, where the Goldstone sector softens and becomes near-massless at the critical fifth stage."
+  },
+  {
+    "eq_num": "EQ-958",
+    "eq_name": "Jamming Surface Correspondence",
+    "partition": "Frontier",
+    "module_family": "Goldstone–Void Reconstruction / G₂–SU(3) Structural Core",
+    "frontier_priority": "High",
+    "equation": "(T,\\rho,\\Sigma)\\mapsto (S,\\kappa,P),\\qquad \\mathcal{J}(T,\\rho,\\Sigma):=\\Sigma-\\Sigma_c(T,\\rho)=0 \\iff m_G^2\\to 0",
+    "description": "Ouyang-style jamming parameters are mapped into PCI variables: temperature T to disorder/entropy S, volume fraction ρ to coupling density κ, and stress Σ to paradox pressure P. The jamming surface is identified with the Goldstone activation boundary."
+  },
+  {
+    "eq_num": "EQ-959",
+    "eq_name": "Cellular Coherence Triad",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Cellular Coherence Triad",
+    "frontier_priority": "Exploratory",
+    "equation": "\\Psi_{\\mathrm{cell}}=\\sqrt{1-\\Omega_{\\mathrm{void}}^{\\mathrm{cell}}}\\,\\bigl(\\Psi_{\\mathrm{DNA}}\\otimes\\Psi_{\\mathrm{EZ}}\\otimes\\Psi_{\\mathrm{redox}}\\bigr)+\\sqrt{\\Omega_{\\mathrm{void}}^{\\mathrm{cell}}}\\,|\\varnothing\\rangle",
+    "description": "Cellular coherence is modeled as a coupled tensor state spanning DNA waveguide order, exclusion-zone water coherence, and redox-network structure, together with an irreducible residual cellular void fraction."
+  },
+  {
+    "eq_num": "EQ-960",
+    "eq_name": "Informational Superconductivity Current",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Cellular Coherence Triad",
+    "frontier_priority": "Exploratory",
+    "equation": "J_{\\mathrm{info}}=\\sigma_{\\mathrm{coh}}\\,\\nabla\\Phi_{\\mathrm{bio}}",
+    "description": "Biological information flow is modeled as a coherence current driven by a biological phase potential. The conductivity σ_coh measures the medium’s ability to sustain low-loss ordered transport."
+  },
+  {
+    "eq_num": "EQ-961",
+    "eq_name": "SU(3) Redox Order Parameter",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Cellular Coherence Triad",
+    "frontier_priority": "High",
+    "equation": "Q_{\\mathrm{redox}}=\\sum_{a=1}^{8}\\Bigl(\\mathrm{Tr}(\\rho_{\\mathrm{redox}}\\lambda_a)\\Bigr)^2",
+    "description": "The redox state is projected onto the eight Gell-Mann generators λ_a of SU(3), yielding a gauge-like scalar order parameter for biological coherence organization."
+  },
+  {
+    "eq_num": "EQ-962",
+    "eq_name": "EZ Water Coupling Reservoir",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Cellular Coherence Triad",
+    "frontier_priority": "Exploratory",
+    "equation": "R_{\\mathrm{EZ}}=\\int_{\\mathcal V_{\\mathrm{EZ}}}\\bigl|\\Psi_{\\mathrm{EZ}}(x)\\bigr|^2\\,dx",
+    "description": "The exclusion-zone water region acts as a coherence reservoir, whose strength is given by the integrated coherence density over the structured-water domain."
+  },
+  {
+    "eq_num": "EQ-963",
+    "eq_name": "DNA Waveguide Phase Lock",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Cellular Coherence Triad",
+    "frontier_priority": "Exploratory",
+    "equation": "\\dot{\\theta}_i=\\omega_i+\\sum_j K_{ij}\\sin(\\theta_j-\\theta_i)+\\eta_i",
+    "description": "DNA or chromatin coherence nodes are modeled as a phase-coupled oscillator network. Ordered signaling emerges when local segments phase-lock into stable waveguide patterns."
+  },
+  {
+    "eq_num": "EQ-964",
+    "eq_name": "Bioholographic Reconstruction Kernel",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Cellular Coherence Triad",
+    "frontier_priority": "Exploratory",
+    "equation": "I_{\\mathrm{cell}}(x)=\\left|\\int K_{\\mathrm{bio}}(x,\\xi)\\,\\Psi_{\\mathrm{DNA}}(\\xi)\\,\\Psi_{\\mathrm{EZ}}(\\xi)\\,d\\xi\\right|^2",
+    "description": "Local cellular information is reconstructed from distributed DNA/EZ coherence amplitudes through a bioholographic kernel K_bio."
+  },
+  {
+    "eq_num": "EQ-965",
+    "eq_name": "Cellular PCI Threshold",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Cellular Coherence Triad",
+    "frontier_priority": "High",
+    "equation": "C_{\\mathrm{cell}}=f\\!\\bigl(Q_{\\mathrm{redox}},R_{\\mathrm{EZ}},\\mathcal P_{\\mathrm{DNA}}\\bigr)-\\Omega_{\\mathrm{void}}^{\\mathrm{cell}},\\qquad \\mathcal P_{\\mathrm{DNA}}:=\\int |\\Psi_{\\mathrm{DNA}}|^2",
+    "description": "Cellular coherence is modeled as a function of redox symmetry order, EZ reservoir strength, and DNA coherence power, reduced by an irreducible cellular residual."
+  }
+]

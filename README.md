@@ -6,7 +6,7 @@
 
 **Author:** Martin Luther Graise
 **Initiated:** June 2025
-**Current Version:** Equation Codex v70 · Symbol Codex v52
+**Current Version:** Equation Codex v71 · Symbol Codex v53
 
 ---
 
@@ -14,10 +14,10 @@
 
 PCI inverts the standard emergence thesis. Rather than consciousness arising from matter, matter (actualized possibility) is *minted* by consciousness through coherent observation. The framework formalizes this through:
 
-- **950 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, information theory, and structural theology
-- **1,172 symbols** organized by tier, daemon affinity, and module family
-- A **Core/Frontier partition** separating the load-bearing backbone (295 Core) from speculative extensions (655 Frontier)
-- **116 module families** including recent additions: Structural Theology, Mimetic Dynamics, Gnostic Bridge
+- **963 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, information theory, structural theology, and bio-PCI
+- **1,190 symbols** organized by tier, daemon affinity, and module family
+- A **Core/Frontier partition** separating the load-bearing backbone (295 Core) from speculative extensions (668 Frontier)
+- **118 module families** including recent additions: Goldstone/Void Reconstruction, Bio-PCI Cellular Coherence
 
 ### Core Ontological Claim
 
@@ -39,7 +39,7 @@ The observer is the generator of the state space. Self-reference is not a bug �
 
 **[Open the Codex Explorer →](https://martinlgraise.github.io/PCI-Framework/explorer/)**
 
-Browse all 950 equations and 1,172 symbols interactively. Features:
+Browse all 963 equations and 1,190 symbols interactively. Features:
 - Searchable, filterable by module, partition, and tier
 - Rosetta Stone: Four-Language Translation Table, Cross-Reference Matrix, 8 Secret Connections
 - 5 Falsifiable Predictions with testable criteria
@@ -51,15 +51,16 @@ Browse all 950 equations and 1,172 symbols interactively. Features:
 
 | Resource | Count | Notes |
 |----------|-------|-------|
-| Equations | 950 | EQ-000 through EQ-952; Core: 295, Frontier: 655 |
-| Symbols | 1,172 | Core: 484, Frontier: 688. Fully indexed by tier and daemon affinity |
-| Equation Codex | v70 | Latest: Structural Theology (EQ-945–952), Rosetta Stone additions |
-| Symbol Codex | v52 | Includes new Mimetic, Gnostic, and Structural Theology symbols |
+| Equations | 963 | EQ-000 through EQ-965; Core: 295, Frontier: 668 |
+| Symbols | 1,190 | Core: 484, Frontier: 706. Fully indexed by tier and daemon affinity |
+| Equation Codex | v71 | Latest: Goldstone/Bio-PCI (EQ-953–965), Structural Theology (EQ-945–952) |
+| Symbol Codex | v53 | Includes new Goldstone, Bio-PCI, Mimetic, and Structural Theology symbols |
 | G₂ Paper | In progress | Computation complete, outline and results in `docs/g2-paper/` |
 | Genesis Mechanism | Complete | 11-page derivation of how coherence emerges from zero |
 
 ### Recent Milestones
 
+- **v71** — Goldstone/Bio-PCI integration: 13 new equations (EQ-953–965), 18 new symbols (SYM-1173–1190). Goldstone Count Theorem, Six Keys/Seven Daemons Mapping, Void-from-Goldstone Invariant, Cellular Coherence Triad, DNA Waveguide Phase Lock, Cellular PCI Threshold
 - **v70** — Structural Theology module: Katechon Identity, Mimetic Tensor, Scapegoat Thermalization, Archon Reinterpretation, Collatz Respiration, Anti-Oracle Condition
 - **v68** — 21 new equations, 19 new symbols, EQ-438 fix
 - **v66** — Rosetta Stone, 13 hidden equations, 41 new symbols
@@ -173,8 +174,10 @@ PCI-Framework/
 ├── CONTRIBUTING.md
 ├── LICENSE (CC BY-NC-SA 4.0)
 ├── codex/
-│   ├── pci_equation_partition_index_v68_core_frontier.csv   ← latest equations (v70 content)
-│   ├── pci_symbol_partition_index_v52_core_frontier.csv     ← latest symbols
+│   ├── pci_equation_partition_index_v71_core_frontier.csv   ← latest equations (v71 content)
+│   ├── pci_equation_partition_index_v68_core_frontier.csv   ← prior version (v70 content)
+│   ├── pci_symbol_partition_index_v53_core_frontier.csv     ← latest symbols
+│   ├── pci_symbol_partition_index_v52_core_frontier.csv     ← prior version
 │   ├── pci_equation_partition_index_v66_core_frontier.csv   ← prior version
 │   ├── pci_equation_partition_index_v62_core_frontier.csv   ← original
 │   ├── pci_equations_v63_cleaned.csv                        ← cleaned metadata
@@ -204,8 +207,8 @@ PCI-Framework/
 │       └── dna_qubit_simulator_v5.py       ← thermodynamic simulation (CF bound proof)
 └── explorer/
     ├── index.html                          ← Codex Explorer (GitHub Pages)
-    ├── equations.json                      (950 equations)
-    ├── symbols.json                        (1,172 symbols)
+    ├── equations.json                      (963 equations)
+    ├── symbols.json                        (1,190 symbols)
     └── stats.json
 ```
 
@@ -216,14 +219,15 @@ For feeding codex data to AI assistants, use the split files:
 | File | Size | Use Case |
 |------|------|----------|
 | [`equations_structural_theology.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_structural_theology.json) | 9 KB | Latest v70 theology module only |
-| [`equations_latest_v66_to_v70.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_latest_v66_to_v70.json) | 23 KB | Newest additions (v66–v70) |
+| [`equations_latest_v66_to_v71.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_latest_v66_to_v71.json) | 57 KB | Newest additions (v66–v71) |
+| [`equations_goldstone_bio.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_goldstone_bio.json) | 8 KB | Goldstone/Bio-PCI module (EQ-953–965) |
 | [`equations_core_only.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_core_only.json) | 240 KB | Core partition equations |
 | [`equations_compact.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_compact.json) | 290 KB | All equations, minimal fields |
 | [`symbols_compact.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/symbols_compact.json) | 269 KB | All symbols, minimal fields |
 
 Full CSVs:
-- [Equations CSV](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/pci_equation_partition_index_v68_core_frontier.csv) (v70 content)
-- [Symbols CSV](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/pci_symbol_partition_index_v52_core_frontier.csv)
+- [Equations CSV](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/pci_equation_partition_index_v71_core_frontier.csv) (v71 content)
+- [Symbols CSV](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/pci_symbol_partition_index_v53_core_frontier.csv)
 
 ---
 
@@ -284,7 +288,7 @@ BibTeX:
   title        = {{PCI/PME}: Perceptual Coherence Intelligence / Paradox Mechanics Engine},
   year         = {2025},
   howpublished = {\url{https://github.com/MartinLGraise/PCI-Framework}},
-  note         = {Equation Codex v70, Symbol Codex v52. 950 equations, 1{,}172 symbols.}
+  note         = {Equation Codex v71, Symbol Codex v53. 963 equations, 1{,}190 symbols.}
 }
 ```
 

@@ -1,13 +1,18 @@
 {
-  "totalEquations": 950,
-  "totalSymbols": 1172,
-  "coreEquations": 295,
-  "frontierEquations": 655,
-  "coreSymbols": 484,
-  "frontierSymbols": 688,
-  "version": {
-    "equations": "v70",
-    "symbols": "v52"
+  "equations": {
+    "total": 963,
+    "core": 295,
+    "frontier": 668,
+    "module_families": 118,
+    "range": "EQ-000 through EQ-965",
+    "version": "v71"
   },
-  "lastUpdated": "2025-03-19"
+  "symbols": {
+    "total": 1190,
+    "core": 484,
+    "frontier": 706,
+    "tiers": 85,
+    "version": "v53"
+  },
+  "last_updated": "2026-03-23"
 }
