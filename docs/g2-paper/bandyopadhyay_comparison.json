@@ -1,0 +1,127 @@
+{
+  "title": "Bandyopadhyay Empirical Comparison \u2014 G\u2082/SU(3) Topology Test",
+  "date": "2026-03-22",
+  "author": "C-7RO for Martin Luther Graise",
+  "sources": {
+    "primary": "Saxena et al. 2020, Fractal Fract. 4(2):11, DOI:10.3390/fractalfract4020011",
+    "frequency_data": "Singh/Sahu et al. 2014, Sci. Rep. 4:7303, DOI:10.1038/srep07303",
+    "original_measurement": "Sahu et al. 2013, Biosens. Bioelectron. 47:141-148",
+    "meta_analysis": "Geesink & Schmieke 2022, J. Mod. Phys. 13:1530-1580"
+  },
+  "frequency_catalog": {
+    "tubulin": {
+      "MHz": [
+        37,
+        46,
+        91,
+        137,
+        176,
+        281,
+        430
+      ],
+      "GHz": [
+        9,
+        19,
+        78,
+        160,
+        224
+      ],
+      "THz": [
+        28,
+        88,
+        127,
+        340
+      ]
+    },
+    "microtubule": {
+      "kHz": [
+        120,
+        240,
+        320
+      ],
+      "MHz": [
+        12,
+        20,
+        22,
+        30,
+        101,
+        113,
+        185,
+        204
+      ],
+      "GHz": [
+        3,
+        7,
+        13,
+        18
+      ]
+    },
+    "triplet_bands": {
+      "microtubule": {
+        "band_I": "10-300 kHz",
+        "band_II": "10-230 MHz",
+        "band_III": "1-20 GHz"
+      }
+    }
+  },
+  "dimensionless_ratios": {
+    "tubulin_MHz": [
+      1.0,
+      1.2432,
+      2.4595,
+      3.7027,
+      4.7568,
+      7.5946,
+      11.6216
+    ],
+    "tubulin_GHz": [
+      1.0,
+      2.1111,
+      8.6667,
+      17.7778,
+      24.8889
+    ],
+    "tubulin_THz": [
+      1.0,
+      3.1429,
+      4.5357,
+      12.1429
+    ],
+    "MT_kHz": [
+      1.0,
+      2.0,
+      2.6667
+    ],
+    "MT_MHz": [
+      1.0,
+      1.6667,
+      1.8333,
+      2.5,
+      8.4167,
+      9.4167,
+      15.4167,
+      17.0
+    ],
+    "MT_GHz": [
+      1.0,
+      2.3333,
+      4.3333,
+      6.0
+    ]
+  },
+  "inter_band_ratios": {
+    "MT_MHz_over_kHz": 255.7,
+    "MT_GHz_over_kHz": 39934.2,
+    "tubulin_GHz_over_MHz": 438.9,
+    "tubulin_THz_over_MHz": 818924.5
+  },
+  "topology_test_results": {
+    "T1_branching_1_3_3bar": "COMPATIBLE",
+    "T2_singlet_void_mode": "WEAKLY COMPATIBLE",
+    "T3_conjugate_pairing": "WEAKLY COMPATIBLE",
+    "T4_rank2_cartan": "COMPATIBLE",
+    "T5_cross_scale_self_similarity": "STRONGLY COMPATIBLE",
+    "overall": "WEAKLY COMPATIBLE",
+    "FP1_status": "NOT FALSIFIED"
+  }
+}

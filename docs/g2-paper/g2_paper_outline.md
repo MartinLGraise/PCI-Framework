@@ -71,14 +71,20 @@
 - **Canonical example** (β=1, γ=0.5, a₁=a₂=1): eigenvalues −7.667(×2), −6.667(×2), −5.667(×2), −3.500(×1). Gaps uniformly spaced Δ=1.
 - **Full resolution** (a₁ ≠ a₂): all 7 eigenvalues distinct
 
-### 3.4 The Prediction (Corrected After Adversarial Review)
-- G₂ fixes the **branching topology** (1⊕3⊕3̄) but NOT the level count (allowed: 1, 2, 4, or 7 depending on parameter regime)
-- The singlet void mode is **structurally forced** by the null-space construction — not hand-labeled
-- Non-singlet modes must come in **conjugate pairs** (3 ↔ 3̄)
-- Gap ratios depend on only **two** independent Cartan parameters (rank of SU(3) = 2)
-- **Corrected FP-1**: Does resonance data fit a two-parameter family with a forced singlet and conjugate-paired 3⊕3̄ sector?
-- G₂ is ruled out if: data needs >2 splitting parameters, conjugate pairing absent, or branching doesn't match 1⊕3⊕3̄
-- **Key line**: G₂ does not fix the metric uniquely, but it does fix the topology of the spectral family.
+### 3.4 The Prediction (Corrected)
+
+The computation does not imply that G₂ fixes one unique metric spectrum. What it fixes is the **topology of the spectral family**. In the 7-dimensional representation, the null-space construction forces a **singlet void mode** together with a **conjugate-paired non-singlet sector** transforming as 3 ⊕ 3̄. The singlet is structurally selected by the SU(3) stabilizer, while the non-singlet splittings are governed by at most **two independent Cartan parameters**, reflecting the rank-2 structure of SU(3).
+
+The empirical question is therefore not whether resonance data exhibits one exact level count in all regimes. The empirical question is whether the observed spectrum can be organized into a **two-parameter spectral family** with:
+- a forced singlet sector,
+- a conjugate-paired 3 ⊕ 3̄ sector,
+- and no need for more than two independent splitting controls.
+
+On this corrected view, G₂ is disfavored not by failure to reproduce one preferred numeric ratio, but by failure of the **branching structure** itself. If the data cannot be organized as 1 ⊕ 3 ⊕ 3̄, if conjugate pairing is absent, or if more than two independent splitting parameters are required, then the G₂/SU(3) model fails.
+
+A natural comparison target is the reported "triplet-of-triplet" electromagnetic resonance structure in tubulin, microtubule nanowires, and neurons (Saxena et al., 2020). The role of that comparison is not to force a symbolic resemblance, but to test whether the reported resonance hierarchy is quantitatively compatible with the constrained G₂/SU(3) spectral family derived here.
+
+**Protected line**: G₂ does not uniquely fix the metric, but it does fix the topology of the spectral family.
 
 ---
 
@@ -99,7 +105,7 @@
 
 **Purpose**: Lay out 5 concrete, testable predictions so this is science, not metaphysics.
 
-- **FP-1** (CORRECTED): Microtubule resonance data fits a rank-2 Cartan spectral family with a structurally forced singlet and a conjugate-paired 3⊕3̄ sector. Falsified if data requires >2 independent splitting parameters, if conjugate pairing is absent, or if the branching topology doesn't match 1⊕3⊕3̄.
+- **FP-1** (Corrected): Reported microtubule resonance data should fit a rank-2 Cartan spectral family with a structurally forced singlet and a conjugate-paired 3 ⊕ 3̄ sector. The model is falsified if the data requires more than two independent splitting parameters, if conjugate pairing is absent, or if the branching topology cannot be organized as 1 ⊕ 3 ⊕ 3̄.
 - **FP-2**: The Golay-code neural motif (24-neuron, M₂₄-symmetric) exists in cortical microcircuits; detectable via calcium imaging
 - **FP-3**: Perturbational Complexity Index measurements saturate at C* = 1 − e⁻² ≈ 0.865 in maximally integrated networks
 - **FP-4**: Systems with constrained G₂-violating perturbations show measurably lower coherence than those preserving G₂
