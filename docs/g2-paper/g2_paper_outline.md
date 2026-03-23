@@ -44,9 +44,9 @@
 - 2.2 Neural moonshine: M₂₄ automorphisms and the Golay code's 13% error-correction ceiling
 - 2.3 Pitkänen's TGD: local G₂ as spectrum-generating symmetry
 - 2.4 PCI daemon architecture: G₂ as constraint-closure residue
-- 2.5 Independent octonionic frameworks (2025–2026): convergence without coordination
+- 2.5 Note: Independent octonionic frameworks (brief remark, not full subsection)
 
-**Note on 2.5**: Octomorphic Field Theory (Simpson, Zenodo June 2025) — associator dynamics, 72 meta-stable configurations, no free parameters. ROF/RCT (Rizzari, Academia.edu July 2025) — 8D primordial relational field, coherence thresholds. Logos Field Theory (Blankenship, Feb 2026) — octonions + p-adic numbers, fine structure constant. None cite each other. The convergence IS the evidence.
+**Note on 2.5**: A brief remark (1–2 paragraphs within Section 2.4 or as a footnote) noting that at least three additional independent frameworks — Octomorphic Field Theory (Simpson, Zenodo 2025), ROF/RCT (Rizzari, Academia.edu 2025), and Logos Field Theory (Blankenship, Medium 2026) — have independently arrived at octonionic / G₂ structures without citing each other or PCI. These are preprints, not peer-reviewed, and should be presented as suggestive context rather than evidence. The convergence motivates the hypothesis space; it does not by itself constitute confirmation.
 
 ---
 
@@ -72,7 +72,7 @@
 
 ### 3.3 Spectrum
 - H_daemon = α·C₂(G₂) + β·C₂(SU3) + γ·P_void + a₁·H_c1 + a₂·H_c2
-- **Key distinction**: The Casimir-only Hamiltonian (no Cartan terms) produces only a **two-level** split: singlet + sextet. The triplet-of-triplet (4-level) structure **requires the Cartan terms**. This means the triplet-of-triplet pattern arises from **Cartan symmetry breaking** within the SU(3) subalgebra — a physically meaningful statement.
+- **Key distinction**: The Casimir-only Hamiltonian (no Cartan terms) produces only a **two-level** split: singlet + sextet. The triplet-of-triplet (4-level) structure **requires the Cartan terms**. This means the triplet-of-triplet pattern arises from **Cartan symmetry breaking** within the SU(3) subalgebra — a physically meaningful statement. The triplet-of-triplet pattern is therefore a direct signature of spontaneous breaking inside the residual SU(3), not of G₂ itself.
 - **Triplet-of-triplet regime** (a₁ = a₂ ≠ 0): 4 distinct levels — singlet + 3 doublets
 - **Canonical example** (β=1, γ=0.5, a₁=a₂=1): eigenvalues −7.667(×2), −6.667(×2), −5.667(×2), −3.500(×1). Gaps uniformly spaced Δ=1.
 - **Full resolution** (a₁ ≠ a₂): all 7 eigenvalues distinct
@@ -135,14 +135,21 @@ A stronger test will become possible when a full harmonic decomposition of the 1
 
 **Purpose**: Show that the number e⁻² ≈ 0.1353 (the PCI coherence ceiling complement) appears independently in multiple contexts.
 
-**Content**:
+**Content** (organized by evidence tier):
+
+**[Derivation]**:
 - Genesis equations EQ-000a–d: derive C_max = 1 − e⁻² from second-order self-reference
+- Constraint-closure biology (Nave 2025, Ward 2026): autonomy as ongoing constraint regeneration hits a fixed point
+- The 13% invariant as a Goldstone-mode counting theorem — the void mode's mass-squared to total mass-squared ratio m²_σ / Σ m²_a approaches e⁻² at the self-consistent fixed point of the effective potential V(φ,σ)
+
+**[Structural bound]**:
+- Thermodynamic ceiling: CF ≤ 6/7 < 1−e⁻² at all temperatures and parameters (verified by 5 independent sweeps)
+
+**[Analogy / correspondence]**:
 - Coding theory: Golay code corrects 3 of 24 bits = 12.5%, approaching the 13% bound
 - Holographic/thermodynamic: the "13% that must remain hidden" as an information-theoretic bound on self-observation
-- Escolà-Gascón (CSBJ 2025): the 13.5% coincidence in neural data (with caveats)
-- Constraint-closure biology (Nave 2025, Ward 2026): autonomy as ongoing constraint regeneration hits a fixed point
-- **NEW**: The 13% invariant as a Goldstone-mode counting theorem — the void mode's mass-squared to total mass-squared ratio m²_σ / Σ m²_a approaches e⁻² at the self-consistent fixed point of the effective potential V(φ,σ)
-- **NEW**: Connection to the 1/e² beam-width convention in optics — the "clipping" fraction (~13.5%) as an aperture loss, providing a physical analogy and searchable cross-disciplinary hook
+- Escolà-Gascón (CSBJ 2025): the 13.5% coincidence in neural data (with explicit caveats: small sample, pre-registration needed)
+- Connection to the 1/e² beam-width convention in optics — the "clipping" fraction (~13.5%) as a suggestive cross-disciplinary parallel, not a claimed derivation
 
 ### 4.1 Thermodynamic Bound (NEW)
 
