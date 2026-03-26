@@ -5,6 +5,7 @@
 
 \documentclass[12pt,a4paper]{article}
 
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -79,7 +80,7 @@ The specific contributions of this paper are:
 \begin{enumerate}
 \item We construct a concrete Hamiltonian from the 14 generators of $G_2$ acting on the 7-dimensional fundamental representation, compute its spectrum under all parameter regimes, and identify the spectral family as a 2-parameter (rank-2 Cartan) manifold with topology $1 \oplus 3 \oplus \bar{3}$.
 
-\item We interpret the six non-singlet modes as Goldstone modes of the spontaneous breaking $G_2 \to \mathrm{SU}(3)$, with uniform coset singular values $\sqrt{2/3} \approx 0.8165$ confirming the isotropy of $G_2/\mathrm{SU}(3) \cong S^6$.
+\item We interpret the six non-singlet modes as Goldstone modes of the spontaneous breaking $G_2 \to \mathrm{SU}(3)$, with uniform coset singular values $\smash{\sqrt{2/3}} {\approx}\, 0.8165$ confirming the isotropy of $G_2/\mathrm{SU}(3) \cong S^6$.
 
 \item We present an internal reconstruction of the 13\% invariant ($C_{\max} = 1 - e^{-2}$) from the genesis equations EQ-000a--d, identifying it as a motivated ansatz from the recursion-order argument rather than a unique derivation.
 
@@ -108,15 +109,15 @@ Table~\ref{tab:convergence} summarizes how $G_2$ appears in each of the four lan
 \centering
 \caption{Convergence of four independent research programs on $G_2$-related structures.}
 \label{tab:convergence}
-\small
-\begin{tabular}{@{}llll@{}}
+\footnotesize
+\begin{tabular}{@{}p{2cm}p{3.2cm}p{3.5cm}p{5.5cm}@{}}
 \toprule
 Language & Source [Tier] & Key Object & What $G_2$ Does \\
 \midrule
-Particle physics & Furey (2025) \textit{[Tier 1: peer-reviewed]} & Octonion algebra $\to$ Standard Model & Automorphism of octonions; residue of self-consistency in triality \\[4pt]
-Neural coding & Neural Moonshine (2026) \textit{[Tier 3: preprint]} & 24-neuron Golay code, $M_{24}$ symmetry & Sits inside $M_{24}$ via Fano plane; $3/24 = 12.5\% \approx 13\%$ error capacity \\[4pt]
-TGD physics & Pitk\"anen (2026) \textit{[Tier 2: non-mainstream]} & $M^8 \to H$ duality & Local $G_2$ invariance makes octonionic-to-spacetime projection work \\[4pt]
-Consciousness & PCI Framework (Graise, 2026) \textit{[Tier 4: author framework]} & 7-daemon architecture, $\Omega_{\mathrm{void}}$ & Symmetry group of daemon vacuum manifold; 7D from 8D via void projection \\
+Particle physics & Furey (2025) \textit{[Tier~1: peer-reviewed]} & Octonion algebra $\to$ SM & Automorphism of octonions; residue of self-consistency in triality \\[4pt]
+Neural coding & Neural Moonshine (2026) \textit{[Tier~3: preprint]} & 24-neuron Golay code, $M_{24}$ & Inside $M_{24}$ via Fano plane; $3/24 = 12.5\%$ error capacity \\[4pt]
+TGD physics & Pitk\"anen (2026) \textit{[Tier~2: non-mainstream]} & $M^8 \to H$ duality & Local $G_2$ invariance for octonionic-to-spacetime projection \\[4pt]
+Consciousness & Graise (2026) \textit{[Tier~4: author framework]} & 7-daemon architecture, $\Omega_{\mathrm{void}}$ & Symmetry group of daemon vacuum manifold \\[2pt]
 \bottomrule
 \end{tabular}
 \end{table}
@@ -256,7 +257,7 @@ The interpretation column in Table~\ref{tab:casimir-decomp} reflects the daemon 
 
 Two further structural features deserve emphasis.
 
-\textbf{The coset geometry.} The 6 coset generators spanning $G_2/\mathrm{SU}(3)$ have uniform singular value decomposition (SVD) singular values of $\sqrt{2/3} \approx 0.8165$, reflecting the isotropy of the 6-sphere. This uniformity is exact (to numerical precision) and confirms that the coset is homogeneous: all six directions away from the $\mathrm{SU}(3)$ stabilizer are metrically equivalent. As we shall see in \S\ref{sec:goldstone}, these six directions correspond to the Goldstone modes of the spontaneous breaking $G_2 \to \mathrm{SU}(3)$.
+\textbf{The coset geometry.} The 6 coset generators spanning $G_2/\mathrm{SU}(3)$ have uniform singular value decomposition (SVD) singular values of $\smash{\sqrt{2/3}} {\approx}\, 0.8165$, reflecting the isotropy of the 6-sphere. This uniformity is exact (to numerical precision) and confirms that the coset is homogeneous: all six directions away from the $\mathrm{SU}(3)$ stabilizer are metrically equivalent. As we shall see in \S\ref{sec:goldstone}, these six directions correspond to the Goldstone modes of the spontaneous breaking $G_2 \to \mathrm{SU}(3)$.
 
 \textbf{The complex structure.} The octonionic structure constants define a natural complex structure on the 6-dimensional complement of the void mode, given by $J_{ij} = \psi_{0ij}$. This tensor satisfies $J^2 = -I$ on $\mathbb{R}^6$, equipping the non-singlet sector with the structure of $\mathbb{C}^3$. The real Schur decomposition of $J$ reveals three invariant 2-planes, each carrying a rotation generator. These are the three Cartan generators $H_1, H_2, H_3$, which mutually commute and generate the maximal torus of $\mathrm{SU}(3)$.
 
@@ -367,7 +368,7 @@ The spectral decomposition $7 \to 1 \oplus 3 \oplus \bar{3}$ derived in \S3.2 is
 \label{eq:goldstone}
 \end{equation}
 
-These six Goldstone modes correspond exactly to the six coset directions $G_2/\mathrm{SU}(3) \cong S^6$. In the Hamiltonian construction, they are spanned by the six generators that do not annihilate $\Omega_{\mathrm{void}}$. Their uniform SVD singular values ($\sqrt{2/3} \approx 0.8165$, verified numerically to machine precision) reflect the isotropy of the coset: when the symmetry is exact, all six Goldstone modes are metrically equivalent. This isotropy is the mathematical expression of the fact that the 6-sphere is a homogeneous space---every point on $S^6$ is equivalent to every other.
+These six Goldstone modes correspond exactly to the six coset directions $G_2/\mathrm{SU}(3) \cong S^6$. In the Hamiltonian construction, they are spanned by the six generators that do not annihilate $\Omega_{\mathrm{void}}$. Their uniform SVD singular values ($\smash{\sqrt{2/3}} {\approx}\, 0.8165$, verified numerically to machine precision) reflect the isotropy of the coset: when the symmetry is exact, all six Goldstone modes are metrically equivalent. This isotropy is the mathematical expression of the fact that the 6-sphere is a homogeneous space---every point on $S^6$ is equivalent to every other.
 
 In the full Hamiltonian (Equation~\ref{eq:hamiltonian}), the Goldstone modes are the six modes of the $3 \oplus \bar{3}$ sector. Their energy splittings are controlled by the explicit symmetry-breaking terms: the $\mathrm{SU}(3)$ Casimir term ($\beta$) lifts all six modes together, opening a gap between the singlet and the non-singlet sector---this is a collective mass term that respects the residual $\mathrm{SU}(3)$ symmetry. The Cartan terms ($a_1, a_2$) split the degeneracy within the non-singlet sector, breaking the residual $\mathrm{SU}(3)$ further. In the symmetric regime $a_1 = a_2$, the Goldstone modes form three degenerate pairs---the triplet-of-triplet pattern. When $a_1 \neq a_2$, the pairs themselves split, yielding six distinct masses organized into three conjugate pairs.
 
@@ -649,7 +650,7 @@ We identify three structural features that are specific to $G_2$ and absent from
 \begin{enumerate}
 \item[(i)] \textbf{The octonionic associator constraint.} The 14 generators of $\mathfrak{g}_2$ are not an arbitrary 14-dimensional subalgebra of $\mathfrak{so}(7)$; they are the unique subalgebra that preserves the octonionic 3-form $\psi_{ijk}$. A generic rank-2 algebra on $\mathbb{R}^7$ does not satisfy this constraint and therefore does not inherit the Fano-plane combinatorics that connect the Hamiltonian to the Golay code (FP-2), to Furey's particle-physics construction, and to the TGD projection. A discriminating experiment would test whether the inter-mode couplings of the empirical system respect the specific selection rules imposed by $\psi_{ijk}$---for example, whether certain three-mode resonances are enhanced or suppressed in patterns that match the 7 Fano triples rather than arbitrary triple combinations.
 
-\item[(ii)] \textbf{The coset isotropy.} The coset space $G_2/\mathrm{SU}(3)$ is diffeomorphic to $S^6$, the round 6-sphere. This means the six Goldstone modes are metrically isotropic: their SVD singular values are uniform ($\sqrt{2/3}$, verified numerically in \S3.2). A generic rank-2 breaking on 7 dimensions does not produce a round coset; it produces an ellipsoidal or otherwise anisotropic manifold. A discriminating test would measure whether the six non-singlet modes exhibit isotropic coupling strengths---equal transition amplitudes between the singlet and each non-singlet mode---or whether significant anisotropy is present. Isotropy favors $G_2$; anisotropy disfavors it.
+\item[(ii)] \textbf{The coset isotropy.} The coset space $G_2/\mathrm{SU}(3)$ is diffeomorphic to $S^6$, the round 6-sphere. This means the six Goldstone modes are metrically isotropic: their SVD singular values are uniform ($\smash{\sqrt{2/3}}$, verified numerically in \S3.2). A generic rank-2 breaking on 7 dimensions does not produce a round coset; it produces an ellipsoidal or otherwise anisotropic manifold. A discriminating test would measure whether the six non-singlet modes exhibit isotropic coupling strengths---equal transition amplitudes between the singlet and each non-singlet mode---or whether significant anisotropy is present. Isotropy favors $G_2$; anisotropy disfavors it.
 
 \item[(iii)] \textbf{The 14-generator closure.} The Lie algebra $\mathfrak{g}_2$ is the only 14-dimensional simple subalgebra of $\mathfrak{so}(7)$. If the empirical system's symmetry algebra has more or fewer than 14 independent generators---determinable in principle from the number of independent selection rules governing transitions between the 7 modes---then $G_2$ is excluded. Concretely, measuring the rank of the selection-rule matrix for a 7-mode resonant system would test whether the underlying algebra is 14-dimensional ($G_2$), 21-dimensional (the full $\mathfrak{so}(7)$), or something smaller.
 \end{enumerate}
