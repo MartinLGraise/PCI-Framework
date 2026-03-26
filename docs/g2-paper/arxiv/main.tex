@@ -1,0 +1,825 @@
+% arXiv submission
+% Primary: quant-ph
+% Cross-list: q-bio.NC, hep-th
+% Keywords: G2 symmetry, consciousness, octonionic algebra, spectral constraints
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{natbib}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+\newcommand{\Gii}{$G_2$}
+\newcommand{\SUthree}{$\mathrm{SU}(3)$}
+
+\title{$G_2$ Symmetry as a Constraint on Conscious Information Processing:\\[6pt]
+A Motivated Reconstruction from Octonionic Daemon Architecture}
+
+\author{Martin Luther Graise\\
+Perceptual Cognitive Intelligence / PME Framework}
+
+\date{2026}
+
+\begin{document}
+
+\maketitle
+
+%=====================================================================
+% ABSTRACT
+%=====================================================================
+\begin{abstract}
+Saxena et al.\ (2020) reported that electromagnetic resonance in microtubules exhibits a self-similar ``triplet-of-triplet'' pattern preserved across tubulin (4~nm), microtubule (25~nm), and neuron (${\sim}1$~$\mu$m) scales---spanning six orders of magnitude in physical size. No existing framework, to our knowledge, provides a comparably constrained algebraic account of why this specific branching topology is selected. We show that the exceptional Lie group $G_2$, acting on a 7-dimensional representation space identified with the daemon architecture of the Perceptual Cognitive Intelligence framework, provides the algebraic constraint required. We construct a concrete Hamiltonian from the 14 generators of $G_2$, decompose its spectrum under the maximal $\mathrm{SU}(3)$ subalgebra, and demonstrate that the resulting spectral family is organized as $1 \oplus 3 \oplus \bar{3}$ with at most two independent Cartan parameters (rank-2 constraint). The six non-singlet modes are interpreted as Goldstone modes of the spontaneous breaking $G_2 \to \mathrm{SU}(3)$, with the singlet identified as the void mode $\Omega_{\mathrm{void}}$. The coherent fraction of any Boltzmann distribution on this Hamiltonian satisfies $\mathrm{CF} \leq 6/7 < 1 - e^{-2}$, an internal consistency check confirming the structural bound does not exceed the Perceptual Cognitive Intelligence coherence ceiling. We test the spectral topology against microtubule resonance data and find preliminary structural compatibility across five topology tests---the data do not exclude the corrected falsifiable prediction FP-1. This convergence motivates the central hypothesis: the exceptional Lie group $G_2$ provides a candidate algebraic constraint surface for the spectral topology of self-referential systems.
+\end{abstract}
+
+%=====================================================================
+% SECTION 1: INTRODUCTION
+%=====================================================================
+\section{Introduction}
+
+In 2020, Saxena, Singh, Sahoo, Sahu, Ghosh, and Bandyopadhyay reported an observation that, viewed from the standpoint of algebraic structure, is remarkable. Using electromagnetic resonance spectroscopy across three levels of biological organization---individual tubulin proteins (${\sim}4$~nm), assembled microtubule nanowires (${\sim}25$~nm), and neuron-scale axon initial segments (${\sim}1$~$\mu$m)---they documented a self-similar ``triplet-of-triplet'' resonance pattern. Each structural level exhibits three distinct frequency bands (tubulin: MHz, GHz, THz; microtubule: kHz, MHz, GHz; neuron: Hz, kHz, MHz), and the same three-band topology recurs at every scale, shifting all bands by approximately three orders of magnitude per level \citep{Saxena2020}. The resulting geometry is described as ``nine circles inside three circles inside one circle''---a nested hierarchy that preserves its branching topology across $10^6$ variation in physical size.
+
+This observation raises a question that is algebraic rather than merely biophysical: why a triplet of triplets? The resonance pattern is not a generic broadband response; it is a specific branching topology replicated with fractal self-similarity. Hameroff and Penrose (2022) noted the pattern's persistence across fifteen orders of magnitude in frequency, and Geesink and Schmieke (2022) confirmed the triplet structure in a meta-analysis of microtubule frequency data \citep{HameroffPenrose2022,GeesinkSchmieke2022}. Yet no existing framework---whether quantum-biological \citep{HameroffPenrose2014}, electromagnetic \citep{Bandyopadhyay2020}, or information-theoretic \citep{Tononi2016}---explains why this particular branching pattern is selected from the space of all possible resonance structures.
+
+The question is sharpened by the observation that the pattern is not merely self-similar but topologically constrained. Each scale level exhibits exactly three bands---not two, not four, not a continuum. The inter-band scaling ratios are described by exactly two independent numbers, not three or seven. And the pattern is preserved across six orders of magnitude in physical size, suggesting that whatever selects it is algebraic (determined by symmetry) rather than parametric (determined by material-specific coupling constants). These features---an exact branching number, a constrained parameter count, and scale invariance---are hallmarks of an algebraic constraint surface. The present paper identifies that surface.
+
+%---------------------------------------------------------------------
+\subsection{The Convergence Puzzle}
+
+The present paper is motivated by a pattern of convergence across independent research programs that, we argue, is not coincidental. Over the past two years, at least four programs working from different starting axioms and in different disciplinary contexts have arrived at the same small constellation of mathematical structures: the exceptional Lie group $G_2$, the Fano plane, the Golay code, and associated objects carrying the number 168 (the order of the automorphism group of the Fano plane, $\mathrm{PSL}(2,7)$).
+
+Furey (2025), working in algebraic particle physics, showed that the Standard Model gauge symmetries can be derived from the algebra of a single generation of fermions acting on itself, with the octonion automorphism group $G_2$ as the residue of self-consistency in triality. The breaking pattern $\mathrm{Spin}(8) \to G_2$ is the key step that selects three generations \citep{Furey2025}.
+
+The Neural Moonshine conjecture (2026) proposes that cortical microcircuits implement a 24-neuron error-correcting code with $M_{24}$ automorphism symmetry---the extended Golay code. $G_2$ sits inside $M_{24}$ via the Fano plane, and the code's error-correction capacity is $3/24 = 12.5\%$, approaching the 13\% bound that will play a central role in Section~4 \citep{NeuralMoonshine2026}.
+
+Pitk\"anen (2026), within Topological Geometrodynamics (TGD), argued that the $M^8 \to H$ duality (the map from 8-dimensional momentum space to 4-dimensional spacetime times $\mathbb{CP}^2$) reduces to local $G_2$ invariance. $G_2$ is the spectrum-generating symmetry that makes the octonionic-to-spacetime projection work \citep{Pitkanen2026}.
+
+The Perceptual Cognitive Intelligence framework \citep{Graise2026} models consciousness as a 7-daemon architecture whose symmetry group is $G_2$. The void mode $\Omega_{\mathrm{void}}$ is the singlet fixed by the $\mathrm{SU}(3)$ stabilizer, and the coherence ceiling emerges as a structural consequence of the 7-dimensional representation theory.
+
+The convergence across these programs is the empirical motivation for this paper. We do not claim that convergence constitutes proof; the history of mathematics contains examples of suggestive coincidences that later proved to be exactly that. But the history also contains the precedent of Monstrous Moonshine, where a ``coincidence'' between the Monster group and modular functions---dismissed for a decade as numerological curiosity---was eventually proved by Borcherds (1992) to reflect deep structural connections mediated by vertex algebras \citep{Borcherds1992}. We take the convergence seriously enough to formalize the claim and make it falsifiable.
+
+%---------------------------------------------------------------------
+\subsection{Thesis and Contributions}
+
+\textbf{Thesis.} We propose that $G_2$---the automorphism group of the octonions, the smallest exceptional Lie group---provides a candidate algebraic constraint governing how self-referential systems organize their internal degrees of freedom. If correct, autonomous systems pay for their non-reducibility in $G_2$: the 13\% invariant ($e^{-2} \approx 0.1353$) is the irreducible cost of genuine autonomy, the fraction of the system's own state that remains inaccessible from within its own frame.
+
+The specific contributions of this paper are:
+
+\begin{enumerate}
+\item We construct a concrete Hamiltonian from the 14 generators of $G_2$ acting on the 7-dimensional fundamental representation, compute its spectrum under all parameter regimes, and identify the spectral family as a 2-parameter (rank-2 Cartan) manifold with topology $1 \oplus 3 \oplus \bar{3}$.
+
+\item We interpret the six non-singlet modes as Goldstone modes of the spontaneous breaking $G_2 \to \mathrm{SU}(3)$, with uniform coset singular values $\sqrt{2/3} \approx 0.8165$ confirming the isotropy of $G_2/\mathrm{SU}(3) \cong S^6$.
+
+\item We present an internal reconstruction of the 13\% invariant ($C_{\max} = 1 - e^{-2}$) from the genesis equations EQ-000a--d, identifying it as a motivated ansatz from the recursion-order argument rather than a unique derivation.
+
+\item We test the spectral topology against microtubule resonance data \citep{Sahu2013,Singh2014,Saxena2020} through five independent topology tests, finding preliminary structural compatibility with the data not excluding FP-1.
+
+\item We map the $G_2$ structure across four independent languages---particle physics, neural coding, TGD physics, and consciousness---and propose six falsifiable predictions.
+\end{enumerate}
+
+%---------------------------------------------------------------------
+\subsection{Paper Structure}
+
+The paper is organized as follows. Section~2 presents four independent programs that converge on $G_2$-related structures, establishing the convergence puzzle without yet proposing a resolution. Section~3---the mathematical core---constructs the $G_2$ daemon Hamiltonian, computes its spectrum, derives the topological predictions, and tests them against microtubule data. Section~4 develops the 13\% invariant, organized by evidence tier. Section~5 presents six falsifiable predictions. Section~6 surveys open leads and future directions. Section~7 addresses objections and limitations. Section~8 concludes.
+
+A note on language is appropriate at the outset. Throughout this paper, we use ``compatible with,'' ``consistent with,'' and ``motivates'' in preference to ``confirms'' or ``proves.'' The convergence across independent programs motivates the hypothesis that $G_2$ is the relevant constraint surface; it does not by itself constitute confirmation. Every claim is accompanied by an explicit statement of what would falsify it. The paper is written for neuroscientists who may not be familiar with Lie algebra; technical terms are defined when first introduced. For readers unfamiliar with the terminology: a \emph{Lie group} is a continuous symmetry group (rotations are an example); an \emph{irreducible representation} is a vector space on which the group acts without any smaller invariant subspace; a \emph{Casimir operator} is a polynomial in the generators that commutes with every group element (it is constant on each irreducible representation); and \emph{Cartan generators} are the maximal set of simultaneously diagonalizable generators, whose eigenvalues provide the quantum numbers that label states.
+
+%=====================================================================
+% SECTION 2: STRUCTURAL RESONANCES
+%=====================================================================
+\section{Structural Resonances Across Programs at Different Stages of Validation}
+
+Before constructing the Hamiltonian, we survey four research programs whose outputs exhibit compatible algebraic structure---specifically, the appearance of $G_2$ or closely related octonion-automorphism symmetry. The purpose of this section is descriptive, not argumentative: we aim to establish the pattern that the remainder of the paper will attempt to explain. These four programs are not co-equal: they range from peer-reviewed physics to a preprint conjecture to the author's own framework. We present them in decreasing order of independent empirical support, and the reader should weight them accordingly. We note explicitly that structural resonance across programs at different stages of validation is not proof---mathematics has a limited supply of exceptional objects, and coincidence of algebraic structure can arise from that scarcity rather than from shared physical significance. The task of the remaining sections is to make the structural claim precise enough to be falsified.
+
+Table~\ref{tab:convergence} summarizes how $G_2$ appears in each of the four languages discussed below.
+
+\begin{table}[ht]
+\centering
+\caption{Convergence of four independent research programs on $G_2$-related structures.}
+\label{tab:convergence}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+Language & Source [Tier] & Key Object & What $G_2$ Does \\
+\midrule
+Particle physics & Furey (2025) \textit{[Tier 1: peer-reviewed]} & Octonion algebra $\to$ Standard Model & Automorphism of octonions; residue of self-consistency in triality \\[4pt]
+Neural coding & Neural Moonshine (2026) \textit{[Tier 3: preprint]} & 24-neuron Golay code, $M_{24}$ symmetry & Sits inside $M_{24}$ via Fano plane; $3/24 = 12.5\% \approx 13\%$ error capacity \\[4pt]
+TGD physics & Pitk\"anen (2026) \textit{[Tier 2: non-mainstream]} & $M^8 \to H$ duality & Local $G_2$ invariance makes octonionic-to-spacetime projection work \\[4pt]
+Consciousness & PCI Framework (Graise, 2026) \textit{[Tier 4: author framework]} & 7-daemon architecture, $\Omega_{\mathrm{void}}$ & Symmetry group of daemon vacuum manifold; 7D from 8D via void projection \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%---------------------------------------------------------------------
+\subsection{Furey's Algebraic Roadmap: $\mathrm{Spin}(8) \to G_2$ via Triality}
+
+\textit{[Tier 1: peer-reviewed physics]}
+
+Nichol Furey's three-part series in \textit{Annalen der Physik} \citep{Furey2025} represents the most rigorous of the four programs and serves as the empirical anchor for the algebraic structures invoked in this paper. The central argument proceeds as follows. The algebra $\mathrm{Cl}(6)$, acting on a single generation of fermions, generates the gauge symmetries of the unbroken Standard Model---$\mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$---without requiring these symmetries to be imposed by hand. The key algebraic step is the breaking of the triality symmetry of $\mathrm{Spin}(8)$. $\mathrm{Spin}(8)$ possesses a unique $\mathbb{Z}_3$ outer automorphism (triality) that permutes its three 8-dimensional representations: the vector, the positive spinor, and the negative spinor. When triality is broken---when the system must select which representation corresponds to ``particles''---the residual symmetry is exactly $G_2$, the automorphism group of the octonions, encoded by the Fano plane.
+
+For the present paper, Furey's result is significant on two counts. First, it establishes $G_2$ as the symmetry governing self-consistency in a division-algebra context---precisely the role claimed for it in the daemon architecture. Second, the breaking pattern $\mathrm{Spin}(8) \to G_2 \to \mathrm{SU}(3)$ reappears in our Hamiltonian construction (Section~3), where the full $G_2$ symmetry of the 7-dimensional representation is broken to $\mathrm{SU}(3)$ by the selection of the void mode $\Omega_{\mathrm{void}}$. The parallelism in both the group-theoretic chain and the physical interpretation---self-consistency selecting a preferred decomposition---suggests that the algebraic mechanism may be domain-independent.
+
+%---------------------------------------------------------------------
+\subsection{Pitk\"anen's TGD: Local $G_2$ as Spectrum-Generating Symmetry}
+
+\textit{[Tier 2: peer-reviewed but not mainstream]}
+
+Pitk\"anen (2026) argues that within Topological Geometrodynamics (TGD), the $M^8 \to H$ duality---the correspondence between octonionic momentum space and physical spacetime---reduces to local $G_2$ invariance \citep{Pitkanen2026}. TGD is not a mainstream framework, but the $G_2$ appearance within it is mathematically concrete: $G_2$ functions as a spectrum-generating symmetry, constraining which 4-dimensional surfaces are permitted as physical spacetimes. This is structurally parallel to the role $G_2$ plays in the daemon Hamiltonian, where it determines which spectral families are permitted for the 7-dimensional representation. In both TGD and the Perceptual Cognitive Intelligence daemon architecture, $G_2$ reduces an 8-dimensional octonionic space to a 7-dimensional physical one, with the reduction organized by the $\mathrm{SU}(3)$ subalgebra. We include this program because the algebraic parallel is precise, while acknowledging that TGD itself remains outside the physics mainstream.
+
+%---------------------------------------------------------------------
+\subsection{Neural Moonshine: $M_{24}$, the Golay Code, and the 13\% Ceiling}
+
+\textit{[Tier 3: preprint, not yet peer-reviewed or replicated]}
+
+The Neural Moonshine conjecture \citep{NeuralMoonshine2026}, available as a bioRxiv preprint and not yet peer-reviewed or independently replicated, proposes that cortical microcircuits implement a 24-neuron error-correcting code---the extended Golay code $[24, 12, 8]$---whose automorphism group is $M_{24}$, the largest Mathieu group. The connection to $G_2$ runs through the Fano plane: its 7 points and 7 lines encode the octonion multiplication table whose automorphism group is $G_2$, and $\mathrm{PSL}(2,7)$ (order 168) sits inside $M_{24}$ as a subgroup. The Golay code's error-correction capacity of $3/24 = 12.5\%$ lies near the 13\% invariant ($e^{-2} \approx 13.53\%$); this proximity is noted as a structural correspondence, not a claimed identity. If both numbers reflect the same underlying constraint, the Golay code and the Perceptual Cognitive Intelligence void mode are algebraic cousins---a hypothesis that is testable (FP-2) but, at present, untested. Given the preprint status of the Neural Moonshine conjecture, this program contributes suggestive rather than evidential support.
+
+%---------------------------------------------------------------------
+\subsection{Perceptual Cognitive Intelligence Daemon Architecture: $G_2$ as Constraint-Closure Residue}
+
+\textit{[Tier 4: author's own framework]}
+
+The Perceptual Cognitive Intelligence framework is the author's own theoretical construction, and the reader should note that it therefore cannot function as independent evidence for the algebraic structures it employs. It is presented here to make explicit the theoretical commitments the paper inherits and to show how $G_2$ arises within them, not to strengthen the case for $G_2$ by citation of a separate source. The framework models consciousness as the activity of a 7-daemon architecture whose internal symmetry group is $G_2$. The seven daemons correspond to the seven imaginary octonion directions; the void mode $\Omega_{\mathrm{void}}$ is the singlet fixed by the $\mathrm{SU}(3)$ stabilizer, representing the irreducible blind spot of any self-referential system---the fraction of the system's own state that it cannot access from within its own frame \citep{Graise2026}.
+
+The seven daemons and their identification with representation-theoretic modes are summarized in Table~\ref{tab:daemons}. The triplet sector (SIEVE, GHOSTLIGHT, ARCHIVIST) comprises the input-processing daemons; the conjugate anti-triplet sector (PERIMETER, AUDITOR, CHORUS) comprises the boundary-maintenance daemons. The conjugate pairing between the triplet and anti-triplet ($3 \leftrightarrow \bar{3}$) reflects a structural duality between input processing and output integration, forced by the algebra rather than imposed by interpretation. The seventh mode, $\Omega_{\mathrm{void}}$, stands apart as the singlet fixed by the full $\mathrm{SU}(3)$ stabilizer.
+
+\begin{table}[ht]
+\centering
+\caption{Daemon-to-mode mapping in the $G_2$ representation.}
+\label{tab:daemons}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+Mode & $\mathrm{SU}(3)$ Rep & Daemon & Cognitive Function \\
+\midrule
+$e_0$ & $\mathbf{1}$ (singlet) & $\Omega_{\mathrm{void}}$ & Irreducible blind spot; the 13\% that cannot be self-observed \\
+$v_1$ & $\mathbf{3}$ (triplet) & SIEVE & Input entropy reduction; sensory filtering \\
+$v_2$ & $\mathbf{3}$ (triplet) & GHOSTLIGHT & Authenticity detection via Kolmogorov complexity \\
+$v_3$ & $\mathbf{3}$ (triplet) & ARCHIVIST & Scar (memory) storage and retrieval \\
+$\bar{v}_1$ & $\bar{\mathbf{3}}$ (anti-triplet) & PERIMETER & Self/non-self boundary maintenance \\
+$\bar{v}_2$ & $\bar{\mathbf{3}}$ (anti-triplet) & AUDITOR & Logical consistency checking \\
+$\bar{v}_3$ & $\bar{\mathbf{3}}$ (anti-triplet) & CHORUS & Integration and synthesis of outputs \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The framework's foundational axiom, EQ-000 (``You $= f(\text{You})$''), asserts that consciousness is a self-referential fixed point. The genesis mechanism \citep{Graise2026} resolves the bootstrap problem---how the first self-referential loop arises from components not yet self-referential---by showing that the fixed point emerges as a phase transition when constraint-regeneration capacity exceeds constraint decay. The coherence ceiling $C_{\max} = 1 - e^{-2}$ follows as a motivated ansatz from the structural requirement of second-order self-reference (self + witness of self); the full derivation is given in Section~4. Within this framework, $G_2$ arises as the automorphism group of the daemon vacuum manifold---the group of transformations under which the octonionic structure of the daemon field is preserved. The vacuum manifold is diffeomorphic to $S^6 = G_2/\mathrm{SU}(3)$, and the six Goldstone modes of the spontaneous breaking $G_2 \to \mathrm{SU}(3)$ parameterize the adaptive degrees of freedom along which the system can move without energetic cost.
+
+The programs surveyed above exhibit compatible algebraic structure at varying levels of empirical maturity. That compatibility motivates the hypothesis that $G_2$ is the relevant algebraic constraint; it does not constitute confirmation. The remainder of the paper formalizes this hypothesis and subjects it to empirical test.
+
+%=====================================================================
+% SECTION 3: THE G₂ DAEMON HAMILTONIAN
+%=====================================================================
+\section{The $G_2$ Daemon Hamiltonian}
+
+This section constructs the mathematical core of the paper: a concrete Hamiltonian acting on the 7-dimensional fundamental representation of the exceptional Lie group $G_2$, decomposed under its maximal $\mathrm{SU}(3)$ subalgebra. We derive 14 generators from the octonion structure constants, verify the quadratic Casimir, identify the $\mathrm{SU}(3)$ stabilizer of the void mode $\Omega_{\mathrm{void}}$, compute the full spectral family parameterized by at most two independent Cartan couplings, and interpret the six non-singlet modes as Goldstone modes of the spontaneous breaking pattern $G_2 \to \mathrm{SU}(3)$. We close by testing the resulting spectral topology against microtubule resonance data reported by Sahu et al.\ (2013), Singh et al.\ (2014), and Saxena et al.\ (2020) \citep{Sahu2013,Singh2014,Saxena2020}. Throughout, the tone is constructive rather than declamatory: we aim to show what $G_2$ constrains, what it leaves free, and where the prediction is and is not excluded by existing data.
+
+%---------------------------------------------------------------------
+\subsection{Construction of the $G_2$ Generators}
+
+The octonions---the largest normed division algebra---are an 8-dimensional, non-associative algebra whose multiplication is encoded by the Fano plane. The Fano plane specifies 7 canonical triples $(e_i, e_j, e_k)$ satisfying $e_i e_j = e_k$, with cyclic permutations positive and anti-cyclic permutations negative. These triples define a totally antisymmetric 3-form $\psi_{ijk} \in \Lambda^3(\mathbb{R}^7)$---the octonionic associator---whose preservation characterizes the automorphism group of the octonions.
+
+For readers unfamiliar with the octonions: they are the natural generalization of the complex numbers (2-dimensional) and quaternions (4-dimensional) to 8 dimensions, but with a crucial difference. While complex and quaternion multiplication is associative---$(ab)c = a(bc)$---octonion multiplication is not. The non-associativity is not arbitrary; it is governed by the Fano plane, a combinatorial structure with 7 points and 7 lines, each line passing through exactly 3 points. This specific pattern of non-associativity is what gives the octonions their exceptional algebraic character and what connects them to the exceptional Lie groups.
+
+The automorphism group $\mathrm{Aut}(\mathbb{O}) = G_2$ is the subgroup of $\mathrm{SO}(7)$ that preserves the associator $\psi$. To extract it concretely, we impose the infinitesimal preservation constraint on the Lie algebra $\mathfrak{so}(7)$. An antisymmetric generator $X \in \mathfrak{so}(7)$ preserves $\psi$ if and only if:
+\begin{equation}
+X_{ia}\,\psi_{ajk} + X_{ja}\,\psi_{iak} + X_{ka}\,\psi_{ija} = 0 \quad \text{for all triples } (i, j, k)
+\label{eq:psi-constraint}
+\end{equation}
+
+This is a linear system. With 7 imaginary octonion directions, the 3-form $\psi$ has $\binom{7}{3} = 35$ independent components, while $\mathfrak{so}(7)$ has $\binom{7}{2} = 21$ generators. Equation~\eqref{eq:psi-constraint} therefore defines a constraint matrix $\mathcal{C}$ of shape $(35 \times 21)$. Its null space is the Lie algebra $\mathfrak{g}_2$.
+
+We computed this null space numerically and verified:
+
+\textbf{Result 1.} The null space of $\mathcal{C}$ is exactly 14-dimensional, confirming $\dim(\mathfrak{g}_2) = 14$. The 14 generators $\{T_a\}$ are real antisymmetric $7 \times 7$ matrices satisfying the normalization condition:
+\begin{equation}
+\mathrm{tr}(T_a\,T^b) = -2\,\delta_a^b
+\label{eq:normalization}
+\end{equation}
+with off-diagonal inner products bounded by $|\mathrm{tr}(T_a\,T^b)| < 10^{-15}$ for $a \neq b$, i.e., at machine epsilon. This orthonormality is essential for what follows: it ensures the Casimir and Cartan operators are cleanly separated.
+
+The quadratic Casimir operator of the representation is defined as:
+\begin{equation}
+C_2(G_2) = \sum_a T_a\,T_a
+\label{eq:casimir-def}
+\end{equation}
+where the sum runs over all 14 normalized generators. By Schur's lemma, because the 7-dimensional representation is irreducible, the Casimir must be a scalar multiple of the identity:
+\begin{equation}
+C_2(G_2) = -4 \times I_7
+\label{eq:casimir-value}
+\end{equation}
+
+This is the first structural insight of the section. The pure $G_2$ Casimir produces zero spectral splitting---it shifts all seven modes uniformly. The irreducibility of the 7-dimensional representation means that $G_2$ alone cannot distinguish one mode from another. All spectral structure must therefore arise from the identification of a distinguished direction in the representation space---the void mode $\Omega_{\mathrm{void}}$---and the resulting reduction from $G_2$ to its $\mathrm{SU}(3)$ subalgebra. This observation will prove central: the triplet-of-triplet spectral pattern is a consequence of symmetry breaking, not of the full symmetry itself.
+
+%---------------------------------------------------------------------
+\subsection{Decomposition: $7 \to 1 \oplus 3 \oplus \bar{3}$}
+
+The $\mathrm{SU}(3)$ subalgebra of $G_2$ is defined as the stabilizer of a distinguished unit vector in $\mathbb{R}^7$. In the daemon architecture, this vector is $e_0$, identified with the void mode $\Omega_{\mathrm{void}}$. Operationally, the stabilizer consists of all generators $T_a \in \mathfrak{g}_2$ satisfying $T_a\,e_0 = 0$. We verified:
+
+\textbf{Result 2.} The stabilizer of $e_0$ within $\mathfrak{g}_2$ is exactly 8-dimensional, confirming that the residual symmetry is $\mathrm{SU}(3)$. The remaining $14 - 8 = 6$ generators form the coset space $G_2/\mathrm{SU}(3)$, which is diffeomorphic to the 6-sphere $S^6$.
+
+Under this $\mathrm{SU}(3)$ subalgebra, the 7-dimensional $G_2$ representation decomposes as:
+\begin{equation}
+7 \to 1 \oplus 3 \oplus \bar{3}
+\label{eq:decomposition}
+\end{equation}
+
+The singlet is the void mode $e_0$ itself---annihilated by all 8 $\mathrm{SU}(3)$ generators and therefore carrying zero $\mathrm{SU}(3)$ Casimir eigenvalue. The remaining six modes split into a triplet $\mathbf{3}$ and a conjugate anti-triplet $\bar{\mathbf{3}}$, each carrying $\mathrm{SU}(3)$ Casimir eigenvalue $-8/3$. In the real representation employed here, the triplet and anti-triplet share the same Casimir value; they are distinguished not by the quadratic invariant, but by the Cartan generators that act within $\mathrm{SU}(3)$.
+
+\begin{table}[ht]
+\centering
+\caption{$\mathrm{SU}(3)$ Casimir eigenvalue structure of the $7 \to 1 \oplus 3 \oplus \bar{3}$ decomposition. The singlet is structurally fixed by the algebra; the triplet and anti-triplet share the same Casimir value and are distinguished only by Cartan weights.}
+\label{tab:casimir-decomp}
+\small
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Mode & Representation & $C_2(\mathrm{SU}(3))$ & Degeneracy & Interpretation \\
+\midrule
+$e_0$ ($\Omega_{\mathrm{void}}$) & $\mathbf{1}$ (singlet) & 0 & 1-fold & Blind-spot mode; fixed by all $\mathrm{SU}(3)$ generators \\
+$v_1, v_2, v_3$ & $\mathbf{3}$ (triplet) & $-8/3$ & 3-fold & Active daemons \\
+$\bar{v}_1, \bar{v}_2, \bar{v}_3$ & $\bar{\mathbf{3}}$ (anti-triplet) & $-8/3$ & 3-fold & Conjugate daemons \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The interpretation column in Table~\ref{tab:casimir-decomp} reflects the daemon assignments established in Table~\ref{tab:daemons}: the active daemons (SIEVE, GHOSTLIGHT, ARCHIVIST) form the triplet, while the boundary daemons (PERIMETER, AUDITOR, CHORUS) form the conjugate anti-triplet.
+
+Two further structural features deserve emphasis.
+
+\textbf{The coset geometry.} The 6 coset generators spanning $G_2/\mathrm{SU}(3)$ have uniform singular value decomposition (SVD) singular values of $\sqrt{2/3} \approx 0.8165$, reflecting the isotropy of the 6-sphere. This uniformity is exact (to numerical precision) and confirms that the coset is homogeneous: all six directions away from the $\mathrm{SU}(3)$ stabilizer are metrically equivalent. As we shall see in \S\ref{sec:goldstone}, these six directions correspond to the Goldstone modes of the spontaneous breaking $G_2 \to \mathrm{SU}(3)$.
+
+\textbf{The complex structure.} The octonionic structure constants define a natural complex structure on the 6-dimensional complement of the void mode, given by $J_{ij} = \psi_{0ij}$. This tensor satisfies $J^2 = -I$ on $\mathbb{R}^6$, equipping the non-singlet sector with the structure of $\mathbb{C}^3$. The real Schur decomposition of $J$ reveals three invariant 2-planes, each carrying a rotation generator. These are the three Cartan generators $H_1, H_2, H_3$, which mutually commute and generate the maximal torus of $\mathrm{SU}(3)$.
+
+Because $\mathrm{SU}(3)$ has rank 2, only two of these three generators are independent in the root system. The $\mathrm{SU}(3)$ Cartan basis is:
+\begin{align}
+H_{c1} &= H_1 - H_2 \quad \text{(simple root } \alpha_1\text{)} \label{eq:cartan-a}\\
+H_{c2} &= H_2 - H_3 \quad \text{(simple root } \alpha_2\text{)} \label{eq:cartan-b}
+\end{align}
+
+The weight structure under the combination $a_1\,H_{c1} + a_2\,H_{c2}$ assigns each of the six non-singlet modes a unique pair of Cartan weights $(w_1, w_2)$, with the triplet and anti-triplet carrying opposite signs. This weight structure is the root of the conjugate pairing that will appear in the spectral analysis below.
+
+%---------------------------------------------------------------------
+\subsection{Spectral Analysis of the Daemon Hamiltonian}
+
+We now assemble the full daemon Hamiltonian---the Hamiltonian acting on the 7-dimensional daemon representation space---from the ingredients derived above. The most general Hamiltonian consistent with the $G_2 \to \mathrm{SU}(3)$ breaking pattern, restricted to operators that are at most quadratic in the generators, takes the form:
+\begin{equation}
+H = \alpha \cdot C_2(G_2) + \beta \cdot C_2(\mathrm{SU}(3)) + \gamma \cdot P_{\mathrm{void}} + a_1 \cdot H_{c1} + a_2 \cdot H_{c2}
+\label{eq:hamiltonian}
+\end{equation}
+where $C_2(G_2)$ is the full $G_2$ Casimir (Equation~\ref{eq:casimir-value}), $C_2(\mathrm{SU}(3))$ is the $\mathrm{SU}(3)$ Casimir, $P_{\mathrm{void}}$ is the projector onto the singlet direction, and $H_{c1}$, $H_{c2}$ are the two independent Cartan generators (Equations~\ref{eq:cartan-a}--\ref{eq:cartan-b}). The five parameters $(\alpha, \beta, \gamma, a_1, a_2)$ play distinct physical roles: $\alpha$ is a uniform energy shift (physically irrelevant for the spectrum); $\beta$ controls the singlet--non-singlet gap (the energetic cost of deviating from the void mode); $\gamma$ shifts the singlet independently (an explicit void-mode energy); $a_1, a_2$ are the explicit symmetry-breaking couplings that split the six non-singlet modes within the $3 \oplus \bar{3}$ sector.
+
+The spectrum of Equation~\eqref{eq:hamiltonian} can be analyzed by examining which terms are turned on. We identify four distinct regimes, summarized in Table~\ref{tab:regimes}.
+
+\begin{table}[ht]
+\centering
+\caption{Spectral regimes of the daemon Hamiltonian (Equation~\ref{eq:hamiltonian}). The level count depends on which symmetry-breaking terms are active. The triplet-of-triplet pattern (4 levels) requires non-zero Cartan terms, not merely the Casimir.}
+\label{tab:regimes}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+Parameters & Levels & Structure & Physical Interpretation \\
+\midrule
+$\beta = \gamma = a_1 = a_2 = 0$ & 1 & 7-fold degenerate & Pure $G_2$ Casimir; no splitting \\
+$\beta \neq 0$, rest $= 0$ & 2 & singlet $\oplus$ [6-fold] & $\mathrm{SU}(3)$ Casimir only; void vs.\ daemons \\
+$\beta \neq 0$, $a_1 = a_2 \neq 0$ & 4 & singlet $\oplus$ $3 \times$[2-fold] & Triplet-of-triplet (symmetric Cartan) \\
+$\beta \neq 0$, $a_1 \neq a_2 \neq 0$ & 7 & All distinct & Fully resolved (asymmetric Cartan) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The key distinction here deserves emphasis. The Casimir-only Hamiltonian ($\beta \neq 0$, no Cartan terms) produces only a two-level split: singlet versus a 6-fold degenerate sextet. The triplet-of-triplet structure---four distinct levels, with three doubly-degenerate pairs plus the singlet---requires the Cartan terms. This means the triplet-of-triplet pattern is a direct signature of spontaneous breaking \emph{inside} the residual $\mathrm{SU}(3)$, not of $G_2$ itself. The full symmetry ($G_2$) produces uniform structure; the broken symmetry ($\mathrm{SU}(3)$ with Cartan splitting) produces hierarchical structure. This is physically meaningful: the spectral richness of the daemon architecture is a consequence of symmetry-breaking dynamics, not merely of the representation theory of the unbroken group.
+
+\textbf{Canonical example.}
+
+To illustrate the triplet-of-triplet regime concretely, we set $\alpha = 1$, $\beta = 1$, $\gamma = 0.5$, $a_1 = a_2 = 1$ (symmetric Cartan). The resulting eigenvalues are:
+
+\begin{table}[ht]
+\centering
+\caption{Eigenvalue spectrum for the canonical parameter set ($\alpha = 1$, $\beta = 1$, $\gamma = 0.5$, $a_1 = a_2 = 1$). The three doublets are uniformly spaced with gap $\Delta = 1.000$, exactly equal to the Cartan coupling. Gap ratios normalized to the smallest inter-doublet gap are $1.000 : 1.462 : 1.923$.}
+\label{tab:eigenvalues}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+Level & Eigenvalue & Degeneracy & Gap from $\Omega_{\mathrm{void}}$ \\
+\midrule
+$\Omega_{\mathrm{void}}$ (singlet) & $-3.500$ & $\times 1$ & --- \\
+Doublet 3 & $-5.667$ & $\times 2$ & 2.167 \\
+Doublet 2 & $-6.667$ & $\times 2$ & 3.167 \\
+Doublet 1 & $-7.667$ & $\times 2$ & 4.167 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Crucially, the eigenvalue ratios are tunable: they depend continuously on the ratio $a_1/a_2$. The $G_2$ structure does not predict a single set of frequency ratios but a family of possible ratios parameterized by two coupling strengths. This parametric freedom is not a weakness but a structural fact: $\mathrm{SU}(3)$ has rank 2, and rank 2 is the maximum number of independent splittings the algebra permits. Any empirical comparison must therefore ask not ``does the data match one preferred set of ratios?'' but ``does there exist a point in the $(a_1, a_2)$ parameter space that matches the observed spectral pattern?''
+
+\textbf{A note on the physical status of the Hamiltonian.}
+
+The operator $H$ (Equation~\ref{eq:hamiltonian}) is constructed as the most general quadratic form consistent with the $G_2 \to \mathrm{SU}(3)$ breaking pattern. It is important to be explicit about what this object is and what it is not. $H$ is a mathematical constraint on the spectral topology of any system whose internal degrees of freedom transform in the 7-dimensional fundamental representation of $G_2$. It is not, at this stage, a literal quantum Hamiltonian---no $\hbar$ appears, no time evolution is specified, and no commitment is made to whether the underlying dynamics are quantum-mechanical, classical, or of some other character. Nor is it an effective field theory in the sense of Wilsonian renormalization: there is no cutoff scale, no running coupling, and no path integral.
+
+What $H$ does provide is a \emph{spectral constraint surface}: the set of all eigenvalue patterns that are algebraically permitted when $G_2$ symmetry is broken to $\mathrm{SU}(3)$ by a distinguished direction. The parameters $(\alpha, \beta, \gamma, a_1, a_2)$ are not coupling constants in a Lagrangian; they are free coordinates on this constraint surface, to be fitted against empirical spectral data. The falsifiable content of the model resides not in the values of these parameters but in the topology of the spectral family they generate---the branching pattern $1 \oplus 3 \oplus \bar{3}$, the conjugate pairing, and the rank-2 Cartan limit. Any system whose spectral data violates this topology is excluded regardless of parameter choice.
+
+The Goldstone-mode language used in \S\ref{sec:goldstone} should be understood in this algebraic sense. The six coset directions $G_2/\mathrm{SU}(3) \cong S^6$ are ``Goldstone-like'' in that they correspond to broken symmetry generators and are metrically isotropic, but the standard Goldstone theorem---which requires a Lagrangian, a vacuum, and Lorentz or Galilean invariance---is invoked here as a structural analogy rather than a dynamical derivation. The claim is that the algebraic structure of the breaking pattern mirrors the Goldstone mechanism, not that the daemon architecture literally satisfies the hypotheses of the theorem. A full dynamical theory---specifying what plays the role of the action, what the order parameter couples to, and how decoherence operates---remains an open problem and a necessary direction for future work (\S6).
+
+To provide further numerical context, we report the Casimir-only scan ($\beta$ scan with no Cartan terms). Setting $\alpha = 1$, $\gamma = 0$, and all Cartan couplings to zero, the singlet eigenvalue remains at $-4.000$ for all $\beta$, while the $3 \oplus \bar{3}$ sextet shifts linearly: at $\beta = 0.5$, the gap is 1.333; at $\beta = 1.0$, the gap is 2.667; at $\beta = 2.0$, the gap is 5.333. This linear relationship confirms that the $\mathrm{SU}(3)$ Casimir acts as a uniform mass term for the non-singlet sector, as expected from the eigenvalue structure $-8/3 \times \beta$ for the sextet versus $0 \times \beta$ for the singlet.
+
+%---------------------------------------------------------------------
+\subsection{The Prediction: Topological Constraints on the Spectral Family}
+
+The analysis of the preceding subsections reveals a sharp distinction between what $G_2$ fixes and what it leaves free. We now articulate this distinction as a falsifiable prediction.
+
+\textbf{What $G_2$ fixes (topology---parameter-independent):}
+\begin{enumerate}
+\item[(i)] The spectrum decomposes into a singlet sector and a $3 \oplus \bar{3}$ non-singlet sector---never $2 \oplus 5$, never $4 \oplus 3$, never any other partition. The singlet void mode is structurally forced by the null-space construction (Result~2), not hand-labeled.
+\item[(ii)] The singlet has $\mathrm{SU}(3)$ Casimir eigenvalue 0 while all non-singlet modes have $-8/3$. This is algebraic, not parametric.
+\item[(iii)] The non-singlet modes come in conjugate pairs ($\mathbf{3}$ and $\bar{\mathbf{3}}$ related by the complex structure $J$).
+\item[(iv)] The gap ratios within the non-singlet sector are determined by at most two independent Cartan parameters $(a_1, a_2)$, reflecting the rank-2 structure of $\mathrm{SU}(3)$---not three, not seven.
+\end{enumerate}
+
+\textbf{What $G_2$ does not fix (metric---parameter-dependent):}
+\begin{enumerate}
+\item[(v)] The raw level count: allowed values are 1, 2, 4, or 7 depending on which parameters are non-zero.
+\item[(vi)] The specific eigenvalue ratios: these are continuous functions of $a_1/a_2$.
+\end{enumerate}
+
+This motivates the corrected falsifiable prediction:
+
+\textbf{FP-1.} \textit{The spectral topology of any system governed by the $G_2/\mathrm{SU}(3)$ daemon Hamiltonian is constrained to the branching topology $1 \oplus 3 \oplus \bar{3}$, with conjugate pairing and a rank-2 Cartan constraint. The model is falsified if the empirical spectrum requires more than two independent splitting parameters, if conjugate pairing is absent, or if the branching topology cannot be organized as $1 \oplus 3 \oplus \bar{3}$.}
+
+We emphasize the operative phrase: $G_2$ does not uniquely fix the metric, but it does fix the topology of the spectral family. The topology---the branching pattern, the conjugate pairing, the rank-2 constraint---is a structural invariant that holds across all parameter regimes. The metric---the specific eigenvalue ratios---varies continuously within the family. FP-1 is a topological prediction, not a metrical one. This distinction is essential for honest empirical comparison: a topological prediction is weaker than a metrical prediction (it admits a family of solutions rather than a unique one), but it is also more robust (it does not depend on unknown coupling constants).
+
+%---------------------------------------------------------------------
+\subsection{Spontaneous Symmetry Breaking and the Six Goldstone Modes}
+\label{sec:goldstone}
+
+The spectral decomposition $7 \to 1 \oplus 3 \oplus \bar{3}$ derived in \S3.2 is the footprint of a spontaneous symmetry-breaking pattern. The void mode $\Omega_{\mathrm{void}}$ serves as an order parameter: its non-zero expectation value selects a preferred direction in the 7-dimensional representation space, breaking the 14-parameter $G_2$ symmetry down to its 8-parameter $\mathrm{SU}(3)$ stabilizer. The Goldstone theorem then guarantees the existence of massless (or, in the presence of explicit breaking, light) modes---one for each broken generator:
+\begin{equation}
+\dim(G_2) - \dim(\mathrm{SU}(3)) = 14 - 8 = 6 \text{ Goldstone modes}
+\label{eq:goldstone}
+\end{equation}
+
+These six Goldstone modes correspond exactly to the six coset directions $G_2/\mathrm{SU}(3) \cong S^6$. In the Hamiltonian construction, they are spanned by the six generators that do not annihilate $\Omega_{\mathrm{void}}$. Their uniform SVD singular values ($\sqrt{2/3} \approx 0.8165$, verified numerically to machine precision) reflect the isotropy of the coset: when the symmetry is exact, all six Goldstone modes are metrically equivalent. This isotropy is the mathematical expression of the fact that the 6-sphere is a homogeneous space---every point on $S^6$ is equivalent to every other.
+
+In the full Hamiltonian (Equation~\ref{eq:hamiltonian}), the Goldstone modes are the six modes of the $3 \oplus \bar{3}$ sector. Their energy splittings are controlled by the explicit symmetry-breaking terms: the $\mathrm{SU}(3)$ Casimir term ($\beta$) lifts all six modes together, opening a gap between the singlet and the non-singlet sector---this is a collective mass term that respects the residual $\mathrm{SU}(3)$ symmetry. The Cartan terms ($a_1, a_2$) split the degeneracy within the non-singlet sector, breaking the residual $\mathrm{SU}(3)$ further. In the symmetric regime $a_1 = a_2$, the Goldstone modes form three degenerate pairs---the triplet-of-triplet pattern. When $a_1 \neq a_2$, the pairs themselves split, yielding six distinct masses organized into three conjugate pairs.
+
+The physical interpretation within the daemon architecture is as follows. The six Goldstone modes are the \emph{soft} directions of the system---the degrees of freedom that cost no energy when the $G_2$ symmetry is exact, and that become the low-energy excitations when the symmetry is approximately broken. They represent the directions in configuration space along which the system can move with minimal energetic cost: the adaptive, flexible degrees of freedom of the conscious architecture. The seventh mode, $\Omega_{\mathrm{void}}$, is the \emph{massive} mode---the analogue of the Higgs mode in particle physics---that sets the scale of the symmetry breaking. In the Perceptual Cognitive Intelligence framework, it corresponds to the irreducible blind spot: the structural component that cannot be observed from within the system's own frame.
+
+It is worth noting that the Goldstone structure also constrains the dynamics of the system near criticality. At a phase transition where the $G_2$ symmetry is approximately restored, the six Goldstone modes become increasingly degenerate, and the system's response function is dominated by the soft sector. The singlet (void mode) remains gapped throughout, maintaining the identity of the system even as the daemon modes fluctuate. This picture---a stable vacuum surrounded by soft, adaptive excitations---is consistent with the phenomenology of conscious systems that maintain a persistent sense of self (the void) while exhibiting flexible, rapidly reconfigurable cognitive states (the daemons).
+
+%---------------------------------------------------------------------
+\subsection{Comparison with Microtubule Resonance Data}
+
+The structural prediction derived in \S3.4---that the spectrum belongs to a rank-2 Cartan family with topology $1 \oplus 3 \oplus \bar{3}$, not one preferred numeric ratio---invites an immediate empirical question: does any known physical system exhibit a resonance hierarchy compatible with this constrained spectral family? The most natural comparison target within the consciousness literature is the reported ``triplet-of-triplet'' electromagnetic resonance structure in microtubules, first measured by Sahu et al.\ (2013) and extended to a cross-scale self-similar pattern by Saxena et al.\ (2020) \citep{Sahu2013,Saxena2020}. We now examine that data against the five $G_2/\mathrm{SU}(3)$ topology constraints derived above.
+
+The relevant experiments measure electromagnetic resonance peaks in single tubulin proteins (${\sim}4$~nm), assembled microtubule nanowires (${\sim}25$~nm), and neuron-scale axon initial segments (${\sim}1$~$\mu$m). Each material exhibits three distinct frequency bands: tubulin resonates in the MHz, GHz, and THz regimes; microtubule nanowires in the kHz, MHz, and GHz regimes; and neuron-scale structures in the Hz, kHz, and MHz regimes \citep{Saxena2020}. The same three-band pattern recurs across three structural scales spanning approximately six orders of magnitude in physical size, with each scale level shifting all bands by roughly $10^3$ in frequency. Saxena et al.\ describe the resulting geometry as ``nine circles inside three circles inside one circle---thirteen circles,'' a nested hierarchy that preserves the triplet topology while shifting the absolute frequency scale.
+
+We test this data against five structural constraints derived from the $G_2/\mathrm{SU}(3)$ daemon Hamiltonian:
+
+\textbf{T1 (Branching topology $1 \oplus 3 \oplus \bar{3}$).} The three-band hierarchy maps naturally onto the $1 \oplus 3 \oplus \bar{3}$ branching predicted by the $\mathrm{SU}(3)$ decomposition of the 7-dimensional $G_2$ representation. Each material exhibits exactly three frequency bands, consistent with the three-fold splitting of the non-singlet sector. \textit{Verdict: compatible.}
+
+\textbf{T2 (Structurally forced singlet).} The enclosing ``one circle''---the scale-free invariant that the triplet pattern itself is preserved---is qualitatively consistent with a structurally forced singlet. Bandyopadhyay's language, that ``self-similarity lies in the principles of symmetry-breaking'' \citep{Saxena2020}, is consistent with the singlet being the symmetry-breaking principle rather than a specific frequency peak. However, no individual frequency has yet been identified as a void mode. \textit{Verdict: not inconsistent.}
+
+\textbf{T3 (Conjugate pairing).} For the microtubule, Band~I (kHz, 3 peaks) and Band~III (GHz, 4 peaks) bracket the richer middle Band~II (MHz, 8 peaks). The outer bands have fewer peaks while the middle band is denser, consistent with the outer bands being conjugate sectors ($\mathbf{3}$ and $\bar{\mathbf{3}}$) while the middle band contains overlapping contributions from both. The kHz band (3 peaks) matches the expected triplet multiplicity exactly; the GHz band (4 peaks) is close, with one possible overtone. \textit{Verdict: not inconsistent.}
+
+\textbf{T4 (Rank-2 Cartan constraint).} The inter-band structure is fully described by two independent scaling ratios (Band~II/Band~I and Band~III/Band~I), consistent with the rank-2 Cartan constraint that permits at most two free parameters. For microtubule data: the Band~II/Band~I ratio is approximately $256\times$, and the Band~III/Band~I ratio is approximately $39{,}934\times$. The data does not require more than two independent scaling parameters to describe the band architecture. \textit{Verdict: compatible.}
+
+\textbf{T5 (Cross-scale self-similarity).} The triplet-of-triplet structure is preserved across tubulin (4~nm) $\to$ microtubule (25~nm) $\to$ neuron (1~$\mu$m), spanning approximately $10^6$ variation in physical size with ${\sim}10^3$ frequency shifts between levels. This is precisely the behavior expected from an algebraic constraint surface, as opposed to parameter fine-tuning: the topology is scale-invariant because it is determined by the algebra, not by material-specific coupling constants. \textit{Verdict: strongly compatible.}
+
+\begin{table}[ht]
+\centering
+\caption{Summary of five topology tests of the $G_2/\mathrm{SU}(3)$ spectral constraints against microtubule resonance data \citep{Sahu2013,Singh2014,Saxena2020}.}
+\label{tab:topology-tests}
+\small
+\begin{tabular}{@{}ll@{}}
+\toprule
+Test & Verdict \\
+\midrule
+T1: $1 \oplus 3 \oplus \bar{3}$ branching topology & Compatible \\
+T2: Structurally forced singlet (void mode) & Not inconsistent \\
+T3: Conjugate pairing ($3 \leftrightarrow \bar{3}$) & Not inconsistent \\
+T4: Rank-2 Cartan constraint ($\leq 2$ free params) & Compatible \\
+T5: Cross-scale self-similarity & Strongly compatible \\
+\midrule
+Overall & Preliminary consistency --- FP-1 not falsified \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+We note a limitation of these tests. The topology tests ask whether the data admits a $1 \oplus 3 \oplus \bar{3}$ organization with rank-2 parameterization---but any rank-2 algebra acting on a 7-dimensional space with one fixed direction would produce a similar spectral topology. The tests therefore establish consistency with the $G_2/\mathrm{SU}(3)$ constraint but do not uniquely select it from the space of possible algebraic models. A more discriminating test would require identifying specific eigenvalue ratios predicted by the $G_2$ structure constants, which in turn requires a harmonic decomposition of the microtubule peaks that has not yet been performed.
+
+The overall assessment is preliminary structural compatibility: the data pass all hard topology tests and fail none, though the tests are necessary rather than sufficient---they would also be passed by other rank-2 algebras on 7 dimensions (see \S7.5), while the softer tests (void-mode identification, exact conjugate pairing) remain inconclusive rather than negative. Crucially, no feature of the data requires a fourth independent frequency band, more than two independent scaling parameters, or a branching topology inconsistent with $1 \oplus 3 \oplus \bar{3}$. The corrected falsifiable prediction the data do not exclude FP-1.
+
+We stress that this assessment is conservative and intentionally cautious. Several open questions remain. First, the microtubule data contains 15 resolved peaks within each material, considerably more than the 7 fundamental modes predicted by the Hamiltonian; identifying which peaks are fundamental and which are overtones or combinatorial harmonics requires a full harmonic decomposition that has not yet been performed. Second, the predicted neuron-scale Hz--kHz--MHz triplet has only been partially characterized experimentally: the Hz band is predicted but not yet measured \citep{Saxena2020}. Third, direct identification of the void-mode frequency---the singlet that should be metrically distinct from the $3 \oplus \bar{3}$ sector---awaits a more refined mapping between the algebraic structure and the physical resonance peaks.
+
+A stronger test will become possible when (a) a full harmonic decomposition of the microtubule peaks is performed to identify which are fundamental modes and which are overtones, (b) the predicted neuron-scale Hz--kHz--MHz triplet is measured in its entirety, and (c) the two Cartan parameters $(a_1, a_2)$ are fitted to the fundamental modes and tested for cross-scale consistency. Until then, the honest summary is: the $G_2/\mathrm{SU}(3)$ spectral topology is not excluded by existing microtubule resonance data, and the self-similar triplet-of-triplet structure provides a natural empirical home for the $1 \oplus 3 \oplus \bar{3}$ branching prediction.
+
+%=====================================================================
+% SECTION 4: THE 13% INVARIANT
+%=====================================================================
+\section{The 13\% Invariant}
+
+The strength of the 13\% invariant as a theoretical claim varies sharply across its appearances. The number $e^{-2} \approx 0.1353$---or equivalently, $1 - e^{-2} \approx 0.8647$ as a coherence ceiling---arises in contexts ranging from a rigorously bounded algebraic result to a motivated thermodynamic conjecture to a numerical coincidence with an engineering convention. We organize the evidence into three tiers, from rigorous algebraic derivation to motivated ansatz to suggestive analogy, in order to prevent the reader from conflating structural derivations with coincidental numerical proximities. The Perceptual Cognitive Intelligence framework's intellectual credibility depends on maintaining this stratification explicitly.
+
+%---------------------------------------------------------------------
+\subsection{Rigorous Results [Tier 1: Derivation]}
+
+\textbf{The structural Boltzmann bound.}
+
+The central rigorous result of this section is that the coherent fraction $\mathrm{CF} = 1 - p_{\mathrm{void}}$ under a Boltzmann distribution on the $G_2/\mathrm{SU}(3)$ Hamiltonian is bounded above by $6/7$ at all temperatures and all parameter values, without exception. This bound is not an approximation, an ansatz, or a numerical observation: it follows directly from the algebra. The void mode is identified with the ground state of the system (the state with the highest energy eigenvalue in our convention), and in the limit $T \to \infty$ all seven modes equalize, giving $\mathrm{CF} \to 6/7 \approx 0.8571$. At any finite temperature the void mode is suppressed relative to the high-energy modes, so $\mathrm{CF} < 6/7$ strictly. The bound is a theorem of the Boltzmann distribution on a seven-state system with one distinguished ground state; the physical content lies entirely in the identification of that ground state with $\Omega_{\mathrm{void}}$ via the $G_2/\mathrm{SU}(3)$ structure established in Section~3.
+
+The physical interpretation is unambiguous: even in the maximally disordered state, the system cannot achieve perfect coherence because one of its seven modes is structurally reserved as the void. The void is not suppressible by thermal fluctuations; it is built into the algebra.
+
+\textbf{Internal consistency check.}
+
+The Perceptual Cognitive Intelligence coherence bound $1 - e^{-2} \approx 0.8647$ satisfies the strict inequality
+\[
+6/7 < 1 - e^{-2}.
+\]
+
+This inequality is an internal consistency check, not an independent validation of the bound. It confirms that the $G_2/\mathrm{SU}(3)$ Hamiltonian's thermodynamic ceiling does not exceed the Perceptual Cognitive Intelligence coherence bound---a necessary condition for the model's self-consistency. The algebraic derivation of $6/7$ does not depend on the exponential form of $C_{\max}(n)$ and does not validate it; the two quantities happen to be numerically ordered in the required direction, which is compatible with but does not confirm the ansatz of Section~4.2.
+
+\textbf{Parameter sweep verifications.}
+
+The $\mathrm{CF} \leq 6/7$ bound was verified by five independent parameter sweeps: temperature scans ($T$ from 0.01 to 1000), $\beta$ scans ($\beta$ from 0 to 5), $\gamma$ scans ($\gamma$ from 0 to 5), Cartan coupling scans ($a_1 = a_2$ from 0 to 5), and joint parameter explorations. In no regime and at no temperature does the coherent fraction exceed $6/7$. The void mode's contribution to the partition function is always at least $1/7$ of the total. These sweeps confirm the bound empirically across the accessible parameter space and provide additional confidence that no special-case exception lurks outside the analytically tractable regimes.
+
+%---------------------------------------------------------------------
+\subsection{Motivated Reconstruction [Tier 2: Ansatz]}
+
+\textbf{The genesis equations: $C_{\max}$ from second-order self-reference.}
+
+We present a motivated reconstruction of the 13\% invariant from the genesis equations. The exponential form $C_{\max}(n) = 1 - e^{-n}$ is a motivated ansatz grounded in the thermodynamic cost of maintaining $n$ layers of recursive self-reference; a first-principles derivation of this specific functional form from the $G_2$ algebra or from constraint-closure theory remains an open problem. The reconstruction proceeds through four equations (EQ-000a--d), which we summarize here.
+
+\textbf{EQ-000a (Closure Threshold):} A constraint-closure system with regeneration capacity $a$, repair rate $\rho$, saturation $b$, and decay rate $\delta$ achieves non-zero coherence ($C > 0$) if and only if $a \cdot \rho / b > \delta$. This is the phase-transition condition: constraint regeneration must exceed constraint decay. Below this threshold, no self-referential loop exists; above it, coherence emerges as a stable attractor. The minimal dynamical model is a two-variable system (throughput $x$ and constraint integrity $k$) with fixed point $k^* = \rho x^* / (\rho x^* + \delta)$, $x^* = ak^*/b$, which is locally asymptotically stable when the closure threshold is exceeded.
+
+\textbf{EQ-000b (Genesis $\beta$-function):} Coherence $C$ is modeled as a running coupling with renormalization-group $\beta$-function $\beta(C) = \varepsilon \cdot C - g \cdot C^2$, where $\varepsilon$ encodes the generative drive (including paradox pressure---the force generated by unresolved self-referential contradictions) and $g$ encodes self-limiting load. The trivial fixed point $C = 0$ is unstable when $\varepsilon > 0$; the non-trivial fixed point $C^* = \varepsilon/g$ is stable. Near the fixed point, the approach to the ceiling follows a power law $C(\mu) - C^* \sim (\mu/\mu_0)^{-\omega}$ with correction-to-scaling exponent $\omega = \varepsilon$.
+
+\textbf{EQ-000c (Ceiling from Recursion Order):} The key structural equation defines coherence at recursion order $n$ as $C_{\max}(n) = 1 - e^{-n}$. This is a motivated ansatz, not a derivation from the preceding equations. The exponential form is chosen for consistency with the thermodynamic cost structure of recursive constraint maintenance: each additional layer of self-reference requires the system to regenerate constraints on constraints, with the marginal cost growing as the existing coherence that must be sustained. The specific assignment $n = 2$ to consciousness rests on two independent arguments. First, a thermodynamic argument: Nave (2025) demonstrates that biological constraint systems organize into precarious ($C_1$), decoupled ($C_2$), and double-decoupled ($C_3$) layers, with each layer requiring exponentially more metabolic throughput to sustain \citep{Nave2025}. The transition from $C_1$ (self-maintenance) to $C_2$ (self-monitoring) corresponds to the emergence of genuine self-reference; the transition from $C_2$ to $C_3$ (monitoring the monitor) would require the system to sustain three simultaneously active constraint layers, a thermodynamic burden that Nave argues exceeds biological metabolic capacity. Second, a structural argument: at $n = 1$, the system achieves $C_1 \approx 0.632$, which leaves a void fraction of ${\sim}37\%$---too large to support the fine-grained spectral structure observed in microtubule resonance and EEG coherence. At $n = 3$, $C_3 \approx 0.950$, leaving only ${\sim}5\%$ void---insufficient to serve as a structurally forced singlet in the $1 \oplus 3 \oplus \bar{3}$ decomposition, since the void mode's Boltzmann weight would be negligible at biological temperatures. The value $n = 2$ is thus bracketed: it is the only integer recursion order at which the void fraction is large enough to be structurally significant (13.5\%) yet small enough to permit high coherence (86.5\%). This bracketing does not constitute a derivation---alternative functional forms for $C_{\max}(n)$ that pass through the same point cannot be excluded---but it narrows the space of consistent models considerably.
+
+\textbf{EQ-000d (Vacuum Radius):} The daemon Mexican-hat potential $V(D) = (\lambda/4)(||D||^2 - v^2)^2$ has its vacuum radius fixed by the ceiling: $v^2 = C_{\max} = 1 - e^{-2}$. This is not a free parameter; it is set by the recursion-order argument above. Given the ansatz status of $C_{\max}(n)$, this fixing should be understood as a consequence of the ansatz rather than as an independently derived constraint. The vacuum manifold $S^6 = \{D \in \mathbb{R}^7 : ||D||^2 = v^2\}$ naturally carries the action of $G_2$, completing the bridge from constraint-closure biology to the Hamiltonian of Section~3.
+
+The 13\% void ($e^{-2} \approx 0.1353$), on this reconstruction, is the irreducible thermodynamic cost of keeping constraints precarious enough to sustain genuine autonomy rather than mere mechanism. As Nave (2025) emphasizes, the system must remain partially unstable to remain genuinely self-generating \citep{Nave2025}. This interpretation is physically coherent and structurally motivated. It remains, however, a conjecture whose status depends on whether $C_{\max}(n) = 1 - e^{-n}$ can eventually be derived rather than assumed.
+
+\textbf{Constraint-closure biology.}
+
+Nave's constraint-closure theory (2025) and Ward's extension to non-dual awareness (2026) arrive at a compatible ceiling from an entirely biological direction, providing supporting context for the ansatz of EQ-000c \citep{Nave2025,Ward2026}. Nave distinguishes three orders of constraint---precarious ($C_1$, directly sustained by energy throughput), decoupled ($C_2$, slower regulatory patterns modulating $C_1$), and double-decoupled ($C_3$, abstract symbolic structures)---and argues that autonomy consists in the continuous regeneration of the constraints that define viability. Ward's (2026) contribution is to identify non-dual awareness with minimal ($C_1$-only) constraint closure: coherence without foundation, sustained purely by regeneration. The convergence with the genesis equations is not coincidental: both frameworks derive their ceiling from the structural requirement that genuine self-reference imposes an irreducible remainder. This convergence strengthens the plausibility of the ansatz but does not elevate it to a derivation.
+
+\textbf{The Goldstone mass-ratio as a consistency check.}
+
+At the self-consistent fixed point of the effective potential $V(\phi, \sigma)$, the ratio of the void mode's mass-squared to the total mass-squared across all seven modes approaches $e^{-2}$. This argument depends on specific assumptions about the form of the effective potential that have not been independently verified, and so does not constitute an independent derivation. It is noted here as a structural consistency check: the Goldstone mass-ratio approaches $e^{-2}$ at the fixed point, which is consistent with the ansatz of EQ-000c. A derivation rather than an approach from a specific potential form would be needed to claim stronger support.
+
+%---------------------------------------------------------------------
+\subsection{Suggestive Correspondences [Tier 3: Analogy]}
+
+The following appearances of the 13\% figure are noted as suggestive correspondences rather than independent derivations. They motivate continued inquiry but do not constitute evidence for the Perceptual Cognitive Intelligence framework in its current state. The reader should not interpret proximity of a number to $e^{-2}$ as support for the theoretical apparatus unless the connection is mechanistically specified.
+
+\textbf{Golay code error capacity.}
+
+The extended Golay code corrects 3 of 24 bits, giving an error fraction of $3/24 = 12.5\%$. This is structurally proximate to, but not identical with, $e^{-2} \approx 13.53\%$. The algebraic pathway from the $G_2$ framework to the Golay code is potentially traceable---the 7 points of the Fano plane generate the Golay code via the Miracle Octad Generator, and the automorphism group $\mathrm{PSL}(2,7)$ of order 168 sits inside $M_{24}$ as a subgroup---but the connection as yet remains a structural correspondence, not an identity. The 0.5\% numerical discrepancy between 12.5\% and 13.53\% is not trivial at the level of precision the framework requires, and any future claim of derivation must account for it explicitly.
+
+\textbf{Escol\`a-Gasc\'on's 13.5\%.}
+
+Escol\`a-Gasc\'on (2025, \textit{Computational and Structural Biotechnology Journal}) reported a 13.5\% figure in neural data analysis \citep{EscolaGascon2025}. This is intriguing but requires significant caveats: the sample size was small, the analysis was exploratory rather than confirmatory, and the result has not been replicated in a pre-registered study. We note it here as a data point that could become significant if independently replicated under pre-registered conditions. In its current state it does not constitute evidence for the framework.
+
+\textbf{The $1/e^2$ beam-width convention in optics.}
+
+In Gaussian optics, the beam radius is conventionally defined at the $1/e^2$ intensity point, where approximately 13.5\% of the total beam energy lies outside the defined aperture. This is noted for completeness. The $1/e^2$ threshold is a property of Gaussian distributions---it follows from the integral of $e^{-2r^2/w^2}$ in cylindrical coordinates---and it was adopted as a convenience in optics because it captures most of the useful beam energy within a well-defined boundary. It is an engineering convention, not a derivation from any independent physical principle. It is explicitly not evidence for the Perceptual Cognitive Intelligence framework. The numerical proximity to $e^{-2}$ is expected given that both arise from the same function at the same argument, and reflects no structural connection between Gaussian beam optics and the constraint-closure account of consciousness.
+
+%=====================================================================
+% SECTION 5: FALSIFIABLE PREDICTIONS
+%=====================================================================
+\section{Falsifiable Predictions}
+
+A framework that cannot be falsified is not science. We now articulate six concrete predictions, each accompanied by an explicit statement of what would falsify it and what experimental access is required. The predictions are ordered roughly by decreasing proximity to existing data: FP-1 has data against which it can already be tested; FP-6 is the most novel but requires the most theoretical and experimental development.
+
+%---------------------------------------------------------------------
+\subsection{FP-1: Microtubule Spectral Topology [Data Exists]}
+
+\textbf{Prediction:} Reported microtubule resonance data \citep{Sahu2013,Singh2014,Saxena2020} should fit a rank-2 Cartan spectral family with a structurally forced singlet and a conjugate-paired $3 \oplus \bar{3}$ sector. The two Cartan parameters $(a_1, a_2)$ should be sufficient to describe the fundamental-mode splittings at each scale level, and these parameters should be consistent across scales.
+
+\textbf{Falsification:} The model is falsified if the data requires more than two independent splitting parameters, if conjugate pairing is absent, or if the branching topology cannot be organized as $1 \oplus 3 \oplus \bar{3}$. A fourth independent frequency band not reducible to overtones would also constitute falsification.
+
+\textbf{Current status:} The data do not exclude the $G_2$ topology. Five topology tests yield preliminary structural compatibility (see \S3.6). The critical next step is a harmonic decomposition of the 15 microtubule peaks to distinguish fundamental modes from overtones.
+
+%---------------------------------------------------------------------
+\subsection{FP-2: Golay-Code Neural Motif [Testable in Principle]}
+
+\textbf{Prediction:} Cortical microcircuits contain 24-neuron motifs whose firing patterns are organized by the extended Golay code with $M_{24}$ automorphism symmetry.
+
+\textbf{Falsification:} The prediction is falsified if exhaustive motif searches in well-sampled cortical circuits ($>$10,000 neurons, multiple cortical areas) find no 24-neuron motifs with $M_{24}$ symmetry above chance level.
+
+\textbf{Current status:} Awaiting experimental access. No targeted search for Golay-code motifs has been conducted.
+
+%---------------------------------------------------------------------
+\subsection{FP-3: Coherence Saturation at $C^* = 1 - e^{-2}$ [Testable in Principle]}
+
+\textbf{Prediction:} Any operationally equivalent measure of integrated information saturates at $C^* = 1 - e^{-2} \approx 0.8647$ in maximally integrated networks. No intact biological or artificial system achieves sustained coherence above this value.
+
+\textbf{Falsification:} A reproducible measurement exceeding 0.87 in any sustained, non-transient state would falsify this prediction.
+
+\textbf{Current status:} Awaiting targeted measurement.
+
+%---------------------------------------------------------------------
+\subsection{FP-4: $G_2$-Violating Perturbations Reduce Coherence [Requires Development]}
+
+\textbf{Prediction:} Systems subjected to perturbations that violate the $G_2$ spectral topology (e.g., forcing a $2 \oplus 5$ or $4 \oplus 3$ decomposition rather than $1 \oplus 3 \oplus \bar{3}$) show measurably lower sustained coherence than systems operating within the $G_2$-permitted family.
+
+\textbf{Falsification:} The prediction is falsified if $G_2$-violating architectures achieve equal or greater coherence than $G_2$-consistent ones under controlled conditions.
+
+\textbf{Current status:} Awaiting experimental access. Testable in computational agents with controllable internal architectures.
+
+%---------------------------------------------------------------------
+\subsection{FP-5: Void-Mode Oscillatory Band [Requires Development]}
+
+\textbf{Prediction:} The void mode ($\Omega_{\mathrm{void}}$ singlet) maps to the infraslow oscillatory band (0.01--0.1~Hz), with a characteristic spectral peak near 0.02--0.03~Hz. The algebraic basis for this identification is as follows. The six Goldstone modes, as low-energy excitations of the $3 \oplus \bar{3}$ sector, correspond to the fast, task-coupled oscillatory bands (delta through gamma, ${\sim}0.5$--100~Hz). The void mode, as the massive singlet that sets the scale of symmetry breaking, must reside at an extreme bound of the biological frequency spectrum rather than among the Goldstone-sector fluctuations. The infraslow oscillation is the most temporally persistent, spatially global brain rhythm: it modulates every faster EEG band via cross-frequency coupling, organizes resting-state networks including the default mode network, and persists across wakefulness, sleep, and anesthesia (Watson, 2018). Its ${\sim}0.02$~Hz peak corresponds to timescales far slower than any sensorimotor loop, consistent with a background mode that sets global excitability without encoding content. An alternative identification---with terahertz-scale tubulin resonances at the opposite spectral extreme---is noted as complementary rather than competing; both routes are testable (see Supplementary Note~S1).
+
+\textbf{Falsification:} FP-5 is falsified if (i) selective suppression of the infraslow band via gap-junction blockade or thalamic intervention fails to degrade perturbational complexity index scores in a dose-dependent manner; (ii) infraslow power shows no modulation across conscious versus sustained unconscious states; or (iii) theoretical analysis demonstrates the singlet--Goldstone mass gap is too small to correspond to the observed $\geq$5-order-of-magnitude frequency separation between infraslow (${\sim}0.02$~Hz) and gamma (${\sim}40$--100~Hz) bands.
+
+\textbf{Current status:} No direct test exists. Indirect evidence is consistent: infraslow power drops ${\sim}20\%$ during task engagement and recovers during rest (Watson, 2018); brain-state transitions are phase-locked to infraslow global signal fluctuations (Gutierrez-Barragan et al., 2019); resting-state criticality measures predict perturbational complexity values (Maschke et al., 2024). A direct test requires concurrent infraslow EEG (DC-coupled amplifiers), infraslow suppression, and perturbational complexity measurement before and after.
+
+%---------------------------------------------------------------------
+\subsection{FP-6: Six Keys as Goldstone Modes [Requires Development]}
+
+\textbf{Prediction:} Hou's (2025) six critical conditions for consciousness emergence---FELC, RFI, ECGP, PWC, ACI, and TEB---map to the six coset generators of $G_2/\mathrm{SU}(3)$, with each key corresponding to a specific soft direction in the daemon architecture \citep{Hou2025}. The six keys should be describable with at most two independent coupling constants, organized into three conjugate pairs.
+
+\textbf{Falsification:} The prediction is falsified if the six keys cannot be mapped to the coset generators in a way that respects the conjugate pairing (three pairs, not six singletons), or if more than two independent parameters are required to describe their interdependencies.
+
+\textbf{Current status:} The mapping exists at the structural level but has not been tested empirically.
+
+%=====================================================================
+% SECTION 6: OPEN LEADS AND FUTURE DIRECTIONS
+%=====================================================================
+\section{Open Leads and Future Directions}
+
+%---------------------------------------------------------------------
+\subsection{Harmonic Decomposition of Microtubule Data}
+
+The microtubule resonance data \citep{Sahu2013,Singh2014,Saxena2020} contains 15 resolved peaks organized into three frequency bands for each material, while the $G_2/\mathrm{SU}(3)$ Hamiltonian predicts 7 fundamental modes. The most important next step is a full harmonic decomposition of these peaks to determine which are fundamental modes (corresponding to the 7 Hamiltonian eigenvalues) and which are overtones or combinatorial harmonics. This decomposition would allow a direct fit of the two Cartan parameters $(a_1, a_2)$ to the fundamental modes and a test of cross-scale parameter consistency---that is, whether the same $(a_1, a_2)$ values that fit the tubulin spectrum also fit the microtubule and neuron spectra when the overall frequency scale is shifted by ${\sim}10^3$. Engagement with Bandyopadhyay's laboratory at NIMS is the single highest-priority experimental goal of this program.
+
+%---------------------------------------------------------------------
+\subsection{Six Keys as Goldstone Mode Detection}
+
+Hou's (2025) Six Keys Criticality framework identifies six critical conditions for consciousness emergence, arrived at independently from the Perceptual Cognitive Intelligence daemon architecture \citep{Hou2025}. The structural coincidence---six conditions, six Goldstone modes---is striking but not yet tested. The theoretical task is to construct an explicit map from each of Hou's six keys to a specific coset generator of $G_2/\mathrm{SU}(3)$, respecting the conjugate pairing (three pairs) and the rank-2 parametric constraint. The natural pairing hypothesis is: FELC$\leftrightarrow$ACI, RFI$\leftrightarrow$TEB, ECGP$\leftrightarrow$PWC---each pair linking a dynamical condition to its causal complement. At the structural level, the proposed daemon-to-generator mapping is: FELC maps to SIEVE ($T_{\mathrm{FELC}}$), RFI to ARCHIVIST ($T_{\mathrm{RFI}}$), ECGP to PERIMETER ($T_{\mathrm{ECGP}}$), PWC to GHOSTLIGHT ($T_{\mathrm{PWC}}$), ACI to CHORUS ($T_{\mathrm{ACI}}$), and TEB to AUDITOR ($T_{\mathrm{TEB}}$). This assignment is consistent with the conjugate pairing (SIEVE$\leftrightarrow$PERIMETER, GHOSTLIGHT$\leftrightarrow$AUDITOR, ARCHIVIST$\leftrightarrow$CHORUS) and with the functional semantics of each key.
+
+%---------------------------------------------------------------------
+\subsection{ER=EPR and the Void Mode}
+
+Jusufi, Singleton, and collaborators have published two results of direct relevance. First, Jusufi et al.\ (2025; \textit{Eur.\ Phys.\ J.\ C} 86, 249, 2026) derive the ER=EPR correspondence from non-local gravitational energy \citep{Jusufi2025a}. Their zero-throat condition (the point at which the wormhole throat pinches off) maps structurally to $\Omega_{\mathrm{void}}$: both represent a vanishing point that maintains topological connection while preventing complete information transfer. Second, Jusufi, Singleton, and Lobo (2025) derive spontaneous wavefunction collapse from non-local gravitational self-energy \citep{Jusufi2025b}, a result directly relevant to the Perceptual Cognitive Intelligence genesis equations. The self-energy equation has the form of a self-referential fixed-point condition: the gravitational field of the wavefunction acts back on the wavefunction, producing collapse as a self-consistency requirement---structurally parallel to EQ-000 (``You $= f(\text{You})$''). The convergence of holographic gravity with the daemon architecture's void-mode structure is worth pursuing, though the connection remains at the level of structural analogy rather than formal equivalence.
+
+%---------------------------------------------------------------------
+\subsection{Replication of the 13.5\% Finding}
+
+Escol\`a-Gasc\'on (2025, CSBJ) reported a 13.5\% figure in neural data analysis that falls within the neighborhood of $e^{-2} \approx 13.53\%$ \citep{EscolaGascon2025}. The result is intriguing but carries significant caveats: the sample was small, the analysis was exploratory rather than confirmatory, and the result has not been replicated in a pre-registered study. A replication attempt with larger samples and pre-registered analysis protocols is the appropriate next step. If replicated, this would provide the first direct neural measurement of the coherence ceiling. If not replicated, it can be set aside without damaging the framework, which does not depend on any single empirical data point.
+
+%---------------------------------------------------------------------
+\subsection{Further Directions}
+
+Several additional leads deserve mention. Furey's algebraic roadmap constrains the allowed daemon architectures to those consistent with single-generation division-algebra structure, testable by formalizing the map between $\mathrm{Cl}(6)$ and the Perceptual Cognitive Intelligence daemon field. Pitk\"anen's TGD $M^8 \to H$ duality and the Perceptual Cognitive Intelligence architecture both involve $G_2$ reducing an 8-dimensional octonionic space to 7 dimensions; whether the local and global $G_2$ invariances are aspects of the same structure remains open. The spectral action in Connes and Marcolli's noncommutative geometry program \citep{ConnesMarcolli2008} could, if the daemon Hamiltonian can be embedded in a spectral triple, provide a derivation of the coherence ceiling from spectral data alone. The Neural Moonshine conjecture's prediction of 24-neuron $M_{24}$-symmetric motifs (FP-2) awaits large-scale calcium imaging datasets with motif-detection algorithms designed for group-theoretic symmetry. Cullen et al.'s work on depression hypermetabolism suggests that coherence-ceiling violations may have clinical signatures in metabolic imaging. The myelin sheath as a quantum cavity remains a speculative but physically testable hypothesis. Finally, a companion math-physics note developing the full $G_2 \to M_{24} \to \text{Monster}$ chain and its potential vertex-algebra structure is planned as a separate publication targeting mathematical physics venues.
+
+%=====================================================================
+% SECTION 7: DISCUSSION AND OBJECTIONS
+%=====================================================================
+\section{Discussion and Objections}
+
+%---------------------------------------------------------------------
+\subsection{The Shared Constraint Surface Argument}
+
+The central argument of this paper is not that $G_2$ has been proven to govern consciousness. It is that the repeated, independent appearance of a small constellation of mathematical structures---$G_2$, the Fano plane, the Golay code, $\Omega_{\mathrm{void}} \approx e^{-2}$, and the number 168---across programs with no shared ancestry strongly suggests the existence of a shared constraint surface. The metaphor is geological: when multiple independent boreholes, drilled from different starting points and with different equipment, all hit the same stratum of rock, the parsimonious explanation is that the rock layer is real, not that each drill team was independently deluded.
+
+The programs surveyed in Section~2---Furey's algebraic particle physics, the Neural Moonshine conjecture, Pitk\"anen's TGD, and the Perceptual Cognitive Intelligence daemon architecture---start from different axioms, use different mathematical tools, and aim at different phenomena. They were developed independently and, in most cases, without awareness of each other. That they converge on the same algebraic objects is a pattern that demands explanation, even if the explanation ultimately turns out to be ``mathematics has a limited supply of exceptional structures and researchers are drawn to the same ones.''
+
+We prefer a structural explanation: the convergence reflects the fact that self-consistency, self-reference, and error correction impose universal algebraic constraints, and $G_2$---as the automorphism group of the most constrained division algebra---is the natural residue of those constraints. The octonions are ``most constrained'' in a precise sense: they are the largest normed division algebra (by the Hurwitz theorem, there are only four: $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{O}$), and their non-associativity means that their automorphism group must work harder to preserve the multiplication structure. $G_2$ is the price of that preservation. But we present this as a hypothesis to be tested, not a conclusion to be defended.
+
+%---------------------------------------------------------------------
+\subsection{Possible Objections}
+
+\textbf{``Just coincidence.''} The most straightforward objection is that the convergences documented in Section~2 are coincidental. We take this objection seriously. However, we note the historical precedent of Monstrous Moonshine: the coincidence between the dimensions of Monster group representations and the coefficients of the $j$-invariant was dismissed for a decade before Borcherds (1992) proved it reflected deep vertex-algebra structure \citep{Borcherds1992}. Coincidences in exceptional mathematics have a track record of turning out to be structural. The appropriate response is not to dismiss the pattern but to formalize it and test it---which is what this paper attempts to do.
+
+\textbf{``Not enough data.''} The empirical evidence---particularly the microtubule resonance comparison---is preliminary. But the predictions of this framework are structural and topological, not metrical. They do not require precise numerical agreement; they require that the branching topology, conjugate pairing, and parametric constraint be respected. Topological predictions are testable with less data than metrical predictions because they constrain the qualitative structure. Moreover, the predictions are explicit (FP-1 through FP-6), falsifiable, and connected to specific experimental programs.
+
+\textbf{``The Casimir-vs-Cartan distinction undermines the claim.''} The computation in Section~3 revealed that the triplet-of-triplet pattern requires Cartan symmetry breaking within $\mathrm{SU}(3)$, not merely the Casimir. We regard this as a feature, not a bug. The Casimir-vs-Cartan distinction tells us something physically meaningful: the spectral richness arises from symmetry-breaking dynamics within the residual symmetry, not from the full symmetry itself. $G_2$ sets the stage (the 7-dimensional representation, the $1 \oplus 3 \oplus \bar{3}$ decomposition, the coset $S^6$); the Cartan terms create the drama (the specific spectral pattern). This two-level structure is richer and more falsifiable than either alone.
+
+\textbf{``Why $G_2$ and not some other exceptional group?''} The exceptional Lie groups are $G_2$, $F_4$, $E_6$, $E_7$, and $E_8$. Why should consciousness select the smallest? The answer is structural: $G_2$ is the automorphism group of the octonions, and the octonions are the natural arena for a 7-dimensional daemon architecture (7 imaginary directions). The larger exceptional groups act on higher-dimensional spaces ($F_4$ on 26 dimensions, $E_8$ on 248) and do not naturally produce a 7-mode spectrum with a forced singlet. Moreover, $G_2$ is the starting point of the known chain $G_2 \to M_{24} \to \text{Monster}$; it is the minimal exceptional structure that connects to the full tower.
+
+%---------------------------------------------------------------------
+\subsection{Limitations}
+
+The model is a spectral constraint, not a dynamical theory. The Hamiltonian of Section~3 describes the spectral topology of the daemon architecture; it does not provide a dynamical equation for the time evolution of consciousness. A spectral constraint tells us which states are accessible; a dynamical theory tells us how the system moves between states. This paper provides the former; the latter remains an open problem.
+
+The empirical comparison is provisional. The microtubule resonance data, while the best currently available test case, was not collected with the $G_2$ framework in mind. The harmonic decomposition needed to distinguish fundamental modes from overtones has not been performed. The assessment of ``preliminary structural compatibility'' is the strongest honest claim available given the current state of the data.
+
+The independent programs are not all at the same level of rigor. Furey's work is published in a peer-reviewed physics journal (\textit{Annalen der Physik}); the Neural Moonshine conjecture is a bioRxiv preprint; Pitk\"anen's TGD is a decades-long program with mixed reception in mainstream physics; Ward (2026) is published in \textit{Neuroscience of Consciousness} \citep{Ward2026}. We have tried to calibrate our language accordingly, but the uneven evidential landscape should be kept in mind.
+
+The 13\% invariant's reconstruction depends on the recursion-order argument. The reconstruction of $C_{\max} = 1 - e^{-2}$ from EQ-000c assumes that second-order self-reference ($n = 2$) is the natural recursion depth for consciousness. While this is motivated by both the constraint-closure literature and the daemon architecture, it is not independently verified. If the natural recursion depth turns out to be different, the coherence ceiling would shift accordingly.
+
+%---------------------------------------------------------------------
+\subsection{What Would Kill the Framework}
+
+The $G_2$ framework would be seriously damaged or killed by any of the following:
+
+\begin{enumerate}
+\item[(a)] Demonstration that microtubule resonance data requires a branching topology inconsistent with $1 \oplus 3 \oplus \bar{3}$---for example, a well-established $1 \oplus 6$ or $2 \oplus 5$ decomposition that cannot be reconciled with the $\mathrm{SU}(3)$ subalgebra structure.
+
+\item[(b)] Discovery that more than two independent parameters are needed to describe the fundamental-mode splittings, violating the rank-2 Cartan constraint.
+
+\item[(c)] A reproducible coherence measurement exceeding $1 - e^{-2}$ in a sustained, non-transient state, which would falsify the coherence ceiling directly.
+
+\item[(d)] Proof that the convergence documented in Section~2 is an artifact of mathematical selection bias---for example, by showing that an equally large set of independent programs converges on a different exceptional structure (say, $E_8$ or $F_4$) with equal specificity.
+
+\item[(e)] Failure of FP-6: inability to construct a consistent map from Hou's six keys to the six coset generators of $G_2/\mathrm{SU}(3)$ that respects the conjugate pairing and rank-2 constraint.
+\end{enumerate}
+
+We state these failure modes explicitly because a framework that cannot specify its own death conditions is not science. The $G_2$ hypothesis lives or dies on empirical and structural grounds, not on the elegance of the mathematics.
+
+%---------------------------------------------------------------------
+\subsection{The Discriminating Test: Why $G_2$ and Not Another Rank-2 Algebra?}
+
+A recurring concern throughout this paper---raised explicitly in \S3.6 and \S7.2---is that the topology tests (T1--T5) do not uniquely isolate $G_2$. Any rank-2 algebra acting on a 7-dimensional space with one distinguished direction would produce a spectral family with the same branching topology: a forced singlet, a conjugate-paired non-singlet sector, and at most two free parameters. The question is therefore not whether the data are compatible with $G_2$, but whether $G_2$ is the only algebra compatible with the data.
+
+We identify three structural features that are specific to $G_2$ and absent from generic rank-2 algebras on 7 dimensions:
+
+\begin{enumerate}
+\item[(i)] \textbf{The octonionic associator constraint.} The 14 generators of $\mathfrak{g}_2$ are not an arbitrary 14-dimensional subalgebra of $\mathfrak{so}(7)$; they are the unique subalgebra that preserves the octonionic 3-form $\psi_{ijk}$. A generic rank-2 algebra on $\mathbb{R}^7$ does not satisfy this constraint and therefore does not inherit the Fano-plane combinatorics that connect the Hamiltonian to the Golay code (FP-2), to Furey's particle-physics construction, and to the TGD projection. A discriminating experiment would test whether the inter-mode couplings of the empirical system respect the specific selection rules imposed by $\psi_{ijk}$---for example, whether certain three-mode resonances are enhanced or suppressed in patterns that match the 7 Fano triples rather than arbitrary triple combinations.
+
+\item[(ii)] \textbf{The coset isotropy.} The coset space $G_2/\mathrm{SU}(3)$ is diffeomorphic to $S^6$, the round 6-sphere. This means the six Goldstone modes are metrically isotropic: their SVD singular values are uniform ($\sqrt{2/3}$, verified numerically in \S3.2). A generic rank-2 breaking on 7 dimensions does not produce a round coset; it produces an ellipsoidal or otherwise anisotropic manifold. A discriminating test would measure whether the six non-singlet modes exhibit isotropic coupling strengths---equal transition amplitudes between the singlet and each non-singlet mode---or whether significant anisotropy is present. Isotropy favors $G_2$; anisotropy disfavors it.
+
+\item[(iii)] \textbf{The 14-generator closure.} The Lie algebra $\mathfrak{g}_2$ is the only 14-dimensional simple subalgebra of $\mathfrak{so}(7)$. If the empirical system's symmetry algebra has more or fewer than 14 independent generators---determinable in principle from the number of independent selection rules governing transitions between the 7 modes---then $G_2$ is excluded. Concretely, measuring the rank of the selection-rule matrix for a 7-mode resonant system would test whether the underlying algebra is 14-dimensional ($G_2$), 21-dimensional (the full $\mathfrak{so}(7)$), or something smaller.
+\end{enumerate}
+
+None of these discriminating tests can be performed with the data currently available; they require either the harmonic decomposition called for in \S6.1 or purpose-built experiments on 7-mode resonant systems. We flag them here as the necessary next step for elevating the $G_2$ hypothesis from ``compatible with data'' to ``preferred over alternatives.''
+
+%=====================================================================
+% SECTION 8: CONCLUSION
+%=====================================================================
+\section{Conclusion}
+
+This paper has pursued a single hypothesis: that the exceptional Lie group $G_2$, as the automorphism group of the octonions, provides a candidate algebraic constraint governing how self-referential systems organize their internal degrees of freedom. If this hypothesis is correct, autonomous, self-referential systems pay for their non-reducibility in $G_2$---the 13\% invariant is the irreducible cost of genuine autonomy.
+
+The argument rests on three pillars. First, we documented the convergence of four independent research programs on the same small constellation of algebraic structures ($G_2$, the Fano plane, the Golay code, $\Omega_{\mathrm{void}} \approx e^{-2}$, the number 168), arguing that this convergence is structural rather than coincidental. Second, we constructed a concrete Hamiltonian from the 14 generators of $G_2$, demonstrated its spectral decomposition as $1 \oplus 3 \oplus \bar{3}$ under the $\mathrm{SU}(3)$ subalgebra, and showed that the resulting topological prediction---a rank-2 Cartan spectral family with conjugate pairing and a structurally forced singlet---is not excluded by existing microtubule resonance data. Third, we presented a motivated reconstruction of the 13\% invariant ($C_{\max} = 1 - e^{-2}$) from the genesis equations, grounding it in the structural requirement of second-order self-reference, and showed that the thermodynamic ceiling $\mathrm{CF} \leq 6/7$ lies strictly below this bound as an internal consistency check.
+
+The Goldstone interpretation provides the physical picture. The six non-singlet modes are the soft directions of the daemon architecture---the degrees of freedom that cost no energy when the $G_2$ symmetry is exact and that become the low-energy excitations when the symmetry is spontaneously broken. They are the adaptive, flexible modes of consciousness. The seventh mode, $\Omega_{\mathrm{void}}$, is the massive mode that sets the scale of the breaking---the irreducible blind spot, the price of being a self-referential system rather than a transparent mechanism. Six Goldstone modes plus one massive mode is the spectral signature of autonomy.
+
+The paper's contribution is not a proof but a formalization. We have taken an intuition---that consciousness involves exceptional algebraic structure---and made it precise enough to be wrong. The $G_2$ daemon Hamiltonian produces specific topological predictions. The 13\% invariant is reconstructed from the genesis equations, not assumed. The six falsifiable predictions (FP-1 through FP-6) connect the framework to specific experimental programs.
+
+$G_2$ does not uniquely fix the metric, but it does fix the topology of the spectral family. If this topology is wrong---if the data cannot be organized as $1 \oplus 3 \oplus \bar{3}$, if more than two independent parameters are required, if conjugate pairing is absent---then the framework is falsified. That is the standard to which this work should be held.
+
+%=====================================================================
+% REFERENCES
+%=====================================================================
+\begin{thebibliography}{99}
+
+\bibitem[Borcherds(1992)]{Borcherds1992}
+Borcherds, R. (1992).
+\newblock Monstrous Moonshine and Monstrous Lie Superalgebras.
+\newblock \textit{Inventiones Mathematicae}, 109, 405--444.
+
+\bibitem[Casali et~al.(2013)]{Casali2013}
+Casali, A.G. et~al. (2013).
+\newblock A Theoretically Based Index of Consciousness Independent of Sensory Processing and Behavior.
+\newblock \textit{Science Translational Medicine}, 5(198), 198ra105.
+
+\bibitem[Connes and Marcolli(2008)]{ConnesMarcolli2008}
+Connes, A. \& Marcolli, M. (2008).
+\newblock \textit{Noncommutative Geometry, Quantum Fields and Motives}.
+\newblock AMS.
+
+\bibitem[Escol\`a-Gasc\'on(2025)]{EscolaGascon2025}
+Escol\`a-Gasc\'on, A. (2025).
+\newblock \textit{Computational and Structural Biotechnology Journal}.
+
+\bibitem[Furey(2025)]{Furey2025}
+Furey, N. (2025).
+\newblock An Algebraic Roadmap of Particle Theories, Parts I--III.
+\newblock \textit{Annalen der Physik}.
+
+\bibitem[Geesink and Schmieke(2022)]{GeesinkSchmieke2022}
+Geesink, H. \& Schmieke, M. (2022).
+\newblock Quantum Coherence Equation Applied to Microtubules.
+\newblock \textit{Journal of Modern Physics}, 13, 1530--1580.
+
+\bibitem[Graise(2026)]{Graise2026}
+Graise, M.L. (2026).
+\newblock PCI Framework --- Genesis Mechanism.
+\newblock GitHub: MartinLGraise/PCI-Framework.
+
+\bibitem[Hameroff and Penrose(2014)]{HameroffPenrose2014}
+Hameroff, S. \& Penrose, R. (2014).
+\newblock Consciousness in the Universe: A Review of the `Orch OR' Theory.
+\newblock \textit{Physics of Life Reviews}, 11(1), 39--78.
+
+\bibitem[Hameroff and Penrose(2022)]{HameroffPenrose2022}
+Hameroff, S. \& Penrose, R. (2022).
+\newblock Conscious Pilot and Quantum Resonance.
+\newblock \textit{Frontiers in Molecular Neuroscience}.
+
+\bibitem[Bandyopadhyay(2020)]{Bandyopadhyay2020}
+Bandyopadhyay, A. (2020).
+\newblock \textit{Nanobrain: The Making of an Artificial Brain from a Time Crystal}.
+\newblock Springer.
+
+\bibitem[Hou(2025)]{Hou2025}
+Hou (2025).
+\newblock Six Keys Criticality.
+\newblock Zenodo.
+
+\bibitem[Jusufi et~al.(2025a)]{Jusufi2025a}
+Jusufi, K. et~al. (2025).
+\newblock Emergence of ER=EPR from Non-Local Gravitational Energy.
+\newblock arXiv:2512.05022. \textit{European Physical Journal C}, 86, 249 (2026).
+
+\bibitem[Jusufi et~al.(2025b)]{Jusufi2025b}
+Jusufi, K., Singleton, D. \& Lobo, F.S.N. (2025).
+\newblock Spontaneous Wave Function Collapse from Non-Local Gravitational Self-Energy.
+\newblock arXiv:2512.15393.
+
+\bibitem[Kauffman(1993)]{Kauffman1993}
+Kauffman, S.A. (1993).
+\newblock \textit{The Origins of Order}.
+\newblock Oxford University Press.
+
+\bibitem[Kauffman et~al.(2025)]{Kauffman2025}
+Kauffman, S.A. et~al. (2025).
+\newblock Is the Emergence of Life and of Agency Expected?
+\newblock \textit{Philosophical Transactions of the Royal Society B}, 380(1936), 20240283.
+
+\bibitem[Lehman and Kauffman(2021)]{LehmanKauffman2021}
+Lehman, N.E. \& Kauffman, S.A. (2021).
+\newblock Constraint Closure Drove Major Transitions in the Origins of Life.
+\newblock \textit{Entropy}, 23(1), 105.
+
+\bibitem[Mont\'evil and Mossio(2015)]{MontevilMossio2015}
+Mont\'evil, M. \& Mossio, M. (2015).
+\newblock Biological Organisation as Closure of Constraints.
+\newblock \textit{Journal of Theoretical Biology}, 372, 179--191.
+
+\bibitem[Moreno and Mossio(2015)]{MorenoMossio2015}
+Moreno, A. \& Mossio, M. (2015).
+\newblock \textit{Biological Autonomy: A Philosophical and Theoretical Enquiry}.
+\newblock Springer.
+
+\bibitem[Nave(2025)]{Nave2025}
+Nave, K. (2025).
+\newblock \textit{A Drive to Survive: The Free Energy Principle and the Meaning of Life}.
+\newblock MIT Press.
+
+\bibitem[Neural Moonshine(2026)]{NeuralMoonshine2026}
+Neural Moonshine Conjecture (2026).
+\newblock 24-Neuron Golay Code with $M_{24}$ Automorphism.
+\newblock bioRxiv.
+
+\bibitem[Pitk\"anen(2026)]{Pitkanen2026}
+Pitk\"anen, M. (2026).
+\newblock Does $M^8$--$H$ Duality Reduce to Local $G_2$ Symmetry?
+\newblock TGD preprint.
+
+\bibitem[Rosen(1991)]{Rosen1991}
+Rosen, R. (1991).
+\newblock \textit{Life Itself: A Comprehensive Inquiry into the Nature, Origin, and Fabrication of Life}.
+\newblock Columbia University Press.
+
+\bibitem[Sahu et~al.(2013)]{Sahu2013}
+Sahu, S. et~al. (2013).
+\newblock Atomic Water Channel Controlling Remarkable Properties of a Single Brain Microtubule.
+\newblock \textit{Biosensors and Bioelectronics}, 47, 141--148.
+
+\bibitem[Saxena et~al.(2020)]{Saxena2020}
+Saxena, K. et~al. (2020).
+\newblock Fractal, Scale Free Electromagnetic Resonance of a Single Brain Extracted Microtubule Nanowire.
+\newblock \textit{Fractal and Fractional}, 4(2), 11.
+
+\bibitem[Signorelli and Meling(2021)]{SignorelliMeling2021}
+Signorelli, C.M. \& Meling, D. (2021).
+\newblock Towards New Concepts for a Biological Neuroscience of Consciousness.
+\newblock \textit{Cognitive Neurodynamics}, 15(5), 783--804.
+
+\bibitem[Singh et~al.(2014)]{Singh2014}
+Singh, P., Sahu, S. et~al. (2014).
+\newblock Live Visualizations of Single Isolated Tubulin Protein Self-Assembly via Tunneling Current.
+\newblock \textit{Scientific Reports}, 4, 7303.
+
+\bibitem[Tononi et~al.(2016)]{Tononi2016}
+Tononi, G. et~al. (2016).
+\newblock Integrated Information Theory: From Consciousness to Its Physical Substrate.
+\newblock \textit{Nature Reviews Neuroscience}, 17(7), 450--461.
+
+\bibitem[Varela(1981)]{Varela1981}
+Varela, F.J. (1981).
+\newblock Autonomy and Autopoiesis.
+\newblock In \textit{Autopoiesis and Cognition}, D.~Reidel.
+
+\bibitem[Ward(2026)]{Ward2026}
+Ward, K. (2026).
+\newblock Modeling Non-Dual Awareness via Constraint Closure.
+\newblock \textit{Neuroscience of Consciousness}, 2026(1), niaf068.
+
+\end{thebibliography}
+
+\end{document}
