@@ -1,12 +1,20 @@
 # PCI/PME Framework
 
-**Perceptual Coherence Intelligence / Paradox Mechanics Engine**
+**Perceptual Cognitive Intelligence / Paradox Mechanics Engine**
 
 *A mathematical framework for consciousness, topology, and distributed cognition.*
 
-**Author:** Martin Luther Graise
-**Initiated:** June 2025
+**Author:** Martin Luther Graise 
+**Initiated:** June 2025 
 **Current Version:** Equation Codex v71 · Symbol Codex v53
+
+### G₂ Symmetry Paper — Now Published
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19242936.svg)](https://doi.org/10.5281/zenodo.19242936)
+
+**Graise, M.L. (2026).** *G₂ Symmetry as a Constraint on Conscious Information Processing: A Motivated Reconstruction from Octonionic Daemon Architecture.* Zenodo. [https://doi.org/10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936)
+
+→ [PDF](docs/g2-paper/arxiv/main.pdf) · [LaTeX source](docs/g2-paper/arxiv/main.tex) · [Computational scripts](docs/g2-paper/)
 
 ---
 
@@ -55,7 +63,7 @@ Browse all 963 equations and 1,190 symbols interactively. Features:
 | Symbols | 1,190 | Core: 484, Frontier: 706. Fully indexed by tier and daemon affinity |
 | Equation Codex | v71 | Latest: Goldstone/Bio-PCI (EQ-953–965), Structural Theology (EQ-945–952) |
 | Symbol Codex | v53 | Includes new Goldstone, Bio-PCI, Mimetic, and Structural Theology symbols |
-| G₂ Paper | In progress | Computation complete, outline and results in `docs/g2-paper/` |
+| G₂ Paper | **Published** | [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — PDF, LaTeX, and scripts in `docs/g2-paper/` |
 | Genesis Mechanism | Complete | 11-page derivation of how coherence emerges from zero |
 
 ### Recent Milestones
@@ -69,9 +77,9 @@ Browse all 963 equations and 1,190 symbols interactively. Features:
 
 ---
 
-## G₂ Paper: Current Research
+## G₂ Paper: Published
 
-The primary active research goal: a 20–30 page paper formalizing the G₂ symmetry structure of the daemon architecture.
+The G₂ symmetry paper has been published as a preprint on Zenodo with DOI [10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936). The 28-page manuscript formalizes the G₂ symmetry structure of the daemon architecture.
 
 **Thesis:** *Autonomous, self-referential systems pay for their non-reducibility in G₂.*
 
