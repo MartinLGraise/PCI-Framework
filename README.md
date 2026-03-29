@@ -6,7 +6,7 @@
 
 **Author:** Martin Luther Graise 
 **Initiated:** June 2025 
-**Current Version:** Equation Codex v71 · Symbol Codex v53
+**Current Version:** Equation Codex v72 · Symbol Codex v54
 
 ### G₂ Symmetry Paper — Now Published
 
@@ -59,10 +59,10 @@ Browse all 963 equations and 1,190 symbols interactively. Features:
 
 | Resource | Count | Notes |
 |----------|-------|-------|
-| Equations | 963 | EQ-000 through EQ-965; Core: 295, Frontier: 668 |
-| Symbols | 1,190 | Core: 484, Frontier: 706. Fully indexed by tier and daemon affinity |
-| Equation Codex | v71 | Latest: Goldstone/Bio-PCI (EQ-953–965), Structural Theology (EQ-945–952) |
-| Symbol Codex | v53 | Includes new Goldstone, Bio-PCI, Mimetic, and Structural Theology symbols |
+| Equations | 983 | EQ-000 through EQ-983; Core: 295, Frontier: 688 |
+| Symbols | 1,213 | Core: 484, Frontier: 729. Fully indexed by tier and daemon affinity |
+| Equation Codex | v72 | Latest: Bio-PCI Phase II (EQ-966–983), Goldstone/Bio-PCI (EQ-953–965) |
+| Symbol Codex | v54 | Latest: Bio-PCI DNA Coherence Transport (SYM-1191–1213) |
 | G₂ Paper | **Published** | [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — PDF, LaTeX, and scripts in `docs/g2-paper/` |
 | Genesis Mechanism | Complete | 11-page derivation of how coherence emerges from zero |
 
