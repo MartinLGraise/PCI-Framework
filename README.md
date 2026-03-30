@@ -6,7 +6,7 @@
 
 **Author:** Martin Luther Graise 
 **Initiated:** June 2025 
-**Current Version:** Equation Codex v73 · Symbol Codex v55
+**Current Version:** Equation Codex v74 · Symbol Codex v56
 
 ### G₂ Symmetry Paper — Now Published
 
@@ -59,10 +59,10 @@ Browse all 963 equations and 1,190 symbols interactively. Features:
 
 | Resource | Count | Notes |
 |----------|-------|-------|
-| Equations | 988 | EQ-000 through EQ-988; Core: 295, Frontier: 693 |
-| Symbols | 1,222 | Core: 484, Frontier: 738. Fully indexed by tier and daemon affinity |
-| Equation Codex | v73 | Latest: Bio-PCI Module 2 EZ Water (EQ-984–988), Module 1 DNA (EQ-966–983) |
-| Symbol Codex | v55 | Latest: Bio-PCI EZ Water (SYM-1214–1222), DNA Transport (SYM-1191–1213) |
+| Equations | 994 | EQ-000 through EQ-994; Core: 295, Frontier: 699 |
+| Symbols | 1,232 | Core: 484, Frontier: 748. Fully indexed by tier and daemon affinity |
+| Equation Codex | v74 | Latest: Bio-PCI Module 3 Redox (EQ-989–994), Module 2 EZ Water (EQ-984–988), Module 1 DNA (EQ-966–983) |
+| Symbol Codex | v56 | Latest: Bio-PCI Module 3 Redox (SYM-1223–1232), EZ Water (SYM-1214–1222), DNA (SYM-1191–1213) |
 | G₂ Paper | **Published** | [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — PDF, LaTeX, and scripts in `docs/g2-paper/` |
 | Genesis Mechanism | Complete | 11-page derivation of how coherence emerges from zero |
 
