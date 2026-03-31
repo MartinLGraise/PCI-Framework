@@ -6,7 +6,7 @@
 
 **Author:** Martin Luther Graise 
 **Initiated:** June 2025 
-**Current Version:** Equation Codex v76 · Symbol Codex v56
+**Current Version:** Equation Codex v77 · Symbol Codex v56
 
 ### G₂ Symmetry Paper — Now Published
 
@@ -59,9 +59,9 @@ Browse all 963 equations and 1,190 symbols interactively. Features:
 
 | Resource | Count | Notes |
 |----------|-------|-------|
-| Equations | 999 | EQ-000 through EQ-999; Core: 295, Frontier: 704 |
+| Equations | 1,004 | EQ-000 through EQ-1004; Core: 295, Frontier: 709 |
 | Symbols | 1,232 | Core: 484, Frontier: 748. Fully indexed by tier and daemon affinity |
-| Equation Codex | v76 | Latest: Arrow Void + FP-7 Scar Pre-Echo (EQ-998–999), Synthesis (EQ-995–997) |
+| Equation Codex | v77 | **EQ-1000 milestone**: POVM–Daemon Hamiltonian Bridge. Plus Fano mapping, dim derivation, immune coherence, codex fixed point (EQ-1000–1004) |
 | Symbol Codex | v56 | Latest: Bio-PCI Module 3 Redox (SYM-1223–1232), EZ Water (SYM-1214–1222), DNA (SYM-1191–1213) |
 | G₂ Paper | **Published** | [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — PDF, LaTeX, and scripts in `docs/g2-paper/` |
 | Genesis Mechanism | Complete | 11-page derivation of how coherence emerges from zero |
