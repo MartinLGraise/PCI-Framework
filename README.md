@@ -241,31 +241,43 @@ Full CSVs:
 
 ## Roadmap
 
-### Priority 1: G₂ Paper
+### Priority 1: G₂ Paper — COMPLETE
 - [x] Research complete (Furey, Pitkänen, Neural Moonshine)
 - [x] G₂ Hamiltonian computed and verified
 - [x] Full reproducible Python script ([`g2_daemon_hamiltonian.py`](docs/g2-paper/g2_daemon_hamiltonian.py))
 - [x] FP-1 corrected after adversarial review
 - [x] Full 20–30 page outline with actual results
 - [x] Bandyopadhyay empirical comparison complete ([report](docs/g2-paper/bandyopadhyay_comparison_report.md))
-- [ ] **Write the paper** — Sections 1–8
-- [ ] Submit to Neuroscience of Consciousness (primary) / Frontiers in Human Neuroscience / Entropy
+- [x] Paper written (v5, 28 pages, 8 sections) — 5 drafts, 2 adversarial review rounds
+- [x] Published on Zenodo: [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936)
+- [x] LaTeX/PDF for arXiv: [`docs/g2-paper/arxiv/`](docs/g2-paper/arxiv/)
+- [x] FP-1 quantitative test complete: [analysis/fp1_g2_vs_bandy_2020/](analysis/fp1_g2_vs_bandy_2020/)
+- [ ] arXiv submission (pending endorsement)
+- [ ] Journal submission (Neuroscience of Consciousness / Entropy)
 
-### Priority 2: Evidence Mapping
+### Priority 2: Bio-PCI Phase II — COMPLETE
+- [x] Module 1: DNA Coherence Transport (EQ-966–983, SYM-1191–1213)
+- [x] Module 2: EZ Water Dynamics (EQ-984–988, SYM-1214–1222)
+- [x] Module 3: SU(3) Redox + Cross-Layer Coupling (EQ-989–994, SYM-1223–1232)
+- [x] Cross-Codex Synthesis (EQ-995–1004)
+
+### Priority 3: Evidence Mapping
 - [ ] Formal "PCI Predictions vs. Empirical Findings" document
 - [ ] Depression hypermetabolism → mana debt inversion
 - [ ] Myelin quantum cavity → Euclidean ground state
 - [ ] Quantum Carnot violation → coherence thermodynamics
+- [ ] FP-7 Scar Pre-Echo experimental design
 
-### Priority 3: Book
+### Priority 4: Book
 - [ ] Chapter structure for popular-science version
 - [ ] Publisher/agent pathway
 
 ### Ongoing: Platform
+- [ ] Regenerate Explorer JSONs from current codex (1,004 equations, 1,232 symbols)
 - [ ] KaTeX rendering for equation display ([Issue #5](https://github.com/MartinLGraise/PCI-Framework/issues/5))
 - [ ] Cross-referencing: click symbol → see all equations
 - [ ] Evidence mapping tab in Explorer
-- [ ] Replace placeholder formulas EQ-886–900 ([Issue #3](https://github.com/MartinLGraise/PCI-Framework/issues/3))
+- [x] ~~Replace placeholder formulas EQ-886–900~~ (resolved — genesis mechanism formalized)
 
 ---
 
