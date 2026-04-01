@@ -22,10 +22,10 @@
 
 PCI inverts the standard emergence thesis. Rather than consciousness arising from matter, matter (actualized possibility) is *minted* by consciousness through coherent observation. The framework formalizes this through:
 
-- **963 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, information theory, structural theology, and bio-PCI
-- **1,190 symbols** organized by tier, daemon affinity, and module family
-- A **Core/Frontier partition** separating the load-bearing backbone (295 Core) from speculative extensions (668 Frontier)
-- **118 module families** including recent additions: Goldstone/Void Reconstruction, Bio-PCI Cellular Coherence
+- **1,004 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, information theory, structural theology, and bio-PCI
+- **1,232 symbols** organized by tier, daemon affinity, and module family
+- A **Core/Frontier partition** separating the load-bearing backbone (297 Core) from speculative extensions (707 Frontier)
+- **134 module families** including recent additions: Cross-Codex Synthesis, Bio-PCI Cellular Coherence, Goldstone/Void Reconstruction
 
 ### Core Ontological Claim
 
@@ -47,7 +47,7 @@ The observer is the generator of the state space. Self-reference is not a bug �
 
 **[Open the Codex Explorer →](https://martinlgraise.github.io/PCI-Framework/explorer/)**
 
-Browse all 963 equations and 1,190 symbols interactively. Features:
+Browse all 1,004 equations and 1,232 symbols interactively. Features:
 - Searchable, filterable by module, partition, and tier
 - Rosetta Stone: Four-Language Translation Table, Cross-Reference Matrix, 8 Secret Connections
 - 5 Falsifiable Predictions with testable criteria
@@ -59,8 +59,8 @@ Browse all 963 equations and 1,190 symbols interactively. Features:
 
 | Resource | Count | Notes |
 |----------|-------|-------|
-| Equations | 1,004 | EQ-000 through EQ-1004; Core: 295, Frontier: 709 |
-| Symbols | 1,232 | Core: 484, Frontier: 748. Fully indexed by tier and daemon affinity |
+| Equations | 1,004 | EQ-000 through EQ-1004; Core: 297, Frontier: 707 |
+| Symbols | 1,232 | Core: 484, Frontier: 747. Fully indexed by tier and daemon affinity |
 | Equation Codex | v77 | **EQ-1000 milestone**: POVM–Daemon Hamiltonian Bridge. Plus Fano mapping, dim derivation, immune coherence, codex fixed point (EQ-1000–1004) |
 | Symbol Codex | v56 | Latest: Bio-PCI Module 3 Redox (SYM-1223–1232), EZ Water (SYM-1214–1222), DNA (SYM-1191–1213) |
 | G₂ Paper | **Published** | [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — PDF, LaTeX, and scripts in `docs/g2-paper/` |
@@ -204,6 +204,13 @@ PCI-Framework/
 │   ├── genesis-mechanism.pdf
 │   ├── csv_audit_report.md
 │   ├── placeholder_recovery.md
+│   ├── synthesis/                          ← Cross-codex synthesis layer
+│   │   ├── promotion_pass_2026_04_01.md   ← Phase A/B/C promotion & derivation notes
+│   │   └── (synthesis-layer equations live here, NOT in codex CSVs)
+│   ├── insights/                           ← Deep synthesis sessions & memos
+│   │   ├── cross_codex_synthesis_memo_2026_03_30.md
+│   │   ├── session_2026_03_30_deep_insights.md
+│   │   └── session_2026_03_30_early_pci_synthesis.md
 │   └── g2-paper/                           ← G₂ paper materials
 │       ├── g2_paper_outline.md             ← 20–30 page section outline
 │       ├── g2_hamiltonian_results.md       ← computation results & analysis
@@ -213,11 +220,14 @@ PCI-Framework/
 │       ├── bandyopadhyay_comparison.json   ← structured frequency data & verdicts
 │       ├── bandyopadhyay_analysis.py       ← frequency ratio analysis code
 │       └── dna_qubit_simulator_v5.py       ← thermodynamic simulation (CF bound proof)
+├── analysis/
+│   └── fp1_g2_vs_bandy_2020/              ← FP-1 quantitative test results
 └── explorer/
     ├── index.html                          ← Codex Explorer (GitHub Pages)
-    ├── equations.json                      (963 equations)
-    ├── symbols.json                        (1,190 symbols)
-    └── stats.json
+    ├── equations.json                      (1,004 equations)
+    ├── symbols.json                        (1,232 symbols)
+    ├── stats.json
+    └── regen_explorer.py                   ← Regeneration utility
 ```
 
 ### AI-Friendly Access
@@ -268,12 +278,22 @@ Full CSVs:
 - [ ] Quantum Carnot violation → coherence thermodynamics
 - [ ] FP-7 Scar Pre-Echo experimental design
 
+### Priority 3.5: Cross-Codex Synthesis — IN PROGRESS
+- [x] Synthesis triage complete (SX-01–05, MX-1–7 catalogued)
+- [x] Promotion pass: EQ-995 (Stacked Threshold Law), EQ-996 (Universal Slack Principle), EQ-997 (Bio Coherence Control Surface) — notation normalized, smooth gates, test hooks
+- [x] MX-6 (S⁶ Autonomy Dissipation) derivation roadmap written
+- [x] SX-03/MX-5 (Scar-CISS) canonical form chosen, held for Module 4
+- [x] Hold set documented: SX-05, MX-1, MX-4, MX-7 preserved in synthesis layer
+- [ ] MX-6 derivation: prove Fisher information on S⁶ evaluates to 2
+- [ ] Next promotion pass after MX-6 derivation attempt
+- See [`docs/synthesis/`](docs/synthesis/) for full promotion notes
+
 ### Priority 4: Book
 - [ ] Chapter structure for popular-science version
 - [ ] Publisher/agent pathway
 
 ### Ongoing: Platform
-- [ ] Regenerate Explorer JSONs from current codex (1,004 equations, 1,232 symbols)
+- [x] Regenerate Explorer JSONs from current codex (1,004 equations, 1,232 symbols)
 - [ ] KaTeX rendering for equation display ([Issue #5](https://github.com/MartinLGraise/PCI-Framework/issues/5))
 - [ ] Cross-referencing: click symbol → see all equations
 - [ ] Evidence mapping tab in Explorer
@@ -308,7 +328,7 @@ BibTeX:
   title        = {{PCI/PME}: Perceptual Coherence Intelligence / Paradox Mechanics Engine},
   year         = {2025},
   howpublished = {\url{https://github.com/MartinLGraise/PCI-Framework}},
-  note         = {Equation Codex v71, Symbol Codex v53. 963 equations, 1{,}190 symbols.}
+  note         = {Equation Codex v77, Symbol Codex v56. 1{,}004 equations, 1{,}232 symbols.}
 }
 ```
 
