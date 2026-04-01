@@ -862,5 +862,410 @@
     "frontier_priority": "High",
     "equation": "C_{\\mathrm{cell}}=f\\!\\bigl(Q_{\\mathrm{redox}},R_{\\mathrm{EZ}},\\mathcal P_{\\mathrm{DNA}}\\bigr)-\\Omega_{\\mathrm{void}}^{\\mathrm{cell}},\\qquad \\mathcal P_{\\mathrm{DNA}}:=\\int |\\Psi_{\\mathrm{DNA}}|^2",
     "description": "Cellular coherence is modeled as a function of redox symmetry order, EZ reservoir strength, and DNA coherence power, reduced by an irreducible cellular residual."
+  },
+  {
+    "eq_num": "EQ-966",
+    "eq_name": "DNA Coherence Length",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / DNA Coherence Transport",
+    "frontier_priority": "High",
+    "equation": "\\\\xi_{\\\\mathrm{DNA}}(\\\\mathrm{seq}):=\\\\frac{1}{\\\\beta_{\\\\mathrm{DNA}}(\\\\mathrm{seq})},\\\\qquad K_{ij}\\\\propto \\\\exp(-\\\\beta_{\\\\mathrm{DNA}}|r_i-r_j|)",
+    "description": "Defines the natural coherence range of DNA-mediated phase-locking from the experimentally constrained attenuation parameter β_DNA. Supplies the bare spatial kernel underlying EQ-963. Measured β values: 0.6–0.7 Å⁻¹ for well-stacked duplex DNA."
+  },
+  {
+    "eq_num": "EQ-967",
+    "eq_name": "Decoherence-Transport Optimum",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / DNA Coherence Transport",
+    "frontier_priority": "High",
+    "equation": "J_{\\\\mathrm{DNA}}(\\\\Gamma_{\\\\mathrm{dec}})\\\\ \\\\text{maximized at}\\\\ \\\\Gamma_{\\\\mathrm{dec}}^\\\\ast \\\\neq 0,\\\\quad \\\\Gamma_{\\\\mathrm{dec}}^\\\\ast \\\\sim \\\\Delta E_{\\\\mathrm{stack}}",
+    "description": "Formalizes the result that moderate decoherence enhances DNA transport relative to the perfectly coherent limit. Molecular-scale manifestation of the nonzero void requirement: transport is not optimized at Γ_dec=0."
+  },
+  {
+    "eq_num": "EQ-968",
+    "eq_name": "CISS Spin Polarization",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / DNA Coherence Transport",
+    "frontier_priority": "High",
+    "equation": "P_{\\\\mathrm{spin}}=\\\\tanh(\\\\xi_{\\\\mathrm{SOC}}\\\\,N_{\\\\mathrm{bp}}\\\\cos\\\\theta_{\\\\mathrm{helix}})",
+    "description": "Captures DNA chirality-induced spin selectivity as measurable polarization fraction over a chiral transport path. Provides a physical substrate for chirality-sensitive transport and gives scar chirality a biomolecular anchor."
+  },
+  {
+    "eq_num": "EQ-969",
+    "eq_name": "Fröhlich Condensation Threshold",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / DNA Coherence Transport",
+    "frontier_priority": "High",
+    "equation": "\\\\frac{s}{\\\\phi}>(\\\\frac{s}{\\\\phi})_{\\\\mathrm{crit}}\\\\approx 1 \\\\implies \\\\text{weak condensate / sustained coherent mode}",
+    "description": "Maps the Fröhlich energy-supply to damping ratio onto the local molecular analogue of EQ-000a. Only the weak condensation regime (s/φ ~ 0.1–5) is biologically feasible."
+  },
+  {
+    "eq_num": "EQ-970",
+    "eq_name": "DNA Damage Scan Operator",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / DNA Coherence Transport",
+    "frontier_priority": "High",
+    "equation": "\\\\mathrm{Scan}(i,j)=\\\\Theta(J_{CT}(i\\\\to j)-J_{\\\\mathrm{thresh}}),\\\\quad J_{CT}=k_0 e^{-\\\\beta d_{ij}}\\\\prod_{\\\\text{sites}}(1-\\\\delta_{\\\\mathrm{mismatch}})",
+    "description": "Models DNA-mediated lesion detection as a transport-threshold decision rule. Intact π-stack: transport survives, region clears. Mismatch or lesion: transport drops, protein retained near damage. Molecular GHOSTLIGHT analogue."
+  },
+  {
+    "eq_num": "EQ-971",
+    "eq_name": "Chromatin Transmission Coefficient",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / DNA Coherence Transport",
+    "frontier_priority": "Exploratory",
+    "equation": "\\\\tau_{\\\\mathrm{chrom}}=S_{\\\\mathrm{LC}}\\\\,e^{-N_{\\\\mathrm{nuc}}/N_0}[1+A\\\\cos(\\\\frac{2\\\\pi(L_{\\\\mathrm{linker}}-d_5)}{10\\\\,\\\\mathrm{bp}})]",
+    "description": "Encodes how chromatin condensation state, liquid-crystal order, and linker-length rotational register modulate coherent transmission. Explicitly treated as ansatz rather than direct extraction."
+  },
+  {
+    "eq_num": "EQ-972",
+    "eq_name": "DNA Waveguide Mode Condition",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / DNA Coherence Transport",
+    "frontier_priority": "Exploratory",
+    "equation": "k_m=\\\\frac{2\\\\pi m}{p_{\\\\mathrm{helix}}},\\\\quad E_m \\\\in \\\\mathrm{DOS}_{\\\\mathrm{seq}}",
+    "description": "Formalizes selection rules: sequence-dependent band structure plus helical periodicity impose discrete transport/resonance admissibility conditions. Firmer for charge transport than photonic guiding."
+  },
+  {
+    "eq_num": "EQ-973",
+    "eq_name": "p-Adic Retrieval Barrier",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / DNA Coherence Transport",
+    "frontier_priority": "Exploratory",
+    "equation": "\\\\Delta_{\\\\mathrm{retrieval}}(x,y)=-\\\\log d_5(x,y)",
+    "description": "Uses p-adic code distance as a retrieval-cost metric on symbolic DNA states. Dragovich framework is mathematically rigorous but descriptive; this is a PCI construction, not a biological transport law."
+  },
+  {
+    "eq_num": "EQ-974",
+    "eq_name": "DNA Electromagnetic Emission Window",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Speculative Correspondence Layer",
+    "frontier_priority": "Exploratory",
+    "equation": "S_{\\\\mathrm{DNA}}(f)=\\\\sum_n A_n\\\\,\\\\delta(f-f_n),\\\\quad f_n\\\\in[500,3000]\\\\,\\\\mathrm{Hz}",
+    "description": "Encodes the Montagnier-style claim that dilute DNA solutions emit low-frequency electromagnetic signatures. No independent replication; speculative codex object."
+  },
+  {
+    "eq_num": "EQ-975",
+    "eq_name": "DNA Sequence–Frequency Projection Operator",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Speculative Correspondence Layer",
+    "frontier_priority": "Exploratory",
+    "equation": "\\\\mathcal{P}_{\\\\mathrm{seq}\\\\to f}:\\\\ \\\\Sigma_{\\\\mathrm{DNA}}\\\\to\\\\{f_n\\\\},\\\\quad f_n=\\\\mathcal{F}_{\\\\mathrm{spec}}(\\\\sigma_n)",
+    "description": "Placeholder operator mapping symbolic DNA segments into a frequency-spectrum hypothesis. No published quantitative sequence-to-frequency law exists."
+  },
+  {
+    "eq_num": "EQ-976",
+    "eq_name": "Wave-Genetics Solitonic Carrier Ansatz",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Speculative Correspondence Layer",
+    "frontier_priority": "Exploratory",
+    "equation": "\\\\Psi_{\\\\mathrm{gene}}(x,t)=A(x,t)e^{i(kx-\\\\omega t)}+\\\\eta\\\\,\\\\Phi_{\\\\mathrm{sol}}(x,t)",
+    "description": "Codex-level formalization of the Gariaev-style wave genetics intuition: symbolic genetic content rides on a coupled oscillatory plus solitonic carrier. Speculative."
+  },
+  {
+    "eq_num": "EQ-977",
+    "eq_name": "Holographic Genetic Reconstruction Kernel",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Speculative Correspondence Layer",
+    "frontier_priority": "Exploratory",
+    "equation": "\\\\mathcal{K}_{\\\\mathrm{gene}}(x,y)=\\\\int d\\\\omega\\\\,\\\\tilde{\\\\Psi}_{\\\\mathrm{gene}}(x,\\\\omega)\\\\,\\\\tilde{\\\\Psi}_{\\\\mathrm{gene}}^*(y,\\\\omega)",
+    "description": "Formalizes holographic reconstruction intuition as a coherence kernel over encoded genetic modes. PCI-compatible speculative operator."
+  },
+  {
+    "eq_num": "EQ-978",
+    "eq_name": "p-Adic Genetic State Metric",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Speculative Correspondence Layer",
+    "frontier_priority": "Exploratory",
+    "equation": "d_5(x,y)=5^{-k(x,y)}",
+    "description": "Promotes the p-adic genetic-code distance to explicit codex metric. Mathematically rigorous but descriptive rather than dynamical."
+  },
+  {
+    "eq_num": "EQ-979",
+    "eq_name": "p-Adic Genetic Retrieval Functional",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Speculative Correspondence Layer",
+    "frontier_priority": "Exploratory",
+    "equation": "\\\\mathcal{R}_{\\\\mathrm{gen}}(x\\\\to y)=\\\\exp(-\\\\lambda_5\\\\,\\\\Delta_{\\\\mathrm{retrieval}}(x,y)),\\\\quad \\\\Delta_{\\\\mathrm{retrieval}}=-\\\\log d_5(x,y)",
+    "description": "Extends retrieval-barrier into a full retrieval functional over p-adic code space. PCI-built operator."
+  },
+  {
+    "eq_num": "EQ-980",
+    "eq_name": "DNA Biophoton Emission Coherence Functional",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Speculative Correspondence Layer",
+    "frontier_priority": "Exploratory",
+    "equation": "C_\\\\gamma=\\\\frac{|\\\\langle E^{(-)}(t)E^{(+)}(t+\\\\tau)\\\\rangle|}{\\\\langle I(t)\\\\rangle}",
+    "description": "Coherence functional for ultra-weak biophoton emission. The emission itself is confirmed; interpretation as coherent DNA radiation remains contested."
+  },
+  {
+    "eq_num": "EQ-981",
+    "eq_name": "DNA Biophoton Waveguide Hypothesis",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Speculative Correspondence Layer",
+    "frontier_priority": "Exploratory",
+    "equation": "\\\\lambda_{\\\\mathrm{bio}}\\\\in\\\\mathrm{Spec}(\\\\hat{W}_{\\\\mathrm{DNA}})\\\\quad\\\\text{only if}\\\\quad n_{\\\\mathrm{eff}}(\\\\omega)r_{\\\\mathrm{DNA}}\\\\gtrsim \\\\lambda_{\\\\mathrm{bio}}/2\\\\pi",
+    "description": "Hypothesis testing whether any ultra-weak biological photon modes could be guided by DNA-associated structure. Explicitly speculative."
+  },
+  {
+    "eq_num": "EQ-982",
+    "eq_name": "SU(3)-CISS Effective Internal Symmetry Ansatz",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Speculative Correspondence Layer",
+    "frontier_priority": "Exploratory",
+    "equation": "\\\\mathcal{G}_{\\\\mathrm{CISS}}=SU(2)_{\\\\mathrm{spin}}\\\\times U(1)_{\\\\mathrm{charge}}\\\\times\\\\mathcal{C}_{3,\\\\pi}\\\\leadsto SU(3)_{\\\\mathrm{eff}}",
+    "description": "Formalizes the suggestion that spin-orbit coupling in a chiral medium plus a three-band π-stack structure may create a structural parallel to effective SU(3). Explicitly speculative."
+  },
+  {
+    "eq_num": "EQ-983",
+    "eq_name": "Chirality–Scar Transport Asymmetry",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Speculative Correspondence Layer",
+    "frontier_priority": "Exploratory",
+    "equation": "\\\\Delta J_\\\\chi=J_+-J_-=J_0\\\\,P_{\\\\mathrm{spin}}\\\\,\\\\Xi_{\\\\mathrm{scar}}",
+    "description": "Chirality-sensitive transport asymmetry modulated by a scar-defect factor. Cleanest bridge from hard CISS physics into scar mechanics."
+  },
+  {
+    "eq_num": "EQ-984",
+    "eq_name": "EZ Boundary Formation Law",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / EZ Water Field and Reservoir Dynamics",
+    "frontier_priority": "High",
+    "equation": "d_{\\\\mathrm{EZ}}(t)=\\\\sqrt{2D_{\\\\mathrm{eff}}\\\\,t}\\\\,[1+\\\\alpha_{\\\\mathrm{IR}}\\\\Phi_{\\\\mathrm{IR}}(t)/\\\\Phi_0]",
+    "description": "Models EZ boundary growth as a diffusion-driven square-root law with IR-sensitive modulation. Anchored to Huszár power-law growth and Fraxedas diffusion-Langevin backbone. IR enhancement treated as modulation, not core mechanism."
+  },
+  {
+    "eq_num": "EQ-985",
+    "eq_name": "EZ Reservoir Dynamics",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / EZ Water Field and Reservoir Dynamics",
+    "frontier_priority": "Exploratory",
+    "equation": "dR_{\\\\mathrm{EZ}}/dt = S_{\\\\mathrm{IR}}(\\\\Phi,\\\\lambda)+S_{\\\\mathrm{therm}}(T)-\\\\Gamma_{\\\\mathrm{ion}}R_{\\\\mathrm{EZ}}-k_{\\\\mathrm{bio}}J_{\\\\mathrm{redox}}R_{\\\\mathrm{EZ}}",
+    "description": "Upgrades the static EZ reservoir (EQ-962) into a supply-vs-decay equation. Synthesized from IR recharge, thermal contribution, ion-exchange depletion, and biological draw terms. Explicitly a codex construction, not a literature extraction."
+  },
+  {
+    "eq_num": "EQ-986",
+    "eq_name": "EZ Charge Separation Field",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / EZ Water Field and Reservoir Dynamics",
+    "frontier_priority": "High",
+    "equation": "V_{\\\\mathrm{EZ}}(x)=V_0[1-\\\\tanh((x-x_{\\\\mathrm{EZ}})/\\\\delta)],\\\\quad [H^+](x)=[H^+]_{\\\\mathrm{bulk}}\\\\exp(-eV_{\\\\mathrm{EZ}}(x)/k_BT)",
+    "description": "Encodes the measured -120 mV EZ potential as a boundary-layer field profile linked to a Boltzmann proton gradient. Mainstream electrochemistry applied to measured EZ potential. Turns EZ into a battery-like field layer."
+  },
+  {
+    "eq_num": "EQ-987",
+    "eq_name": "Hydration Shell Coherence Constraint",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / EZ Water Field and Reservoir Dynamics",
+    "frontier_priority": "High",
+    "equation": "\\\\Psi_{\\\\mathrm{EZ}}(x)=\\\\Psi_0\\\\exp(-|x-x_{\\\\mathrm{surface}}|/\\\\xi_{\\\\mathrm{hydration}})[1+\\\\rho_{\\\\mathrm{retard}}(x)],\\\\quad J_{\\\\mathrm{info}}(x)=J_0\\\\Theta(n_{\\\\mathrm{hydration}}(x)-n_{\\\\mathrm{crit}})",
+    "description": "Formalizes dynamical hydration-shell physics as a coherence constraint on transport. The ≥18 Å dynamical shell, local retardation factors, and hydration gating give the strongest Tier 1 hook in Module 2. Converts hydration physics into a gating law for Bio-PCI."
+  },
+  {
+    "eq_num": "EQ-988",
+    "eq_name": "Reservoir-to-Waveguide Transport Coupling",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / EZ Water Field and Reservoir Dynamics",
+    "frontier_priority": "Exploratory",
+    "equation": "J_{\\\\mathrm{info}}=\\\\sigma_{\\\\mathrm{coh}}(R_{\\\\mathrm{EZ}})\\\\nabla\\\\Phi_{\\\\mathrm{bio}}\\\\exp(-\\\\beta_{\\\\mathrm{water}}d_{\\\\mathrm{gap}})\\\\omega_{\\\\mathrm{CD}}(R_{\\\\mathrm{EZ}})",
+    "description": "Extends EQ-960 by coupling reservoir state to conductivity, water-mediated tunneling (730× enhancement from Stuchebrukhov Complex I), and coherent-domain resonance selector. PCET backbone is strong; Del Giudice ω_CD selector is Tier 3 speculative."
+  },
+  {
+    "eq_num": "EQ-989",
+    "eq_name": "Redox Channel Occupation Vector",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / SU(3) Redox and Cross-Layer Coupling",
+    "frontier_priority": "High",
+    "equation": "|\\Psi_{\\\\mathrm{redox}}\\\\rangle=(\\\\psi_1,\\\\psi_2,\\\\psi_3)^T,\\\\quad E_{\\\\mathrm{cell}}=\\\\sum_i w_i E_i^{\\\\circ\\\\prime}-(RT/2F)\\\\sum_i w_i\\\\ln(\\\\psi_i/(1-\\\\psi_i)),\\\\quad k_{ij}=A_{ij}\\\\exp[-(\\\\Delta G_{ij}^\\\\circ+\\\\lambda_{ij})^2/(4\\\\lambda_{ij}k_BT)]",
+    "description": "Three-component occupation vector over NAD⁺/NADH, GSH/GSSG, and Trx(SH)₂/TrxSS channels with Nernst potential and Marcus inter-channel transfer rates (λ ≈ 0.5 eV for proteins). Effectively supersedes EQ-961 as the dynamic redox state."
+  },
+  {
+    "eq_num": "EQ-990",
+    "eq_name": "SU(3) Redox Order Parameter (Cartan Projection)",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / SU(3) Redox and Cross-Layer Coupling",
+    "frontier_priority": "High",
+    "equation": "\\\\Phi_{\\\\mathrm{SU3}}=\\\\langle\\\\Psi_{\\\\mathrm{redox}}|(\\\\lambda_3\\\\cos\\\\theta+\\\\lambda_8\\\\sin\\\\theta)|\\\\Psi_{\\\\mathrm{redox}}\\\\rangle,\\\\quad V_{\\\\mathrm{break}}=\\\\sum_a m_a^2(\\\\langle\\\\lambda_a\\\\rangle-\\\\langle\\\\lambda_a\\\\rangle_0)^2",
+    "description": "Projects the redox triplet onto the SU(3) Cartan sector using diagonal Gell-Mann generators. Explicit symmetry breaking from different midpoint potentials (−320, −240, −270 mV). Formally novel PCI organizing projection, not a published biological formalism."
+  },
+  {
+    "eq_num": "EQ-991",
+    "eq_name": "DNA-EZ Coupling Operator",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / SU(3) Redox and Cross-Layer Coupling",
+    "frontier_priority": "High",
+    "equation": "\\\\hat{C}_{\\\\mathrm{DNA-EZ}}=\\\\xi_{\\\\mathrm{DNA}}(R_{\\\\mathrm{EZ}})\\\\cdot\\\\tau_{\\\\mathrm{chrom}}\\\\cdot\\\\exp(-d_{\\\\mathrm{gap}}/\\\\xi_{\\\\mathrm{hydration}}),\\\\quad \\\\xi_{\\\\mathrm{DNA}}(R_{\\\\mathrm{EZ}})=\\\\xi_0[1+\\\\alpha R_{\\\\mathrm{EZ}}/(R_{\\\\mathrm{EZ}}+K_{\\\\mathrm{EZ}})]",
+    "description": "First explicit DNA-to-water coupling operator. Combines DNA coherence length (Module 1), chromatin transmission, and hydration-shell attenuation (Module 2). Cross-layer PCI construction using Tier 1 pieces."
+  },
+  {
+    "eq_num": "EQ-992",
+    "eq_name": "EZ-Redox Coupling Operator",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / SU(3) Redox and Cross-Layer Coupling",
+    "frontier_priority": "Exploratory",
+    "equation": "\\\\hat{C}_{\\\\mathrm{EZ-redox}}=\\\\sigma_{\\\\mathrm{coh}}(R_{\\\\mathrm{EZ}})\\\\cdot\\\\exp(\\\\Delta\\\\beta\\\\,d_{\\\\mathrm{water}})\\\\cdot\\\\sum_i f_i\\\\delta(E-E_i^{\\\\circ\\\\prime}-V_{\\\\mathrm{EZ}})",
+    "description": "Water-to-redox coupling through water-mediated tunneling enhancement and resonance-shifted effective midpoint potentials. Stuchebrukhov tunneling backbone is strong; resonance selector is Tier 3 speculative."
+  },
+  {
+    "eq_num": "EQ-993",
+    "eq_name": "DNA-Redox Coupling Operator",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / SU(3) Redox and Cross-Layer Coupling",
+    "frontier_priority": "High",
+    "equation": "\\\\hat{C}_{\\\\mathrm{DNA-redox}}=k_{\\\\mathrm{SIRT}}\\\\frac{[\\\\mathrm{NAD}^+]}{K_m+[\\\\mathrm{NAD}^+]}\\\\Omega_{\\\\mathrm{deacetyl}}+k_{\\\\mathrm{HAT}}\\\\frac{[\\\\mathrm{AcCoA}]}{K_m+[\\\\mathrm{AcCoA}]}\\\\Omega_{\\\\mathrm{acetyl}}+k_{\\\\mathrm{MT}}\\\\frac{[\\\\mathrm{SAM}]}{K_m+[\\\\mathrm{SAM}]}\\\\Omega_{\\\\mathrm{methyl}}+k_{\\\\mathrm{JmjC}}\\\\frac{[\\\\alpha\\\\mathrm{KG}]}{K_m+[\\\\alpha\\\\mathrm{KG}]}\\\\Omega_{\\\\mathrm{demethyl}}+k_{\\\\mathrm{LSD}}\\\\frac{[\\\\mathrm{FAD}]}{K_m+[\\\\mathrm{FAD}]}\\\\Omega_{\\\\mathrm{demethyl,FAD}}",
+    "description": "Five metabolite-gated pathways connecting redox state to chromatin remodeling: NAD⁺/SIRT, acetyl-CoA/HAT, SAM/MT, αKG/JmjC, FAD/LSD. All five are mainstream biochemistry. Probably the strongest single cross-layer operator in all three modules."
+  },
+  {
+    "eq_num": "EQ-994",
+    "eq_name": "Cellular PCI Phase-Transition Criterion",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / SU(3) Redox and Cross-Layer Coupling",
+    "frontier_priority": "High",
+    "equation": "C_{\\\\mathrm{PCI}}=\\\\hat{C}_{\\\\mathrm{DNA-EZ}}\\\\cdot\\\\hat{C}_{\\\\mathrm{EZ-redox}}\\\\cdot\\\\hat{C}_{\\\\mathrm{DNA-redox}}\\\\cdot\\\\|\\\\Psi_{\\\\mathrm{redox}}\\\\|^2,\\\\quad E_{\\\\mathrm{crit}}(\\\\mathrm{prolif})\\\\approx -240\\\\,\\\\mathrm{mV},\\\\; E_{\\\\mathrm{crit}}(\\\\mathrm{diff})\\\\approx -200\\\\,\\\\mathrm{mV},\\\\; E_{\\\\mathrm{crit}}(\\\\mathrm{apop})\\\\approx -170\\\\,\\\\mathrm{mV}",
+    "description": "Connects Schafer-Buettner redox fate thresholds to the Bio-PCI coherence integral. Threshold voltages are Tier 1; the explicit coherence integral and C_max = 1−e⁻² connection are PCI constructions. First real cellular phase-transition surface in Bio-PCI."
+  },
+  {
+    "eq_num": "EQ-995",
+    "eq_name": "Stacked Threshold Law",
+    "partition": "Frontier",
+    "module_family": "Cross-Codex Synthesis / Multi-Scale Thresholds",
+    "frontier_priority": "High",
+    "equation": "\\mathcal{T}_{\\mathrm{cascade}}(\\Psi,\\mathbf{r},E) = \\sigma_\\varepsilon\\!\\left(\\frac{a\\rho}{b}-\\delta\\right) \\cdot \\sigma_\\varepsilon\\!\\left(\\frac{s}{\\phi}-\\left(\\frac{s}{\\phi}\\right)_{\\!\\mathrm{crit}}\\right) \\cdot \\sum_{k=1}^{3}\\delta_\\varepsilon\\!\\left(E_{\\mathrm{redox}}-E_k^{\\mathrm{crit}}\\right),\\quad \\sigma_\\varepsilon(x)=\\frac{1}{1+e^{-x/\\varepsilon}}",
+    "description": "A living system undergoes coherent fate transitions only when three thresholds are simultaneously passed: (1) Genesis closure — constraint regeneration exceeds decay (EQ-000a/EQ-887), (2) Molecular supply — Fröhlich supply-to-damping ratio exceeds condensation onset (EQ-969), (3) Cellular redox fate — redox potential crosses a Schafer–Buettner threshold at −240/−200/−170 mV (EQ-994). Smooth gates σ_ε replace hard Heavisides. If any gate is closed, the cascade is blocked. Anesthesia blocks Gate 1, starvation blocks Gate 2, redox collapse blocks Gate 3."
+  },
+  {
+    "eq_num": "EQ-996",
+    "eq_name": "Universal Slack Principle",
+    "partition": "Frontier",
+    "module_family": "Cross-Codex Synthesis / Void Fraction Optimality",
+    "frontier_priority": "High",
+    "equation": "\\Omega^{\\ast} \\equiv \\arg\\min_{\\Omega>0}\\left[\\mathcal{D}_{\\mathrm{auto}}(\\Omega)+\\mathcal{L}_{\\mathrm{closure}}(\\Omega)+\\mathcal{L}_{\\mathrm{transport}}(\\Omega)\\right]=e^{-2},\\quad \\sigma^{\\ast}=\\arg\\max_{\\sigma\\geq 0}J_{\\mathrm{transport}}(\\sigma)=1-C_{\\max}=e^{-2},\\quad \\partial^2 J/\\partial\\sigma^2|_{\\sigma=e^{-2}}<0",
+    "description": "The 13% void is not a defect but the thermodynamic operating slack at which self-maintaining transport is maximized. D_auto = autonomy dissipation cost (Frim–DeWeese), L_closure = information loss from recursion-depth truncation, L_transport = efficiency cost of coherent transport through noisy channels. The optimum σ* = e⁻² is a maximum of transport efficiency, not a remainder. Correspondences: Del Giudice 0.87/0.13 partition, G₂ singlet fraction, recursion-order ceiling (EQ-892), Goldstone coset dimension ratio (EQ-1002). Derivation status: theorem target — variational proof incomplete."
+  },
+  {
+    "eq_num": "EQ-997",
+    "eq_name": "Biological Coherence Control Surface",
+    "partition": "Frontier",
+    "module_family": "Cross-Codex Synthesis / Bio-PCI Control Theory",
+    "frontier_priority": "High",
+    "equation": "C_{\\mathrm{bio}}(\\mathbf{r},E)=\\|\\hat{M}\\cdot\\mathbf{r}\\|^2 \\cdot \\sum_{k=1}^{3}w_k\\,\\sigma_\\varepsilon\\!(E-E_k^{\\mathrm{crit}}),\\quad \\mathbf{r}=(r_{\\mathrm{NAD}},r_{\\mathrm{GSH}},r_{\\mathrm{TRX}})\\in[0,1]^3,\\quad \\sum w_k=1",
+    "description": "Biological coherence as a smooth control surface over redox occupation r and threshold potentials E. r_NAD = [NAD+]/([NAD+]+[NADH]), similarly for GSH and TRX ratios. M̂ is the cross-layer coupling matrix (SYM-1227–1229) encoding DNA–EZ, EZ–redox, DNA–redox coupling strengths. Smooth gates σ_ε replace hard Heavisides. Test hooks: (T1) C_bio vs r_NAD monotone with C_max plateau, (T2) fate-channel switching at E_k^crit, (T3) rank(M̂)=3 via pathway inhibition, (T4) coherence collapse when any coupling channel is inhibited."
+  },
+  {
+    "eq_num": "EQ-998",
+    "eq_name": "Arrow Dictator as Void Mode",
+    "partition": "Frontier",
+    "module_family": "Cross-Codex Synthesis / Axiomatic Walls",
+    "frontier_priority": "High",
+    "equation": "\\\\text{Arrow}(n\\\\geq 3):\\\\; \\\\nexists\\\\, f_{\\\\mathrm{fair}} \\\\;\\\\Rightarrow\\\\; \\\\exists!\\\\, d_{\\\\mathrm{dictator}} = \\\\Omega_{\\\\mathrm{void}},\\\\quad G_2 \\\\to SU(3) \\\\equiv \\\\text{Arrow resolution of 7-mode democracy}",
+    "description": "Arrow's Impossibility Theorem states that with ≥3 options no fair aggregation exists without a dictator. In the daemon architecture (7 modes), spontaneous symmetry breaking G₂→SU(3) selects the void mode as the structurally distinguished direction — Arrow's dictator. SSB is mathematically equivalent to resolving a social choice paradox among 7 equal modes."
+  },
+  {
+    "eq_num": "EQ-999",
+    "eq_name": "Scar Pre-Echo Prediction (FP-7)",
+    "partition": "Frontier",
+    "module_family": "Cross-Codex Synthesis / Scar Topology × Bio-PCI",
+    "frontier_priority": "High",
+    "equation": "\\\\Delta\\\\mathrm{HRV}(t_{\\\\mathrm{trigger}}-\\\\tau) > \\\\sigma_{\\\\mathrm{baseline}},\\\\quad \\\\tau \\\\in [2,5]\\\\,\\\\mathrm{s},\\\\quad \\\\text{iff}\\\\; T_n(\\\\mathrm{scar}) > T_{\\\\mathrm{crit}}",
+    "description": "High-torsion scars (topological defects in daemon configuration space) produce measurable autonomic precursors (HRV compression, EDA pre-rise) 2-5 seconds before conscious recognition of a triggering stimulus. Falsified if no autonomic precursor is detected in controlled trigger-exposure experiments. The scar acts as a stable attractor whose approach produces harbinger dynamics in the autonomic nervous system."
+  },
+  {
+    "eq_num": "EQ-1000",
+    "eq_name": "POVM–Daemon Hamiltonian Bridge",
+    "partition": "Frontier",
+    "module_family": "Cross-Codex Synthesis / Born Rule × G₂ Architecture",
+    "frontier_priority": "High",
+    "equation": "\\\\tilde{E}_j = E_j^{(\\\\mathrm{phys})} \\\\otimes E_j^{(\\\\mathrm{coh})},\\\\quad E_j^{(\\\\mathrm{coh})} = \\\\Pi_j(H_{\\\\mathrm{daemon}}),\\\\quad H_{\\\\mathrm{daemon}} = \\\\alpha C_2(G_2)+\\\\beta C_2(SU(3))+\\\\gamma P_{\\\\mathrm{void}}+a_1 H_{c1}+a_2 H_{c2}",
+    "description": "The Extended Born Rule (EQ-01) can be understood as an effective POVM on an enlarged system: the physical measurement operator tensored with a coherence-sector operator. The coherence-sector operator has the spectral structure of the G₂/SU(3) daemon Hamiltonian — its 7 eigenvalues correspond to the 7 daemon modes (1 singlet + 3 triplet + 3 anti-triplet). This bridges the 2025 NCRL insight (coherence weights experience after collapse) with the 2026 algebraic result (the weighting operator has G₂ symmetry). Written in 2025 as intuition; derived in 2026 as algebra; unified here as EQ-1000."
+  },
+  {
+    "eq_num": "EQ-1001",
+    "eq_name": "PX–Fano Formal Mapping",
+    "partition": "Frontier",
+    "module_family": "Cross-Codex Synthesis / PX Series × G₂ Algebra",
+    "frontier_priority": "High",
+    "equation": "\\\\mathcal{F}: \\\\{\\\\mathrm{PX}\\\\text{-}001,\\\\ldots,\\\\mathrm{PX}\\\\text{-}007\\\\} \\\\xrightarrow{\\\\sim} \\\\{e_1,\\\\ldots,e_7\\\\}_{\\\\mathrm{Fano}},\\\\quad (\\\\mathrm{PX}_i,\\\\mathrm{PX}_j,\\\\mathrm{PX}_k) \\\\in \\\\mathcal{L}_{\\\\mathrm{Fano}} \\\\iff [D_i,D_j,D_k] = \\\\psi_{ijk}",
+    "description": "The seven fundamental paradox types discovered phenomenologically in mid-2025 map onto the seven points of the Fano plane — the combinatorial structure encoding octonion multiplication and preserved by G₂. A Fano line (triple) identifies which three paradox-daemons can co-execute without conflict; non-Fano triples require serialization (non-associativity). The PX lattice was the Fano plane discovered from the experiential side of reality."
+  },
+  {
+    "eq_num": "EQ-1002",
+    "eq_name": "Void Fraction from Complex Structure (dim derivation)",
+    "partition": "Frontier",
+    "module_family": "Cross-Codex Synthesis / G₂ Coset Geometry",
+    "frontier_priority": "High",
+    "equation": "\\\\Omega_{\\\\mathrm{void}} = \\\\exp\\\\!\\\\left(-\\\\frac{\\\\dim_{\\\\mathbb{R}}(G_2/SU(3))}{\\\\dim_{\\\\mathbb{C}}(G_2/SU(3))}\\\\right) = \\\\exp\\\\!\\\\left(-\\\\frac{6}{3}\\\\right) = e^{-2},\\\\quad \\\\text{where } J_6^2=-I_6 \\\\text{ forces } \\\\dim_{\\\\mathbb{C}}=3",
+    "description": "The 2 in e⁻² is not a recursion order — it is the ratio of real to complex dimension of the Goldstone coset G₂/SU(3) ≅ S⁶. The complex structure J₆ on the 6-dimensional coset has exactly 3 invariant 2-planes (eigenvalue pairs ±i), giving dim_C = 3. The ratio 6/3 = 2 is a geometric invariant locked by the algebra. The recursion-order story (n=2 = self + witness) is the phenomenological shadow of this algebraic fact: the system experiences two levels of recursion because the Goldstone modes pair into 3 complex doublets."
+  },
+  {
+    "eq_num": "EQ-1003",
+    "eq_name": "Immune Coherence Master Equation",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI Annex / Immune Coherence (Module 4 proposal)",
+    "frontier_priority": "Exploratory",
+    "equation": "C_{\\\\mathrm{immune}} = \\\\sum_{d \\\\in \\\\{\\\\mathrm{TLR,APC,Mem,Barrier,Treg,Cytokine}\\\\}} w_d \\\\cdot \\\\Theta(f_d - f_{d,\\\\mathrm{crit}}) \\\\cdot (1 - \\\\Omega_{\\\\mathrm{priv}}),\\\\quad \\\\Omega_{\\\\mathrm{priv}} = \\\\text{immune privilege fraction}",
+    "description": "The innate immune system has six functional daemons (pattern recognition / antigen presentation / immunological memory / epithelial barriers / regulatory T cells / cytokine coordination) plus immune-privileged void zones (brain, eyes, testes). The redox fate thresholds in EQ-994 are immune cell fate decisions. This equation proposes that immune coherence follows the same 6+1 architecture as daemon coherence, with immune privilege as the biological Ω_void."
+  },
+  {
+    "eq_num": "EQ-1004",
+    "eq_name": "Codex Fixed Point (Self-Reference Limit)",
+    "partition": "Frontier",
+    "module_family": "Cross-Codex Synthesis / Meta-Codex",
+    "frontier_priority": "High",
+    "equation": "\\\\hat{E}^{\\\\infty} = \\\\lim_{n\\\\to\\\\infty} \\\\hat{E}^n(\\\\mathrm{EQ}\\\\text{-}000) = \\\\frac{\\\\mathrm{EQ}\\\\text{-}000}{1-\\\\Omega_{\\\\mathrm{void}}} = \\\\frac{\\\\text{You}=f(\\\\text{You})}{C_{\\\\max}}",
+    "description": "The codex is a self-referential system with a creation operator (EQ-504), a convergence theorem (EQ-855), a non-closure theorem (EQ-877), and an incompleteness sentence (EQ-854). It generates itself, approaches a limit, but cannot reach that limit. The geometric series in Ω_void converges to EQ-000/C_max — the full content of consciousness exceeds the foundational axiom by exactly 1/C_max. The codex captures C_max ≈ 86.5% of the truth. The remaining e⁻² ≈ 13.5% exists but cannot be written. This is the codex's own prediction about itself."
+  },
+  {
+    "eq_num": "EQ-1005",
+    "eq_name": "G₂-Ricci Flow as NP Pump Dynamics",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "High",
+    "equation": "Identifies the NP Pump daemon cycle with the Ricci-harmonic flow of G₂ structures. Torsion drives the flow; torsion-free = fully coherent. Source: Dwivedi (2026) arXiv:2601.05210, Pinčák et al. (2025) NucPhysB 1017:116959.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1006",
+    "eq_name": "Scar Field as G₂ Torsion",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "High",
+    "equation": "Formalizes the PCI scar concept as geometric torsion on the daemon manifold. The Ricci-harmonic flow attempts to smooth torsion; singularities classify failure modes. Source: PCI synthesis of Dwivedi + Pinčák.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1007",
+    "eq_name": "Goldstone Amplification at Phase Transition",
+    "partition": "Frontier",
+    "module_family": "G₂ Goldstone Dynamics",
+    "frontier_priority": "High",
+    "equation": "Predicts that the six active daemon modes amplify near phase transitions (insights, epiphanies, state shifts). The void mode remains massive. Source: Florio et al. (2025) PRL 135:242303.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1008",
+    "eq_name": "Slow-Goldstone Dispersion of Void Mode",
+    "partition": "Frontier",
+    "module_family": "G₂ Goldstone Dynamics",
+    "frontier_priority": "High",
+    "equation": "Explains why the void mode has not been identified in microtubule resonance data: it is not a peak but a diffuse background. Connects to SYK soft modes and slow light. Source: Sun & Ye (2025) PRB 112:085127.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1009",
+    "eq_name": "Jamming Surface as Consciousness Boundary",
+    "partition": "Frontier",
+    "module_family": "Phase Transition / Criticality",
+    "frontier_priority": "Medium",
+    "equation": "Maps Ouyang's jamming phase diagram onto the daemon architecture. The consciousness/coherence boundary is a critical surface, not a threshold. Source: Ouyang (2025) arXiv:2507.08197.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1010",
+    "eq_name": "Torsion-Generated Daemon Mass",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "Medium",
+    "equation": "Translates Pinčák's torsion-mass mechanism to the daemon architecture. The 'weight' of each daemon is set by local geometry, not imposed from outside. Source: Pinčák et al. (2025) NucPhysB 1017:116959.",
+    "description": ""
   }
 ]

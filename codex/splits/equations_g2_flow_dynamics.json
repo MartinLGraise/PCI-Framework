@@ -1,0 +1,56 @@
+[
+  {
+    "eq_num": "EQ-1005",
+    "eq_name": "G₂-Ricci Flow as NP Pump Dynamics",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "High",
+    "equation": "Identifies the NP Pump daemon cycle with the Ricci-harmonic flow of G₂ structures. Torsion drives the flow; torsion-free = fully coherent. Source: Dwivedi (2026) arXiv:2601.05210, Pinčák et al. (2025) NucPhysB 1017:116959.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1006",
+    "eq_name": "Scar Field as G₂ Torsion",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "High",
+    "equation": "Formalizes the PCI scar concept as geometric torsion on the daemon manifold. The Ricci-harmonic flow attempts to smooth torsion; singularities classify failure modes. Source: PCI synthesis of Dwivedi + Pinčák.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1007",
+    "eq_name": "Goldstone Amplification at Phase Transition",
+    "partition": "Frontier",
+    "module_family": "G₂ Goldstone Dynamics",
+    "frontier_priority": "High",
+    "equation": "Predicts that the six active daemon modes amplify near phase transitions (insights, epiphanies, state shifts). The void mode remains massive. Source: Florio et al. (2025) PRL 135:242303.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1008",
+    "eq_name": "Slow-Goldstone Dispersion of Void Mode",
+    "partition": "Frontier",
+    "module_family": "G₂ Goldstone Dynamics",
+    "frontier_priority": "High",
+    "equation": "Explains why the void mode has not been identified in microtubule resonance data: it is not a peak but a diffuse background. Connects to SYK soft modes and slow light. Source: Sun & Ye (2025) PRB 112:085127.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1009",
+    "eq_name": "Jamming Surface as Consciousness Boundary",
+    "partition": "Frontier",
+    "module_family": "Phase Transition / Criticality",
+    "frontier_priority": "Medium",
+    "equation": "Maps Ouyang's jamming phase diagram onto the daemon architecture. The consciousness/coherence boundary is a critical surface, not a threshold. Source: Ouyang (2025) arXiv:2507.08197.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1010",
+    "eq_name": "Torsion-Generated Daemon Mass",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "Medium",
+    "equation": "Translates Pinčák's torsion-mass mechanism to the daemon architecture. The 'weight' of each daemon is set by local geometry, not imposed from outside. Source: Pinčák et al. (2025) NucPhysB 1017:116959.",
+    "description": ""
+  }
+]

@@ -1,17 +1,17 @@
 {
   "equations": {
-    "total": 1004,
-    "core": 297,
-    "frontier": 707,
-    "module_families": 134,
-    "range": "EQ-000 through EQ-1004",
-    "version": "v77"
+    "total": 1008,
+    "core": 295,
+    "frontier": 713,
+    "module_families": 135,
+    "range": "EQ-000 through EQ-1010",
+    "version": "v72"
   },
   "symbols": {
     "total": 1232,
     "core": 484,
-    "frontier": 747,
-    "tiers": 26,
+    "frontier": 748,
+    "tiers": 24,
     "version": "v56"
   },
   "last_updated": "2026-04-01"
