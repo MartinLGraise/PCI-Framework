@@ -1,10 +1,10 @@
 {
   "equations": {
-    "total": 1008,
+    "total": 1012,
     "core": 295,
-    "frontier": 713,
-    "module_families": 135,
-    "range": "EQ-000 through EQ-1010",
+    "frontier": 717,
+    "module_families": 136,
+    "range": "EQ-000 through EQ-1014",
     "version": "v72"
   },
   "symbols": {
@@ -14,5 +14,5 @@
     "tiers": 24,
     "version": "v56"
   },
-  "last_updated": "2026-04-01"
+  "last_updated": "2026-04-02"
 }

@@ -52,5 +52,41 @@
     "frontier_priority": "Medium",
     "equation": "Translates Pinčák's torsion-mass mechanism to the daemon architecture. The 'weight' of each daemon is set by local geometry, not imposed from outside. Source: Pinčák et al. (2025) NucPhysB 1017:116959.",
     "description": ""
+  },
+  {
+    "eq_num": "EQ-1011",
+    "eq_name": "Lichnerowicz Spectral Gap with Torsion Correction",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "High",
+    "equation": "Formal connection between torsion accumulation (scarring) and coherence stability. As torsion grows, the spectral gap shrinks. At |T|² = R_min/(8C) the gap closes — the system hits criticality. Source: Lichnerowicz (1963), adapted to G₂ by Dwivedi (2022).",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1012",
+    "eq_name": "Wyart Soft-Mode Frequency at Jamming",
+    "partition": "Frontier",
+    "module_family": "Phase Transition / Criticality",
+    "frontier_priority": "High",
+    "equation": "Foundational jamming equation. ω* → 0 = soft-mode slowing = Goldstone mode softening at consciousness boundary. D(ω) plateau = proliferation of near-zero daemon modes near criticality. Source: Wyart (2005, Annales de Physique 30:3).",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1013",
+    "eq_name": "Hou Vacuum Manifold as G₂/SU(3) Coset",
+    "partition": "Frontier",
+    "module_family": "G₂ Goldstone Dynamics",
+    "frontier_priority": "High",
+    "equation": "Independent derivation of the PCI vacuum manifold from criticality theory. Hou (2025) arrives at S⁶ without citing PCI or G₂ — two independent paths to the same coset space. Structural confirmation of FP-6. Source: Hou (2025) Six Keys Criticality / 六鑰臨界, Zenodo.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1014",
+    "eq_name": "Saxena Triplet-of-Triplet Spectrum",
+    "partition": "Frontier",
+    "module_family": "Bandyopadhyay Resonance",
+    "frontier_priority": "High",
+    "equation": "Formal equation for the fractal triplet-of-triplet spectrum reported in microtubule resonance. Cited external equation — not derived from PCI but tested against G₂ topology in Section 3.6. Source: Saxena et al. (2020) Fractal Fract. 4(2):11.",
+    "description": ""
   }
 ]
