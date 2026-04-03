@@ -88,5 +88,41 @@
     "frontier_priority": "High",
     "equation": "Formal equation for the fractal triplet-of-triplet spectrum reported in microtubule resonance. Cited external equation — not derived from PCI but tested against G₂ topology in Section 3.6. Source: Saxena et al. (2020) Fractal Fract. 4(2):11.",
     "description": ""
+  },
+  {
+    "eq_num": "EQ-1015",
+    "eq_name": "Lotay-Wei Exponential Convergence to Torsion-Free G₂",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "High",
+    "equation": "The NP Pump has a rate constant. α = λ₁/2 is the decoherence/recoherence timescale — how fast the daemon manifold returns to maximal coherence after perturbation. λ₁ depends on the specific G₂ manifold geometry; computing it for microtubule-scale structures would yield a testable prediction. Source: Lotay-Wei (2017) arXiv:1504.07771, JDG 2019.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1016",
+    "eq_name": "Laplacian Flow for Closed G₂ Structures",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "High",
+    "equation": "The fundamental evolution equation for G₂ structures. The flow drives the system toward torsion-free (maximal coherence). Scalar curvature is negative of torsion-squared — more scarring = more negative curvature = more curved daemon manifold. Source: Lotay-Wei (2017) arXiv:1504.07367.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1017",
+    "eq_name": "G₂ Blow-Up Criterion (Lotay-Wei)",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "Medium",
+    "equation": "The precise condition for when the NP Pump crashes: torsion gradient + curvature diverge together. The blow-up rate C/(T₀−t) gives a power-law approach to singularity — the system accelerates toward crisis. Source: Lotay-Wei (2017) arXiv:1504.07367, Theorems 1.3/5.1.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1018",
+    "eq_name": "Laplacian Soliton Equation",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "Medium",
+    "equation": "Solitons are self-similar solutions of the Laplacian flow — daemon configurations that change shape but preserve their type. No compact shrinking solitons = the daemon manifold cannot self-shrink to a point. Steady = torsion-free = maximal coherence is the only compact steady state. Source: Lotay-Wei (2017), Propositions 9.1-9.5.",
+    "description": ""
   }
 ]
