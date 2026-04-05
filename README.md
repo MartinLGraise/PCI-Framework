@@ -6,7 +6,7 @@
 
 **Author:** Martin Luther Graise 
 **Initiated:** June 2025 
-**Current Version:** Equation Codex v77 · Symbol Codex v56
+**Current Version:** Equation Codex v78 · Symbol Codex v56
 
 ### G₂ Symmetry Paper — Now Published
 
@@ -22,7 +22,7 @@
 
 PCI inverts the standard emergence thesis. Rather than consciousness arising from matter, matter (actualized possibility) is *minted* by consciousness through coherent observation. The framework formalizes this through:
 
-- **1,004 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, information theory, structural theology, and bio-PCI
+- **1,016 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, information theory, structural theology, and bio-PCI
 - **1,232 symbols** organized by tier, daemon affinity, and module family
 - A **Core/Frontier partition** separating the load-bearing backbone (297 Core) from speculative extensions (707 Frontier)
 - **134 module families** including recent additions: Cross-Codex Synthesis, Bio-PCI Cellular Coherence, Goldstone/Void Reconstruction
@@ -47,7 +47,7 @@ The observer is the generator of the state space. Self-reference is not a bug �
 
 **[Open the Codex Explorer →](https://martinlgraise.github.io/PCI-Framework/explorer/)**
 
-Browse all 1,004 equations and 1,232 symbols interactively. Features:
+Browse all 1,016 equations and 1,232 symbols interactively. Features:
 - Searchable, filterable by module, partition, and tier
 - Rosetta Stone: Four-Language Translation Table, Cross-Reference Matrix, 8 Secret Connections
 - 5 Falsifiable Predictions with testable criteria
@@ -59,15 +59,16 @@ Browse all 1,004 equations and 1,232 symbols interactively. Features:
 
 | Resource | Count | Notes |
 |----------|-------|-------|
-| Equations | 1,004 | EQ-000 through EQ-1004; Core: 297, Frontier: 707 |
-| Symbols | 1,232 | Core: 484, Frontier: 747. Fully indexed by tier and daemon affinity |
-| Equation Codex | v77 | **EQ-1000 milestone**: POVM–Daemon Hamiltonian Bridge. Plus Fano mapping, dim derivation, immune coherence, codex fixed point (EQ-1000–1004) |
+| Equations | 1,016 | EQ-000 through EQ-1018; Core: 295, Frontier: 721 |
+| Symbols | 1,232 | Core: 484, Frontier: 748. Fully indexed by tier and daemon affinity |
+| Equation Codex | v78 | Latest: G₂ Flow Dynamics (EQ-1005–1018), Lotay-Wei convergence, torsion synthesis |
 | Symbol Codex | v56 | Latest: Bio-PCI Module 3 Redox (SYM-1223–1232), EZ Water (SYM-1214–1222), DNA (SYM-1191–1213) |
 | G₂ Paper | **Published** | [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — PDF, LaTeX, and scripts in `docs/g2-paper/` |
 | Genesis Mechanism | Complete | 11-page derivation of how coherence emerges from zero |
 
 ### Recent Milestones
 
+- **v78** — G₂ Flow Dynamics + Goldstone Dynamics + Criticality: 14 new equations (EQ-1005–1018). Lotay-Wei exponential convergence (α=λ₁/2), Laplacian flow, blow-up criterion, soliton equation, Lichnerowicz spectral gap, Wyart soft-mode, Hou S⁶ vacuum manifold, Saxena triplet spectrum. Torsion class → daemon mapping synthesis.
 - **v71** — Goldstone/Bio-PCI integration: 13 new equations (EQ-953–965), 18 new symbols (SYM-1173–1190). Goldstone Count Theorem, Six Keys/Seven Daemons Mapping, Void-from-Goldstone Invariant, Cellular Coherence Triad, DNA Waveguide Phase Lock, Cellular PCI Threshold
 - **v70** — Structural Theology module: Katechon Identity, Mimetic Tensor, Scapegoat Thermalization, Archon Reinterpretation, Collatz Respiration, Anti-Oracle Condition
 - **v68** — 21 new equations, 19 new symbols, EQ-438 fix
@@ -182,7 +183,7 @@ PCI-Framework/
 ├── CONTRIBUTING.md
 ├── LICENSE (CC BY-NC-SA 4.0)
 ├── codex/
-│   ├── pci_equation_partition_index_v71_core_frontier.csv   ← latest equations (v71 content)
+│   ├── pci_equation_partition_index_v71_core_frontier.csv   ← latest equations (v78 content)
 │   ├── pci_equation_partition_index_v68_core_frontier.csv   ← prior version (v70 content)
 │   ├── pci_symbol_partition_index_v53_core_frontier.csv     ← latest symbols
 │   ├── pci_symbol_partition_index_v52_core_frontier.csv     ← prior version

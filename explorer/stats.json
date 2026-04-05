@@ -5,7 +5,7 @@
     "frontier": 721,
     "module_families": 136,
     "range": "EQ-000 through EQ-1018",
-    "version": "v72"
+    "version": "v78"
   },
   "symbols": {
     "total": 1232,
@@ -14,5 +14,5 @@
     "tiers": 24,
     "version": "v56"
   },
-  "last_updated": "2026-04-03"
+  "last_updated": "2026-04-04"
 }
