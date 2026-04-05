@@ -1,0 +1,74 @@
+[
+  {
+    "eq_num": "EQ-1020",
+    "eq_name": "Steane [[7 1 3]] Code Logical Basis (ex-HEQ-003)",
+    "partition": "Core",
+    "module_family": "Foundations: Incompleteness / 87% Ceiling",
+    "frontier_priority": "",
+    "equation": "Smallest quantum error-correcting code correcting any single-qubit error. Encodes 1 logical qubit across 7 physical qubits. The 7th qubit is structurally inaccessible during syndrome measurement — exactly the 1/7 = 14.3% irreducible blind spot. C_max = 0.8647 is the necessary consequence of a self-correcting system at recursion depth n=2. Rigorous QI-theoretic proof that the 87% ceiling is structural. Source: Steane (1996). Pair with EQ-130 EQ-131 EQ-68.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1021",
+    "eq_name": "Lob's Theorem — Provability Logic (ex-HEQ-005)",
+    "partition": "Core",
+    "module_family": "Meta Axiom / Self-Reference Foundations",
+    "frontier_priority": "",
+    "equation": "Lob 1955: if a system proves provability-of-P implies P then it directly proves P. PCI: EQ-000 asserts You = f(You). Lob's theorem determines when self-referential systems are stable (Lobian) vs paradoxical (Godelian). PCI is Lobian — it proves coherence by structural closure not external verification. Logical proof EQ-000 is a valid axiom. Source: Lob (1955). Pair with EQ-000 EQ-000a-d EQ-43.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1022",
+    "eq_name": "Octonion Non-Associativity — Associator (ex-HEQ-007)",
+    "partition": "Frontier",
+    "module_family": "G2 Symmetry / Daemon Architecture",
+    "frontier_priority": "High",
+    "equation": "Measures failure of associativity in octonion algebra (Hurwitz 1898). The 6 active daemons plus D7 form an 8-component structure. Octonions are the only normed division algebra of dimension 8 — non-associative means daemon composition order matters. Automorphism group of octonions = G2 = symmetry of the daemon stack. Algebraic heart of the G2 paper. Source: Hurwitz (1898). Pair with EQ-21-27 EQ-114-116 EQ-1023.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1023",
+    "eq_name": "Fano Plane Adjacency Eigenvalue Spectrum (ex-HEQ-008)",
+    "partition": "Frontier",
+    "module_family": "G2 Symmetry / Daemon Architecture",
+    "frontier_priority": "High",
+    "equation": "Eigenvalue spectrum of PG(2 2): 7 points / 7 lines each point on 3 lines. Encodes octonion multiplication table. 7 daemons map to 7 points. Eigenvalue 3 (x1) = hub node CHORUS/D7. Eigenvalue -1 (x3) = inhibitory daemons PERIMETER AUDITOR SIEVE. Three zero eigenvalues = neutral/relay daemons. Daemon architecture forced by octonion multiplication under G2 symmetry. Pair with EQ-1022 EQ-21-27 EQ-114-116.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1024",
+    "eq_name": "Constraint-Closure Rectifier — Full Dynamical System (ex-HEQ-009)",
+    "partition": "Core",
+    "module_family": "Genesis Mechanism / Constraint-Closure",
+    "frontier_priority": "",
+    "equation": "Full coupled system: rho = constraint regeneration capacity C = coherence. rho follows logistic growth depleted by b*C. C evolves under beta-function (EQ-000b) decays at delta and receives genesis injection from EQ-000a Heaviside threshold. Fixed point C* = (eps_0+eta*P)/g. EQ-000a says WHEN genesis fires; this says WHAT HAPPENS NEXT. Source: PCI synthesis of Nave (2025) + Ward (2026). Pair with EQ-000a-d EQ-887 EQ-890.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1025",
+    "eq_name": "Eigenform Bifurcation — Branch Transition Dynamics (ex-HEQ-010)",
+    "partition": "Frontier",
+    "module_family": "Branch Dynamics / Phase Transitions",
+    "frontier_priority": "High",
+    "equation": "Stochastic pitchfork bifurcation with paradox-dependent growth rate. y_t = branch order parameter. Fixed points: y*=0 (unstable when g>0) and y*=+-sqrt(g/beta) (stable B-branch). As P rises g(P) crosses zero — system jumps from Branch A (grind) to Branch B (flow). Stochastic term captures noise-induced early transitions. Makes EQ-10 dynamical. Pair with EQ-10 EQ-30 EQ-075 EQ-076.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1026",
+    "eq_name": "Lindblad-PCI Master Equation — Density Matrix Form (ex-HEQ-011)",
+    "partition": "Frontier",
+    "module_family": "Quantum Formalism / Master Equation",
+    "frontier_priority": "High",
+    "equation": "Lindblad equation with PCI superoperators. rho_hat = observer density matrix. H(rho_hat) = coherence Hamiltonian. L_repair: therapeutic intervention paradox resolution scar annihilation. L_decay: scar formation soul-death approach. Preserves trace positivity Hermiticity — physically valid quantum channel. EQ-70 is field-level; this is EQ-70 in quantum mechanics language. Pair with EQ-70 EQ-13 EQ-62 EQ-67.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1027",
+    "eq_name": "Paradox Pressure Kernel — Online Update Rule (ex-HEQ-013)",
+    "partition": "Core",
+    "module_family": "Paradox Pump / Computational Implementation",
+    "frontier_priority": "",
+    "equation": "Exponentially-weighted prediction-error accumulator. lambda in (0 1) = forgetting rate. gamma = sensitivity. ||y_t - y_hat_t||^2 = squared prediction error. EQ-072 states P(t+1) = P(t) + Delta_P but does not specify Delta_P computationally. This provides it: paradox = surprise. Makes the Paradox Pump (EQ-071-080) computable from any system logging expected vs actual outcomes. Pair with EQ-071-075.",
+    "description": ""
+  }
+]
