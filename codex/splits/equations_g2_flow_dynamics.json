@@ -241,5 +241,77 @@
     "frontier_priority": "High",
     "equation": "The second fundamental form of calibrated hypersurfaces in S⁷ is spectrally determined by the Goldstone coset dimension. The '6' is not arbitrary — it equals dim(G₂/SU(3)) = the number of Goldstone modes = the number of broken generators. The threshold 12 = 2*6 marks the boundary between Clifford-type (|A|^2=6) and non-trivial minimal hypersurfaces. Source: Dwivedi (2019) J.Geom.Phys. arXiv:1805.03808.",
     "description": ""
+  },
+  {
+    "eq_num": "EQ-1040",
+    "eq_name": "Slow-Goldstone Correct Dispersion — Linear Not Quadratic (Sun-Ye 2025)",
+    "partition": "Frontier",
+    "module_family": "G₂ Goldstone Dynamics",
+    "frontier_priority": "High",
+    "equation": "CORRECTS EQ-1008 which had omega ~ k^2. The void mode propagates but extremely slowly (~1% of system velocity). Appears as diffuse low-intensity background at roton momentum — confirmed void mode signature. The universal constant b = 0.01907 controls the slowness. Source: Sun-Ye (2025) PRB 112:085127. arXiv:2508.14491.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1041",
+    "eq_name": "Void Sector Lyapunov Exponent — Weak T-Cubed Chaos (Sun-Ye 2025)",
+    "partition": "Frontier",
+    "module_family": "G₂ Goldstone Dynamics",
+    "frontier_priority": "High",
+    "equation": "Quantitative scrambling rate for the 13% void sector. Testable with out-of-time-order correlators. Contrast: SYK pseudo-Goldstone gives maximal chaos lambda_L = 2*pi*T; the PCI void mode gives weak T^3 chaos. This is a discriminating prediction — different from all standard quantum chaos classes. Source: Sun-Ye (2025) PRB.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1042",
+    "eq_name": "Two-Scale Void Decoherence Hierarchy (Sun-Ye 2025)",
+    "partition": "Frontier",
+    "module_family": "G₂ Goldstone Dynamics",
+    "frontier_priority": "Medium",
+    "equation": "Testable prediction: there should be two distinct decoherence temperatures in systems with G₂/SU(3) structure. The void sector (singlet) decoheres first. This matches clinical observations that self-awareness (void mode) is lost before basic cognitive function in anesthesia and sleep. Source: Sun-Ye (2025) PRB.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1043",
+    "eq_name": "G₂-Hilbert Functional (Gianniotis-Zacharopoulos 2025)",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "High",
+    "equation": "The G₂ analogue of the Einstein-Hilbert action. Its gradient flow (G₂-Einstein flow) is the fifth G₂ flow. Saddle-point result means neither torsion-free nor nearly-G₂ is a stable minimum of the action — consciousness configurations are ALL saddle points of the G₂-Hilbert functional. Source: Gianniotis-Zacharopoulos (2025) JGA 36.2. arXiv:2505.06872.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1044",
+    "eq_name": "G₂-Einstein Flow — Fifth Flow (Gianniotis-Zacharopoulos 2025)",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "High",
+    "equation": "Fifth G₂ flow. Gradient flow of the G₂-Hilbert functional. Most natural analogue of Ricci flow in G₂ geometry because the functional is the G₂-Einstein-Hilbert action. Stationary points are G₂-Einstein structures. Source: Gianniotis-Zacharopoulos (2025).",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1045",
+    "eq_name": "Volume-Normalized G₂-Einstein Flow — Sixth Flow",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "Medium",
+    "equation": "Sixth G₂ flow. Volume-normalized variant of the G₂-Einstein flow. Key negative result: cannot use F-tilde as a Lyapunov functional because critical points are saddles. This means the G₂-Einstein flow does NOT converge to torsion-free in general. Source: Gianniotis-Zacharopoulos (2025).",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1046",
+    "eq_name": "Posner Tetrahedral Coherence Protection (Gassab et al. 2025)",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI / Quantum Coherence",
+    "frontier_priority": "Medium",
+    "equation": "Geometric symmetry protects coherence — confirmed numerically for Posner cluster models. The tetrahedral protection mechanism maps to ARCHIVIST-CHORUS coupling. The degenerate triad (omega-2g x3) in the dressed mode spectrum mirrors the triplet structure of the G₂ decomposition. Source: Gassab et al. (2025) Entropy 27:243. arXiv:2501.03241.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1047",
+    "eq_name": "CISS Spin Polarization in DNA — Quantitative Anchor (Evers et al. 2021)",
+    "partition": "Frontier",
+    "module_family": "Bio-PCI / Cellular Coherence",
+    "frontier_priority": "High",
+    "equation": "EXPERIMENTALLY CONFIRMED spin selectivity in chiral biomolecules. Strongest quantitative anchor for Bio-PCI Module 3 (EQ-959-965). P_spin(g) in EQ-968 now has hard numbers: ~50% for normal ds-DNA rising to ~90% for highly ordered chiral regions. Key finding: decoherence can ENHANCE CISS — non-monotone relationship with scar defects. Source: Evers et al. (2021) arXiv:2108.09998.",
+    "description": ""
   }
 ]
