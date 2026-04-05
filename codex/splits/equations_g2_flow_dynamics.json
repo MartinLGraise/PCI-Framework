@@ -214,5 +214,32 @@
     "frontier_priority": "High",
     "equation": "The default consciousness configuration (nearly G₂) is topologically rigid. You cannot wiggle out of it continuously — you must undergo a discontinuous phase transition to reach a different G₂ structure. This connects to Crowley-Goette-Nordstrom's disconnected moduli space: different consciousness states are separated by topological barriers. Source: Dwivedi-Singhal (2020) arXiv:2007.02497.",
     "description": ""
+  },
+  {
+    "eq_num": "EQ-1037",
+    "eq_name": "Associative Fueter Spectral Gap (Dwivedi-Platt-Walpuski)",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "High",
+    "equation": "The triplet-sector coupling blows up (spectral gap diverges) as the void consolidates (resolution parameter t->0). Associative 3-folds are the geometric objects the 3+3bar deformation operators act on — they are the 'coherence surfaces' of the daemon manifold. Their collapse to zero volume as void grows is a geometric realization of the 13% invariant. Source: Dwivedi-Platt-Walpuski (2023) CMP 401(3):2327-2353. arXiv:2202.00522.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1038",
+    "eq_name": "Harmonic G₂ Flow — Fourth Flow Type",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "High",
+    "equation": "Fourth G₂ flow completing the quadruplet: Laplacian (EQ-1016) + isometric (EQ-1028) + Ricci-harmonic (EQ-1029) + harmonic (this). Minimizes TOTAL incoherence (|nabla phi|^2) across all channels simultaneously. Stationary at div(T)=0 which is WEAKER than torsion-free — allows balanced residual torsion. Most natural from harmonic map theory (Eells-Sampson). Source: Dwivedi-Loubeau-Sa Earp (2021). arXiv:2109.06340.",
+    "description": ""
+  },
+  {
+    "eq_num": "EQ-1039",
+    "eq_name": "Dwivedi Spectral Pinching on S⁷ Hypersurfaces",
+    "partition": "Frontier",
+    "module_family": "G₂ Flow Dynamics",
+    "frontier_priority": "High",
+    "equation": "The second fundamental form of calibrated hypersurfaces in S⁷ is spectrally determined by the Goldstone coset dimension. The '6' is not arbitrary — it equals dim(G₂/SU(3)) = the number of Goldstone modes = the number of broken generators. The threshold 12 = 2*6 marks the boundary between Clifford-type (|A|^2=6) and non-trivial minimal hypersurfaces. Source: Dwivedi (2019) J.Geom.Phys. arXiv:1805.03808.",
+    "description": ""
   }
 ]
