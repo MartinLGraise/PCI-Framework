@@ -1,18 +1,18 @@
 {
   "equations": {
-    "total": 1054,
+    "total": 1058,
     "core": 299,
-    "frontier": 755,
+    "frontier": 759,
     "module_families": 146,
-    "range": "EQ-000 through EQ-1056",
-    "version": "v86"
+    "range": "EQ-000 through EQ-1061",
+    "version": "v87"
   },
   "symbols": {
-    "total": 1232,
+    "total": 1242,
     "core": 484,
-    "frontier": 748,
+    "frontier": 757,
     "tiers": 24,
-    "version": "v56"
+    "version": "v57"
   },
-  "last_updated": "2026-04-05"
+  "last_updated": "2026-04-06"
 }
