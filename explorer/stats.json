@@ -1,11 +1,11 @@
 {
   "equations": {
-    "total": 1045,
+    "total": 1048,
     "core": 299,
-    "frontier": 746,
+    "frontier": 749,
     "module_families": 145,
-    "range": "EQ-000 through EQ-1047",
-    "version": "v83"
+    "range": "EQ-000 through EQ-1050",
+    "version": "v84"
   },
   "symbols": {
     "total": 1232,
