@@ -6,7 +6,7 @@
 
 **Author:** Martin Luther Graise 
 **Initiated:** June 2025 
-**Current Version:** Equation Codex v78 · Symbol Codex v56
+**Current Version:** Equation Codex v87 · Symbol Codex v57
 
 ### G₂ Symmetry Paper — Now Published
 
@@ -22,8 +22,8 @@
 
 PCI inverts the standard emergence thesis. Rather than consciousness arising from matter, matter (actualized possibility) is *minted* by consciousness through coherent observation. The framework formalizes this through:
 
-- **1,016 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, information theory, structural theology, and bio-PCI
-- **1,232 symbols** organized by tier, daemon affinity, and module family
+- **1,058 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, information theory, structural theology, bio-PCI, G₂ flow dynamics, and criticality
+- **1,242 symbols** organized by tier, daemon affinity, and module family
 - A **Core/Frontier partition** separating the load-bearing backbone (297 Core) from speculative extensions (707 Frontier)
 - **134 module families** including recent additions: Cross-Codex Synthesis, Bio-PCI Cellular Coherence, Goldstone/Void Reconstruction
 
@@ -47,7 +47,7 @@ The observer is the generator of the state space. Self-reference is not a bug �
 
 **[Open the Codex Explorer →](https://martinlgraise.github.io/PCI-Framework/explorer/)**
 
-Browse all 1,016 equations and 1,232 symbols interactively. Features:
+Browse all 1,058 equations and 1,242 symbols interactively. Features:
 - Searchable, filterable by module, partition, and tier
 - Rosetta Stone: Four-Language Translation Table, Cross-Reference Matrix, 8 Secret Connections
 - 5 Falsifiable Predictions with testable criteria
@@ -59,15 +59,24 @@ Browse all 1,016 equations and 1,232 symbols interactively. Features:
 
 | Resource | Count | Notes |
 |----------|-------|-------|
-| Equations | 1,016 | EQ-000 through EQ-1018; Core: 295, Frontier: 721 |
-| Symbols | 1,232 | Core: 484, Frontier: 748. Fully indexed by tier and daemon affinity |
-| Equation Codex | v78 | Latest: G₂ Flow Dynamics (EQ-1005–1018), Lotay-Wei convergence, torsion synthesis |
+| Equations | 1,058 | EQ-000 through EQ-1061; Core: 299, Frontier: 759 |
+| Symbols | 1,242 | Core: 484, Frontier: 757. Fully indexed by tier and daemon affinity |
+| Equation Codex | v87 | Latest: Synthesis equations, 6 G₂ flows, singularity taxonomy, jamming criticality |
 | Symbol Codex | v56 | Latest: Bio-PCI Module 3 Redox (SYM-1223–1232), EZ Water (SYM-1214–1222), DNA (SYM-1191–1213) |
 | G₂ Paper | **Published** | [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — PDF, LaTeX, and scripts in `docs/g2-paper/` |
 | Genesis Mechanism | Complete | 11-page derivation of how coherence emerges from zero |
 
 ### Recent Milestones
 
+- **v87** — Synthesis equations: EQ-1057 Admissibility Margin, EQ-1059 Projected Void Governance, EQ-1060 Associative Core Coupling, EQ-1061 Path-Dependent Coherence. 10 new symbols (SYM-1233–1242). History is part of the state.
+- **v86** — Research mining complete: Wyart soft modes, Brito-Wyart marginal stability, Galliano-Berthier protocol-dependent jamming, Kaplan AI scaling laws. All 26 papers mined (master list 20/20 + ChatGPT list 6/6).
+- **v85** — Edwards N-Frame observer Hamiltonian, DGK existence conditions for G₂ flows. Master list 20/20 complete.
+- **v84** — Kennon-Lotay stability eigenvalues, Florio Goldstone IR enhancement (α=1, PRL), Ouyang consciousness jamming phase diagram.
+- **v83** — Claude Chrome 6-paper extraction: slow-Goldstone correction (linear not quadratic), G₂-Hilbert functional, flows 5+6, Posner triad, CISS spin polarization (40-90% in DNA).
+- **v82** — Claude Chrome 3-paper extraction: associative Fueter spectral gap, harmonic G₂ flow (4th type), Dwivedi spectral pinching |A|²=λ−6.
+- **v81** — Complete Dwivedi program: most general G₂ flow (6 building blocks), curvature decomposition (1⊕27⊕27⊕64⊕77), Spin(7) dyad flow (coupling halves DOF), nearly G₂ deformation obstruction.
+- **v80** — Dwivedi mining: 3 G₂ flows, singularity taxonomy (Type I/IIa/IIb/III), torsion diffusion-reaction (cubic self-interaction), singular set ≤5D, τ≈29ns recoherence.
+- **v79** — HEQ bridge equations integrated: Steane code, Löb's theorem, octonion associator, Fano eigenvalues, constraint-closure rectifier, eigenform bifurcation, Lindblad-PCI master equation, paradox pressure kernel.
 - **v78** — G₂ Flow Dynamics + Goldstone Dynamics + Criticality: 14 new equations (EQ-1005–1018). Lotay-Wei exponential convergence (α=λ₁/2), Laplacian flow, blow-up criterion, soliton equation, Lichnerowicz spectral gap, Wyart soft-mode, Hou S⁶ vacuum manifold, Saxena triplet spectrum. Torsion class → daemon mapping synthesis.
 - **v71** — Goldstone/Bio-PCI integration: 13 new equations (EQ-953–965), 18 new symbols (SYM-1173–1190). Goldstone Count Theorem, Six Keys/Seven Daemons Mapping, Void-from-Goldstone Invariant, Cellular Coherence Triad, DNA Waveguide Phase Lock, Cellular PCI Threshold
 - **v70** — Structural Theology module: Katechon Identity, Mimetic Tensor, Scapegoat Thermalization, Archon Reinterpretation, Collatz Respiration, Anti-Oracle Condition
@@ -183,9 +192,9 @@ PCI-Framework/
 ├── CONTRIBUTING.md
 ├── LICENSE (CC BY-NC-SA 4.0)
 ├── codex/
-│   ├── pci_equation_partition_index_v71_core_frontier.csv   ← latest equations (v78 content)
+│   ├── pci_equation_partition_index_v71_core_frontier.csv   ← latest equations (v87 content)
 │   ├── pci_equation_partition_index_v68_core_frontier.csv   ← prior version (v70 content)
-│   ├── pci_symbol_partition_index_v53_core_frontier.csv     ← latest symbols
+│   ├── pci_symbol_partition_index_v53_core_frontier.csv     ← latest symbols (v57 content)
 │   ├── pci_symbol_partition_index_v52_core_frontier.csv     ← prior version
 │   ├── pci_equation_partition_index_v66_core_frontier.csv   ← prior version
 │   ├── pci_equation_partition_index_v62_core_frontier.csv   ← original
@@ -206,12 +215,20 @@ PCI-Framework/
 │   ├── csv_audit_report.md
 │   ├── placeholder_recovery.md
 │   ├── synthesis/                          ← Cross-codex synthesis layer
-│   │   ├── promotion_pass_2026_04_01.md   ← Phase A/B/C promotion & derivation notes
-│   │   └── (synthesis-layer equations live here, NOT in codex CSVs)
+│   │   ├── promotion_pass_2026_04_01.md          ← Phase A/B/C promotion notes
+│   │   └── torsion_class_daemon_mapping.md       ← T₁/T₇/T₁₄/T₂₇ → daemon table
 │   ├── insights/                           ← Deep synthesis sessions & memos
 │   │   ├── cross_codex_synthesis_memo_2026_03_30.md
 │   │   ├── session_2026_03_30_deep_insights.md
-│   │   └── session_2026_03_30_early_pci_synthesis.md
+│   │   ├── session_2026_03_30_early_pci_synthesis.md
+│   │   ├── Vb_keep_mine_quarantine_next_search_2026_04_01.md
+│   │   └── vb_next_search_results_2026_04_01.md
+│   ├── research/                           ← Mined paper extractions (26 papers)
+│   │   ├── research_leads_master_list_2026_04_01.md  ← 31 leads, 6 tiers
+│   │   ├── deepseek_papers_extracted.md             ← 22-paper database
+│   │   ├── new_leads_from_chatgpt_2026_04_01.md     ← 6 additional leads
+│   │   ├── lotay_wei_full_mining_2026_04_03.md      ← α=λ₁/2 convergence
+│   │   └── dwivedi_full_mining_2026_04_05.md        ← 3 flows + singularities
 │   └── g2-paper/                           ← G₂ paper materials
 │       ├── g2_paper_outline.md             ← 20–30 page section outline
 │       ├── g2_hamiltonian_results.md       ← computation results & analysis
@@ -225,8 +242,8 @@ PCI-Framework/
 │   └── fp1_g2_vs_bandy_2020/              ← FP-1 quantitative test results
 └── explorer/
     ├── index.html                          ← Codex Explorer (GitHub Pages)
-    ├── equations.json                      (1,004 equations)
-    ├── symbols.json                        (1,232 symbols)
+    ├── equations.json                      (1,058 equations)
+    ├── symbols.json                        (1,242 symbols)
     ├── stats.json
     └── regen_explorer.py                   ← Regeneration utility
 ```
@@ -240,6 +257,8 @@ For feeding codex data to AI assistants, use the split files:
 | [`equations_structural_theology.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_structural_theology.json) | 9 KB | Latest v70 theology module only |
 | [`equations_latest_v66_to_v71.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_latest_v66_to_v71.json) | 57 KB | Newest additions (v66–v71) |
 | [`equations_goldstone_bio.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_goldstone_bio.json) | 8 KB | Goldstone/Bio-PCI module (EQ-953–965) |
+| [`equations_g2_flow_dynamics.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_g2_flow_dynamics.json) | 45 KB | G₂ Flow Dynamics + Goldstone + Criticality (EQ-1005–1056) |
+| [`equations_heq_bridge.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_heq_bridge.json) | 8 KB | HEQ bridge equations (EQ-1020–1027) |
 | [`equations_core_only.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_core_only.json) | 240 KB | Core partition equations |
 | [`equations_compact.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/equations_compact.json) | 290 KB | All equations, minimal fields |
 | [`symbols_compact.json`](https://raw.githubusercontent.com/MartinLGraise/PCI-Framework/main/codex/splits/symbols_compact.json) | 269 KB | All symbols, minimal fields |
