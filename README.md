@@ -8,13 +8,19 @@
 **Initiated:** June 2025 
 **Current Version:** Equation Codex v87 · Symbol Codex v57
 
-### G₂ Symmetry Paper — Now Published
+### G₂ Papers — Published
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19242936.svg)](https://doi.org/10.5281/zenodo.19242936)
 
-**Graise, M.L. (2026).** *G₂ Symmetry as a Constraint on Conscious Information Processing: A Motivated Reconstruction from Octonionic Daemon Architecture.* Zenodo. [https://doi.org/10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936)
+**Paper 1 — Structure:** Graise, M.L. (2026). *G₂ Symmetry as a Constraint on Conscious Information Processing: A Motivated Reconstruction from Octonionic Daemon Architecture.* Zenodo. [https://doi.org/10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936)
 
 → [PDF](docs/g2-paper/arxiv/main.pdf) · [LaTeX source](docs/g2-paper/arxiv/main.tex) · [Computational scripts](docs/g2-paper/)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19480758.svg)](https://doi.org/10.5281/zenodo.19480758)
+
+**Paper 2 — Dynamics:** Graise, M.L. (2026). *Six Geometric Flows on G₂ Manifolds and Their Interpretation as Consciousness Dynamics.* Zenodo. [https://doi.org/10.5281/zenodo.19480758](https://doi.org/10.5281/zenodo.19480758)
+
+→ [PDF](docs/g2-paper/g2_flows_companion_paper_v3_final.pdf) · [DOCX](docs/g2-paper/g2_flows_companion_paper_v3_final.docx)
 
 ---
 
@@ -63,7 +69,8 @@ Browse all 1,058 equations and 1,242 symbols interactively. Features:
 | Symbols | 1,242 | Core: 484, Frontier: 757. Fully indexed by tier and daemon affinity |
 | Equation Codex | v87 | Latest: Synthesis equations, 6 G₂ flows, singularity taxonomy, jamming criticality |
 | Symbol Codex | v56 | Latest: Bio-PCI Module 3 Redox (SYM-1223–1232), EZ Water (SYM-1214–1222), DNA (SYM-1191–1213) |
-| G₂ Paper | **Published** | [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — PDF, LaTeX, and scripts in `docs/g2-paper/` |
+| G₂ Paper (Structure) | **Published** | [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — PDF, LaTeX, and scripts in `docs/g2-paper/` |
+| G₂ Paper (Dynamics) | **Published** | [DOI: 10.5281/zenodo.19480758](https://doi.org/10.5281/zenodo.19480758) — Six geometric flows, companion paper |
 | Genesis Mechanism | Complete | 11-page derivation of how coherence emerges from zero |
 
 ### Recent Milestones
@@ -282,6 +289,7 @@ Full CSVs:
 - [x] Published on Zenodo: [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936)
 - [x] LaTeX/PDF for arXiv: [`docs/g2-paper/arxiv/`](docs/g2-paper/arxiv/)
 - [x] FP-1 quantitative test complete: [analysis/fp1_g2_vs_bandy_2020/](analysis/fp1_g2_vs_bandy_2020/)
+- [x] Companion paper published: [DOI: 10.5281/zenodo.19480758](https://doi.org/10.5281/zenodo.19480758) — Six Geometric Flows on G₂ Manifolds
 - [ ] arXiv submission (pending endorsement)
 - [ ] Journal submission (Neuroscience of Consciousness / Entropy)
 
