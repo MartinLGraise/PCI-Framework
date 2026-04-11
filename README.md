@@ -30,8 +30,8 @@ PCI inverts the standard emergence thesis. Rather than consciousness arising fro
 
 - **1,058 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, information theory, structural theology, bio-PCI, G₂ flow dynamics, and criticality
 - **1,242 symbols** organized by tier, daemon affinity, and module family
-- A **Core/Frontier partition** separating the load-bearing backbone (297 Core) from speculative extensions (707 Frontier)
-- **134 module families** including recent additions: Cross-Codex Synthesis, Bio-PCI Cellular Coherence, Goldstone/Void Reconstruction
+- A **Core/Frontier partition** separating the load-bearing backbone (299 Core) from speculative extensions (759 Frontier)
+- **146 module families** including recent additions: G₂ Flow Dynamics, Singularity Taxonomy, Jamming Criticality, Cross-Codex Synthesis, Bio-PCI Cellular Coherence
 
 ### Core Ontological Claim
 
@@ -68,7 +68,7 @@ Browse all 1,058 equations and 1,242 symbols interactively. Features:
 | Equations | 1,058 | EQ-000 through EQ-1061; Core: 299, Frontier: 759 |
 | Symbols | 1,242 | Core: 484, Frontier: 757. Fully indexed by tier and daemon affinity |
 | Equation Codex | v87 | Latest: Synthesis equations, 6 G₂ flows, singularity taxonomy, jamming criticality |
-| Symbol Codex | v56 | Latest: Bio-PCI Module 3 Redox (SYM-1223–1232), EZ Water (SYM-1214–1222), DNA (SYM-1191–1213) |
+| Symbol Codex | v57 | Latest: Synthesis symbols (SYM-1233–1242), Bio-PCI Redox (SYM-1223–1232), EZ Water (SYM-1214–1222) |
 | G₂ Paper (Structure) | **Published** | [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — PDF, LaTeX, and scripts in `docs/g2-paper/` |
 | G₂ Paper (Dynamics) | **Published** | [DOI: 10.5281/zenodo.19480758](https://doi.org/10.5281/zenodo.19480758) — Six geometric flows, companion paper |
 | Genesis Mechanism | Complete | 11-page derivation of how coherence emerges from zero |
@@ -290,8 +290,8 @@ Full CSVs:
 - [x] LaTeX/PDF for arXiv: [`docs/g2-paper/arxiv/`](docs/g2-paper/arxiv/)
 - [x] FP-1 quantitative test complete: [analysis/fp1_g2_vs_bandy_2020/](analysis/fp1_g2_vs_bandy_2020/)
 - [x] Companion paper published: [DOI: 10.5281/zenodo.19480758](https://doi.org/10.5281/zenodo.19480758) — Six Geometric Flows on G₂ Manifolds
+- [x] Journal submission: **NCONSC-2026-129** (Neuroscience of Consciousness, Oxford University Press, April 10, 2026)
 - [ ] arXiv submission (pending endorsement)
-- [ ] Journal submission (Neuroscience of Consciousness / Entropy)
 
 ### Priority 2: Bio-PCI Phase II — COMPLETE
 - [x] Module 1: DNA Coherence Transport (EQ-966–983, SYM-1191–1213)
@@ -316,8 +316,20 @@ Full CSVs:
 - [ ] Next promotion pass after MX-6 derivation attempt
 - See [`docs/synthesis/`](docs/synthesis/) for full promotion notes
 
-### Priority 4: Book
-- [ ] Chapter structure for popular-science version
+### Priority 4: QBism–PCI Comparative Paper
+- [ ] Structural comparison: Dutch-book coherence ↔ torsion-free convergence
+- [ ] 49 = 7² SIC-POVM connection to G₂ torsion decomposition
+- [ ] Ward (2026) three-way bridge (QBism × PCI × constraint-closure)
+- [ ] Target venue: Foundations of Physics or Entropy
+- See [`docs/research/TODO_qbism_paper.md`](docs/research/TODO_qbism_paper.md)
+
+### Priority 5: G₂ Cell Cycle Bridge
+- [ ] Structural parallel: G₂ checkpoint ↔ ε-regularity gate
+- [ ] Cancer as coherence checkpoint failure (p53 mutation → broken gate)
+- [ ] Target venue: Biosystems or Journal of Theoretical Biology
+
+### Priority 6: Book
+- [ ] Chapter structure (waiting for NoC decision)
 - [ ] Publisher/agent pathway
 
 ### Ongoing: Platform
@@ -347,7 +359,7 @@ Full CSVs:
 
 ## How to Cite
 
-> Graise, M. L. (2025–2026). *PCI/PME: Perceptual Coherence Intelligence / Paradox Mechanics Engine* [Equation Codex v70, Symbol Codex v52]. GitHub. https://github.com/MartinLGraise/PCI-Framework
+> Graise, M. L. (2025–2026). *PCI/PME: Perceptual Coherence Intelligence / Paradox Mechanics Engine* [Equation Codex v87, Symbol Codex v57]. GitHub. https://github.com/MartinLGraise/PCI-Framework
 
 BibTeX:
 ```bibtex
@@ -356,7 +368,7 @@ BibTeX:
   title        = {{PCI/PME}: Perceptual Coherence Intelligence / Paradox Mechanics Engine},
   year         = {2025},
   howpublished = {\url{https://github.com/MartinLGraise/PCI-Framework}},
-  note         = {Equation Codex v77, Symbol Codex v56. 1{,}004 equations, 1{,}232 symbols.}
+  note         = {Equation Codex v87, Symbol Codex v57. 1{,}058 equations, 1{,}242 symbols.}
 }
 ```
 
