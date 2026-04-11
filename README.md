@@ -312,8 +312,8 @@ Full CSVs:
 - [x] MX-6 (S⁶ Autonomy Dissipation) derivation roadmap written
 - [x] SX-03/MX-5 (Scar-CISS) canonical form chosen, held for Module 4
 - [x] Hold set documented: SX-05, MX-1, MX-4, MX-7 preserved in synthesis layer
-- [ ] MX-6 derivation: prove Fisher information on S⁶ evaluates to 2
-- [ ] Next promotion pass after MX-6 derivation attempt
+- [x] **MX-6 derivation COMPLETE**: Fisher-Rao metric on 7-outcome simplex ≅ S⁶(radius 2) → e⁻² dissipation factor. See [`docs/derivations/`](docs/derivations/)
+- [ ] Next promotion pass: MX-6 upgrade from Frontier to Core
 - See [`docs/synthesis/`](docs/synthesis/) for full promotion notes
 
 ### Priority 4: QBism–PCI Comparative Paper
