@@ -30,7 +30,7 @@ PCI inverts the standard emergence thesis. Rather than consciousness arising fro
 
 - **1,058 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, information theory, structural theology, bio-PCI, G₂ flow dynamics, and criticality
 - **1,242 symbols** organized by tier, daemon affinity, and module family
-- A **Core/Frontier partition** separating the load-bearing backbone (299 Core) from speculative extensions (759 Frontier)
+- A **Core/Frontier partition** separating the load-bearing backbone (300 Core) from speculative extensions (758 Frontier)
 - **146 module families** including recent additions: G₂ Flow Dynamics, Singularity Taxonomy, Jamming Criticality, Cross-Codex Synthesis, Bio-PCI Cellular Coherence
 
 ### Core Ontological Claim
@@ -65,7 +65,7 @@ Browse all 1,058 equations and 1,242 symbols interactively. Features:
 
 | Resource | Count | Notes |
 |----------|-------|-------|
-| Equations | 1,058 | EQ-000 through EQ-1061; Core: 299, Frontier: 759 |
+| Equations | 1,058 | EQ-000 through EQ-1061; Core: 300, Frontier: 758 |
 | Symbols | 1,242 | Core: 484, Frontier: 757. Fully indexed by tier and daemon affinity |
 | Equation Codex | v87 | Latest: Synthesis equations, 6 G₂ flows, singularity taxonomy, jamming criticality |
 | Symbol Codex | v57 | Latest: Synthesis symbols (SYM-1233–1242), Bio-PCI Redox (SYM-1223–1232), EZ Water (SYM-1214–1222) |
@@ -313,7 +313,7 @@ Full CSVs:
 - [x] SX-03/MX-5 (Scar-CISS) canonical form chosen, held for Module 4
 - [x] Hold set documented: SX-05, MX-1, MX-4, MX-7 preserved in synthesis layer
 - [x] **MX-6 derivation COMPLETE**: Fisher-Rao metric on 7-outcome simplex ≅ S⁶(radius 2) → e⁻² dissipation factor. See [`docs/derivations/`](docs/derivations/)
-- [ ] Next promotion pass: MX-6 upgrade from Frontier to Core
+- [x] Promotion pass: EQ-1002 (Void Fraction from Complex Structure) upgraded Frontier → Core (April 11, 2026)
 - See [`docs/synthesis/`](docs/synthesis/) for full promotion notes
 
 ### Priority 4: QBism–PCI Comparative Paper
