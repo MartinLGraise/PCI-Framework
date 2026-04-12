@@ -6,7 +6,7 @@
 
 **Author:** Martin Luther Graise 
 **Initiated:** June 2025 
-**Current Version:** Equation Codex v87 · Symbol Codex v57
+**Current Version:** Equation Codex v88 · Symbol Codex v57
 
 ### G₂ Papers — Published
 
@@ -28,9 +28,9 @@
 
 PCI inverts the standard emergence thesis. Rather than consciousness arising from matter, matter (actualized possibility) is *minted* by consciousness through coherent observation. The framework formalizes this through:
 
-- **1,058 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, information theory, structural theology, bio-PCI, G₂ flow dynamics, and criticality
+- **1,065 equations** spanning quantum mechanics, algebraic topology, Riemannian geometry, information theory, structural theology, bio-PCI, G₂ flow dynamics, and criticality
 - **1,242 symbols** organized by tier, daemon affinity, and module family
-- A **Core/Frontier partition** separating the load-bearing backbone (300 Core) from speculative extensions (758 Frontier)
+- A **Core/Frontier partition** separating the load-bearing backbone (305 Core) from speculative extensions (760 Frontier)
 - **146 module families** including recent additions: G₂ Flow Dynamics, Singularity Taxonomy, Jamming Criticality, Cross-Codex Synthesis, Bio-PCI Cellular Coherence
 
 ### Core Ontological Claim
@@ -65,9 +65,9 @@ Browse all 1,058 equations and 1,242 symbols interactively. Features:
 
 | Resource | Count | Notes |
 |----------|-------|-------|
-| Equations | 1,058 | EQ-000 through EQ-1061; Core: 300, Frontier: 758 |
+| Equations | 1,065 | EQ-000 through EQ-1066; Core: 305, Frontier: 760 |
 | Symbols | 1,242 | Core: 484, Frontier: 757. Fully indexed by tier and daemon affinity |
-| Equation Codex | v87 | Latest: Synthesis equations, 6 G₂ flows, singularity taxonomy, jamming criticality |
+| Equation Codex | v88 | Latest: MX-6 derivation, three NK invariants, F₂₁ orientation group, torsion-radius duality, non-commutative scars |
 | Symbol Codex | v57 | Latest: Synthesis symbols (SYM-1233–1242), Bio-PCI Redox (SYM-1223–1232), EZ Water (SYM-1214–1222) |
 | G₂ Paper (Structure) | **Published** | [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — PDF, LaTeX, and scripts in `docs/g2-paper/` |
 | G₂ Paper (Dynamics) | **Published** | [DOI: 10.5281/zenodo.19480758](https://doi.org/10.5281/zenodo.19480758) — Six geometric flows, companion paper |
@@ -359,7 +359,7 @@ Full CSVs:
 
 ## How to Cite
 
-> Graise, M. L. (2025–2026). *PCI/PME: Perceptual Coherence Intelligence / Paradox Mechanics Engine* [Equation Codex v87, Symbol Codex v57]. GitHub. https://github.com/MartinLGraise/PCI-Framework
+> Graise, M. L. (2025–2026). *PCI/PME: Perceptual Coherence Intelligence / Paradox Mechanics Engine* [Equation Codex v88, Symbol Codex v57]. GitHub. https://github.com/MartinLGraise/PCI-Framework
 
 BibTeX:
 ```bibtex
@@ -368,7 +368,7 @@ BibTeX:
   title        = {{PCI/PME}: Perceptual Coherence Intelligence / Paradox Mechanics Engine},
   year         = {2025},
   howpublished = {\url{https://github.com/MartinLGraise/PCI-Framework}},
-  note         = {Equation Codex v87, Symbol Codex v57. 1{,}058 equations, 1{,}242 symbols.}
+  note         = {Equation Codex v88, Symbol Codex v57. 1{,}065 equations, 1{,}242 symbols.}
 }
 ```
 

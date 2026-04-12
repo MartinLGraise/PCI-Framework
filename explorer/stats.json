@@ -1,9 +1,9 @@
 {
   "equations": {
-    "total": 1060,
-    "core": 302,
-    "frontier": 758,
-    "version": "v87"
+    "total": 1065,
+    "core": 305,
+    "frontier": 760,
+    "version": "v88"
   },
   "symbols": {
     "total": 1242,
@@ -13,5 +13,5 @@
   },
   "module_families": 220,
   "last_updated": "2026-04-11",
-  "notes": "EQ-1002 promoted Frontier\u2192Core (MX-6 Fisher-Rao derivation)"
+  "notes": "v88: +5 equations (EQ-1062\u20131066) from MX-6 bridge session. 3 Core, 2 Frontier."
 }
