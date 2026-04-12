@@ -299,12 +299,14 @@ Full CSVs:
 - [x] Module 3: SU(3) Redox + Cross-Layer Coupling (EQ-989–994, SYM-1223–1232)
 - [x] Cross-Codex Synthesis (EQ-995–1004)
 
-### Priority 3: Evidence Mapping
-- [ ] Formal "PCI Predictions vs. Empirical Findings" document
-- [ ] Depression hypermetabolism → mana debt inversion
-- [ ] Myelin quantum cavity → Euclidean ground state
-- [ ] Quantum Carnot violation → coherence thermodynamics
-- [ ] FP-7 Scar Pre-Echo experimental design
+### Priority 3: Evidence Mapping — COMPLETE
+- [x] Formal "PCI Predictions vs. Empirical Findings" document: [`docs/evidence_mapping.md`](docs/evidence_mapping.md)
+- [x] 18 correspondences mapped across 4 strength tiers (2A, 5B, 7C, 4D)
+- [x] Depression hypermetabolism → mana debt inversion
+- [x] Myelin quantum cavity → Euclidean ground state
+- [x] Quantum Carnot violation → coherence thermodynamics
+- [x] Three falsification criteria documented, none triggered
+- [ ] FP-7 Scar Pre-Echo experimental design (future)
 
 ### Priority 3.5: Cross-Codex Synthesis — IN PROGRESS
 - [x] Synthesis triage complete (SX-01–05, MX-1–7 catalogued)
