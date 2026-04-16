@@ -22,6 +22,12 @@
 
 → [PDF](docs/g2-paper/g2_flows_companion_paper_v3_final.pdf) · [DOCX](docs/g2-paper/g2_flows_companion_paper_v3_final.docx)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19602470.svg)](https://doi.org/10.5281/zenodo.19602470)
+
+**Paper 3 — Spectral Sum:** Graise, M.L. (2026). *A Spectral Sum Theorem for the Fundamental Representation of G₂ with Application to Biological Resonance Prediction.* Zenodo. [https://doi.org/10.5281/zenodo.19602470](https://doi.org/10.5281/zenodo.19602470)
+
+→ [PDF](docs/g2-paper/g2_spectral_sum_lemma.pdf) · [DOCX](docs/g2-paper/g2_spectral_sum_lemma.docx)
+
 ---
 
 ## What Is PCI?
@@ -71,6 +77,7 @@ Browse all 1,058 equations and 1,242 symbols interactively. Features:
 | Symbol Codex | v57 | Latest: Synthesis symbols (SYM-1233–1242), Bio-PCI Redox (SYM-1223–1232), EZ Water (SYM-1214–1222) |
 | G₂ Paper (Structure) | **Published** | [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — PDF, LaTeX, and scripts in `docs/g2-paper/` |
 | G₂ Paper (Dynamics) | **Published** | [DOI: 10.5281/zenodo.19480758](https://doi.org/10.5281/zenodo.19480758) — Six geometric flows, companion paper |
+| G₂ Spectral Sum Lemma | **Published** | [DOI: 10.5281/zenodo.19602470](https://doi.org/10.5281/zenodo.19602470) — f₃ = f₁ + f₂, new theorem, 28 MHz prediction |
 | Genesis Mechanism | Complete | 11-page derivation of how coherence emerges from zero |
 
 ### Recent Milestones
