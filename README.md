@@ -28,6 +28,12 @@
 
 → [PDF](docs/g2-paper/g2_spectral_sum_lemma.pdf) · [DOCX](docs/g2-paper/g2_spectral_sum_lemma.docx)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19617662.svg)](https://doi.org/10.5281/zenodo.19617662)
+
+**Paper 4 — QBism Bridge:** Graise, M.L. (2026). *Quantum Bayesianism and G₂ Consciousness Geometry: A Structural Bridge via the Fano Automorphism Group PSL(2,7).* Zenodo. [https://doi.org/10.5281/zenodo.19617662](https://doi.org/10.5281/zenodo.19617662)
+
+→ [PDF](docs/g2-paper/qbism_pci_paper_v2.pdf)
+
 ---
 
 ## What Is PCI?
@@ -78,6 +84,7 @@ Browse all 1,058 equations and 1,242 symbols interactively. Features:
 | G₂ Paper (Structure) | **Published** | [DOI: 10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — PDF, LaTeX, and scripts in `docs/g2-paper/` |
 | G₂ Paper (Dynamics) | **Published** | [DOI: 10.5281/zenodo.19480758](https://doi.org/10.5281/zenodo.19480758) — Six geometric flows, companion paper |
 | G₂ Spectral Sum Lemma | **Published** | [DOI: 10.5281/zenodo.19602470](https://doi.org/10.5281/zenodo.19602470) — f₃ = f₁ + f₂, new theorem, 28 MHz prediction |
+| QBism–PCI Bridge | **Published** | [DOI: 10.5281/zenodo.19617662](https://doi.org/10.5281/zenodo.19617662) — PSL(2,7)/F₂₁ = 8 = dim SU(3), structural bridge |
 | Genesis Mechanism | Complete | 11-page derivation of how coherence emerges from zero |
 
 ### Recent Milestones
@@ -325,12 +332,13 @@ Full CSVs:
 - [x] Promotion pass: EQ-1002 (Void Fraction from Complex Structure) upgraded Frontier → Core (April 11, 2026)
 - See [`docs/synthesis/`](docs/synthesis/) for full promotion notes
 
-### Priority 4: QBism–PCI Comparative Paper
-- [ ] Structural comparison: Dutch-book coherence ↔ torsion-free convergence
-- [ ] 49 = 7² SIC-POVM connection to G₂ torsion decomposition
-- [ ] Ward (2026) three-way bridge (QBism × PCI × constraint-closure)
-- [ ] Target venue: Foundations of Physics or Entropy
-- See [`docs/research/TODO_qbism_paper.md`](docs/research/TODO_qbism_paper.md)
+### Priority 4: QBism–PCI Comparative Paper — PUBLISHED
+- [x] Structural comparison: PSL(2,7)/F₂₁ bridge established
+- [x] 49 = 7² double meaning (SIC elements AND torsion dimensions)
+- [x] Six structural parallels identified
+- [x] Five-reviewer AI panel: major revisions applied
+- [x] Published: [DOI: 10.5281/zenodo.19617662](https://doi.org/10.5281/zenodo.19617662)
+- [ ] Submit to Entropy (MDPI) for journal peer review
 
 ### Priority 5: G₂ Cell Cycle Bridge
 - [ ] Structural parallel: G₂ checkpoint ↔ ε-regularity gate
