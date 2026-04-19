@@ -34,6 +34,12 @@
 
 → [PDF](docs/g2-paper/qbism_pci_paper_v2.pdf)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19648892.svg)](https://doi.org/10.5281/zenodo.19648892)
+
+**Paper 5 — Cell Cycle:** Graise, M.L. (2026). *The G₂ Checkpoint as an ε-Regularity Gate: Geometric Flow Theory Applied to Cell Cycle Coherence.* Zenodo. [https://doi.org/10.5281/zenodo.19648892](https://doi.org/10.5281/zenodo.19648892)
+
+→ [PDF](docs/g2-paper/g2_cell_cycle_paper_final.pdf)
+
 ---
 
 ## What Is PCI?
@@ -85,6 +91,7 @@ Browse all 1,058 equations and 1,242 symbols interactively. Features:
 | G₂ Paper (Dynamics) | **Published** | [DOI: 10.5281/zenodo.19480758](https://doi.org/10.5281/zenodo.19480758) — Six geometric flows, companion paper |
 | G₂ Spectral Sum Lemma | **Published** | [DOI: 10.5281/zenodo.19602470](https://doi.org/10.5281/zenodo.19602470) — f₃ = f₁ + f₂, new theorem, 28 MHz prediction |
 | QBism–PCI Bridge | **Published** | [DOI: 10.5281/zenodo.19617662](https://doi.org/10.5281/zenodo.19617662) — PSL(2,7)/F₂₁ = 8 = dim SU(3), structural bridge |
+| G₂ Cell Cycle | **Published** | [DOI: 10.5281/zenodo.19648892](https://doi.org/10.5281/zenodo.19648892) — G₂ checkpoint as ε-regularity gate, 3 predictions |
 | Genesis Mechanism | Complete | 11-page derivation of how coherence emerges from zero |
 
 ### Recent Milestones
@@ -340,9 +347,11 @@ Full CSVs:
 - [x] Published: [DOI: 10.5281/zenodo.19617662](https://doi.org/10.5281/zenodo.19617662)
 - [ ] Submit to Entropy (MDPI) for journal peer review
 
-### Priority 5: G₂ Cell Cycle Bridge
-- [ ] Structural parallel: G₂ checkpoint ↔ ε-regularity gate
-- [ ] Cancer as coherence checkpoint failure (p53 mutation → broken gate)
+### Priority 5: G₂ Cell Cycle Bridge — PUBLISHED
+- [x] Structural parallel: G₂ checkpoint ↔ ε-regularity gate
+- [x] Cancer as coherence checkpoint failure (p53 mutation → broken gate)
+- [x] Three falsifiable predictions (singularity taxonomy, spectral sum, 6/7 bound)
+- [x] Published: [DOI: 10.5281/zenodo.19648892](https://doi.org/10.5281/zenodo.19648892)
 - [ ] Target venue: Biosystems or Journal of Theoretical Biology
 
 ### Priority 6: Book
