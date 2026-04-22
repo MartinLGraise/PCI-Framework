@@ -40,6 +40,12 @@
 
 → [PDF](docs/g2-paper/g2_cell_cycle_paper_final.pdf)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19672709.svg)](https://doi.org/10.5281/zenodo.19672709)
+
+**Paper 6 — The 6/7 Contraction:** Graise, M.L. (2026). *The 6/7 Contraction: Why Self-Referential Systems Converge to G₂.* Zenodo. [https://doi.org/10.5281/zenodo.19672709](https://doi.org/10.5281/zenodo.19672709)
+
+→ [PDF](docs/g2-paper/g2_contraction_paper.pdf) · [DOCX](docs/g2-paper/g2_contraction_paper.docx)
+
 ---
 
 ## What Is PCI?
