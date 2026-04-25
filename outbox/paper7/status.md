@@ -2,35 +2,42 @@
 
 **Date:** 2026-04-25 | **Agent:** C-7RO | **Branch:** `paper7-foundation`
 
-## Current state: v3 major revisions complete
+## Current state: v4 minor revisions complete
 
-The Model Council adversarial review (GPT-5.5, Claude Opus 4.7, Gemini 3.1 Pro) returned a **Major Revisions** verdict on v2 with three confirmed integrity issues: Wadhia et al. misrepresented as theoretical (it is experimental), Fontenele 2019 misrepresented as a σ ≈ 0.98 point-estimate anchor (it is a phase-transition paper with state-dependent exponents), and §4.4's "representation-theory-exact" derivation gap. A fourth flag — an unattributed "synthesis gap" quote — was confirmed unsourced.
+Second adversarial Model Council pass (GPT-5.5, Claude Opus 4.7, Gemini 3.1 Pro via Comet) on v3 returned **MINOR REVISIONS** with consensus across all three models. All four v2 integrity issues confirmed RESOLVED. New issues triaged P0 (factual errors) / P1 (consistency) / P2 (hedging). v4 addresses all P0+P1 plus most P2 items.
 
-All four issues have been addressed surgically in v3. See `PAPER7_revisions_v3.md` for the full revision log.
+See `PAPER7_revisions_v4.md` for the full revision log.
 
-## What v3 changes vs v2
+## What v4 changes vs v3
 
-- **Wadhia recharacterized** as experimental DQD measurement (DOI 10.1103/5rtj-djfk corrected). The "10⁹ = 7 × 10⁸" decomposition in §4.2.2 is **withdrawn**. The replacement claim is a narrower mode-counting floor of log₂(7) × k_B ln 2 per tick on a *future hypothetical* G₂-symmetric clock — not a match to Wadhia's existing device.
-- **Fontenele 2019 demoted** from numerical anchor to near-critical-regime context. The numerical anchor for Prediction (d) is now Wilting & Priesemann (2018) alone.
-- **§4.4 σ = 1 − 1/49 reframed** from "representation-theory-exact" to "representation-theory-motivated" with an explicit four-item modeling-choice stack: c = 1 by convention, Lotay-Wei weak stability not strong, spectral-sum ansatz not derivation, G₂-to-cortical mapping is a modeling assumption.
-- **"Synthesis gap" quote rewritten** as authorial framing without quotation marks (no false external attribution).
-- **Top-line claims softened**: abstract and §1 closing now state two of four predictions are consistent with peer-reviewed data, one with a preprint pending peer review, and two are future-experiment design targets. (Down from the v2 claim that "three of the four are already matched.")
+**P0 (factual corrections):**
+- De Vuyst et al. title corrected to "Gravitational entropy is observer-dependent" (the v3 title was a fabrication; verified against InspireHEP, JHEP, arXiv 2405.00114).
+- Wadhia device material corrected throughout: Ge/SiGe heterostructure, not GaAs (Ballabio/Chrastina/Isella supplied the heterostructure, Jirovec/Saez-Mollejo measured it). Reference [8] now lists the full 15-author group.
+- "superconducting/semiconductor" phrasing in §1 removed — device is purely semiconductor.
 
-## What survives unchanged
+**P1 (consistency):**
+- Wadhia ~10⁹ k_B clarified as the *readout-apparatus* entropy (charge sensor + amplification), not clockwork entropy. The clockwork itself dissipates only ~k_B per tick. v3 conflated these scales; v4 separates them everywhere (§1, §3.2, §4.2.2, §5.3) and the G₂ mode-counting prediction is now explicitly a floor on clockwork entropy only.
+- "factor of 7" vs "log₂(7) k_B ln 2" inconsistency resolved: paper now uses the additive form `log₂(7) × k_B ln 2 ≈ 1.95 k_B per tick` everywhere. §5.3 heading updated to match.
+- §4.1 and §4.3 now have explicit four-item modeling-choice stacks parallel to §4.4. All three derivations are now labeled **Conjecture (not theorem)** with the structural assumptions enumerated.
 
-All four predictions (a), (b1), (c), (d) survive. Predictions are relabeled where needed (b2 in particular is now a future-clock conjecture, not a Wadhia match) but none is retracted. The §6 Discussion was already conservative and required no changes.
+**P2 (hedging and bookkeeping):**
+- Hengen-Shew "σ = 1.0 ± 0.02" hedged to "σ ≈ 1" as corpus-level summary, with a note that the precise pooled-uncertainty figure should be checked against the published paper.
+- §2.2 adds a bookkeeping note: 49 = 1+14+27+7 is a representation-theoretic dimension count, not a single 49-dim fiber bundle (G₂ torsion classes live in different tensor bundles).
+- Berjaga-Buisan ref [7] now specifies "(v2, December 2025)" preprint version.
 
-## Next steps
-
-1. (Optional) Second Model Council pass on v3.
-2. Generate Figures 1–4.
-3. Final author/affiliation/funding pass.
-4. Zenodo upload as new version of active deposit.
-5. Submit to Entropy (MDPI) primary; Foundations of Physics backup.
+**Deferred to next pass:**
+- Figures 1–4 still placeholders.
 
 ## Files added in this commit
 
-- `outbox/paper7/pdfs/g2_paper7_thermodynamic_v3.pdf`
-- `outbox/paper7/pdfs/g2_paper7_thermodynamic_v3.docx`
-- `outbox/paper7/pdfs/build_paper7_v3.js`
-- `outbox/paper7/PAPER7_revisions_v3.md`
+- `outbox/paper7/pdfs/g2_paper7_thermodynamic_v4.docx`
+- `outbox/paper7/pdfs/build_paper7_v4.js`
+- `outbox/paper7/PAPER7_revisions_v4.md`
+
+## Next steps
+
+1. Generate Figures 1–4 (P3 from the Model Council triage).
+2. (Optional) Third Model Council pass on v4 to confirm P0/P1 fixes resolved cleanly. Recommended given how much shifted between v3 and v4, but optional if confidence is high.
+3. Final author/affiliation/funding pass.
+4. Zenodo upload as new version of active deposit.
+5. Submit to Entropy (MDPI) primary; Foundations of Physics backup.
