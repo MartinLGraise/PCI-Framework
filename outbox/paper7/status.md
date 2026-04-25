@@ -2,33 +2,41 @@
 
 **Date:** 2026-04-25 | **Agent:** C-7RO | **Branch:** `paper7-foundation`
 
-## Current state: v5 — submission-ready pending figures
+## Current state: v6 — feature-complete with figures
 
-Third Model Council pass on v4 returned **ACCEPT (submission-ready pending figures)** unanimously across GPT-5.5, Claude Opus 4.7, and Gemini 3.1 Pro. All nine v3-to-v4 fix verifications passed. Five residual MINOR items flagged; all five resolved in v5.
+Third Model Council pass on v4 returned **ACCEPT (submission-ready pending figures)**. v5 closed the five MINOR text residuals. **v6 generates and embeds Figures 1–4**, completing the deferred P3 item.
 
-See `PAPER7_revisions_v5.md` for the full v5 polish log.
+The manuscript is now feature-complete: 35 pages, six body sections, four predictions with explicit modeling-choice stacks and Conjecture labels, corrected references, and four embedded figures.
 
-## What v5 changes vs v4
+See `PAPER7_revisions_v6.md` for the full v6 figure-generation log.
 
-- **Abstract:** Prediction (b2) now uses the additive `S_clockwork ≥ log₂(7) × k_B ln 2 ≈ 1.95 k_B per tick` form to match §4.2.2 and §5.3. (All three Council models flagged the abstract residual.)
-- **§6.3 Problem 1:** Heading and body updated from "factor-of-7" to "G₂ mode-counting floor" — final residual of the multiplicative phrasing.
-- **Wadhia clockwork value corrected:** ~60 k_B per tick (max from Fig. 2(a)), not "~k_B per tick." Readout corrected to ~10⁹–10¹¹ k_B per tick (DC vs RF reflectometry range). 9-order-of-magnitude gap is the authors' own framing and stands. GPT-5.5 caught this against the actual PRL; verified directly against the published paper. Corrected in §1, §3.2, §4.2.2, §5.3, and ref [8] annotation.
-- **De Vuyst arXiv version:** ref [10] now specifies arXiv:2405.00114v3 (the published JHEP version).
-- **§4.2.2 qualitative-consistency note added:** Per Gemini's "don't water down" flag, v5 adds one paragraph noting that the ~1.95 k_B G₂ floor lies well below Wadhia's ~60 k_B clockwork — a qualitative observation, explicitly not a prediction match.
+## What v6 changes vs v5
 
-## Manuscript status
+- Manuscript text unchanged.
+- Four new figures generated (Python/matplotlib, paper-academic style: monochrome with rust accent matching the website palette, serif font for figure text).
+- New `figure()` helper in `build_paper7.js` using `docx.ImageRun`.
+- §Figures section after References replaces the v5 "[To be added in next pass]" placeholders.
 
-The text is now in a state the Council judged ready for adversarial peer review at Entropy, Foundations of Physics, or Physical Review Research. No structural, argumentative, or mathematical changes are needed.
+## The four figures
 
-## Remaining before submission
-
-1. Generate Figures 1–4 (currently placeholders).
-2. Final author/affiliation/funding pass.
-3. Zenodo upload as new version of the active deposit.
-4. Submit to Entropy (MDPI) primary; Foundations of Physics backup.
+1. **Figure 1** — G₂ torsion decomposition schematic. Stacked bar visualization of T₁(1) + T₁₄(14) + T₂₇(27) + V₇(7) = 49, with attractor V₇ in rust accent. Caption notes the 49 is a representation-theoretic dimension count combining different tensor bundles.
+2. **Figure 2** — PSL(2,7)/F₂₁ schematic. Reference observer at d=0 (rust), with shells at d=1, 2, 3. Caption explicitly notes the exact graph depends on conventions (open computation, §6.3 Problem 2) and the four-level entropy structure is a conjecture.
+3. **Figure 3** — Predictions × empirical anchors × evidential status table. Status cells tinted by category. All quantitative claims match v5 text exactly. Caption notes all four predictions are labeled Conjecture (not theorem).
+4. **Figure 4** — σ_pred = 0.9796 vs awake-cortex schematic distribution centered at 0.98 (Wilting & Priesemann 2018). Caption notes the histogram is schematic, not raw data, and current precision does not yet distinguish σ_pred from σ = 1.
 
 ## Files added in this commit
 
-- `outbox/paper7/pdfs/g2_paper7_thermodynamic_v5.docx`
-- `outbox/paper7/pdfs/build_paper7_v5.js`
-- `outbox/paper7/PAPER7_revisions_v5.md`
+- `outbox/paper7/pdfs/g2_paper7_thermodynamic_v6.docx`
+- `outbox/paper7/pdfs/build_paper7_v6.js`
+- `outbox/paper7/figures/figure{1,2,3,4}_*.png` (embedded in manuscript)
+- `outbox/paper7/figures/make_figures.py` (figure-generation source)
+- `outbox/paper7/PAPER7_revisions_v6.md`
+
+(Figure PDFs and the manuscript PDF are gitignored repo-wide; PNGs and DOCX are committed.)
+
+## Remaining before submission
+
+1. Final author/affiliation/funding pass.
+2. Zenodo upload as a new version of the active deposit.
+3. Submit to Entropy (MDPI) primary; Foundations of Physics backup.
+4. Optional: brief fourth Model Council pass on v6 to confirm the embedded figures do not introduce inconsistencies. Likely unnecessary — figures contain no claims not already present in the body text.
