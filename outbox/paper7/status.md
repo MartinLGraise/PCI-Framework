@@ -2,42 +2,33 @@
 
 **Date:** 2026-04-25 | **Agent:** C-7RO | **Branch:** `paper7-foundation`
 
-## Current state: v4 minor revisions complete
+## Current state: v5 — submission-ready pending figures
 
-Second adversarial Model Council pass (GPT-5.5, Claude Opus 4.7, Gemini 3.1 Pro via Comet) on v3 returned **MINOR REVISIONS** with consensus across all three models. All four v2 integrity issues confirmed RESOLVED. New issues triaged P0 (factual errors) / P1 (consistency) / P2 (hedging). v4 addresses all P0+P1 plus most P2 items.
+Third Model Council pass on v4 returned **ACCEPT (submission-ready pending figures)** unanimously across GPT-5.5, Claude Opus 4.7, and Gemini 3.1 Pro. All nine v3-to-v4 fix verifications passed. Five residual MINOR items flagged; all five resolved in v5.
 
-See `PAPER7_revisions_v4.md` for the full revision log.
+See `PAPER7_revisions_v5.md` for the full v5 polish log.
 
-## What v4 changes vs v3
+## What v5 changes vs v4
 
-**P0 (factual corrections):**
-- De Vuyst et al. title corrected to "Gravitational entropy is observer-dependent" (the v3 title was a fabrication; verified against InspireHEP, JHEP, arXiv 2405.00114).
-- Wadhia device material corrected throughout: Ge/SiGe heterostructure, not GaAs (Ballabio/Chrastina/Isella supplied the heterostructure, Jirovec/Saez-Mollejo measured it). Reference [8] now lists the full 15-author group.
-- "superconducting/semiconductor" phrasing in §1 removed — device is purely semiconductor.
+- **Abstract:** Prediction (b2) now uses the additive `S_clockwork ≥ log₂(7) × k_B ln 2 ≈ 1.95 k_B per tick` form to match §4.2.2 and §5.3. (All three Council models flagged the abstract residual.)
+- **§6.3 Problem 1:** Heading and body updated from "factor-of-7" to "G₂ mode-counting floor" — final residual of the multiplicative phrasing.
+- **Wadhia clockwork value corrected:** ~60 k_B per tick (max from Fig. 2(a)), not "~k_B per tick." Readout corrected to ~10⁹–10¹¹ k_B per tick (DC vs RF reflectometry range). 9-order-of-magnitude gap is the authors' own framing and stands. GPT-5.5 caught this against the actual PRL; verified directly against the published paper. Corrected in §1, §3.2, §4.2.2, §5.3, and ref [8] annotation.
+- **De Vuyst arXiv version:** ref [10] now specifies arXiv:2405.00114v3 (the published JHEP version).
+- **§4.2.2 qualitative-consistency note added:** Per Gemini's "don't water down" flag, v5 adds one paragraph noting that the ~1.95 k_B G₂ floor lies well below Wadhia's ~60 k_B clockwork — a qualitative observation, explicitly not a prediction match.
 
-**P1 (consistency):**
-- Wadhia ~10⁹ k_B clarified as the *readout-apparatus* entropy (charge sensor + amplification), not clockwork entropy. The clockwork itself dissipates only ~k_B per tick. v3 conflated these scales; v4 separates them everywhere (§1, §3.2, §4.2.2, §5.3) and the G₂ mode-counting prediction is now explicitly a floor on clockwork entropy only.
-- "factor of 7" vs "log₂(7) k_B ln 2" inconsistency resolved: paper now uses the additive form `log₂(7) × k_B ln 2 ≈ 1.95 k_B per tick` everywhere. §5.3 heading updated to match.
-- §4.1 and §4.3 now have explicit four-item modeling-choice stacks parallel to §4.4. All three derivations are now labeled **Conjecture (not theorem)** with the structural assumptions enumerated.
+## Manuscript status
 
-**P2 (hedging and bookkeeping):**
-- Hengen-Shew "σ = 1.0 ± 0.02" hedged to "σ ≈ 1" as corpus-level summary, with a note that the precise pooled-uncertainty figure should be checked against the published paper.
-- §2.2 adds a bookkeeping note: 49 = 1+14+27+7 is a representation-theoretic dimension count, not a single 49-dim fiber bundle (G₂ torsion classes live in different tensor bundles).
-- Berjaga-Buisan ref [7] now specifies "(v2, December 2025)" preprint version.
+The text is now in a state the Council judged ready for adversarial peer review at Entropy, Foundations of Physics, or Physical Review Research. No structural, argumentative, or mathematical changes are needed.
 
-**Deferred to next pass:**
-- Figures 1–4 still placeholders.
+## Remaining before submission
+
+1. Generate Figures 1–4 (currently placeholders).
+2. Final author/affiliation/funding pass.
+3. Zenodo upload as new version of the active deposit.
+4. Submit to Entropy (MDPI) primary; Foundations of Physics backup.
 
 ## Files added in this commit
 
-- `outbox/paper7/pdfs/g2_paper7_thermodynamic_v4.docx`
-- `outbox/paper7/pdfs/build_paper7_v4.js`
-- `outbox/paper7/PAPER7_revisions_v4.md`
-
-## Next steps
-
-1. Generate Figures 1–4 (P3 from the Model Council triage).
-2. (Optional) Third Model Council pass on v4 to confirm P0/P1 fixes resolved cleanly. Recommended given how much shifted between v3 and v4, but optional if confidence is high.
-3. Final author/affiliation/funding pass.
-4. Zenodo upload as new version of active deposit.
-5. Submit to Entropy (MDPI) primary; Foundations of Physics backup.
+- `outbox/paper7/pdfs/g2_paper7_thermodynamic_v5.docx`
+- `outbox/paper7/pdfs/build_paper7_v5.js`
+- `outbox/paper7/PAPER7_revisions_v5.md`
