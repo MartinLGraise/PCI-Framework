@@ -237,7 +237,7 @@ def figure_3():
         ("(b1) Biological\nLandauer",
          "ΔE_min ≈ 16 zJ\nper G₂/M event",
          "Imamura et al. 2009\n(PNAS, peer-reviewed)",
-         "Published match\n(measured >> floor)"),
+         "Floor satisfied\n(measured >> floor)"),
         ("(b2) Mode-\ncounting floor",
          "S ≥ log₂(7) k_B ln 2\n≈ 1.95 k_B per tick",
          "Wadhia et al. 2025\n(PRL, Ge/SiGe DQD)",
@@ -273,7 +273,7 @@ def figure_3():
     # Status color mapping (subtle accent)
     status_colors = {
         "Preprint match,\npending peer review": "#F0EBE0",
-        "Published match\n(measured >> floor)": "#E8F0E5",
+        "Floor satisfied\n(measured >> floor)": "#E8F0E5",
         "Design target;\nnot a confirmed match": "#F8EFEA",
         "Design target;\nopen Bogoliubov calc": "#F8EFEA",
         "Published match\n(within uncertainty)": "#E8F0E5",
