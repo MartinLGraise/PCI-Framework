@@ -46,6 +46,12 @@
 
 → [PDF](docs/g2-paper/g2_contraction_paper.pdf) · [DOCX](docs/g2-paper/g2_contraction_paper.docx)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19773185.svg)](https://doi.org/10.5281/zenodo.19773185)
+
+**Paper 7 — Thermodynamic Cost of the Coherence Ceiling:** Graise, M.L. (2026). *The Thermodynamic Cost of the Coherence Ceiling: A G₂-Derived Bound on Conscious Information Processing.* Zenodo. [https://doi.org/10.5281/zenodo.19773185](https://doi.org/10.5281/zenodo.19773185)
+
+→ [DOCX](outbox/paper7/pdfs/g2_paper7_thermodynamic_v8.docx) · [Build script](outbox/paper7/pdfs/build_paper7_v8.js) · [Figure source](outbox/paper7/figures/make_figures.py) · [Revision history](outbox/paper7/)
+
 ---
 
 ## What Is PCI?

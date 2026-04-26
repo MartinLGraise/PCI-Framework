@@ -39,12 +39,14 @@ Zenodo gives the paper a permanent DOI before journal submission, which Entropy 
 - **Funding:** none
 - **Notes:** "Manuscript underwent four rounds of adversarial multi-model review (GPT-5.5 Thinking, Claude Opus 4.7 Thinking, Gemini 3.1 Pro Thinking) before submission. Full revision history at github.com/MartinLGraise/PCI-Framework on the paper7-foundation branch."
 
-After upload, capture the **Paper 7 Zenodo DOI** here:
+**Paper 7 Zenodo DOI (assigned 2026-04-25):**
 
 ```
-PAPER 7 ZENODO DOI: 10.5281/zenodo.__________
-(record the actual DOI assigned, then update the cover letter and any future pre-submission references.)
+10.5281/zenodo.19773185
+https://doi.org/10.5281/zenodo.19773185
 ```
+
+Deposit is published, CC-BY-4.0, four files (PDF + DOCX + build script + figure-generation source), six related-works links to Papers 1–6 of the series.
 
 ---
 
@@ -127,7 +129,7 @@ repository. Use of AI tools is fully disclosed in the manuscript's
 "Use of AI Tools" section in accordance with MDPI's policy.
 
 A preprint of this manuscript is available at Zenodo:
-[INSERT PAPER 7 ZENODO DOI HERE]
+https://doi.org/10.5281/zenodo.19773185
 
 This work has not been submitted to any other journal and is not
 under review elsewhere. There are no conflicts of interest. No

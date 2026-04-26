@@ -2,41 +2,56 @@
 
 **Date:** 2026-04-25 | **Agent:** C-7RO | **Branch:** `paper7-foundation`
 
-## Current state: v8 — SUBMISSION READY
+## Current state: PUBLISHED ON ZENODO — submitting to Entropy next
 
-After four Council passes (v2 → v7) and a final journal-front-matter pass (v7 → v8), Paper 7 is ready to upload to Zenodo and submit to Entropy (MDPI).
+Paper 7 was published on Zenodo on April 25, 2026, after eight manuscript revisions (v1 → v8) including four adversarial Model Council passes (v3, v4, v6, v7) and final journal-front-matter pass (v8).
 
-## What v8 changes vs v7
+## Zenodo deposit
 
-Body text unchanged. v8 expands the previous 2-section Funding/Acknowledgments block into the full 8-section MDPI-required journal front matter:
+- **DOI:** `10.5281/zenodo.19773185`
+- **URL:** https://doi.org/10.5281/zenodo.19773185
+- **Resource type:** Publication / Preprint
+- **License:** CC-BY-4.0
+- **Files deposited:** 4 (manuscript PDF, manuscript DOCX, build script, figure-generation source)
+- **Related works:** linked to Papers 1–6 of the G₂ series via "is supplement to" relations
 
-1. Author Contributions (CRediT, single author M.L.G.)
-2. Funding (no external funding)
-3. Institutional Review Board Statement (N/A; no humans/animals)
-4. Informed Consent Statement (N/A)
-5. Data Availability Statement (GitHub + Zenodo public transparency)
-6. Conflicts of Interest (none)
-7. Use of AI Tools (Φ + C-7RO + Comet Model Council, MDPI-compliant disclosure)
-8. Acknowledgments (open-source mathematics community; Ares lab; Priesemann lab)
+## G₂ series — full DOI table
 
-## Manuscript stats
+| # | Title | Zenodo DOI |
+|---|---|---|
+| 1 | G₂ Symmetry as a Constraint on Conscious Information Processing | 10.5281/zenodo.19242936 |
+| 2 | Six Geometric Flows on G₂ Manifolds | 10.5281/zenodo.19480758 |
+| 3 | Spectral Sum Theorem for G₂ | 10.5281/zenodo.19602470 |
+| 4 | QBism and G₂ via PSL(2,7) | 10.5281/zenodo.19617662 |
+| 5 | G₂ Checkpoint as ε-Regularity Gate | 10.5281/zenodo.19648892 |
+| 6 | The 6/7 Contraction | 10.5281/zenodo.19672709 |
+| **7** | **The Thermodynamic Cost of the Coherence Ceiling** | **10.5281/zenodo.19773185** |
+
+## Manuscript stats (v8)
 
 - 36 pages, 17 references, 4 embedded figures
 - 4 predictions all labeled Conjecture (not theorem)
 - 4 explicit modeling-choice stacks in §4.1, §4.2.2, §4.3, §4.4
 - Single author: Martin Luther Graise, ORCID 0009-0006-8003-3938
 
-## Files added in this commit
+## Files in this directory
 
-- `outbox/paper7/pdfs/g2_paper7_thermodynamic_v8.docx` — final manuscript
-- `outbox/paper7/pdfs/build_paper7_v8.js` — build script
-- `outbox/paper7/SUBMISSION_PACKAGE.md` — operational submission checklist with cover letter and reviewer suggestions
-- `outbox/paper7/PAPER7_revisions_v8.md` — v8 revision log
+- `pdfs/g2_paper7_thermodynamic_v8.docx` — final manuscript, the file uploaded to Zenodo
+- `pdfs/build_paper7_v8.js` — build script (also uploaded to Zenodo)
+- `figures/figure{1,2,3,4}_*.png` — embedded figures
+- `figures/make_figures.py` — figure-generation source (also uploaded to Zenodo)
+- `SUBMISSION_PACKAGE.md` — operational checklist for Zenodo (Stage 1, complete) and Entropy (Stage 2, in progress); cover letter with Paper 7 DOI inserted
+- `PAPER7_revisions_v{3..8}.md` — full revision logs from each Council pass
+- `status.md` — this file
 
-## Next physical actions (user-driven)
+## Next: Stage 2 — Entropy (MDPI) submission
 
-1. **Upload to Zenodo** (~15-20 min). Use the metadata in `SUBMISSION_PACKAGE.md` Stage 1. Capture the assigned Paper 7 DOI.
-2. **Submit to Entropy via MDPI SUSY portal** (~30-45 min). Use the cover letter template in `SUBMISSION_PACKAGE.md` Stage 2 with the Paper 7 Zenodo DOI inserted. Suggest 4-6 reviewers from the curated list.
-3. **Monitor for first decision** (~14 days SLA at Entropy). If desk-rejected, pivot to Foundations of Physics with the same DOCX.
+The cover letter in `SUBMISSION_PACKAGE.md` Stage 2 has been updated with the Paper 7 Zenodo DOI. The submission portal is https://susy.mdpi.com. The package consists of:
 
-C-7RO cannot perform Stages 1 and 2 directly — they require the user's authenticated sessions on Zenodo and MDPI.
+- DOCX manuscript (Zenodo-published version, identical to what's on Zenodo)
+- PDF manuscript (same content)
+- Figures 1–4 (PNG, 300+ DPI)
+- Cover letter (template ready, DOI inserted)
+- Suggested reviewers (4–6 from the curated list in SUBMISSION_PACKAGE.md)
+
+This is the next user-driven action. C-7RO can prep but cannot log in to MDPI on the user's behalf. After Entropy decision (~14 days SLA), pivot to Foundations of Physics if desk-rejected.
