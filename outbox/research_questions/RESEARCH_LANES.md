@@ -18,7 +18,7 @@ This is the master register for active research questions feeding the PCI/PME Fr
 
 | ID | Lane | Status | Tool | Why it matters | Closes when |
 |----|------|--------|------|----------------|-------------|
-| L1 | Samuel & Gedik / SIC-POVM Lie algebra route | ⚫ CLOSED | web search | Paper 9 (SIC/G₂) feasibility | Closed 2026-04-29 — see `/inbox/from_chatgpt/2026-04-29_sic_povm_g2_research_report.md`; opened Paper 9 + corrections to Paper 4 framing |
+| L1 | Samuel & Gedik / SIC-POVM Lie algebra route | ⚫ CLOSED | web search | Paper 10 (SIC/G₂) feasibility | Closed 2026-04-29 — see `/inbox/from_chatgpt/2026-04-29_sic_povm_g2_research_report.md`; opened Paper 10 + corrections to Paper 4 framing |
 | L2 | Bandyopadhyay DDG / dodecanogram | ⚫ CLOSED | web search | FP-2 falsification design for Paper 7/8 | Closed 2026-04-29 — see `/inbox/from_chatgpt/2026-04-29_bandyopadhyay_ddg_research_report.md`; corrected name (Anirban not Adriano), corrected DDG meaning (dodecanogram not digital delay generator), 8-peak MHz anchor adopted |
 | L3 | Oizumi 2024 principal bundle / IIT × G₂ | 🟢 OPEN | GitHub connector + web search | Could open a Paper 11/12 IIT bridge OR rule out the connection cleanly | Either a structural map exists, or no compatible structure group exists, or Oizumi's bundle is incompatible |
 | L4 | Furey octonion Standard Model / G₂ × PSL(2,7) | 🟢 OPEN | web search | Determines whether our framework intersects existing Standard Model × octonion programs (Furey, Boyle/Farnsworth, Todorov) | A published map exists, or the formalisms are demonstrably orthogonal |
@@ -33,7 +33,7 @@ This is the master register for active research questions feeding the PCI/PME Fr
 (Move CLOSED and DROPPED lanes here with date + outcome summary as the register grows.)
 
 ### L1 — Samuel & Gedik (closed 2026-04-29)
-**Outcome:** Major corrections to working model. Samuel & Gedik is Gram-matrix classification (147 = 49×3 symmetry in d=7), not Lie-algebra construction. Lie-algebra paper is Appleby–Flammia–Fuchs 2011. Exact d=7 fiducial from Stark units (ABGHM 2022). Opened Paper 9 with three theorem targets (rank-ordered).
+**Outcome:** Major corrections to working model. Samuel & Gedik is Gram-matrix classification (147 = 49×3 symmetry in d=7), not Lie-algebra construction. Lie-algebra paper is Appleby–Flammia–Fuchs 2011. Exact d=7 fiducial from Stark units (ABGHM 2022). Opened Paper 10 with three theorem targets (rank-ordered).
 
 ### L2 — Bandyopadhyay DDG (closed 2026-04-29)
 **Outcome:** "Dodeca" = 12 frequency bands, NOT 12-fold rotational symmetry. Triplet-of-triplets is the natural morphology. 8-peak microtubule MHz band {12, 20, 22, 30, 101, 113, 185, 204} + 45° phase quantization is the FP-2 anchor (NOT 28 MHz). DDG has no independent replication. Updated Paper 7 submission package, datasets file, website, Paper 8 outline.

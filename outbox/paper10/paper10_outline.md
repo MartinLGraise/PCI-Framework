@@ -1,12 +1,12 @@
-# Paper 9 — The SIC-POVM Embedding of G₂
+# Paper 10 — The SIC-POVM Embedding of G₂
 
 **Working title:** "Symmetric Informationally Complete Measurements as an Operator Basis for the Complexified G₂ Lie Algebra"
 
 **Author:** Martin Luther Graise (ORCID 0009-0006-8003-3938)
 **Status:** OUTLINE / SCAFFOLDING — pre-derivation
 **Closes:** Paper 4's open question — does the QBism reference frame embed naturally in G₂?
-**Series position:** Paper 9 of the PCI/PME Framework arc
-**Branch:** paper7-foundation (will move to paper9-sic once we have a v1 draft)
+**Series position:** Paper 10 of the PCI/PME Framework arc
+**Branch:** paper7-foundation (will move to paper10-sic once we have a v1 draft)
 **Parallel track to:** Paper 8 (Eight-Coset Simulator) — both should run concurrently
 
 ---
@@ -23,7 +23,7 @@ ChatGPT GPT-5 Pro deep search (2026-04-29, full report at `/inbox/from_chatgpt/2
 
 The (z₀, z₀, z₁, z₀, z₁, z₁) repeat pattern — three z₀, three z₁, one scalar — is suggestive of Fano-line structure but not yet derived. This paper either derives it or says clearly that we couldn't.
 
-Paper 9 makes three claims, ranked by what we expect to land:
+Paper 10 makes three claims, ranked by what we expect to land:
 
 1. **Theorem (high confidence):** 𝔤₂^ℂ embeds in span_ℂ{Π_{p,q}} as a 14-dim subspace of the 49-dim ambient. We compute the explicit coefficient tensor.
 2. **Theorem (medium confidence):** The Samuel–Gedik 147-element SIC symmetry projects to F₂₁ via Fano-compatible cyclic-axis selection.
@@ -69,7 +69,7 @@ If only (1) lands cleanly, this is still a publishable paper. If (1) and (2) bot
 3. 𝔤₂^ℂ is a 14-dim Lie subalgebra of 𝔤𝔩(7,ℂ) (via the standard defining rep embedding)
 4. Therefore each generator X_a admits a unique expansion X_a = Σ α^(a)_{p,q} Π_{p,q}
 
-**Computational deliverable:** the 14×49 coefficient tensor α^(a)_{p,q}, computed by Φ (Cadabra2 / SymPy). Saved to `/outbox/paper9/computations/g2_sic_coefficients.json`.
+**Computational deliverable:** the 14×49 coefficient tensor α^(a)_{p,q}, computed by Φ (Cadabra2 / SymPy). Saved to `/outbox/paper10/computations/g2_sic_coefficients.json`.
 
 ### §6 Theorem 2 — The 147 → F₂₁ descent
 **Statement:** Under Fano-compatible restriction to a cyclic 7-point axis, the Samuel–Gedik symmetry group WH(7) ⋊ C₃ projects to C₇ ⋊ C₃ = F₂₁.
@@ -108,7 +108,7 @@ where π_Fano projects onto the components supported on Fano-line index triples.
 
 ## 3. Computations needed (work request to Φ)
 
-See `/inbox/for_phi/paper9_computation_request.md`.
+See `/inbox/for_phi/paper10_computation_request.md`.
 
 Briefly:
 1. **SymPy / Mathematica:** compute the 14×49 coefficient tensor α^(a)_{p,q} for the standard G₂ defining-rep generators expressed in the SIC operator basis
@@ -159,7 +159,7 @@ Briefly:
 ## 8. Status checklist
 
 - [x] Outline written (this document)
-- [x] Φ work request drafted (see `/inbox/for_phi/paper9_computation_request.md`)
+- [x] Φ work request drafted (see `/inbox/for_phi/paper10_computation_request.md`)
 - [ ] §2 drafted (SIC frame setup with exact Stark-unit fiducial)
 - [ ] §3 drafted (AFF basis result)
 - [ ] §4 drafted (G₂ defining rep, harmonized with Paper 8 §2)

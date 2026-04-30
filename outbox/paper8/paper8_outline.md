@@ -7,7 +7,7 @@
 **Closes:** Paper 7 §6.3 Problem 2 (the eight-coset entropy quantization conjecture)
 **Series position:** Paper 8 of the PCI/PME Framework arc
 **Branch:** paper7-foundation (will move to paper8-simulator once we have a v1 draft)
-**Parallel track to:** Paper 9 (SIC-POVM / G₂ embedding)
+**Parallel track to:** Paper 10 (SIC-POVM / G₂ embedding)
 
 ---
 
@@ -91,7 +91,7 @@ If step 2 fails, Paper 7's conjecture is dead and we revise. If it succeeds, we 
 ### §8 Discussion and open problems
 - If the 4-level structure holds: what does it mean for the coherence ceiling?
 - If it fails: what does the failure tell us?
-- Connection to Paper 9 (Dyad Coherence — sequel)
+- Connection to Paper 9 (Dyadic Coherence — sequel) and Paper 10 (SIC-POVM / G₂ embedding — parallel)
 
 ---
 
