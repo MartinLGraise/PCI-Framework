@@ -153,16 +153,31 @@ A direct corollary of Theorem 1 is that the AFF coefficient formula
 
 $$\alpha^{(a)}_{p,q} = \frac{d+1}{d} \cdot \operatorname{tr}(T_a \Pi_{p,q})$$
 
-contains the prime $d = 7$ in the denominator as an algebraically forced factor. This $1/7$ is not a numerical coincidence: it arises from the inversion of the SIC Gram matrix $G_{ij} = (7 \delta_{ij} + 1)/8$, whose two eigenvalues $\{1/8, 1\}$ produce an inverse with the prefactor $(d+1)/d$.
+contains the dimension $d = 7$ in the denominator as an algebraically forced factor, arising from the inversion of the SIC Gram matrix $G_{ij} = (7 \delta_{ij} + 1)/8$. This factor is generic to all SIC dimensions, not specific to $d=7$. What is specific to $d=7$ is not the *appearance* of the ratio but the *structural reading* it admits in the presence of additional algebraic features.
 
-The same prime $7$ appears in three other places in the foundational structure of this series:
-1. The PSL$(2,7) / F_{21}$ blind-spot bound $\varepsilon_{\min} = 1/7$ derived in Paper 4 of this series [DOI 10.5281/zenodo.19617662];
+We enumerate four features of $d=7$ that distinguish it among small prime dimensions:
+
+**(F1) Exact Stark-unit SIC construction.** Appleby, Bengtsson, Grassl, Harrison, and McConnell [DOI 10.1063/5.0083520] gave an exact SIC fiducial in dimensions $d = n^2 + 3$, of which $d = 7$ is the smallest prime case ($n = 2$). The next prime members of this sequence are $d = 19, 67, 103, 199, 487, \ldots$ — progressively less accessible and without compensating Lie-algebraic structure (see F2). Other prime dimensions admit Stark-unit constructions only via the conditional Kopp 2021 program for $d \equiv 2 \pmod 3$ [DOI 10.1093/imrn/rnz153] (covering $d = 11, 17, 23, \ldots$) or the conditional Appleby–Flammia–Kopp 2025 all-dimension construction [arXiv:2501.03970]. Dimension $d = 13$ in particular admits no clean Stark-unit recipe.
+
+**(F2) Natural action of an exceptional Lie group.** Among the exceptional simple Lie groups $G_2, F_4, E_6, E_7, E_8$, only $G_2$ has a natural irreducible representation in any prime dimension $\leq 50$ — specifically, the 7-dimensional defining representation on $\operatorname{Im} \mathbb{O} \cong \mathbb{R}^7$. The smallest natural irreps of the other exceptional groups are 26, 27, 56, and 248, none of which are prime. Therefore $d=7$ is the unique small prime dimension in which an exceptional Lie group acts naturally and irreducibly.
+
+**(F3) Klein-quartic / PSL$(2,7)$ combinatorial structure.** The prime $7$ governs the Klein quartic, the unique compact Riemann surface of genus 3 with maximal automorphism group PSL$(2,7)$, and the projective Fano plane PG$(2,2)$ on which $G_2$ acts via the seven octonion multiplication triples. This combinatorial structure does not transfer to $d = 11, 13, 17, 19, 23$.
+
+**(F4) The structural decomposition $7 = 1 + 3 + \bar{3}$.** Under the maximal subgroup SU$(3) \subset G_2$, the 7-dimensional defining representation splits as a singlet plus a complex 3-dimensional representation and its conjugate. This is the unique decomposition that gives the $6/7$ ratio appearing in Papers 6 and 7 a non-generic structural reading: six "active" modes corresponding to the $3 \oplus \bar{3}$ subspace, and one "singlet" residual mode. This reading does not transfer to any other prime dimension where SICs are known.
+
+The ratio $(d-1)/d$ alone is generic to projector geometry: for any rank-one projector $\Pi$ in dimension $d$, the traceless part $B = \Pi - I/d$ satisfies $\operatorname{tr}(B^2) = (d-1)/d$. So $10/11$ and $12/13$ exist in $d=11$ and $d=13$ for trivial reasons. The $6/7$ ratio in this series is not exceptional *as a ratio*. What is exceptional is the conjunction (F1) $\wedge$ (F2) $\wedge$ (F3) $\wedge$ (F4) at $d=7$, which to our knowledge replicates at no other small prime.
+
+With this caveat in place, the four occurrences of the prime $7$ across Papers 4, 6, 7, and 10 of this series are bound by a common structural origin:
+1. The PSL$(2,7) / F_{21}$ blind-spot bound $\varepsilon_{\min} = 1/7$ derived in Paper 4 [DOI 10.5281/zenodo.19617662];
 2. The thermodynamic coherence-ceiling residual $1 - \sigma_{\text{pred}} = 1/49 = (1/7)^2$ derived in Paper 7 [DOI 10.5281/zenodo.19773185];
-3. The $6/7$ contraction ratio of Paper 6 [DOI 10.5281/zenodo.19672709].
+3. The $6/7$ contraction ratio of Paper 6 [DOI 10.5281/zenodo.19672709];
+4. The $(d+1)/d = 8/7$ AFF coefficient factor of the present paper.
 
-These four occurrences of the prime $7$ are not independent. Each arises from a different inversion problem (Gram matrix inversion in this paper; coset-quotient inversion in Paper 4; spectral-sum inversion in Paper 6; FDT bound inversion in Paper 7), but all four are governed by the same dimensional fact: $7$ is the dimension in which G₂ acts naturally, and $7$ is the unique prime dimension for which a Stark-unit SIC fiducial has been constructed (Appleby–Bengtsson–Grassl–Harrison–McConnell 2022 [DOI 10.1063/5.0083520]). The unification of these four occurrences under a single algebraic origin — the dimensional pattern of $\mathfrak{gl}(d,\mathbb{C})$ at $d=7$ — is the structural content of this paper that connects it backward through the series.
+Each arises from a different inversion problem, but all four are governed by the same dimensional fact: $d=7$ is the smallest prime dimension where (F1)–(F4) coexist. The unification is structural, not numerical — we do not claim that the *ratios* are remarkable, but that the *combination of features* under which they appear is unique.
 
-We do not claim this unification is *deep* in any sense beyond the dimensional one. It is, however, an explicit demonstration that the four prior papers are not independent appearances of $7$ in unrelated calculations; they are four facets of the same dimensional structure.
+For concreteness: dimension $d=19$ also admits an ABGHM Stark-unit SIC, but no exceptional Lie group acts in $\mathbb{R}^{19}$; so the privilege at $d=7$ is not (F1) alone. Dimension $d=11$ has an exact SIC and the Kopp Stark-conjecture covering, but no exceptional Lie irrep in dimension 11; so the privilege is not (F1) $\wedge$ similar. The privilege is the full conjunction.
+
+*Footnote on the literature:* the genericity of $(d-1)/d$ as projector geometry, the non-existence of exceptional Lie group irreducibles in prime dimensions $11, 13, 17, 19, 23$, and the specific status of Stark-unit constructions at $d=7$ are independently confirmed by an external review of the SIC literature including Scott–Grassl 2010 [DOI 10.1063/1.3374022], Fuchs–Hoang–Stacey 2017 [DOI 10.3390/axioms6030021], Zhu 2010 [DOI 10.1088/1751-8113/43/30/305305], and Semmelmann–Weingart 2021 [DOI 10.1007/s12220-021-00838-3].
 
 ### 5.6 What Theorem 1 does *not* establish
 
