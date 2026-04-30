@@ -25,7 +25,7 @@ This is the master register for active research questions feeding the PCI/PME Fr
 | L5 | Krasnov pure-connection G₂ Lagrangian / 8-coset sector | 🟢 OPEN | web search | Could give the simulator (Paper 8) a continuum-field interpretation | His Lagrangian has a discrete sector matching our 8 cosets, or doesn't |
 | L6 | Stark units in d=11, d=13 — is d=7 privileged? | 🟢 OPEN | web search | Determines whether the 6/7 saturation in Paper 7 is a special property of d=7 or a general fact about prime dimensions | Stark-unit fiducials in d=11 and d=13 either show analogous (d-1)/d saturation or don't |
 | L7 | Wilting–Priesemann awake-cortex σ replication landscape | 🟢 OPEN | web search | Determines whether σ ≈ 0.98 is the consensus or a specific lab's result | Find ≥3 independent labs reporting σ ≈ 0.98 in awake cortex with their methodology |
-| L8 | Lena Ryss "Seven Degrees of Freedom" citation due-diligence | 🟢 OPEN — prompt drafted | web search | One-shot check — has any legitimate G₂ literature cited her? | Either zero citations from credible venues (confirms our crank-adjacent verdict), or surprising citations (forces re-evaluation) | prompt at `/inbox/for_chatgpt/2026-04-30_L8_lena_ryss_citation_check.md` |
+| L8 | Lena Ryss "Seven Degrees of Freedom" citation due-diligence | ⚫ CLOSED 2026-04-30 | web search | One-shot check — has any legitimate G₂ literature cited her? | Closed: zero LEGIT or NEUTRAL citations found; one QUESTIONABLE self-published cross-reference; verdict confirms crank-adjacent classification |
 | L9 | DDG independent-replication search | 🟢 OPEN | web search | Single biggest weakness of the Bandyopadhyay program | Find any non-Bandyopadhyay-affiliated lab attempting DDG, or confirm none exists |
 
 ## Closed lanes archive
@@ -37,6 +37,9 @@ This is the master register for active research questions feeding the PCI/PME Fr
 
 ### L2 — Bandyopadhyay DDG (closed 2026-04-29)
 **Outcome:** "Dodeca" = 12 frequency bands, NOT 12-fold rotational symmetry. Triplet-of-triplets is the natural morphology. 8-peak microtubule MHz band {12, 20, 22, 30, 101, 113, 185, 204} + 45° phase quantization is the FP-2 anchor (NOT 28 MHz). DDG has no independent replication. Updated Paper 7 submission package, datasets file, website, Paper 8 outline.
+
+### L8 — Lena Ryss citation check (closed 2026-04-30)
+**Outcome:** Zero LEGIT or NEUTRAL citations found across arXiv, INSPIRE-HEP, Semantic Scholar, Google Scholar. One QUESTIONABLE cross-reference in a self-published ResearchGate/Zenodo preprint ("Fundamental Constants" by Evdokimov & Beardsley) which itself has zero citations. Several SELF citations on Medium. Verdict: confirms crank-adjacent classification; no action needed in any paper. Full response at `/inbox/from_chatgpt/2026-04-30_L8_lena_ryss_citation_check_response.md`.
 
 ## Lane proposal queue
 
