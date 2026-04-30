@@ -7,6 +7,7 @@
 **Closes:** Paper 7 §6.3 Problem 2 (the eight-coset entropy quantization conjecture)
 **Series position:** Paper 8 of the PCI/PME Framework arc
 **Branch:** paper7-foundation (will move to paper8-simulator once we have a v1 draft)
+**Parallel track to:** Paper 9 (SIC-POVM / G₂ embedding)
 
 ---
 
@@ -61,12 +62,25 @@ If step 2 fails, Paper 7's conjecture is dead and we revise. If it succeeds, we 
 - Numerical verification via QuTiP simulation (delegated to Φ): does the 28-element histogram cluster into 4 bins?
 - If yes, this closes Paper 7 §6.3 Problem 2. If no, we report the failure and revise.
 
-### §6 7-qubit hardware specification
+### §6 Hardware specification: synthetic and biological tracks
+
+**§6.1 Synthetic 7-qubit test (primary):**
 - Map the eight cosets to computational basis states of 3 qubits (8 = 2³), reserving 4 ancilla qubits for the entropy readout
 - Specify circuit depth, two-qubit gate count, and required fidelity to resolve the 1/7 step
 - Estimate decoherence-limited run length and shot count
-- Three platforms compared: IBM Quantum (superconducting), IonQ (trapped ion), and Bandyopadhyay's microtubule resonator (28 MHz regime)
-- Falsification criterion: if the four-level structure is not observed at p < 0.01 with N shots, the conjecture is rejected
+- Two platforms compared: IBM Quantum (superconducting), IonQ (trapped ion)
+- Falsification criterion: if the four-level structure is not observed at p < 0.01 with N shots, the algebraic conjecture is rejected
+
+**§6.2 Biological microtubule track (FP-2 anchor, secondary):**
+- The microtubule MHz resonance band shows eight exact peaks: {12, 20, 22, 30, 101, 113, 185, 204} MHz (Sahu et al., *Sci Rep* 4:7303, DOI 10.1038/srep07303)
+- 45° phase quantization in the 10 kHz–50 MHz regime is reported by Saxena et al. 2020 (DOI 10.3390/fractalfract4020011), giving a literal 8-bin phase circle
+- These 8 peaks are the natural empirical mapping target for the 8 PSL(2,7)/F₂₁ cosets
+- **Important caveats** (from ChatGPT Pro report 2026-04-29):
+  - DDG (dodecanogram) is NOT independently replicated
+  - "28 MHz" framing was wrong (real anchors: 28 THz tubulin, 30 MHz microtubule)
+  - Bandyopadhyay's group is the data source; replication independence is the critical experimental issue
+- See `/inbox/from_chatgpt/2026-04-29_bandyopadhyay_ddg_research_report.md` for the full FP-2 design (coset coherence statistic, falsification criteria)
+- Paper 8 will cite this as a candidate biological replication target, but the paper's primary falsifier is §6.1 (synthetic)
 
 ### §7 What this paper does not claim
 - We do not claim the 4-level quantization is consciousness-relevant in any direct way
