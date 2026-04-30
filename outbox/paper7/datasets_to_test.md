@@ -80,12 +80,19 @@ Prediction (c) is a theoretical calculation about observer-dependent entropy dif
 
 ---
 
-## Bandyopadhyay 28 MHz DDG Flag
+## Bandyopadhyay Microtubule Resonance Flag (formerly "28 MHz DDG")
 
-Martin's April 10 DDG request to Bandyopadhyay: **not directly relevant** to any of the four Paper 7 predictions.
+**FACTUAL CORRECTION (2026-04-29, ChatGPT Pro report):** DDG = **dodecanogram** (Singh et al., *J Multiscale Neuroscience* 3(1):13–26, DOI 10.56280/1600841751), NOT "digital delay generator." "Dodeca" refers to 12 frequency bands / 12 discrete time regions, not 12-fold rotational symmetry.
 
-The 28 MHz DDG measurement refers to digital delay generator control of microwave-frequency stimulation, likely in the context of Bandyopadhyay's work on resonance-based neural modulation or microtubule vibrational modes.
+**Empirical anchors (from Bandyopadhyay group's published microtubule data):**
+- Eight microtubule MHz peaks: {12, 20, 22, 30, 101, 113, 185, 204} MHz (Sahu/Singh/Bandyopadhyay, *Sci Rep* 4:7303, DOI 10.1038/srep07303)
+- 45° phase quantization in 10 kHz – 50 MHz regime (Saxena et al., *Fractal Fract* 4(2):11, DOI 10.3390/fractalfract4020011)
+- **Note:** No published Bandyopadhyay paper reports an exact 28 MHz peak. Closest measured peaks are 22 MHz and 30 MHz.
 
-**Indirect connection to prediction (d):** If Bandyopadhyay's 28 MHz stimulation can be used to modulate neural criticality (branching ratio) in a controlled way, the resulting σ measurements would provide a direct test of whether the G₂ framework predicts the right operating point under perturbation. This would require simultaneous 28 MHz DDG stimulation + spike avalanche recording; σ measurement before/during/after stimulation.
+**Connection to Paper 3's 28 MHz prediction:** Paper 3's spectral sum theorem predicts a sum-frequency triplet at 28 MHz from the G₂ weight structure. This prediction is OUR theoretical claim, not a measurement we attribute to Bandyopadhyay. The relevant test would be a dedicated measurement at 28 MHz using his methodology — which has not been done.
 
-**Recommendation:** If Bandyopadhyay responds, ask whether their 28 MHz stimulation protocol has been combined with LFP avalanche recording. If yes, this dataset directly tests prediction (d) under a non-trivial perturbation.
+**Connection to Paper 7 prediction (d):** The eight measured MHz peaks + 45° phase quantization are the natural empirical anchor for an FP-2 falsification test of the eight-coset PSL(2,7)/F₂₁ structure. Full FP-2 design at `/inbox/from_chatgpt/2026-04-29_bandyopadhyay_ddg_research_report.md`.
+
+**Replication status:** DDG is NOT independently replicated. The Singh et al. paper has Bandyopadhyay as the special-issue lead editor. Treat his group's data as primary, not validated.
+
+**Recommendation:** If Bandyopadhyay responds to outreach, ask whether (a) any blinded measurement at 28 MHz exists, and (b) whether his MHz-band data has been shared raw with any independent lab for replication.

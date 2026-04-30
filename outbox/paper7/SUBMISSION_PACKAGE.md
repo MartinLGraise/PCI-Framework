@@ -159,7 +159,7 @@ Strong candidates from the empirical-anchor groups and the broader G₂ / consci
 | Marcus Huber | Vienna University of Technology, Atominstitut | Coauthor on Wadhia 2025; expertise on quantum thermodynamics / Lindblad clocks | yes |
 | Philipp Höhn | OIST Okinawa Institute of Science and Technology | Coauthor on De Vuyst et al. 2025 (observer-dependent gravitational entropy) | yes |
 | Lucas Céleri | Federal University of Goiás, Brazil | Coauthor on Basso–Céleri 2025 (observer-dependent entropy in Schwarzschild) | yes |
-| Adriano Bandyopadhyay | National Institute for Materials Science, Tsukuba | Dodecanogram / 28 MHz consciousness-frequency work; broader sympathetic context | optional |
+| Anirban Bandyopadhyay | National Institute for Materials Science, Tsukuba | Microtubule resonance spectra (Sahu et al. *Sci Rep* 4:7303; Saxena et al. *Fractal Fract* 4(2):11); could comment on Paper 3's 28 MHz prediction in relation to his published MHz-band peaks | optional |
 | Christopher Fuchs | UMass Boston | QBism foundations; would engage with §4.3 PSL(2,7) prediction | optional |
 | Karl Friston | UCL Institute of Neurology | Free-energy principle / consciousness-thermodynamics adjacency | optional, possibly antagonistic |
 
