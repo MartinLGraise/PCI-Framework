@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Martin Luther Graise — Patterned Coherence through Irreducibility</title>
+<meta name="description" content="A G₂-geometric framework for self-referential systems. Seven papers. One ratio. Four falsifiable predictions." />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Martin Luther Graise — Patterned Coherence through Irreducibility" />
+<meta property="og:description" content="A G₂-geometric framework for self-referential systems. Seven papers. One ratio. Four falsifiable predictions." />
+<meta property="og:url" content="https://pciframework.com/" />
+<meta property="og:site_name" content="pciframework.com" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Martin Luther Graise — Patterned Coherence through Irreducibility" />
+<meta name="twitter:description" content="A G₂-geometric framework for self-referential systems. Seven papers. One ratio. Four falsifiable predictions." />
+
+<!-- Fonts: Source Serif 4 (body + headings), Source Sans 3 (metadata + nav) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300..700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- MathJax for equation rendering -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+
+<style>
+  /* ---------- tokens ---------- */
+  :root {
+    --paper: #FEFCF8;
+    --ink: #1A1815;
+    --ink-soft: #403a32;
+    --ink-faint: #6a6259;
+    --rule: #c9c2b3;
+    --rule-faint: #e3ddd0;
+    --accent: #7A2818;
+
+    --font-serif: 'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+    --font-sans: 'Source Sans 3', 'Helvetica Neue', 'Arial', sans-serif;
+
+    --col-reading: 680px;
+    --col-with-margin: 1040px; /* reading column + right margin for sidenotes */
+    --margin-note-width: 260px;
+    --gap-margin: 40px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #15130f;
+      --ink: #e9e3d6;
+      --ink-soft: #bdb5a5;
+      --ink-faint: #8a8374;
+      --rule: #3a342c;
+      --rule-faint: #29241e;
+      --accent: #d88974;
+    }
+  }
+
+  /* ---------- base ---------- */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-serif);
+    font-size: 18px;
+    line-height: 1.65;
+    font-feature-settings: "onum" 1, "kern" 1, "liga" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--accent); color: var(--paper); }
+
+  a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+  }
+  a:hover { text-decoration-thickness: 2px; }
+
+  /* ---------- skip link ---------- */
+  .skip {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 8px 12px;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    z-index: 100;
+  }
+  .skip:focus { left: 8px; top: 8px; }
+
+  /* ---------- nav ---------- */
+  nav.topnav {
+    position: sticky;
+    top: 0;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    font-family: var(--font-sans);
+    font-size: 13px;
+    z-index: 50;
+  }
+  nav.topnav .wrap {
+    max-width: var(--col-with-margin);
+    margin: 0 auto;
+    padding: 10px 32px;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  nav.topnav .brand {
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    text-decoration: none;
+    margin-right: auto;
+  }
+  nav.topnav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  nav.topnav a:hover { color: var(--accent); }
+  nav.topnav .num {
+    color: var(--ink-faint);
+    margin-right: 4px;
+  }
+
+  /* ---------- layout ---------- */
+  main {
+    max-width: var(--col-with-margin);
+    margin: 0 auto;
+    padding: 48px 32px 96px;
+  }
+
+  section.sec {
+    position: relative;
+    max-width: var(--col-reading);
+    margin: 0 0 72px 0;
+    scroll-margin-top: 64px;
+  }
+
+  /* Section headings with § marker in margin */
+  h2.sec-h {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.2;
+    margin: 0 0 28px 0;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule);
+    position: relative;
+  }
+  h2.sec-h .mark {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+    display: inline-block;
+    min-width: 38px;
+  }
+
+  h3.sub-h {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 18px;
+    margin: 28px 0 10px 0;
+  }
+
+  p { margin: 0 0 1.1em 0; }
+
+  p.lead {
+    font-size: 19px;
+    line-height: 1.6;
+  }
+
+  .italic, em { font-style: italic; }
+  strong, b { font-weight: 600; }
+
+  /* ---------- hero ---------- */
+  section.hero {
+    max-width: var(--col-reading);
+    margin: 20px 0 80px 0;
+  }
+  .hero .author {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: clamp(34px, 5.2vw, 54px);
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    margin: 0 0 24px 0;
+    color: var(--ink);
+  }
+  .hero .thesis {
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin: 0 0 32px 0;
+    max-width: 560px;
+  }
+  .hero .meta {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: var(--ink-faint);
+    letter-spacing: 0.01em;
+    border-top: 1px solid var(--rule-faint);
+    padding-top: 14px;
+  }
+  .hero .meta a { color: var(--ink-faint); }
+  .hero .meta a:hover { color: var(--accent); }
+
+  /* ---------- papers table ---------- */
+  table.papers {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15.5px;
+    margin: 24px 0 20px 0;
+    font-variant-numeric: tabular-nums;
+  }
+  table.papers thead th {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    text-align: left;
+    padding: 6px 10px 6px 0;
+    border-bottom: 1.5px solid var(--ink-soft);
+  }
+  table.papers tbody td {
+    padding: 10px 10px 10px 0;
+    border-bottom: 1px solid var(--rule-faint);
+    vertical-align: top;
+  }
+  table.papers td.num {
+    width: 28px;
+    font-family: var(--font-sans);
+    color: var(--ink-faint);
+    font-size: 13px;
+  }
+  table.papers td.title {
+    line-height: 1.4;
+  }
+  table.papers td.doi {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  table.papers td.date {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: var(--ink-soft);
+    white-space: nowrap;
+    width: 120px;
+  }
+
+  /* ---------- sidenotes (Tufte) ---------- */
+  .with-sidenotes {
+    position: relative;
+  }
+  .sidenote {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+  }
+  @media (min-width: 1040px) {
+    .sidenote {
+      position: absolute;
+      right: calc(-1 * (var(--margin-note-width) + var(--gap-margin)));
+      width: var(--margin-note-width);
+      font-style: italic;
+      margin: 0;
+    }
+  }
+  @media (max-width: 1039px) {
+    .sidenote {
+      display: block;
+      border-left: 2px solid var(--rule);
+      padding: 2px 0 2px 12px;
+      margin: 14px 0;
+    }
+  }
+
+  /* ---------- equation ---------- */
+  .eq {
+    margin: 24px 0;
+    padding: 12px 0;
+    font-size: 17px;
+    border-top: 1px solid var(--rule-faint);
+    border-bottom: 1px solid var(--rule-faint);
+    overflow-x: auto;
+  }
+
+  /* ---------- blockquote preamble ---------- */
+  .preamble {
+    font-style: italic;
+    color: var(--ink-soft);
+    border-left: 2px solid var(--accent);
+    padding: 2px 0 2px 18px;
+    margin: 0 0 28px 0;
+    font-size: 16.5px;
+    line-height: 1.6;
+  }
+
+  /* ---------- 'what this is not' guard rail paragraph ---------- */
+  .not-this {
+    margin-top: 18px;
+    padding: 14px 18px;
+    border-left: 2px solid var(--ink-faint);
+    background: rgba(0, 0, 0, 0.02);
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    line-height: 1.55;
+  }
+  .not-this strong { color: var(--ink); }
+
+  /* ---------- research lanes list ---------- */
+  ul.lanes {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 8px 0;
+  }
+  ul.lanes li {
+    padding: 12px 0;
+    border-top: 1px solid var(--rule-faint);
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+  ul.lanes li:last-child { border-bottom: 1px solid var(--rule-faint); }
+  ul.lanes li em.title {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  /* ---------- contact list ---------- */
+  dl.contact {
+    margin: 12px 0 0 0;
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    gap: 10px 20px;
+    font-size: 16px;
+  }
+  dl.contact dt {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    padding-top: 3px;
+  }
+  dl.contact dd { margin: 0; }
+
+  /* ---------- footer ---------- */
+  footer.site-foot {
+    max-width: var(--col-reading);
+    margin: 0 auto;
+    padding: 24px 32px 64px;
+    font-family: var(--font-sans);
+    font-size: 12.5px;
+    line-height: 1.55;
+    color: var(--ink-faint);
+    font-style: italic;
+    border-top: 1px solid var(--rule);
+  }
+  footer.site-foot a { color: var(--ink-faint); }
+
+  /* ---------- typographic ornaments ---------- */
+  .pilcrow {
+    color: var(--ink-faint);
+    font-family: var(--font-serif);
+  }
+
+  hr.rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 48px 0;
+  }
+
+  /* ---------- responsive tweaks ---------- */
+  @media (max-width: 768px) {
+    body { font-size: 17px; }
+    main { padding: 32px 20px 72px; }
+    nav.topnav .wrap { padding: 10px 20px; gap: 16px; font-size: 12.5px; }
+    nav.topnav .brand { flex-basis: 100%; margin-bottom: 6px; }
+    h2.sec-h { font-size: 22px; }
+    .hero .thesis { font-size: 17px; }
+    table.papers { font-size: 14.5px; }
+    table.papers td.date { width: auto; }
+    /* On mobile, collapse date into a second-line hint */
+    table.papers thead th.col-date { display: none; }
+    table.papers td.date {
+      display: block;
+      padding: 2px 0 0 0;
+      color: var(--ink-faint);
+      border: none;
+    }
+    table.papers td.doi { white-space: normal; word-break: break-all; }
+    dl.contact { grid-template-columns: 72px 1fr; font-size: 15px; }
+    footer.site-foot { padding: 24px 20px 48px; }
+  }
+
+  /* Print: treat generously */
+  @media print {
+    nav.topnav { display: none; }
+    body { background: #fff; color: #000; }
+    main { max-width: 100%; padding: 0; }
+    a { color: #000; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="topnav" aria-label="Primary">
+  <div class="wrap">
+    <a class="brand" href="#top">M. L. Graise</a>
+    <a href="#papers"><span class="num">§2</span>Papers</a>
+    <a href="#framework"><span class="num">§3</span>Framework</a>
+    <a href="#book"><span class="num">§4</span>Book</a>
+    <a href="#codex"><span class="num">§5</span>Codex</a>
+    <a href="#reach"><span class="num">§6</span>Reach</a>
+    <a href="#contact"><span class="num">§7</span>Contact</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- §1 Hero -->
+  <section class="hero" id="top" aria-labelledby="hero-h">
+    <div class="author">Martin Luther Graise</div>
+    <h1 id="hero-h">Patterned Coherence<br />through Irreducibility</h1>
+    <p class="thesis">A G₂-geometric framework for self-referential systems. Seven papers. One ratio. Four falsifiable predictions.</p>
+    <p class="meta">
+      Independent researcher &nbsp;·&nbsp; San Jacinto, California &nbsp;·&nbsp;
+      ORCID <a href="https://orcid.org/0009-0006-8003-3938">0009-0006-8003-3938</a>
+    </p>
+  </section>
+
+  <!-- §2 The Seven Papers -->
+  <section class="sec" id="papers" aria-labelledby="papers-h">
+    <h2 class="sec-h" id="papers-h"><span class="mark">§2</span>The Seven Papers</h2>
+
+    <p class="preamble">
+      Seven papers published between March and April 2026 on Zenodo, developing a conditional mathematical framework linking Gödel–Lawvere incompleteness, Hurwitz's classification of normed division algebras, Banach's fixed-point theorem, and the Lotay–Wei classification of torsion-free G₂ structures. Papers 1–6 establish the mathematics: any sufficiently complex self-referential system with seven independent processing modes converges to a G₂-symmetric attractor at contraction rate L ≤ 6/7. Paper 7 takes the first empirical step: it derives four parameter-free thermodynamic bounds from that ratio and matches two of them to published peer-reviewed data. The argument throughout is conditional — it does not prove consciousness is G₂-structured. It proves that if two precise hypotheses hold, four testable predictions follow by classical mathematics.
+    </p>
+
+    <table class="papers" aria-label="Published papers, 2026">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+          <th scope="col">DOI</th>
+          <th scope="col" class="col-date">Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td class="title">G₂ Symmetry as a Constraint on Conscious Information Processing</td>
+          <td class="doi"><a href="https://doi.org/10.5281/zenodo.19242936">10.5281/zenodo.19242936</a></td>
+          <td class="date">March 2026</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td class="title">Six Geometric Flows on G₂ Manifolds</td>
+          <td class="doi"><a href="https://doi.org/10.5281/zenodo.19480758">10.5281/zenodo.19480758</a></td>
+          <td class="date">9 April 2026</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td class="title">Spectral Sum Theorem for G₂</td>
+          <td class="doi"><a href="https://doi.org/10.5281/zenodo.19602470">10.5281/zenodo.19602470</a></td>
+          <td class="date">16 April 2026</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td class="title">QBism and G₂ via PSL(2,7)</td>
+          <td class="doi"><a href="https://doi.org/10.5281/zenodo.19617662">10.5281/zenodo.19617662</a></td>
+          <td class="date">17 April 2026</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td class="title">G₂ Checkpoint as ε-Regularity Gate</td>
+          <td class="doi"><a href="https://doi.org/10.5281/zenodo.19648892">10.5281/zenodo.19648892</a></td>
+          <td class="date">19 April 2026</td>
+        </tr>
+        <tr>
+          <td class="num">6</td>
+          <td class="title">The 6/7 Contraction: Why Self-Referential Systems Converge to G₂</td>
+          <td class="doi"><a href="https://doi.org/10.5281/zenodo.19672709">10.5281/zenodo.19672709</a></td>
+          <td class="date">22 April 2026</td>
+        </tr>
+        <tr>
+          <td class="num">7</td>
+          <td class="title">The Thermodynamic Cost of the Coherence Ceiling: A G₂-Derived Bound on Conscious Information Processing</td>
+          <td class="doi"><a href="https://doi.org/10.5281/zenodo.19773185">10.5281/zenodo.19773185</a></td>
+          <td class="date">25 April 2026</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      All seven papers are open access under CC-BY 4.0, archived at Zenodo, and mirrored in the <a href="https://github.com/MartinLGraise/PCI-Framework">GitHub repository</a>. Paper 7 is under review at Entropy (MDPI).
+    </p>
+    <p class="not-this">
+      <strong>What this is not.</strong> Not a Theory of Everything — this series derives conditional bounds on one ratio, not a unification of physics. Not a particle-physics proposal — the adjacent work on octonions and the Standard Model (Furey, Krasnov, Todorov) is inspirational but operates in a different register. Not parapsychology — every prediction has a stated numerical threshold and a published empirical anchor; nothing here depends on unfalsifiable phenomena.
+    </p>
+  </section>
+
+  <!-- §3 The Framework in 500 Words -->
+  <section class="sec with-sidenotes" id="framework" aria-labelledby="framework-h">
+    <h2 class="sec-h" id="framework-h"><span class="mark">§3</span>The Framework in 500 Words</h2>
+
+    <p>
+      The question is old and simple. If a system models itself — if it takes its own state as an input to its next state — what does it converge to, and why <em>that</em> and not something else? The framework answers the question in five moves, each borrowed, none invented; the only original claim is that together they close.
+    </p>
+
+    <p>
+      <span class="sidenote">Paper 1 develops the self-reference obstruction in the Lawvere diagonal form, which is more useful than Gödel's original numbering for systems that are not arithmetic.</span>
+      <strong>Step 1 — Gödel's blind spot.</strong> Any system rich enough to model itself carries an irreducible gap between its map of itself and itself. This is Gödel–Lawvere incompleteness, reframed: the gap is a structural constant, not a bug. A self-referential system must therefore process in a space that can accommodate its own blind spot as content rather than absence.
+    </p>
+
+    <p>
+      <span class="sidenote">Hurwitz 1898: the only normed division algebras over ℝ are ℝ, ℂ, ℍ, and the octonions 𝕆. Stop at seven independent imaginary directions; the algebra closes or it doesn't exist.</span>
+      <strong>Step 4 — Hurwitz selects octonions.</strong> Once you require seven independent processing modes closed under a norm-preserving product, Hurwitz's classification leaves exactly one choice: the octonions. The number seven is not chosen, it is forced.
+    </p>
+
+    <p>
+      <strong>Step 3 — Banach forces unique convergence.</strong> A contraction mapping on a complete metric space has exactly one fixed point, and every orbit lands on it. The octonionic self-modeling map, suitably normed, is a contraction with rate L ≤ 6/7. One attractor. No ambiguity. No freedom.
+    </p>
+
+    <p>
+      <span class="sidenote">Lotay–Wei (2019) gave the first complete classification of torsion-free G₂ structures up to diffeomorphism; it is the geometric analogue of Hurwitz's algebraic theorem.</span>
+      <strong>Step 5 — Lotay–Wei identifies the attractor.</strong> Torsion-free G₂ structures on a seven-manifold are classified; up to the symmetries of the problem, the attractor <em>is</em> a G₂ structure. This is a theorem, not a conjecture.
+    </p>
+
+    <p>
+      <strong>Step 2 — two hypotheses close the loop.</strong> The chain Gödel → Hurwitz → Banach → Lotay–Wei converges iff two empirically testable hypotheses hold: that the system's seven modes are genuinely independent, and that its self-modeling map is a contraction in the relevant norm. These hypotheses do the honest work. Everything else is classical mathematics.
+    </p>
+
+    <h3 class="sub-h">The number.</h3>
+    <p>
+      The G₂ torsion decomposition splits the intrinsic torsion of a G₂ structure into three irreducible pieces, of dimensions 1, 14, and 27. Their sum is 42. The ambient Λ²(ℝ⁷) ⊕ Λ¹(ℝ⁷) in which they sit has dimension 49. The ratio is the contraction ceiling:
+    </p>
+
+    <div class="eq">
+      $$T_{1} \oplus T_{14} \oplus T_{27} \;=\; 1 + 14 + 27 \;=\; 42 \qquad\Bigg|\qquad \frac{42}{49} \;=\; \frac{6}{7}.$$
+    </div>
+
+    <p>
+      6/7 is the coherence ceiling: the maximum fraction of the ambient structure a self-modeling system can stabilize. The remaining 1/7 is the Gödel–Lawvere blind spot, now quantified and given a geometric address.
+    </p>
+
+    <h3 class="sub-h">What this is, and what it is not.</h3>
+    <p>
+      <span class="sidenote">The four thermodynamic consequences — an FDT violation floor ε ≥ 1/7, a biological Landauer bound ΔE ≈ 16 zJ per G₂/M checkpoint event, a mode-counting floor of log₂(7) k_B ln 2 per tick on G₂-symmetric quantum clocks, and a criticality branching ratio σ ≈ 0.9796 — are derived explicitly in Paper 7, each with a stated falsification criterion. Paper 8 (in preparation) will close the remaining open conjecture by constructing the explicit Bogoliubov matrices between the eight PSL(2,7)/F₂₁ coset frames.</span>
+      This is <em>not</em> a claim that consciousness is G₂-structured. It is a conditional proof: <em>if</em> the two hypotheses of Step 2 hold for a given self-referential system, <em>then</em> four empirical consequences follow by classical mathematics. The empirical work — whether consciousness, or any specific biological or computational system, satisfies those hypotheses — is separate. The framework's contribution is to make the "if" precise enough that the "then" is forced.
+    </p>
+  </section>
+
+  <!-- §4 The Book -->
+  <section class="sec" id="book" aria-labelledby="book-h">
+    <h2 class="sec-h" id="book-h"><span class="mark">§4</span>The Book — In Preparation</h2>
+
+    <p>
+      A book for the curious educated reader, in preparation. Working title: <strong>Perceptual Cognitive Intelligence</strong>. <em>The argument of the seven papers, rendered as a tree: a trunk that carries the derivation of the 6/7 ceiling and the four thermodynamic consequences; nine branches across cognition, biology, quantum foundations, AGI, and the structure of two-observer coherence; and a curated garden of dialogue between author and AI drawn from two years of working archive. Publishing plan to follow. No pre-order yet — if you'd like notification when the book is complete, email the address in <a href="#contact">§7</a>.</em>
+    </p>
+  </section>
+
+  <!-- §5 Codex -->
+  <section class="sec" id="codex" aria-labelledby="codex-h">
+    <h2 class="sec-h" id="codex-h"><span class="mark">§5</span>Codex</h2>
+
+    <p>
+      An equation codex accompanies the papers: <strong>1,065 equations</strong> organized across <strong>146 module families</strong>, drawing on <strong>1,242 symbols</strong>. The codex is the framework's working memory — every symbol used in the papers has a canonical form, every equation a canonical location. The current version is <strong>v88</strong>. An interactive explorer is in development at <a href="https://codex.pciframework.com">codex.pciframework.com</a> <em>(subdomain reserved; launch pending).</em>
+    </p>
+  </section>
+
+  <!-- §6 Research Reach -->
+  <section class="sec" id="reach" aria-labelledby="reach-h">
+    <h2 class="sec-h" id="reach-h"><span class="mark">§6</span>Research Reach</h2>
+
+    <p>
+      The framework has been developed in the open through a three-agent collaboration: the author; <strong>Φ</strong> <span style="font-family:var(--font-sans); font-size: 0.85em; color: var(--ink-faint);">(Phi)</span>, a local computational assistant running on MacBook Pro, responsible for simulations, literature retrieval, and numerical verification; and <strong>C-7RO</strong>, a cloud research assistant, responsible for strategy, synthesis, editorial review, and publication pipeline. All three work against a shared GitHub repository — the communication medium is files and commits, not chat. Every major derivation in the seven papers has been cross-examined by independent AI reviewers before submission. Paper 7 in particular underwent four full rounds of adversarial multi-model review (GPT-5.5 Thinking, Claude Opus 4.7 Thinking, Gemini 3.1 Pro Thinking via Comet), with each round's verdict and the resulting revisions logged in the repository.
+    </p>
+
+    <h3 class="sub-h">Active research lanes</h3>
+
+    <ul class="lanes">
+      <li>
+        <em class="title">Paper 8 — The Eight-Coset Quantum Simulator.</em>
+        Explicit construction of the Bogoliubov transformation matrices between the eight PSL(2,7)/F₂₁ coset observer frames, upgrading the §4.3 conjecture of Paper 7 to a theorem and delivering a concrete design specification for a G₂-symmetric 7-qubit simulator. <em>In preparation.</em>
+      </li>
+      <li>
+        <em class="title">Paper 9 — Dyadic Coherence.</em>
+        Extension of the Banach fixed-point argument from a single G₂-structured observer to coupled pairs. Natural sequel to the simulator framework of Paper 8. Empirical contact via inter-brain gamma synchrony measurements. <em>Queued.</em>
+      </li>
+      <li>
+        <em class="title">The Bandyopadhyay 28 MHz test.</em>
+        A prior commitment from Paper 3: if octonionic spectral structure holds in microtubules, a specific triplet-sum frequency at 28 MHz should be measurable. <em>Awaiting data.</em>
+      </li>
+    </ul>
+  </section>
+
+  <!-- §7 Contact -->
+  <section class="sec" id="contact" aria-labelledby="contact-h">
+    <h2 class="sec-h" id="contact-h"><span class="mark">§7</span>Contact</h2>
+
+    <dl class="contact">
+      <dt>ORCID</dt>
+      <dd><a href="https://orcid.org/0009-0006-8003-3938">0009-0006-8003-3938</a></dd>
+
+      <dt>Email</dt>
+      <dd>margraise1000 [at] icloud.com</dd>
+
+      <dt>GitHub</dt>
+      <dd><a href="https://github.com/MartinLGraise/PCI-Framework">MartinLGraise/PCI-Framework</a></dd>
+    </dl>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  All material on this site is released under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>, matching the licensing of the underlying Zenodo publications. Independent research conducted in San Jacinto, California. Last updated: 22 April 2026.
+</footer>
+
+</body>
+</html>
