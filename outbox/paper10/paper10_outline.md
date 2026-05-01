@@ -91,12 +91,18 @@ where π_Fano projects onto the components supported on Fano-line index triples.
 
 **Why label as conjecture:** SIC triple products encode WH(7) covariance, not G₂ covariance directly. The fact that they restrict cleanly to the G₂ 3-form would require a deeper structural reason we don't currently have.
 
-### §8 What this paper does not claim
+### §8 What this paper does not claim, and adjacent programs
+
+**Limitations of the present construction:**
 - Does not claim every SIC fiducial respects G₂ structure (only one class of them, in d=7)
 - Does not claim the F₂₁ projection is canonical (Fano-axis choice is a modeling decision)
 - Does not claim the conjecture in §7 is true (it's an open problem we computed evidence for)
 - Does not solve Zauner's conjecture (that's 2025 Appleby-Flammia-Kopp's territory)
 - Does not connect to consciousness or PCI directly — that's the broader series, not this paper
+
+**Positioning relative to adjacent octonion / exceptional-algebra programs in physics:**
+
+Furey's division-algebraic Standard Model program [DOIs 10.1007/JHEP10(2014)046, 10.1140/epjc/s10052-018-5844-7, 10.1016/j.physletb.2025.139473, 10.1002/andp.202400322–324] provides an important adjacent use of the octonions: complex octonions, Clifford algebras, ideals, ladder operators, and triality are used to recover Standard Model gauge and matter representations, including SU(3)_C, electroweak chirality, one-generation Weyl structure, and three-generation triality patterns. Our construction uses the same octonionic/G₂ substrate but addresses a structurally distinct object. Rather than deriving Standard Model gauge representations, we embed the G₂ defining geometry into the d=7 SIC operator frame 𝔤𝔩(7,ℂ), and then use the finite Fano-plane symmetry PSL(2,7), its F₂₁ orientation stabilizer, and the quotient PSL(2,7)/F₂₁ to define an eight-coset observer-frame structure. Thus Furey's work is cited as adjacent and foundational for octonion-based particle physics, while the SIC-d=7, F₂₁, and 6/7 coherence-ceiling mechanism are separate additions rather than restatements of her construction. Adjacent programs in the same cluster — Boyle and Farnsworth's noncommutative/nonassociative spectral geometry [DOIs 10.1007/JHEP07(2015)023, 10.1007/JHEP06(2018)071] and Todorov's exceptional Jordan algebra internal-space construction [DOI 10.3390/universe9050222] — share the octonion substrate but address still other questions (gravity coupled to G₂ gauge theory, and finite internal Standard Model geometry, respectively). The present paper does not compete with any of these programs; it adds a coherence/observer-frame layer on the same exceptional-algebra foundation.
 
 ### §9 Discussion
 - Connection to Paper 4's QBism framing

@@ -35,6 +35,7 @@ If step 2 fails, Paper 7's conjecture is dead and we revise. If it succeeds, we 
 - Recap of Paper 7's coherence-ceiling conjecture (1 paragraph)
 - The eight-coset structure of PSL(2,7)/F₂₁ as the discrete carrier (1 paragraph)
 - What this paper claims to do, what it does NOT claim (the standard guard rail)
+- **Relation to continuum G₂ programs:** Krasnov and collaborators have developed a distinct but adjacent G₂-related program in which stable 3-forms in seven dimensions and SO(3)-connection gravity in four dimensions are related through G₂-holonomy lifts. In particular, Herfray–Krasnov–Scarinci–Shtanov [DOI 10.4310/ATMP.2018.v22.n8.a5] show that a definite SO(3) connection satisfying a second-order PDE on a 4-dimensional base determines a closed and co-closed stable 3-form on a seven-dimensional total space, hence a G₂-holonomy metric. This provides an important continuum-field-theoretic example of G₂ geometry arising from a lower-dimensional connection formalism. The eight-coset construction of the present paper differs in kind: it uses the finite quotient PSL(2,7)/F₂₁, discrete distance classes, and a finite network of 28 observer-frame Bogoliubov transformations rather than a continuous SO(3)-connection or GL(7)/G₂ stable-form moduli. Krasnov's work is therefore cited as adjacent G₂ differential-form machinery, not as a prior realization of the eight-coset PSL(2,7) sector.
 - Roadmap of sections
 
 ### §2 Octonion conventions and the Fano plane
@@ -92,6 +93,7 @@ If step 2 fails, Paper 7's conjecture is dead and we revise. If it succeeds, we 
 - If the 4-level structure holds: what does it mean for the coherence ceiling?
 - If it fails: what does the failure tell us?
 - Connection to Paper 9 (Dyadic Coherence — sequel) and Paper 10 (SIC-POVM / G₂ embedding — parallel)
+- **Relation to Krasnov continuum G₂ work (recap):** Related continuum G₂-structure work, including the broader pure-connection program [DOI 10.1103/PhysRevLett.106.251103], the GR-from-3-forms construction [DOI 10.1016/j.physletb.2017.06.025], and the recent Cayley-form Spin(7)/8D extension [DOI 10.4310/pamq.250421122254], shares the exceptional-holonomy substrate but addresses continuous moduli rather than finite coset structure. A natural open question is whether the eight-coset discrete sector of the present paper corresponds to a particular topological sector of Krasnov's 7D 3-form theory, or whether the two constructions are genuinely orthogonal realizations of G₂ geometry. We do not attempt this reconciliation here.
 
 ---
 
