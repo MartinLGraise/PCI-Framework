@@ -144,9 +144,11 @@ For a SIC, $|T_{ijk}|$ is constant on cyclically distinct triples (by $WH(7)$ co
 
 ### 4.1 Octonions and the Fano-plane indexing
 
-We adopt the Baez 2002 indexing of the imaginary octonions [Bull. AMS 39, 145–205], in which the seven imaginary units $e_0, \ldots, e_6$ are labeled to match the seven points of the Fano plane and the octonion multiplication is encoded by the seven Fano lines. In zero-indexed form (which we use throughout the computational appendix), the seven Fano lines are:
+We adopt the Baez 2002 indexing of the imaginary octonions [Bull. AMS 39, 145–205], in which the seven imaginary units $e_0, \ldots, e_6$ are labeled to match the seven points of the Fano plane and the octonion multiplication is encoded by the seven Fano lines (Figure 1). In zero-indexed form (which we use throughout the computational appendix), the seven Fano lines are:
 
 $$\mathcal{L}_{\mathrm{Fano}} = \{(0,1,3),\ (1,2,4),\ (2,3,5),\ (3,4,6),\ (0,4,5),\ (1,5,6),\ (0,2,6)\}.$$
+
+*[Figure 1: Fano plane diagram — see `figures/figure1_fano_plane.png`]*
 
 Cyclic ordering $(a,b,c)$ on each line indicates positive orientation: $e_a e_b = e_c$. Anti-cyclic ordering reverses the sign.
 
@@ -218,7 +220,9 @@ We may therefore write $\alpha^{(a)}_{p,q} = i \beta^{(a)}_{p,q}$ with $\beta^{(
 
 *Computational claim.* Verified at 60-digit precision. The minimum modulus over the entire tensor is $|\alpha_{\min}| = 2.58 \times 10^{-4}$, well above the precision floor.
 
-*Implication.* Each $G_2$ generator requires the *full* 49-dimensional SIC operator basis; no Fano-line index restriction or sparsity pattern simplifies the embedding. This is the central technical observation of §5: the SIC frame "sees" all of $G_2$ globally, not just the Fano-supported pieces.
+*Implication.* Each $G_2$ generator requires the *full* 49-dimensional SIC operator basis; no Fano-line index restriction or sparsity pattern simplifies the embedding. This is the central technical observation of §5: the SIC frame "sees" all of $G_2$ globally, not just the Fano-supported pieces. Figure 2 displays the $14 \times 49$ magnitude tensor $|\alpha^{(a)}_{p,q}|$ as a heatmap; the uniform Frobenius row norm $\sqrt{8/7} \approx 1.069$ across all 14 rows is the partial-isometry property of Theorem 1, verified to numerical precision $8.5 \times 10^{-8}$.
+
+*[Figure 2: 14×49 coefficient heatmap — see `figures/figure2_coefficient_heatmap.png`]*
 
 ### 5.4 The $G_2$-module decomposition of $\mathfrak{gl}(7,\mathbb{C})$
 
@@ -307,7 +311,9 @@ The Task 2 computational verification (Φ, 2026-04-30) confirms three results:
 
 1. **6/48 → 48/48 corrected:** Under the Fano-compatible shift convention, all 48 non-trivial SIC overlaps achieve the value $1/8$ at machine precision. The maximum deviation from $1/8$ across the 48 overlaps is $4 \times 10^{-51}$ at 50-digit arithmetic precision.
 2. **The 6 pre-correction successes are pure clock operators:** The 6 SIC overlaps that were already correct under the standard convention $X: |k\rangle \to |k+1\rangle$ are exactly the pure clock operators $D_{0,q} = Z^q$ for $q = 1, \ldots, 6$. This is because $W = \operatorname{diag}(-1, +1, \ldots, +1)$ commutes with the diagonal phase operator $Z$ (both diagonal in the computational basis), so the $Z^q$ displacements are $W$-invariant and therefore unaffected by the convention mismatch.
-3. **Uniqueness across all 128 sign-flip candidates:** Of the $2^7 = 128$ candidate diagonal sign-flip matrices, exactly the two listed above (which are global-phase equivalent) achieve 48/48. The other 126 candidates produce overlaps in the same $[0.039, 0.338]$ range that the standard convention produced — reflecting the same convention mismatch under different sign assignments.
+3. **Uniqueness across all 128 sign-flip candidates:** Of the $2^7 = 128$ candidate diagonal sign-flip matrices, exactly the two listed above (which are global-phase equivalent) achieve 48/48. The other 126 candidates produce overlaps in the same $[0.039, 0.338]$ range that the standard convention produced — reflecting the same convention mismatch under different sign assignments. Figure 3 shows the categorical breakdown.
+
+*[Figure 3: 128-candidate enumeration histogram — see `figures/figure3_w_enumeration.png`]*
 
 The full computational record is at `outbox/paper10/computations/paper10_task2_*` (results, JSON, notebook).
 
@@ -385,6 +391,10 @@ The real part $a$ is independent of the orientation $\varphi_{ijk}$: cyclic and 
 
 The numerical values are
 $$a \approx 0.025888347648, \qquad b \approx 0.035817851081.$$
+
+Figure 4 plots all triples in the complex plane: every triple lies on the universal-magnitude circle $|T| = 1/(16\sqrt{2})$ of part (a), with Fano cyclic triples clustering at $(a, +b)$, Fano anti-cyclic at $(a, -b)$, and non-Fano sampled triples at the distinct phase angle of part (c).
+
+*[Figure 4: Triple-product complex-plane structure — see `figures/figure4_triple_product.png`]*
 
 The identity $(\sqrt{2} - 1)^2 (6 + 4\sqrt{2}) = 2$ can be verified directly (expansion: $(3 - 2\sqrt{2})(6 + 4\sqrt{2}) = 18 + 12\sqrt{2} - 12\sqrt{2} - 16 = 2$), giving $a^2 + b^2 = 1/512$ as expected from part (a).
 
