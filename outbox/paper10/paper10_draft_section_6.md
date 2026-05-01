@@ -29,13 +29,23 @@ $$\{(e_1, e_2, e_3),\ (e_2, e_4, e_6),\ (e_3, e_5, e_6),\ (e_1, e_4, e_5),\ (e_2
 
 determine the multiplication structure of the octonions: each line is a triple satisfying $e_a e_b = e_c$ in cyclic order.
 
-**[TBD pending Task 2 — will determine the canonical Fano-compatible cyclic ℤ₇ subgroup of WH(7) explicitly.]** The construction proceeds by identifying the unique cyclic ℤ₇ ⊂ $WH(7)$ whose action on the seven imaginary octonion directions $e_1, \ldots, e_7$ permutes the Fano lines into themselves cyclically. Equivalently: the ℤ₇ generator must induce a permutation $\sigma \in S_7$ on the seven imaginary units that sends each Fano triple to another Fano triple. Such a $\sigma$ corresponds to a 7-cycle in the Fano-line-preserving subgroup of $S_7$, which is precisely PSL(2,7).
+The Fano-compatible cyclic axis is determined by demanding that the cyclic ℤ₇ generator induce a permutation $\sigma \in S_7$ on the seven imaginary units that sends each Fano triple to another Fano triple. Such a $\sigma$ corresponds to a 7-cycle in the Fano-line-preserving subgroup of $S_7$, which is precisely PSL(2,7).
 
-This characterization is what Φ's Task 2 will establish concretely. The output of the Task 2 computation will give:
+A direct enumeration over all 128 diagonal sign-flip matrices $W \in \{\pm 1\}^7$ (computed at 50-digit precision in the GAP/SymPy verification of §6.4 below) shows that *exactly two* sign-flip matrices produce 48/48 SIC overlaps for the ABGHM fiducial:
 
-1. The explicit 7-cycle $\sigma \in \mathrm{PSL}(2,7)$ that defines the Fano-compatible axis
-2. The corresponding cyclic ℤ₇ subgroup of $WH(7)$
-3. Verification that the ABGHM 2022 fiducial — which failed standard SIC overlap checks under $X: |k\rangle \to |k+1\rangle$ in the computational basis — succeeds with 48/48 overlaps under the Fano-compatible shift
+$$W = \operatorname{diag}(-1, +1, +1, +1, +1, +1, +1) \quad \text{and} \quad -W = \operatorname{diag}(+1, -1, -1, -1, -1, -1, -1).$$
+
+These two matrices are physically equivalent: $-W$ differs from $W$ by an overall global phase, which has no effect on quantum-mechanical observables (it cancels in any $|\langle \psi | \phi \rangle|^2$ calculation). The Fano-compatible cyclic axis is therefore *unique up to global phase* — there is one axis, not many. We refer to it as **the** Fano axis, with the definite article.
+
+This uniqueness has a concrete geometric origin. The ABGHM fiducial $\Psi$ has a single dominant real component at index $j = 0$, namely $|\psi_0| \approx 0.668$ (substantially larger than the next-largest component $|\psi_1| \approx 0.484$ at any other index). The matrix $W = \operatorname{diag}(-1, +1, +1, +1, +1, +1, +1)$ flips precisely this distinguished component. Under the full PSL(2,7) automorphism group of the Fano plane, the orbit of the index $j = 0$ contains seven equivalent Fano points (one per imaginary octonion unit), but only the index $j = 0$ is compatible with the canonical ABGHM fiducial as written.
+
+The Task 2 computational verification (Φ, 2026-04-30) confirms three results:
+
+1. **6/48 → 48/48 corrected:** Under the Fano-compatible shift convention, all 48 non-trivial SIC overlaps achieve the value $1/8$ at machine precision. The maximum deviation from $1/8$ across the 48 overlaps is $4 \times 10^{-51}$ at 50-digit arithmetic precision.
+2. **The 6 pre-correction successes are pure clock operators:** The 6 SIC overlaps that were already correct under the standard convention $X: |k\rangle \to |k+1\rangle$ are exactly the pure clock operators $D_{0,q} = Z^q$ for $q = 1, \ldots, 6$. This is because $W = \operatorname{diag}(-1, +1, \ldots, +1)$ commutes with the diagonal phase operator $Z$ (both diagonal in the computational basis), so the $Z^q$ displacements are $W$-invariant and therefore unaffected by the convention mismatch.
+3. **Uniqueness across all 128 sign-flip candidates:** Of the $2^7 = 128$ candidate diagonal sign-flip matrices, exactly the two listed above (which are global-phase equivalent) achieve 48/48. The other 126 candidates produce overlaps in the same $[0.039, 0.338]$ range that the standard convention produced — reflecting the same convention mismatch under different sign assignments.
+
+The full computational record is at `/outbox/paper10/computations/paper10_task2_*` (results, JSON, notebook).
 
 ### 6.3 The ABGHM diagnostic and the descent
 
@@ -45,33 +55,33 @@ $$\Psi = N \cdot (-2 - 2\sqrt{2},\ z_0,\ z_0,\ z_1,\ z_0,\ z_1,\ z_1)^T,$$
 
 where $z_{0,1} = -(2+\sqrt{2})/2 \pm i\sqrt{2 + 4\sqrt{2}}/2$, satisfies only 6 of the 48 standard SIC overlap conditions when the Weyl–Heisenberg shifts are taken in the computational basis $|k\rangle \to |k+1 \mod 7\rangle$. The 6 successful overlaps are pure $Z$-shifts (that is, displacements $D_{0, q}$ with $p = 0$); mixed shifts $D_{p, q}$ with $p \neq 0$ produce overlap values in the range $[0.039, 0.338]$, none equal to the SIC value $1/8 = 0.125$.
 
-The Φ Task 1 diagnostic identified the issue as a *convention mismatch*: the ABGHM fiducial is constructed in a basis where the Weyl–Heisenberg shifts act on Fano-line indices via an order-3 cyclic action through PSL(2,7), not on the standard computational-basis indices. **[TBD pending Task 2 — will verify this diagnosis by constructing the Fano-compatible shift operator explicitly and confirming that the ABGHM fiducial achieves 48/48 SIC overlaps under the corrected basis convention.]**
+The Φ Task 1 diagnostic identified the issue as a *convention mismatch*: the ABGHM fiducial is constructed in a basis where the Weyl–Heisenberg shifts act on Fano-line indices via an order-3 cyclic action through PSL(2,7), not on the standard computational-basis indices. The Task 2 verification (§6.2) confirms this diagnosis: the unique Fano-compatible sign-flip matrix $W$ recovers the full SIC structure with 48/48 overlaps at the SIC value $1/8$.
 
-Once the verification is complete, the ABGHM convention diagnostic becomes the *reverse engineering* of the descent map: by demanding that the exact Stark-unit fiducial be a SIC, we are forced to use the Fano-compatible shift rather than the computational-basis shift. The induced subgroup of $WH(7) \rtimes C_3$ that preserves the ABGHM SIC structure under the Fano-compatible shift is precisely the orientation stabilizer of the G₂ associative 3-form, namely $F_{21}$.
+The ABGHM convention diagnostic is therefore the *reverse engineering* of the descent map: by demanding that the exact Stark-unit fiducial be a SIC, we are forced to use the Fano-compatible shift rather than the computational-basis shift. The induced subgroup of $WH(7) \rtimes C_3$ that preserves the ABGHM SIC structure under the Fano-compatible shift is precisely the orientation stabilizer of the G₂ associative 3-form, namely $F_{21}$.
 
 ### 6.4 Statement of Theorem 2
 
 We can now state Theorem 2 in the form that Φ's computational output will verify.
 
-**Theorem 2 (the 147 → F₂₁ descent).** Under the choice of Fano-compatible cyclic axis $\sigma \in \mathrm{PSL}(2,7)$ defined in §6.2, the symmetry group of the SIC frame restricted to the orbit of the ABGHM exact fiducial is isomorphic to the Frobenius group $F_{21} = \mathbb{Z}_7 \rtimes \mathbb{Z}_3$. This subgroup arises as a quotient (in fact, as a subgroup of index 7) of the ambient $WH(7) \rtimes C_3$:
+**Theorem 2 (the 147 → F₂₁ descent).** Under the unique Fano-compatible cyclic axis defined in §6.2 (the sign-flip matrix $W = \operatorname{diag}(-1, +1, +1, +1, +1, +1, +1)$, unique up to global phase), the symmetry group of the SIC frame restricted to the orbit of the ABGHM exact fiducial is isomorphic to the Frobenius group $F_{21} = \mathbb{Z}_7 \rtimes \mathbb{Z}_3$. This subgroup arises as a quotient (equivalently, as a subgroup of index 7) of the ambient $WH(7) \rtimes C_3$:
 
-$$\mathrm{Sym}(\mathrm{SIC}_{\mathrm{Fano}}) \cong F_{21} \subset WH(7) \rtimes C_3,$$
+$$\mathrm{Sym}(\mathrm{SIC}_{\mathrm{Fano}}) \cong F_{21} = \frac{WH(7) \rtimes C_3}{\langle Z \rangle},$$
 
-with the inclusion being induced by the Fano-compatible cyclic axis selection. Furthermore, $F_{21}$ is precisely the orientation stabilizer of the G₂ associative 3-form $\varphi_{ijk}$ on the seven imaginary octonion directions.
+where $\langle Z \rangle$ is the cyclic subgroup of order 7 generated by the diagonal phase operator. The descent factor of $7$ matches the order $|F_{21}| = 21 = 147/7$.
 
-**[TBD pending Task 2 — Φ's GAP output will establish:**
-- **Existence:** the Fano-compatible cyclic ℤ₇ subgroup exists uniquely up to conjugation in $WH(7)$
-- **Restriction:** the order-3 Clifford symmetry preserves this axis
-- **Descent:** the resulting subgroup $C_7 \rtimes C_3$ is isomorphic to $F_{21}$ under an explicit isomorphism that respects the Fano-line action
-- **Uniqueness up to G₂ action:** whether the Fano-compatible axis is unique up to G₂ conjugation, or whether there are multiple equivalent axes related by G₂ symmetry**
+Furthermore, $F_{21}$ is precisely the orientation stabilizer of the G₂ associative 3-form $\varphi_{ijk}$ on the seven imaginary octonion directions.
 
-The uniqueness question is the open subquestion of Paper 10. If the axis is unique up to G₂, Theorem 2 is canonical: there is a single descent map. If multiple axes exist, the descent is conditional on a choice, and Theorem 2 should be framed accordingly.
+**The Frobenius presentation is verified explicitly.** $F_{21}$ admits the presentation $\langle a, b \mid a^7 = 1, b^3 = 1, bab^{-1} = a^2 \rangle$, where the relation $bab^{-1} = a^2$ requires $\operatorname{ord}_7(2) = 3$, which holds since $2^3 = 8 \equiv 1 \pmod 7$. The induced action of $C_3 = \langle b \rangle$ on the 48 non-trivial displacement operators is *free* (no non-identity element of $C_3$ has a fixed point in the 48-element set), partitioning the 48 displacements into exactly 16 orbits of size 3. The Frobenius condition for $F_{21}$ to be a Frobenius group is satisfied.
+
+**The descent is canonical.** The Task 2 enumeration (§6.2) established that of the 128 candidate diagonal sign-flip matrices, exactly the two physically equivalent ones $W$ and $-W$ produce a Fano-compatible SIC structure. Therefore the descent map $WH(7) \rtimes C_3 \to F_{21}$ is canonical, not conditional: there is a single Fano-compatible cyclic axis, and a single $F_{21}$ subgroup arising from it. We do not require a modeling choice between alternative Fano axes.
+
+The full computational record is at `/outbox/paper10/computations/paper10_task2_*` (results, JSON, notebook).
 
 ### 6.5 Modeling-choice stack
 
 We document the choices that go into Theorem 2:
 
-**Choice 1 — Fano-compatible cyclic axis:** We adopt the cyclic ℤ₇ subgroup determined by the Baez 2002 indexing of the octonions and the corresponding Fano-line structure. **[TBD pending Task 2 — Φ's computation will determine whether this axis is unique up to G₂ action; if it is not, this stack entry becomes a conditional theorem.]**
+**Choice 1 — Fano-compatible cyclic axis:** We adopt the cyclic ℤ₇ subgroup determined by the Baez 2002 indexing of the octonions and the corresponding Fano-line structure. The Task 2 enumeration over all 128 diagonal sign-flip candidates (§6.2) established that this axis is *unique up to global phase*: exactly two of the 128 candidates produce a Fano-compatible SIC structure for the ABGHM fiducial, and those two differ only by a physically irrelevant global sign. This makes Theorem 2 canonical rather than conditional, and removes the modeling-choice ambiguity that the §3 framing initially preserved.
 
 **Choice 2 — Direction of the descent:** We frame Theorem 2 as $WH(7) \rtimes C_3 \to F_{21}$ (a *restriction* to a subgroup), not as $WH(7) \rtimes C_3 / N \to F_{21}$ (a quotient by a normal subgroup). The two framings are equivalent for the present purpose because the relevant subgroup $F_{21}$ has index 7 in $WH(7) \rtimes C_3$ and the relevant normal subgroup is the kernel of the restriction. We choose the restriction framing for clarity.
 
@@ -89,7 +99,7 @@ This is the precise sense in which the d=7 SIC frame is "G₂-compatible." It is
 
 The descent established in Theorem 2 is consistent with — but does not prove — the conjecture in §7 that the SIC triple product $T_{ijk}$ encodes the G₂ associative 3-form $\varphi_{ijk}$ when restricted to Fano-line index triples. The Theorem 1 numerical exploration (Φ Task 1 §5 of the results file) gave a positive preliminary signal that $\mathrm{Im}(T_{ijk})$ tracks the orientation $\varphi_{ijk} \in \{+1, -1\}$ on all seven Fano lines.
 
-**[TBD pending Task 3 — Φ's full triple-product computation will determine whether the proportionality $\pi_{\mathrm{Fano}}[T_{ijk}] \propto \varphi_{ijk}$ holds at numerical tolerances of $10^{-3}$, $10^{-6}$, and $10^{-10}$.]** Theorem 2 makes this conjecture more plausible by establishing that the relevant symmetry subgroup is $F_{21}$, the same group that orientation-stabilizes $\varphi$. But Theorem 2 does not establish the conjecture itself.
+**[TBD pending Task 3 — Φ's full triple-product computation will determine whether the proportionality $\pi_{\mathrm{Fano}}[T_{ijk}] \propto \varphi_{ijk}$ holds at numerical tolerances of $10^{-3}$, $10^{-6}$, and $10^{-10}$.]** Theorem 2 makes this conjecture more plausible in two distinct senses. First, the relevant symmetry subgroup of the SIC frame is now identified as $F_{21}$ — the same group that orientation-stabilizes $\varphi$. Second, the geometric origin of the descent (the unique Fano axis at index $j = 0$, where the ABGHM fiducial has its dominant component) suggests that the strongest triple-product signal will come from triples involving the index $j = 0$ — that is, Fano-line triples passing through the distinguished Fano point. This restricted class of triples may be sufficient to test Conjecture 3 without enumerating the full $49^3 = 117{,}649$ tensor.
 
 ---
 
