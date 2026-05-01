@@ -1,10 +1,14 @@
 # Symmetric Informationally Complete Measurements as an Operator Basis for the Complexified G₂ Lie Algebra
 
-**Author:** Martin Luther Graise (ORCID 0009-0006-8003-3938)
+**Author:** Martin Luther Graise
+**ORCID:** 0009-0006-8003-3938
+**Affiliation:** Independent Researcher
+**Correspondence:** margraise1000@icloud.com
 **Series position:** Paper 10 of the PCI/PME Framework arc
-**Status:** Master draft, v1 (consolidated 2026-05-01)
+**Status:** Master draft v1.1 (front matter complete; Appendix A.4 phase derivation pending Φ)
 **Predecessors in the series:** Paper 4 (DOI 10.5281/zenodo.19617662), Paper 6 (DOI 10.5281/zenodo.19672709), Paper 7 (DOI 10.5281/zenodo.19773185)
 **Computational verification:** Φ Tasks 1–3, results files in `outbox/paper10/computations/`
+**Source repository:** https://github.com/MartinLGraise/PCI-Framework (branch `paper7-foundation`)
 
 ---
 
@@ -81,17 +85,7 @@ The geometric origin of this convention correction — namely that $W$ flips the
 
 ### 2.4 Dimensional context
 
-The dimension $d = 7$ is privileged among small primes by the conjunction of four features whose joint occurrence does not replicate at $d = 11, 13, 17, 19$, or 23. We summarize these features here for context; a more complete discussion is given in §5.5 and §9.
-
-(F1) The ABGHM Stark-unit construction $d = n^2 + 3$ has $d = 7$ as its smallest prime case ($n = 2$). The next prime members are $d = 19, 67, 103, \ldots$
-
-(F2) Among the exceptional Lie groups $G_2, F_4, E_6, E_7, E_8$, only $G_2$ has a natural irreducible representation in any prime dimension $\leq 50$, namely the 7-dimensional defining representation on $\operatorname{Im} \mathbb{O}$.
-
-(F3) The prime 7 governs the Klein quartic — the unique compact Riemann surface of genus 3 with maximal automorphism group $\operatorname{PSL}(2,7)$ — and the projective Fano plane $\operatorname{PG}(2, 2)$ on which $G_2$ acts via the seven octonion multiplication triples.
-
-(F4) Under the maximal subgroup $\operatorname{SU}(3) \subset G_2$, the 7-dimensional defining representation splits as $7 = 1 + 3 + \bar{3}$. The 6/7 ratio that appears throughout this paper and Papers 6 and 7 of the series corresponds to the $3 \oplus \bar{3}$ subspace; the residual 1/7 corresponds to the singlet.
-
-The conjunction (F1)–(F4) is what makes $d = 7$ structurally distinguished, not any single feature alone. The ratio $(d-1)/d$ alone is generic to projector geometry — analogous ratios $10/11$ and $12/13$ exist trivially in $d = 11, 13$ — and is therefore not the source of the d=7 privilege. The full discussion is in §5.5 and §9.
+The dimension $d = 7$ is privileged among small primes by a conjunction of arithmetic, Lie-algebraic, combinatorial, and representation-theoretic features whose joint occurrence does not replicate at $d = 11, 13, 17, 19$, or 23. We make use of this conjunction throughout the paper but defer its full discussion to §5.5, after Theorem 1 establishes the core embedding result. The ratio $(d-1)/d$ alone is generic to projector geometry — analogous ratios $10/11$ and $12/13$ exist trivially — and is therefore not the source of the d=7 privilege; the privilege lies in what additional structure the prime 7 brings to bear, which the theorems of §§5–7 progressively expose.
 
 ---
 
@@ -605,29 +599,127 @@ This is the precise sense in which Theorem 3 is "exact for arithmetic reasons": 
 
 ---
 
+## Author Contributions
+
+Conceptualization, methodology, formal analysis, investigation, writing — original draft, writing — review and editing, and supervision: M.L.G. Computational verification was performed by AI research assistants under the author's direction (see *Use of AI Tools* below); the author retains full responsibility for all scientific content.
+
+## Funding
+
+This research received no external funding.
+
+## Institutional Review Board Statement
+
+Not applicable. No human or animal subjects were involved; the paper is a purely mathematical/structural result. The empirical anchors of related papers in the series (Papers 4, 6, 7) are previously published third-party work and are presupposed rather than redeveloped here.
+
+## Informed Consent Statement
+
+Not applicable.
+
+## Data Availability Statement
+
+All computational artifacts supporting this paper are publicly available at https://github.com/MartinLGraise/PCI-Framework on branch `paper7-foundation`, including:
+
+- The 14×49 G₂/SIC coefficient tensor (Theorem 1): `outbox/paper10/computations/paper10_task1_g2_sic_coefficients.json`
+- The 128-candidate $W$-enumeration record (Theorem 2): `outbox/paper10/computations/paper10_task2_*`
+- The 50-digit triple-product verification (Theorem 3): `outbox/paper10/computations/paper10_task3_*`
+- The figure-generation code: `outbox/paper10/figures/build_figures.py`
+- An independent verification audit: `outbox/paper10/computations/paper10_task3_c7ro_verification.md`
+
+Every numerical claim in this paper can be reproduced by running the scripts in the cited paths against the public Git history.
+
+## Conflicts of Interest
+
+The author declares no conflicts of interest.
+
+## Use of AI Tools
+
+In accordance with publisher policies on the use of generative AI in scholarly publishing, the author discloses that this manuscript was developed with the assistance of two AI research collaborators: Φ (computational verification, instantiated as Anthropic Claude Dispatch running GAP, Cadabra2, SymPy, and mpmath at 50-digit precision) and C-7RO (synthesis, strategy, editorial review, and prose drafting, instantiated as Perplexity Computer running Claude Sonnet 4.6). External literature support was provided by ChatGPT GPT-5 Pro deep research. Both primary collaborators operated against the public Git repository at github.com/MartinLGraise/PCI-Framework, where every revision, computational output, integrity flag, and counter-argument is version-controlled and publicly auditable. The three independent computational tasks supporting Theorems 1, 2, and 3 were each verified twice — once by Φ's primary computation and once by C-7RO's independent re-derivation — with audit records preserved in the repository. The author retains full responsibility for all scientific content; AI tools were used as research assistants, not as authors.
+
+## Acknowledgments
+
+The author thanks the open-source mathematics community for the foundational results on which this paper depends — in particular the Appleby–Flammia–Fuchs SIC operator basis theorem, the Appleby–Bengtsson–Grassl–Harrison–McConnell exact d=7 Stark-unit fiducial, the Samuel–Gedik classification of d=7 SIC symmetries, and the Baez 2002 indexing of the imaginary octonions. The Klein quartic / PSL(2,7) connection that motivates the broader series owes a debt to Felix Klein's nineteenth-century investigations and to the contemporary expository tradition (Levy, Singerman, Elkies). Particular thanks to Christopher Fuchs, Marcus Appleby, Ingemar Bengtsson, Markus Grassl, and the broader QBism / SIC-POVM community for making the algebraic structure of the d=7 case sufficiently transparent that the connection to G₂ could be discovered. Every quantitative claim in this paper has been independently verified against source material or executed code.
+
+---
+
 ## References
 
-(Selected — full bibliography in submission version)
+References are organized by topical cluster: (i) SIC-POVM foundations and exact constructions; (ii) symmetry classifications of SIC frames; (iii) $G_2$ and octonion algebra; (iv) adjacent exceptional-algebra programs in physics; (v) prior papers in the PCI/PME series; (vi) classical algebraic combinatorics referenced in the discussion.
 
-- **Appleby, D. M.** (2005). "Symmetric informationally complete-positive operator valued measures and the extended Clifford group." *J. Math. Phys.* 46, 052107. DOI 10.1063/1.1842008.
-- **Appleby, D. M., Bengtsson, I., Grassl, M., Harrison, M., McConnell, G.** (2022). "SIC-POVMs from Stark units." *J. Math. Phys.* 63, 112205. DOI 10.1063/5.0083520.
-- **Appleby, D. M., Flammia, S. T., Fuchs, C. A.** (2011). "The Lie algebraic significance of symmetric informationally complete measurements." *J. Math. Phys.* 52, 022202. DOI 10.1063/1.3555805.
-- **Appleby, D. M., Flammia, S. T., Kopp, G. S.** (2025). "All dimensions admit SIC-POVMs." arXiv:2501.03970.
-- **Baez, J. C.** (2002). "The octonions." *Bull. Amer. Math. Soc.* 39, 145–205.
-- **Boyle, L., Farnsworth, S.** (2015, 2018). "Non-commutative geometry, non-associative geometry, and the Standard Model." DOIs 10.1007/JHEP07(2015)023, 10.1007/JHEP06(2018)071.
-- **Fuchs, C. A., Hoang, M. C., Stacey, B. C.** (2017). "The SIC question: history and state of play." *Axioms* 6, 21. DOI 10.3390/axioms6030021.
-- **Furey, N.** (2014–2025). Series of papers on octonionic Standard Model algebra. DOIs 10.1007/JHEP10(2014)046, 10.1140/epjc/s10052-018-5844-7, 10.1016/j.physletb.2025.139473, 10.1002/andp.202400322–324.
-- **Graise, M. L.** (2025). "Paper 4: QBism and $G_2$ via PSL(2,7)." DOI 10.5281/zenodo.19617662.
-- **Graise, M. L.** (2025). "Paper 6: The 6/7 contraction ratio." DOI 10.5281/zenodo.19672709.
-- **Graise, M. L.** (2026). "Paper 7: A thermodynamic ceiling on coherence in self-modeling observers." DOI 10.5281/zenodo.19773185.
-- **Kopp, G. S.** (2021). "SIC-POVMs and the Stark conjectures." *Int. Math. Res. Not.* 2021, 13812–13838. DOI 10.1093/imrn/rnz153.
-- **Paley, R. E. A. C.** (1933). "On orthogonal matrices." *J. Math. Phys.* 12, 311–320.
-- **Samuel, J., Gedik, Z.** (2024). "Symmetries of d=7 SIC-POVMs." *J. Phys. A: Math. Theor.* 57, 295304. DOI 10.1088/1751-8121/ad5ca9.
-- **Scott, A. J., Grassl, M.** (2010). "Symmetric informationally complete positive-operator-valued measures: A new computer study." *J. Math. Phys.* 51, 042203. DOI 10.1063/1.3374022.
-- **Semmelmann, U., Weingart, G.** (2021). "The standard Laplace operator." *J. Geom. Anal.* 31, 8639–8696. DOI 10.1007/s12220-021-00838-3.
-- **Todorov, I.** (2023). "Octonions, exceptional Jordan algebra, and the role of the group $F_4$ in particle physics." *Universe* 9, 222. DOI 10.3390/universe9050222.
-- **Zauner, G.** (1999). "Quantendesigns: Grundzüge einer nichtkommutativen Designtheorie." Ph.D. thesis, University of Vienna.
-- **Zhu, H.** (2010). "SIC POVMs and Clifford groups in prime dimensions." *J. Phys. A: Math. Theor.* 43, 305305. DOI 10.1088/1751-8113/43/30/305305.
+### SIC-POVM foundations and exact constructions
+
+[1] **Zauner, G.** (1999). *Quantendesigns: Grundzüge einer nichtkommutativen Designtheorie.* Ph.D. thesis, University of Vienna. (Published English translation: *Int. J. Quantum Inf.* 9, 445–507, 2011. DOI 10.1142/S0219749911006776.)
+
+[2] **Renes, J. M., Blume-Kohout, R., Scott, A. J., Caves, C. M.** (2004). "Symmetric informationally complete quantum measurements." *J. Math. Phys.* 45, 2171–2180. DOI 10.1063/1.1737053.
+
+[3] **Appleby, D. M.** (2005). "Symmetric informationally complete-positive operator valued measures and the extended Clifford group." *J. Math. Phys.* 46, 052107. DOI 10.1063/1.1842008.
+
+[4] **Scott, A. J., Grassl, M.** (2010). "Symmetric informationally complete positive-operator-valued measures: A new computer study." *J. Math. Phys.* 51, 042203. DOI 10.1063/1.3374022.
+
+[5] **Appleby, D. M., Flammia, S. T., Fuchs, C. A.** (2011). "The Lie algebraic significance of symmetric informationally complete measurements." *J. Math. Phys.* 52, 022202. DOI 10.1063/1.3555805.  *[The basis theorem; central to Theorem 1 of the present paper.]*
+
+[6] **Fuchs, C. A., Hoang, M. C., Stacey, B. C.** (2017). "The SIC question: history and state of play." *Axioms* 6, 21. DOI 10.3390/axioms6030021.
+
+[7] **Kopp, G. S.** (2021). "SIC-POVMs and the Stark conjectures." *Int. Math. Res. Not.* 2021, 13812–13838. DOI 10.1093/imrn/rnz153.
+
+[8] **Appleby, D. M., Bengtsson, I., Grassl, M., Harrison, M., McConnell, G.** (2022). "SIC-POVMs from Stark units." *J. Math. Phys.* 63, 112205. DOI 10.1063/5.0083520.  *[The exact d=7 fiducial used throughout the present paper.]*
+
+[9] **Appleby, D. M., Flammia, S. T., Kopp, G. S.** (2025). "All dimensions admit SIC-POVMs." arXiv:2501.03970.
+
+[10] **Bengtsson, I.** (2020). "SIC and Hopf links." *Found. Phys.* 50, 1794–1814. DOI 10.1007/s10701-020-00318-8.
+
+### SIC symmetry classifications and prime-dimension structure
+
+[11] **Zhu, H.** (2010). "SIC POVMs and Clifford groups in prime dimensions." *J. Phys. A: Math. Theor.* 43, 305305. DOI 10.1088/1751-8113/43/30/305305.
+
+[12] **Samuel, J., Gedik, Z.** (2024). "Symmetries of d=7 SIC-POVMs." *J. Phys. A: Math. Theor.* 57, 295304. DOI 10.1088/1751-8121/ad5ca9.  *[The 147-element symmetry group $WH(7)\rtimes C_3$; central to Theorem 2.]*
+
+[13] **Stacey, B. C.** (2021). *A First Course in the Sporadic SICs.* SpringerBriefs in Mathematical Physics. DOI 10.1007/978-3-030-76104-2.
+
+### $G_2$, octonions, and the Fano plane
+
+[14] **Baez, J. C.** (2002). "The octonions." *Bull. Amer. Math. Soc.* 39, 145–205. DOI 10.1090/S0273-0979-01-00934-X.  *[The Fano-plane indexing of imaginary octonions used throughout §4.]*
+
+[15] **Conway, J. H., Smith, D. A.** (2003). *On Quaternions and Octonions: Their Geometry, Arithmetic, and Symmetry.* A K Peters / CRC Press.
+
+[16] **Cartan, É.** (1894). *Sur la structure des groupes de transformations finis et continus.* Thèse, Paris. *[Original construction of $G_2$ as the automorphism group of the octonions.]*
+
+[17] **Bryant, R. L.** (1987). "Metrics with exceptional holonomy." *Ann. Math.* 126, 525–576. DOI 10.2307/1971360.
+
+[18] **Fernández, M., Gray, A.** (1982). "Riemannian manifolds with structure group $G_2$." *Ann. Mat. Pura Appl.* 132, 19–45. DOI 10.1007/BF01760975.
+
+[19] **Semmelmann, U., Weingart, G.** (2021). "The standard Laplace operator." *J. Geom. Anal.* 31, 8639–8696. DOI 10.1007/s12220-021-00838-3.
+
+### Adjacent exceptional-algebra programs in physics (§8)
+
+[20] **Furey, N.** (2014). "Generations: three prints, in colour." *J. High Energy Phys.* 2014, 046. DOI 10.1007/JHEP10(2014)046.
+
+[21] **Furey, N.** (2018). "$SU(3)_C \times SU(2)_L \times U(1)_Y(\times U(1)_X)$ as a symmetry of division algebraic ladder operators." *Eur. Phys. J. C* 78, 375. DOI 10.1140/epjc/s10052-018-5844-7.
+
+[22] **Furey, N.** (2025). "Three generations from a single octonion vector space." *Phys. Lett. B* (online, accepted manuscript). DOI 10.1016/j.physletb.2025.139473.
+
+[23] **Boyle, L., Farnsworth, S.** (2015). "Non-commutative geometry, non-associative geometry and the standard model of particle physics." *J. High Energy Phys.* 2015, 023. DOI 10.1007/JHEP07(2015)023.
+
+[24] **Boyle, L., Farnsworth, S.** (2018). "A new algebraic structure in the standard model of particle physics." *J. High Energy Phys.* 2018, 071. DOI 10.1007/JHEP06(2018)071.
+
+[25] **Todorov, I.** (2023). "Octonions, exceptional Jordan algebra and the role of the group $F_4$ in particle physics." *Universe* 9, 222. DOI 10.3390/universe9050222.
+
+### PCI/PME framework series (prior papers)
+
+[26] **Graise, M. L.** (2025). *QBism and $G_2$ via PSL(2,7)* (Paper 4). Zenodo. DOI 10.5281/zenodo.19617662.
+
+[27] **Graise, M. L.** (2025). *The 6/7 contraction* (Paper 6). Zenodo. DOI 10.5281/zenodo.19672709.
+
+[28] **Graise, M. L.** (2026). *A thermodynamic ceiling on coherence in self-modeling observers* (Paper 7). Zenodo. DOI 10.5281/zenodo.19773185.
+
+### Classical algebraic combinatorics (§7.4 / §9.4)
+
+[29] **Paley, R. E. A. C.** (1933). "On orthogonal matrices." *J. Math. Phys.* 12, 311–320. DOI 10.1002/sapm1933121311.
+
+[30] **Klein, F.** (1879). "Über die Transformation siebenter Ordnung der elliptischen Funktionen." *Math. Ann.* 14, 428–471. *[Original construction of the Klein quartic and its $\mathrm{PSL}(2,7)$ automorphism group; cited for the Fano-plane / Klein-quartic combinatorial structure underlying §5.5(F3).]*
+
+[31] **Singerman, D.** (1988). "Klein's Riemann surface of genus 3 and regular embeddings of finite projective planes." *Bull. London Math. Soc.* 20, 297–304. DOI 10.1112/blms/20.4.297.
+
+[32] **Elkies, N. D.** (1999). "The Klein quartic in number theory." In *The Eightfold Way: The Beauty of Klein's Quartic Curve* (S. Levy, ed.), MSRI Publications 35, Cambridge University Press, pp. 51–101.
 
 ---
 
