@@ -1,0 +1,455 @@
+{
+  "paper": "Paper 10",
+  "task": "Task 2",
+  "agent": "Phi",
+  "date": "2026-04-30",
+  "precision_digits": 50,
+  "d": 7,
+  "group_chain": {
+    "WH7_semidirect_C3": {
+      "order": 147,
+      "description": "WH(7) \u22ca C3, symmetry group of d=7 SIC-POVM"
+    },
+    "phase_subgroup_Z": {
+      "generators": "Z = diag(omega^0, ..., omega^6)",
+      "order": 7,
+      "isomorphic_to": "C7",
+      "central_in": "WH(7)"
+    },
+    "quotient": {
+      "group": "F21",
+      "order": 21,
+      "computation": "147 / 7 = 21",
+      "isomorphic_to": "C7 \u22ca C3 (Frobenius group)",
+      "presentation": "< a, b | a^7=1, b^3=1, b a b^{-1} = a^2 >",
+      "frobenius": true,
+      "frobenius_check": "ord_7(2) = 3, 2 \u2262 1 (mod 7), 4 \u2262 1 (mod 7)"
+    }
+  },
+  "C3_symplectic_matrix": {
+    "M": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "modulus": 7,
+    "det_mod_7": 1,
+    "order": 3,
+    "verification": {
+      "M^1": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "M^2": [
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "M^3": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "C3_action_on_C7": {
+    "generator_action": "k \u2192 2k (mod 7)",
+    "order_of_2_mod_7": 3,
+    "powers": {
+      "2^1 mod 7": 2,
+      "2^2 mod 7": 4,
+      "2^3 mod 7": 1
+    }
+  },
+  "C3_orbits": {
+    "total_nontrivial_pairs": 48,
+    "num_orbits": 16,
+    "all_orbit_sizes_equal_3": true,
+    "orbits": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      [
+        [
+          3,
+          3
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      [
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      [
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ]
+    ]
+  },
+  "W_correction": {
+    "W": [
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "description": "Fano-compatible sign-flip axis W = diag(-1,1,1,1,1,1,1)",
+    "action": "Replace ABGHM fiducial |Psi> by W|Psi>",
+    "effect_standard": "6/48 SIC overlaps = 1/8",
+    "effect_corrected": "48/48 SIC overlaps = 1/8",
+    "max_deviation_from_1_8": "4.0e-51 (at 50-digit precision floor)",
+    "uniqueness": {
+      "matrices_tested": 128,
+      "matrices_achieving_48_48": 2,
+      "winners": [
+        [
+          -1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "unique_up_to_global_phase": true,
+      "unique_representatives": [
+        [
+          -1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  "SIC_structure": {
+    "d": 7,
+    "num_projectors": 49,
+    "SIC_condition": "|<Psi|D_{p,q}|Psi>|^2 = 1/(d+1) = 1/8  for all (p,q) \u2260 (0,0)",
+    "displacement_convention": "D_{p,q} = tau^{pq} X^p Z^q, tau = exp(i*pi/7)",
+    "standard_correct_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "standard_correct_explanation": "D_{0,q} = Z^q (pure clock) commutes with W; W-invariant"
+  },
+  "fano_plane": {
+    "indexing": "0-indexed (standard 0..6)",
+    "lines_7": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        2,
+        3,
+        5
+      ],
+      [
+        3,
+        4,
+        6
+      ],
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        1,
+        5,
+        6
+      ],
+      [
+        0,
+        2,
+        6
+      ]
+    ],
+    "special_point": 0,
+    "z0_group": [
+      1,
+      2,
+      4
+    ],
+    "z1_group": [
+      3,
+      5,
+      6
+    ],
+    "z0_is_fano_line": true,
+    "z1_is_fano_line": false,
+    "note": "{3,5,6} is not a standard Fano line under 0-indexed labeling"
+  }
+}
