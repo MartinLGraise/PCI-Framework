@@ -5,7 +5,7 @@
 **Affiliation:** Independent Researcher
 **Correspondence:** margraise1000@icloud.com
 **Series position:** Paper 10 of the PCI/PME Framework arc
-**Status:** Master draft v1.3 (Model Council revisions integrated: math errors corrected in §§3.2 and 5.2; Theorems 2 and 3 restated with precise group-theoretic and domain language; bibliography audited and expanded to 37 references; §8 expanded with Dixon, Manogue–Dray, Castro Perelman, Coecke–Heunen and the $V_{27} \leftrightarrow \mathfrak{h}_3(\mathbb{O})$ open question)
+**Status:** Master draft v1.3.1 (confirming-review consistency pass: removed obsolete 'Theorem 3, part (a)/(c)' references; reconciled QR/NQR sign-assignment between §7.3 and Appendix A.4; deleted the false 'open problem' on $|T|^2 = 1/512$ now established by Lemma 7.1; softened density claim in §5.3 to acknowledge it was verified for the database fiducial only)
 **Predecessors in the series:** Paper 4 (DOI 10.5281/zenodo.19617662), Paper 6 (DOI 10.5281/zenodo.19672709), Paper 7 (DOI 10.5281/zenodo.19773185)
 **Computational verification:** Φ Tasks 1–3, results files in `outbox/paper10/computations/`
 **Source repository:** https://github.com/MartinLGraise/PCI-Framework (branch `paper7-foundation`)
@@ -222,7 +222,7 @@ We may therefore write $\alpha^{(a)}_{p,q} = i \beta^{(a)}_{p,q}$ with $\beta^{(
 
 *Why the result is SIC-invariant.* The structural properties of the tensor — rank, equal row norm, density, traceless rows — are all consequences of (i) the AFF dual-frame inversion (§3.2), which depends only on the SIC condition $|\langle\psi_i|\psi_j\rangle|^2 = 1/(d+1)$, and (ii) the SIC 2-design identity (§5.2), which holds for any SIC-POVM regardless of fiducial choice. The numerical values $\alpha^{(a)}_{p,q}$ change between Clifford-equivalent SIC fiducials, but the row Gram matrix $\sum_i \alpha^{(a)}_i \overline{\alpha^{(b)}_i} = (8/7)\delta_{ab}$ does not. The corrected ABGHM SIC, by virtue of being in the same Clifford orbit as the database fiducial, yields a tensor with identical structural properties; only the specific entries differ. The Φ Task 1 numerical record is at `outbox/paper10/computations/paper10_task1_g2_sic_coefficients.json`.
 
-*Implication.* Each $G_2$ generator requires the *full* 49-dimensional SIC operator basis; no Fano-line index restriction or sparsity pattern simplifies the embedding. This is the central technical observation of §5: the SIC frame "sees" all of $G_2$ globally, not just the Fano-supported pieces. Figure 2 displays the $14 \times 49$ magnitude tensor $|\alpha^{(a)}_{p,q}|$ as a heatmap; the uniform Frobenius row norm $\sqrt{8/7} \approx 1.069$ across all 14 rows is the isometric-embedding property derived in §5.2, verified to numerical precision $8.5 \times 10^{-8}$.
+*Implication.* In the database fiducial computation, each $G_2$ generator requires the *full* 49-dimensional SIC operator basis; no Fano-line index restriction or sparsity pattern simplifies the embedding. This is the central technical observation of §5: the SIC frame "sees" all of $G_2$ globally, not just the Fano-supported pieces. We expect (but have not separately verified) that the same density holds for the corrected ABGHM SIC, since the Clifford orbit of the database fiducial does not in general permit zero entries to appear under conjugation by $WH(7) \rtimes C_3$; rerunning Task 1 against the corrected ABGHM fiducial would settle this directly. Figure 2 displays the $14 \times 49$ magnitude tensor $|\alpha^{(a)}_{p,q}|$ as a heatmap; the uniform Frobenius row norm $\sqrt{8/7} \approx 1.069$ across all 14 rows is the isometric-embedding property derived in §5.2, which holds for any SIC fiducial and is verified to numerical precision $8.5 \times 10^{-8}$.
 
 *[Figure 2: 14×49 coefficient heatmap — see `figures/figure2_coefficient_heatmap.png`]*
 
@@ -396,7 +396,7 @@ For a triple of distinct indices $(i, j, k)$ in the seven-point orbit, define th
 
 The two zero-sum subsets of $\mathbb{Z}_7^*$ are exactly $\operatorname{QR}_7 = \{1, 2, 4\}$ ($1 + 2 + 4 = 7$) and $\operatorname{NQR}_7 = \{3, 5, 6\}$ ($3 + 5 + 6 = 14$). Triples whose three ordered differences span $\operatorname{QR}_7$ in cyclic order, or $\operatorname{NQR}_7$ in cyclic order, correspond to *Fano-line cyclic triples* under the Baez 2002 indexing of the imaginary octonions on $\mathbb{Z}_7$. We refer to these as *Fano-line $X$-subgroup triples*.
 
-*Note on Fano-line vs. all-QR triples.* In the seven-point $X$-subgroup orbit indexed by $\mathbb{Z}_7$, the all-QR cyclic triples correspond exactly to the Fano lines in the Baez 2002 indexing; mixed-residue-class triples correspond to non-Fano triples in this indexing. (This is a finite combinatorial check; we verify it explicitly in Appendix A.) For triples drawn from the full 49-projector SIC frame indexed by $\mathbb{Z}_7 \times \mathbb{Z}_7$, the Fano-vs-non-Fano distinction does not reduce cleanly to the QR/NQR partition because the cocycle phase $\tau^{qr - ps}$ enters; this is why we restrict the closed-form analysis of Theorem 3 to the $X$-subgroup orbit.
+*Note on Fano-line vs. all-QR triples.* In the seven-point $X$-subgroup orbit indexed by $\mathbb{Z}_7$, the seven Fano lines under Baez's 2002 indexing correspond to a subset of the all-QR cyclic triples; the precise combinatorial question of whether *all* all-QR cyclic triples in $\mathbb{Z}_7$ are Fano lines (under some indexing) is left open in §9.4 and is a finite combinatorial check we have not exhaustively performed. For triples drawn from the full 49-projector SIC frame indexed by $\mathbb{Z}_7 \times \mathbb{Z}_7$, the Fano-vs-non-Fano distinction does not reduce cleanly to the QR/NQR partition because the cocycle phase $\tau^{qr - ps}$ enters; this is why we restrict the closed-form analysis of Theorem 3 to the $X$-subgroup orbit.
 
 ### 7.1 Lemma (universal magnitude on the SIC frame)
 
@@ -526,13 +526,11 @@ The thermodynamic coherence-ceiling derivation of Paper 7 [DOI 10.5281/zenodo.19
 
 Paper 8 of this series [in preparation] addresses the 8-coset structure $\operatorname{PSL}(2,7) / F_{21}$ as the discrete carrier of an eight-mode quantum simulator. Specifically, Paper 8 conjectures that the 8 SU(3) subgroup embeddings of $G_2$ (one per coset) correspond to 8 distinct vacua, with 28 Bogoliubov transformations between them, producing entropy differences quantized in 4 levels $\{0, 1/7, 2/7, 3/7\} \times S_{\mathrm{ref}}$.
 
-The present paper makes Paper 8's conjecture more concrete in two ways. First, the $F_{21}$ identified in Theorem 2 of the present paper is the same $F_{21}$ that appears in Paper 8's quotient $\operatorname{PSL}(2,7) / F_{21}$. Second, the universal magnitude $|T|^2 = 1/512$ in Theorem 3, part (a), suggests a natural scale for the entropy differences in Paper 8: the proportionality of $1/8$ between $|T|^2$ and the Hilbert space size $|7|$ is the same factor that enters the SIC defining condition. Whether this implies $|T|^2 = (d+1)/(d \cdot d^2 (d+1)) = 1/d^3$ corrected by a Stark-unit-specific factor of $1/(d+1)$, giving $1/(d^3 \cdot \text{factor}) = 1/512$ for $d = 7$, is a structural question we leave open.
+The present paper makes Paper 8's conjecture more concrete in two ways. First, the $F_{21}$ identified in Theorem 2 of the present paper is the same $F_{21}$ that appears in Paper 8's quotient $\operatorname{PSL}(2,7) / F_{21}$. Second, the universal magnitude $|T|^2 = 1/512$ established in Lemma 7.1 suggests a natural scale for the entropy differences in Paper 8: the proportionality of $1/8$ between $|T|^2$ and the Hilbert space size $|7|$ is the same factor that enters the SIC defining condition. Whether this implies $|T|^2 = (d+1)/(d \cdot d^2 (d+1)) = 1/d^3$ corrected by a Stark-unit-specific factor of $1/(d+1)$, giving $1/(d^3 \cdot \text{factor}) = 1/512$ for $d = 7$, is a structural question we leave open.
 
 ### 9.4 Open problems
 
-**Analytic proof of $|T|^2 = 1/512$.** Theorem 3, part (a), is verified numerically. An analytic proof from the autocorrelation function $f(k)$ of §7.5 should be achievable from Appendix A but is not given in full there.
-
-**Closed form for non-Fano constants $a', b'$.** Theorem 3, part (c), gives numerical values and the ratio $b'/b = (1 + \sqrt{2})/2$. Whether $a', b'$ admit closed-form algebraic expressions over $\mathbb{Q}(\sqrt{2})$ analogous to those of $a, b$ is open. The conjecture is that they do, and that the ratio $b'/b = (1 + \sqrt{2})/2$ is exact at the algebraic level.
+**Closed form for non-Fano constants $a', b'$ (Conjecture 7.4).** Conjecture 7.4 of §7 states that the mixed-residue-class triple-product ratio satisfies $b'/b = (1 + \sqrt{2})/2$ and gives numerical values for $a' \approx -0.009152913$, $b' \approx 0.043235971$. The numerical claim is verified at 50-digit precision (Φ Task 3 Phase 4); the analytic closed-form derivation requires enumerating WH cocycle phases over mixed-displacement triples and is left open. The relevant algebraic identity $(\sqrt{2}-1)(1+\sqrt{2}) = 1$ makes the ratio natural over $\mathbb{Q}(\sqrt{2})$; finding which precise cocycle-phase structure produces it analytically is the residual question. (Note: Lemma 7.1 already establishes the universal magnitude $|T|^2 = 1/512$ for all distinct WH triples directly from the SIC overlap condition; no separate analytic proof is needed there.)
 
 **The Fano-line / QR-cyclic-triple correspondence.** §7.4 observes that Fano lines in the standard 0-indexed Baez 2002 indexing are precisely the "all-QR" cyclic triples in $\mathbb{Z}_7$. Whether this is a defining property of Fano lines (i.e., whether *all* all-QR cyclic triples are Fano lines) is a finite combinatorial question that we have not fully verified. If yes, the SIC triple-product structure can be characterized purely in terms of the QR-partition, and the Fano-line structure becomes a derived rather than primitive object.
 
@@ -550,7 +548,7 @@ The d=7 SIC frame with the corrected ABGHM exact fiducial encodes the algebraic,
 
 ## Appendix A. Autocorrelation Derivation of the Triple-Product Constants
 
-This appendix derives the constants $a, b$ of Theorem 3, part (b), from the autocorrelation structure of the corrected ABGHM fiducial. The derivation makes clear why $|T|^2 = 1/512$ is universal across triples and why the imaginary part of the triple product on Fano lines is exactly proportional to the $G_2$ associative 3-form.
+This appendix derives the constants $a, b$ of Theorem 3 (§7.2) from the autocorrelation structure of the corrected ABGHM fiducial. The derivation makes clear why the imaginary part of the triple product on Fano-line $X$-subgroup triples is exactly proportional to the $G_2$ associative 3-form. The universal magnitude $|T|^2 = 1/512$ is recapitulated in §A.5 from the SIC overlap condition (matching Lemma 7.1).
 
 ### A.1 Setup
 
@@ -596,21 +594,21 @@ The autocorrelations $\tilde{f}(p, q)$ for $p \neq 0$ are *not* real — they pi
 
 We now derive the constants $a, b$ in closed form by computing the autocorrelation $\tilde{f}(p, q) = \langle \psi_W | D_{p, q} | \psi_W \rangle$ for the corrected ABGHM fiducial $|\psi_W\rangle = W |\psi\rangle$, where $W = \operatorname{diag}(-1, +1, +1, +1, +1, +1, +1)$ is the unique (up to global phase) Fano-compatible sign-flip matrix established in §6.2. The full numerical record at 50-digit precision is in `outbox/paper10/computations/paper10_appendix_A4_derivation.md`; the verification script is `paper10_appendix_A4_verify.py`.
 
-**Theorem A.4.1** (Autocorrelation structure). *For the corrected ABGHM fiducial $|\psi_W\rangle$, every autocorrelation satisfies $|\tilde{f}(p, q)|^2 = 1/8$. The six $X$-subgroup autocorrelations $\tilde{f}(p, 0)$ split as*
-$$\tilde{f}(p, 0) = \begin{cases} \bar\alpha & p \in \{1, 2, 4\} = \operatorname{QR}_7 \\ \alpha & p \in \{3, 5, 6\} = \operatorname{NQR}_7 \end{cases}$$
+**Theorem A.4.1** (Autocorrelation structure). *For the corrected ABGHM fiducial $|\psi_W\rangle$, every autocorrelation satisfies $|\tilde{f}(p, q)|^2 = 1/8$. With the convention $\alpha = \overline{\tilde{f}(3, 0)}$, the six $X$-subgroup autocorrelations $\tilde{f}(p, 0)$ split as*
+$$\tilde{f}(p, 0) = \begin{cases} \alpha & p \in \{1, 2, 4\} = \operatorname{QR}_7 \\ \bar\alpha & p \in \{3, 5, 6\} = \operatorname{NQR}_7 \end{cases}$$
 *where*
-$$\alpha = -\frac{(2 - \sqrt{2}) + i\sqrt{2 + 4\sqrt{2}}}{8}.$$
-*In particular $|\alpha|^2 = 1/8$.*
+$$\alpha = -\frac{(2 - \sqrt{2}) - i\sqrt{2 + 4\sqrt{2}}}{8} = \overline{-\frac{(2 - \sqrt{2}) + i\sqrt{2 + 4\sqrt{2}}}{8}}.$$
+*Equivalently, $\alpha = \bar{\beta}$ where $\beta = -[(2-\sqrt{2}) + i\sqrt{2+4\sqrt{2}}]/8$ is the value reported in the Φ Task 3 verification record (note: Φ's labeling assigned $\beta$ to QR shifts, the conjugate of the convention adopted here). In particular $|\alpha|^2 = 1/8$.*
 
 *Proof of $|\alpha|^2 = 1/8$.* Direct computation:
 $$|\alpha|^2 = \frac{(2 - \sqrt{2})^2 + (2 + 4\sqrt{2})}{64} = \frac{(6 - 4\sqrt{2}) + (2 + 4\sqrt{2})}{64} = \frac{8}{64} = \frac{1}{8}.$$
-The values $\tilde{f}(p, 0) \in \{\alpha, \bar\alpha\}$ are verified numerically to 50 significant digits, with residuals below $6.4 \times 10^{-57}$ for all six $X$-subgroup displacements. The QR/NQR split follows from the action of the Frobenius automorphism of $(\mathbb{Z}/7\mathbb{Z})^*$ on the SIC fiducial under the corrected sign convention. $\square$
+The values $\tilde{f}(p, 0) \in \{\alpha, \bar\alpha\}$ are verified numerically to 50 significant digits, with residuals below $6.4 \times 10^{-57}$ for all six $X$-subgroup displacements. The QR/NQR split follows from the action of the Frobenius automorphism of $(\mathbb{Z}/7\mathbb{Z})^*$ on the SIC fiducial under the corrected sign convention. The convention here ($\alpha$ on QR shifts) is chosen so that the all-QR Fano-line cyclic triple gives $T = \alpha^3 = a + ib$, matching the orientation convention of §7.3. $\square$
 
-**Proposition A.4.2** (Cube of $\alpha$). *With $u = 2 - \sqrt{2}$ and $v = \sqrt{2 + 4\sqrt{2}}$, writing $\alpha = -(u + iv)/8$:*
+**Proposition A.4.2** (Cube of $\alpha$). *With $u = 2 - \sqrt{2}$ and $v = \sqrt{2 + 4\sqrt{2}}$, writing $\alpha = -(u - iv)/8$ (the convention of Theorem A.4.1):*
 $$\alpha^3 = \frac{\sqrt{2} - 1}{16} + i\,\frac{(\sqrt{2} - 1)\sqrt{2 + 4\sqrt{2}}}{32} = a + ib.$$
 
 *Proof.* Expand:
-$$(u + iv)^3 = (u^3 - 3uv^2) + i(3u^2 v - v^3).$$
+$$(u - iv)^3 = (u^3 - 3uv^2) - i(3u^2 v - v^3).$$
 Direct computation in $\mathbb{Q}(\sqrt{2})$:
 $$u^2 = 6 - 4\sqrt{2}, \qquad u^3 = 20 - 14\sqrt{2}, \qquad uv^2 = -4 + 6\sqrt{2}.$$
 Subtraction:
@@ -618,21 +616,21 @@ $$u^3 - 3uv^2 = (20 - 14\sqrt{2}) - 3(-4 + 6\sqrt{2}) = 32 - 32\sqrt{2} = 32(1 -
 For the imaginary coefficient, factor: $3u^2 v - v^3 = v(3u^2 - v^2)$, where
 $$3u^2 - v^2 = 3(6 - 4\sqrt{2}) - (2 + 4\sqrt{2}) = 16 - 16\sqrt{2} = 16(1 - \sqrt{2}).$$
 Therefore
-$$(u + iv)^3 = 32(1 - \sqrt{2}) + 16i(1 - \sqrt{2})\, v.$$
+$$(u - iv)^3 = 32(1 - \sqrt{2}) - 16i(1 - \sqrt{2})\, v.$$
 Dividing by $-512$ and using $-(1 - \sqrt{2}) = \sqrt{2} - 1$:
 $$\alpha^3 = \frac{\sqrt{2} - 1}{16} + i\,\frac{(\sqrt{2} - 1)\, v}{32} = a + ib. \square$$
 
 Numerical verification at 50-digit precision gives $|\operatorname{Re}(\alpha^3) - a| < 4 \times 10^{-58}$ and $|\operatorname{Im}(\alpha^3) - b| < 10^{-58}$.
 
 **Proposition A.4.3** (Fano-line triple products on the $X$-subgroup; zero cocycle phase). *For the zero-sum subsets $L_{\mathrm{QR}} = \{1, 2, 4\}$ and $L_{\mathrm{NQR}} = \{3, 5, 6\}$ in $(\mathbb{Z}/7\mathbb{Z})^*$ (which coincide with the QR and NQR classes), the WH triple products for the corresponding $X$-subgroup SIC triples are*
-$$T_{L_{\mathrm{QR}}} = \bar\alpha^3 = a - ib, \qquad T_{L_{\mathrm{NQR}}} = \alpha^3 = a + ib,$$
-*with no cocycle correction.*
+$$T_{L_{\mathrm{QR}}} = \alpha^3 = a + ib, \qquad T_{L_{\mathrm{NQR}}} = \bar\alpha^3 = a - ib,$$
+*with no cocycle correction. This matches the orientation convention of §7.3 (all-QR ordered differences $\Rightarrow T = a + ib$).*
 
 *Proof.* The triple-product formula for displacements $(p, q)$ and $(r, s)$ is
 $$T_{0, (p, q), (r, s)} = \tilde{f}(p, q) \cdot \tau^{qr - ps} \cdot \tilde{f}(r - p, s - q) \cdot \overline{\tilde{f}(r, s)}, \tag{A4-main}$$
-which follows from $D_{p, q}^\dagger D_{r, s} = \tau^{qr - ps} D_{r - p, s - q}$ and the anti-unitary symmetry $\tilde{f}(-p, -q) = \overline{\tilde{f}(p, q)}$. For displacements in the $X$-subgroup, $q = s = 0$, so the cocycle phase reduces to $\tau^{0 \cdot r - p \cdot 0} = 1$. The triple product becomes a bare product of three autocorrelations. For $L_{\mathrm{QR}}$, the SIC triple $\{|\psi_0\rangle, |\psi_{(1,0)}\rangle, |\psi_{(3,0)}\rangle\}$ has pairwise displacement differences $(1, 0), (2, 0), (4, 0)$ — all QR — giving $\bar\alpha \cdot \bar\alpha \cdot \overline{\alpha} = \bar\alpha^3$. For $L_{\mathrm{NQR}}$, the triple $\{|\psi_0\rangle, |\psi_{(3,0)}\rangle, |\psi_{(1,0)}\rangle\}$ has differences $(3, 0), (5, 0), (6, 0)$ — all NQR — giving $\alpha \cdot \alpha \cdot \overline{\bar\alpha} = \alpha^3$. Both verified numerically with residual $< 3 \times 10^{-57}$. $\square$
+which follows from $D_{p, q}^\dagger D_{r, s} = \tau^{qr - ps} D_{r - p, s - q}$ and the anti-unitary symmetry $\tilde{f}(-p, -q) = \overline{\tilde{f}(p, q)}$. For displacements in the $X$-subgroup, $q = s = 0$, so the cocycle phase reduces to $\tau^{0 \cdot r - p \cdot 0} = 1$. The triple product becomes a bare product of three autocorrelations. For $L_{\mathrm{QR}}$, the SIC triple $\{|\psi_0\rangle, |\psi_{(1,0)}\rangle, |\psi_{(3,0)}\rangle\}$ has pairwise displacement differences $(1, 0), (2, 0), (4, 0)$ — all QR — giving $\alpha \cdot \alpha \cdot \overline{\bar\alpha} = \alpha^3$. For $L_{\mathrm{NQR}}$, the triple $\{|\psi_0\rangle, |\psi_{(3,0)}\rangle, |\psi_{(1,0)}\rangle\}$ has differences $(3, 0), (5, 0), (6, 0)$ — all NQR — giving $\bar\alpha \cdot \bar\alpha \cdot \overline{\alpha} = \bar\alpha^3$. Both verified numerically with residual $< 3 \times 10^{-57}$. $\square$
 
-For a Fano-line *cyclic* triple in the $G_2$-orientation sense, the triple product is $\alpha^3 = a + ib$, and for the *anti-cyclic* orientation it is $\bar\alpha^3 = a - ib$. Combining: $T_{ijk} = a + ib \cdot \varphi_{ijk}$ for all Fano-line triples, where $\varphi_{ijk} \in \{+1, -1\}$ is the $G_2$ associative 3-form. This establishes Theorem 3, part (b), with constants $a, b$ in closed form.
+For a Fano-line *cyclic* triple in the $G_2$-orientation sense, the triple product is $\alpha^3 = a + ib$, and for the *anti-cyclic* orientation it is $\bar\alpha^3 = a - ib$. Combining: $T_{ijk} = a + ib \cdot \varphi_{ijk}$ for all Fano-line triples, where $\varphi_{ijk} \in \{+1, -1\}$ is the $G_2$ associative 3-form. This establishes Theorem 3 (§7.2), with constants $a, b$ in closed form.
 
 *Remark on mixed displacements.* For triples involving displacements with $q \neq 0$ (i.e., not confined to the $X$-subgroup), the cocycle phase $\tau^{qr - ps}$ in (A4-main) is nontrivial, and the individual autocorrelations $\tilde{f}(p, q)$ no longer equal $\alpha$ or $\bar\alpha$ but take generic complex values on the SIC overlap circle $|\tilde{f}|^2 = 1/8$. The non-Fano triple-product ratio $b'/b = (1 + \sqrt{2})/2$ established numerically in §7.3 (Φ Task 3 Phase 4, verified at 50-digit precision) is a statement about mixed-displacement triples; its closed-form analytic derivation is left as an open problem and flagged in §9.4.
 
@@ -641,7 +639,7 @@ For a Fano-line *cyclic* triple in the $G_2$-orientation sense, the triple produ
 From Theorem A.4.1, every nontrivial autocorrelation satisfies $|\tilde{f}(p, q)|^2 = 1/8$, which is the SIC overlap value. The triple-product formula (A4-main) expresses $T_{ijk}$ as a product of three autocorrelations multiplied by a unit-modulus cocycle phase $\tau^{qr - ps}$. Taking modulus squared:
 $$|T_{ijk}|^2 = |\tilde{f}(p, q)|^2 \cdot |\tilde{f}(r - p, s - q)|^2 \cdot |\overline{\tilde{f}(r, s)}|^2 = \left(\frac{1}{8}\right)^3 = \frac{1}{512}.$$
 
-This confirms Theorem 3, part (a), directly from the SIC defining property: every off-diagonal SIC overlap is $1/8$, so the cube of any three such overlaps has magnitude $1/512$. The universal magnitude is a consequence of the SIC condition and is structurally independent of the Fano-line vs non-Fano distinction.
+This confirms Lemma 7.1 directly from the SIC defining property: every off-diagonal SIC overlap is $1/8$, so the cube of any three such overlaps has magnitude $1/512$. The universal magnitude is a consequence of the SIC condition and is structurally independent of the Fano-line vs non-Fano distinction.
 
 For the Fano-line case specifically, where $T_{ijk} = a \pm ib$ from Proposition A.4.3, one can also verify $a^2 + b^2 = 1/512$ directly using the algebraic identity $(\sqrt{2} - 1)^2 (6 + 4\sqrt{2}) = 2$ (expansion: $(3 - 2\sqrt{2})(6 + 4\sqrt{2}) = 18 + 12\sqrt{2} - 12\sqrt{2} - 16 = 2$):
 $$a^2 + b^2 = \frac{(\sqrt{2} - 1)^2}{256}\left(1 + \frac{2 + 4\sqrt{2}}{4}\right) = \frac{(\sqrt{2} - 1)^2 (6 + 4\sqrt{2})}{1024} = \frac{2}{1024} = \frac{1}{512}. \checkmark$$
