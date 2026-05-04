@@ -5,7 +5,7 @@
 **Affiliation:** Independent Researcher
 **Correspondence:** margraise1000@icloud.com
 **Series position:** Paper 10 of the PCI/PME Framework arc
-**Status:** Master draft v1.3.1 (confirming-review consistency pass: removed obsolete 'Theorem 3, part (a)/(c)' references; reconciled QR/NQR sign-assignment between §7.3 and Appendix A.4; deleted the false 'open problem' on $|T|^2 = 1/512$ now established by Lemma 7.1; softened density claim in §5.3 to acknowledge it was verified for the database fiducial only)
+**Status:** Published as v1 on Zenodo, 2026-05-02. **DOI 10.5281/zenodo.19966692** ([https://doi.org/10.5281/zenodo.19966692](https://doi.org/10.5281/zenodo.19966692)).
 **Predecessors in the series:** Paper 4 (DOI 10.5281/zenodo.19617662), Paper 6 (DOI 10.5281/zenodo.19672709), Paper 7 (DOI 10.5281/zenodo.19773185)
 **Computational verification:** Φ Tasks 1–3, results files in `outbox/paper10/computations/`
 **Source repository:** https://github.com/MartinLGraise/PCI-Framework (branch `paper7-foundation`)
