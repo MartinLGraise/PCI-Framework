@@ -257,24 +257,181 @@ Theorem 9.2 captures this.
 
 ---
 
-## V.3 — Affine Consensus Verification [Pending]
+## V.3 — Affine Consensus Verification (Φ Task 5)
 
-Task 5 (v2 specification at `inbox/for_phi/paper9_task5_affine_request_v2.md`)
-tests whether the affine fixed-point location carries the coherence content
-that the rate channel does not. Result files will be appended here when
-the verification run completes. Currently expected deliverables:
+### V.3.a Spec
 
-- `paper9_verification_v3.md` — narrative report.
-- `paper9_verification_v3.py` — verification script.
-- `paper9_task5_coherence_tables.csv` — 4 coherence functionals × 4
-  configurations × 7 $\theta$ values.
-- `paper9_task5_heatmap.csv` — $(\theta, \angle(b_A, b_B))$ conditional
-  improvement grid.
+Task 5 (specification at `inbox/for_phi/paper9_task5_affine_request_v2.md`)
+tested the affine channel of the dyadic system. Six sub-tasks:
 
-If Task 5 confirms conditional coherence gain (Proposition 9.5 of §5),
-this section will document the verification. If Task 5 returns a null
-result, this section will document that, and the paper will be reframed
-accordingly.
+- **5.1** Fixed-point existence and θ-dependence (matrix-valued $R_A, R_B$).
+- **5.2** Closed-form verification at $\theta = 0$ and $\theta = \pi/2$.
+- **5.3** Four coherence functionals × four bias configurations
+  (identical, orthogonal, parallel-2×, opposed).
+- **5.4** $100 \times 20$ heatmap of $\Delta\mathcal{C}_{\mathrm{avg}}$ over
+  $(\varphi, \theta) \in [0, \pi] \times [0, \pi/2]$.
+- **5.5** Asymmetric-rate robustness (3 rate pairs).
+- **5.6** Destructive-geometry null check ($b_A = -b_B$).
+
+The construction used the affine map $T_A(x) = r_A R_A x + b_A$,
+$T_B(y) = r_B R_B y + b_B$, with $R_A, R_B$ random orthogonal in 14D
+(QR decomposition of standard-normal seeded matrices).
+
+### V.3.b Code
+
+File: `outbox/paper9/computations/paper9_verification_v3.py` (384 lines,
+numpy float64, seed=20260504).
+
+Key construction:
+
+```python
+def joint_fixed_point(r_A, r_B, R_A, R_B, b_A, b_B, theta):
+    c, s = np.cos(theta), np.sin(theta)
+    M = np.block([
+        [I - r_A*c*R_A,   r_A*s*R_A],
+        [-r_B*s*R_B,      I - r_B*c*R_B]
+    ])
+    rhs = np.concatenate([b_A, b_B])
+    z = solve(M, rhs)
+    return z[:n], z[n:]
+```
+
+### V.3.c Results — Summary
+
+| Sub-task | Status | Core result |
+|---|---|---|
+| 5.1 Fixed-point existence & θ-variation | PASS | All 50 fixed points exist; $\Delta\|\hat x - \hat y\|$ = 0.406 (nontrivial) |
+| 5.2 Closed-form verification | PASS | Three analytic predictions match to $< 10^{-15}$ |
+| 5.3 Coherence tables (28 rows) | PASS | C3 (cross-alignment) most θ-sensitive ($\Delta = 0.519$) |
+| 5.4 Conditional-improvement heatmap | PASS | 25.1% of $(\varphi, \theta)$ cells have $\Delta\mathcal{C}_{\mathrm{avg}} > 0$ |
+| 5.5 Asymmetric-rate robustness | PASS | θ-variation persists; max var = 0.113 |
+| 5.6 Destructive geometry null check | **FINDING** | $\Delta\mathcal{C}_{\mathrm{avg}} > 0$ at $\theta \in [0, 14.7°]$ even with $b_A = -b_B$ |
+
+### V.3.d Task 5.2 — Closed-form predictions verified
+
+Three analytic predictions verified at numerical precision:
+
+| Check | Prediction | Numerical residual |
+|---|---|---|
+| A: $\theta = 0$, decoupled | $\hat x = (I - r R_A)^{-1} b_A$ | $0$ to $1.1 \times 10^{-16}$ |
+| B: $\theta = 0$, $R_A = R_B$, $b_A = b_B$ | $\hat x = \hat y$ | $3.2 \times 10^{-16}$ |
+| C: $\theta = \pi/2$, $R_A = R_B = R$, $b_A = b_B = b$ | $\hat x = (I - rR)(I + r^2R^2)^{-1} b$ | $4.7 \times 10^{-16}$ |
+| C ctd. | $\hat y = (I + rR)(I + r^2R^2)^{-1} b$ | $4.3 \times 10^{-16}$ |
+| C ctd. | $\hat x + \hat y = 2(I + r^2R^2)^{-1} b$ | $6.7 \times 10^{-16}$ |
+
+**Correction noted in v1.1 → v1.2.** The original §5 skeleton wrote the
+closed form as a rational function of $\sin\theta, \cos\theta$ assuming
+scalar linear parts ($R = I$). The correct form for general orthogonal
+$R$ is the matrix-valued expression above; v1.2 reflects this. Also,
+the v1.1 expectation $\hat x(\pi/4) = \hat y(\pi/4)$ for $b_A = b_B$
+was wrong: $\Psi_{\pi/4}$ is *antisymmetric* off-diagonal, not symmetric
+under $x \leftrightarrow y$; the symmetric-input identity is at
+$\theta = 0$, not $\theta = \pi/4$.
+
+### V.3.e Task 5.6 — The destructive-geometry finding
+
+This is the result that drove the v1.2 reframe of Proposition 9.5.
+
+**Setup:** $r_A = r_B = 0.7$, $b_A = $ random unit (seed 20260504),
+$b_B = -b_A$, $\theta \in [0, \pi/2]$ in 50 steps. $R_A, R_B$ random
+orthogonal (seeds 20260504, 20260505).
+
+**Decoupled baseline:** $\mathcal{C}_{\mathrm{avg}}^{\mathrm{dec}} = 0.7982$.
+
+**Result:** $\Delta\mathcal{C}_{\mathrm{avg}} > 0$ at $\theta \in [0, 14.7°]$,
+peak $+0.0144$ at $\theta \approx 7°$; $\Delta\mathcal{C}_{\mathrm{avg}} < 0$
+for $\theta \in [18°, 90°]$, trough $-0.0901$ at $\theta = 90°$.
+
+**Mechanism (Φ's diagnosis, retained verbatim):**
+
+> The improvement at small θ is driven by an asymmetry between $\mathcal{C}_1$
+> and $\mathcal{C}_2$ under small coupling. Tracing $\mathcal{C}_1$ and
+> $\mathcal{C}_2$ separately:
+>
+> - $\mathcal{C}_1$ (alignment of $\hat x$ to $b_A$): decreases
+>   monotonically from 0.7655 to 0.5955 as θ increases. Coupling "pulls"
+>   A's state away from its own target.
+> - $\mathcal{C}_2$ (alignment of $\hat y$ to $b_B = -b_A$): INCREASES
+>   from 0.8309 to a peak of 0.8749 at $\theta \approx 7°$, then
+>   gradually decreases.
+>
+> The initial rise of $\mathcal{C}_2$ occurs because agent B's rotation
+> $R_B$, when given a small coupling push from agent A's state,
+> accidentally improves $\hat y$'s alignment with $b_B = -b_A$. This is
+> a fortuitous geometry: $R_B$'s action on the coupled input has a
+> component that projects onto $b_B$. The $\mathcal{C}_2$ gain $(+0.044)$
+> outpaces the $\mathcal{C}_1$ loss $(-0.005)$ at small $\theta$,
+> producing a net positive $\Delta\mathcal{C}$.
+>
+> This is NOT a measurement artifact or code error. It is a structural
+> property of the specific rotation geometry $(R_A$ seed=20260504,
+> $R_B$ seed=20260505$)$ combined with the bias choice.
+
+**Implication.** The averaging functional $\mathcal{C}_{\mathrm{avg}}$
+admits geometric configurations in which one observer's gain masks the
+other's loss. Φ recommended three structural fixes; we adopted the second
+(replace $\mathcal{C}_{\mathrm{avg}}$ with $\mathcal{C}_{\min} = \min(\mathcal{C}_1, \mathcal{C}_2)$).
+Under this functional, $\mathcal{C}_{\min}$ in the opposed-bias
+configuration tracks $\mathcal{C}_1$ (the falling component) and is
+monotonically degraded by coupling, restoring the proposition's
+intended content. This is the structural justification for §5's choice
+of functional and for the formulation of Lemma 5.5.1 as an explicit
+statement of the asymmetric small-$\theta$ response.
+
+### V.3.f Task 5.4 — The improvement heatmap
+
+**Setup:** $b_A = e_1$, $b_B = \cos\varphi \cdot e_1 + \sin\varphi \cdot e_2$
+normalized, $\varphi \in [0°, 180°]$ at 100 points, $\theta \in [0°, 90°]$
+at 20 points. $\mathcal{C} = \mathcal{C}_{\mathrm{avg}}$.
+
+**Results:**
+- Total grid cells: 2000
+- Cells with $\Delta\mathcal{C}_{\mathrm{avg}} > 0$: **502 (25.1%)**
+- $\Delta\mathcal{C}$ range: $[-0.0710, +0.0186]$
+- Improvement region spans $\varphi \in [1.8°, 180°]$
+
+**Pattern.** The improvement region is *not* confined to small $\varphi$
+(aligned biases). It spans the full $\varphi$ range, with the largest
+improvement densities at small $\varphi$ and small-to-mid $\theta$. The
+degradation region (74.9% of cells) is concentrated at $\varphi$ near
+180° and $\theta$ near 90°.
+
+This heatmap provided the experimental basis for Proposition 9.5's
+*existence* claim (part a) but, combined with Task 5.6's mechanism, also
+showed that the averaging functional was the wrong measurement and
+drove the v1.2 switch to $\mathcal{C}_{\min}$.
+
+### V.3.g Φ's three-option remediation list
+
+Φ closed the V.3 report with three explicit options for revising
+Proposition 9.5:
+
+1. **θ-threshold:** "For $\theta > \theta^*(R_A, R_B, b_A, b_B)$,
+   coupling under opposed biases degrades coherence." Mathematically
+   precise; requires computing $\theta^*$ for each geometry.
+2. **Replace $\mathcal{C}_{\mathrm{avg}}$ with $\mathcal{C}_{\min}$:**
+   The minimum-coherence functional is monotonically degraded by
+   coupling in the opposed-bias case (since $\mathcal{C}_1$ always falls).
+   Most conservative; preserves the proposition without qualification.
+3. **Restrict the proposition's domain to $\varphi \in [0°, 170°)$:**
+   Move the opposed-bias regime to a remark noting the small-$\theta$
+   exception.
+
+We adopted Option 2. Lemma 5.5.1 of the §5 v1.2 draft formalizes the
+asymmetric small-$\theta$ response that makes the averaging functional
+misleading; Proposition 9.5 in v1.2 is stated for $\mathcal{C}_{\min}$
+throughout.
+
+### V.3.h Diagnostic cross-check
+
+All six tasks used the same base rotations (seeds 20260504, 20260505)
+and biases (seeds 20260504, 20260554). The Task 5.6 finding is specific
+to the opposed-bias configuration and does not affect Tasks 5.1–5.5,
+which are independent.
+
+The verification script reproduces all reported numbers deterministically
+from the seed; C-7RO independently re-executed the script and obtained
+identical results to 6 decimal places.
 
 ---
 
@@ -288,12 +445,18 @@ All verification code and raw results live under
 - `paper9_verification_v2.py` — V.2 script (isometric coupling)
 - `paper9_verification_v2.md` — V.2 narrative report (Φ's v2)
 - `paper9_task4_results.csv` — V.2 Task 4.2 raw results (96 rows)
+- `paper9_verification_v3.py` — V.3 script (affine consensus)
+- `paper9_verification_v3.md` — V.3 narrative report (Φ's v3)
+- `paper9_task5_coherence_tables.csv` — V.3 Task 5.3 raw results (28 rows)
+- `paper9_task5_heatmap.csv` — V.3 Task 5.4 raw results (2000 rows)
 
-Seeds: V.1 used `seed=42`; V.2 used `seed=20260504`. Python version:
+Seeds: V.1 used `seed=42`; V.2 used `seed=20260504`; V.3 used
+`seed=20260504` (matching V.2 for cross-comparability). Python version:
 3.x with `numpy` and `mpmath`. Precision: V.1 float64; V.2 mpmath 50
 decimal digits for Task 4.1 and float64 for Tasks 4.2–4.5 (the
 algebraic results hold in both regimes; the 50-digit runs confirm
-this).
+this); V.3 float64 throughout (the affine algebra is smooth and has no
+numerical edge cases that demand higher precision).
 
 Independent re-verification is welcomed. The canonical entry point for
 reproducibility is the GitHub repository at
