@@ -1,0 +1,29 @@
+{
+  "n_seeds": 50,
+  "n_seeds_with_gain": 50,
+  "n_seeds_zero_gain": 0,
+  "fraction_range": [
+    0.0005,
+    0.2475
+  ],
+  "fraction_mean": 0.08434000000000003,
+  "fraction_std": 0.060995609678074374,
+  "max_phi_range_deg": [
+    50.909090909090914,
+    180.0
+  ],
+  "max_phi_mean_deg": 136.21818181818182,
+  "max_phi_lt_180_seeds": 32,
+  "max_phi_eq_180_seeds": 18,
+  "theta_star_range_deg": [
+    0.0,
+    75.78947368421052
+  ],
+  "theta_star_mean_deg": 3.2210526315789467,
+  "theta_star_neq_45deg_seeds": 50,
+  "max_gain_range": [
+    4.759978304080814e-05,
+    0.07635714948237982
+  ],
+  "elapsed_seconds": 6.537923097610474
+}
