@@ -221,6 +221,7 @@ and Proposition 9.5 conditional min-coherence gain, Note 9.6 deferring
 rate-improvement to the nonlinear sequel). §6 discusses empirical
 accessibility of the min-coherence prediction and its operationalization
 in inter-brain and human-AI coupling settings, including Figure 1
+and Figure 2
 (the $\Delta\mathcal{C}_{\mathrm{avg}}$ and $\Delta\mathcal{C}_{\min}$
 heatmaps). §7 treats the joint-fixed-point location and geometry-dependent
 optima. §8 addresses the human-AI dyad as a conditional special case.
@@ -1467,6 +1468,8 @@ $b_B = \cos\varphi\, e_1 + \sin\varphi\, e_2$, $r = 0.7$. Findings:
   seeds is $136.2°$. The seeded geometry of Proposition 9.5 (with
   $\varphi_{\max} \approx 176.4°$) is therefore representative of
   the bounded-away majority class but not universal.
+
+![Paper 9, Fig. 2: 50-seed Monte Carlo summary for Conjecture 9.5$'$. Each panel shows a histogram across the 50 seeded $(R_A, R_B)$ pairs (seeds $20260504 + k$ for $k = 0, \ldots, 49$, $r = 0.7$, dim 14). **(a)** Gain-region size, expressed as the percentage of $100 \times 20$ grid cells in $(\varphi, \theta)$-space where $\Delta\mathcal{C}_{\min} > 10^{-10}$; all 50 seeds are non-zero, with mean $8.4\%$ and standard deviation $6.1\%$. **(b)** Optimal coupling angle $\theta^*$ at aligned bias ($\varphi = 0$); all 50 seeds satisfy $|\theta^* - 45°| > 5°$, with the dashed red line marking the rejected universal $\pi/4$ value. Most seeds favor very small $\theta^*$ (mean $3.2°$). **(c)** Upper bound $\varphi_{\max}$ of the improvement region; $32/50$ seeds are bounded below the dashed red opposed-bias line at $\varphi = 180°$, while $18/50$ admit small-$\theta$ improvement cells extending up to $180°$—this latter behavior forced the amendment of Conjecture 9.5$'$ to drop the original "bounded strictly away from opposed biases" clause. Reproducible from `computations/paper9_conjecture95_mc_seeds.csv` via `figures/build_fig2_mc.py`.](figures/paper9_fig2_mc_summary.png)
 
 This Monte Carlo supports the existence and non-universality components
 of Conjecture 9.5′ (a non-empty improvement region with $\theta^*$
