@@ -1,3 +1,15 @@
+"""
+Paper 9 v1.3.2 supporting computation: C_1, C_2, C_min trajectory under
+opposed biases (b_B = -b_A) for the seeded geometry of Numerical
+Observation 5.5.1.
+
+  DOI:        10.5281/zenodo.20034821
+  Repository: github.com/MartinLGraise/PCI-Framework (branch paper7-foundation)
+  Section:    §5.5 Numerical Observation 5.5.1
+
+Reproduces the C_1(θ), C_2(θ), C_min(θ) table at θ ∈ [0°, 90°]
+to four decimal places. Seeds 20260504 (R_A) and 20260505 (R_B).
+"""
 import numpy as np
 N = 14
 r = 0.7

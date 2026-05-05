@@ -3,8 +3,9 @@
 **Author:** Martin Luther Graise
 **ORCID:** 0009-0006-8003-3938
 **Affiliation:** Independent researcher
-**Date:** 2026-05-04
+**Date:** 2026-05-05
 **Manuscript version:** v1.3.2
+**DOI:** [10.5281/zenodo.20034821](https://doi.org/10.5281/zenodo.20034821)
 
 **Repository:** [github.com/MartinLGraise/PCI-Framework](https://github.com/MartinLGraise/PCI-Framework), branch `paper7-foundation`
 **Series:** Paper 9 of the PCI/PME framework

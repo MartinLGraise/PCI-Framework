@@ -1,6 +1,15 @@
 """
 Monte Carlo across 50 seeded (R_A, R_B) pairs to test Conjecture 9.5'.
 
+Reproducibility record for Paper 9 v1.3.2 "Rate Lock and Affine Consensus
+in G₂-Structured Dyadic Observers".
+
+  DOI:        10.5281/zenodo.20034821
+  Repository: github.com/MartinLGraise/PCI-Framework (branch paper7-foundation)
+  Section:    Appendix V.3.i (50-seed Monte Carlo for Conjecture 9.5')
+  Outputs:    paper9_conjecture95_mc_seeds.csv (per-seed)
+              paper9_conjecture95_mc_summary.json (aggregate)
+
 For each seed pair:
   - Construct R_A, R_B via QR of standard-normal matrix
   - Sweep (φ, θ) on the 100×20 grid
