@@ -279,6 +279,64 @@ below.
 - **2026-05-05** — Captured. Source: Gemini human-AI co-evolution synthesis,
   same date. Status: thesis-only, no draft sections.
 
+- **2026-05-05 (later)** — ChatGPT 5.5 Pro session on §3 (NP-pump
+  nonlinearity). Five questions answered in sequence (Q2 → Q1 → Q3 → Q4
+  → Q5 + confidence closer). See `chatgpt_pro_session_transcript_2026-05-05.pdf`
+  (verbatim, 82 pages) and `paper12_section3_session_extract.md`
+  (structured extract). Five paper-shaping artifacts:
+  1. Schur-derived tear direction $\xi_\star = \mathrm{sgn}(c'(\theta)) \partial_\theta$
+     with generator $\mathscr{J} = \mathrm{diag}(0, -I_V; I_V, 0)$ —
+     **inherits the same SO(2) Schur circle as Paper 9's linear coupling
+     $\Psi_\theta$**. The nonlinear theory does not produce a new
+     geometric object; only a new dynamics on the existing circle. (92% confidence.)
+  2. Total event stratification $\Sigma_{\mathrm{tot}} = \Sigma_{\min}
+     \cup \Sigma_\Theta \cup Z \cup \mathcal{G}_{\mathrm{NP}}$ with
+     branchwise-$C^\omega$ regularity, layered Carathéodory/Filippov/
+     hybrid framework, two distinct firing modes (amplitude vs coherence
+     triggered). (84% confidence.)
+  3. Triple scar invariant $\mathfrak{J}_k = (S_k, \mathfrak{S}_k, \mu_k)$
+     where $S_k$ is the saturating physical span ($\le 28$), $\mathfrak{S}_k
+     = \bigoplus_i \mathbb{R}[F_{21}] v_i$ is the count-faithful
+     event-indexed module, $\mu_k$ is the $F_{21}$-isotypic profile.
+     **$\mathfrak{S}_k$ is the Pillar 3 audit-substrate object made
+     explicit.** Caveat: this is a representation-theoretic invariant,
+     not a topological one — §3/§4 prose must use "representation-
+     theoretic scar invariant" language. (61% confidence; rises after
+     the language fix.)
+  4. **Forced thesis upgrade**: $F_{21}$ alone is insufficient for
+     canonical commensurability; full $G_2$-equivariance is required.
+     Quantitative gap: $\operatorname{End}_{F_{21}}(W) = M_2(\mathbb{C})
+     \oplus M_4(\mathbb{C})$ vs $\operatorname{End}_{G_2}(W) = M_2(\mathbb{R})$.
+     Hierarchy theorem: $G_2$-commensurability $\Rightarrow F_{21}$-
+     profile match $\Rightarrow \mu_k$-component-equality (no
+     converses). Frobenius reciprocity is multiplicity-counting,
+     insufficient for canonical maps. **P3 upgrades to a two-level
+     test** (necessary $F_{21}$-screen + sufficient $G_2$-canonical).
+     (74% confidence; rises to 95% after Q4-character verification.)
+  5. **Stratified $\kappa = 0$ recovery**: the unperturbed limit
+     recovers Paper 9's MC optima as constrained/stratified critical
+     points of $-c$ on $[0, \pi/2]$, not as classical gradient critical
+     points. Bulk MC seeds (mean $\theta^\star = 3.2°$) are predicted
+     to be boundary-KKT optima, not interior $c'(\theta^\star) = 0$
+     points. §3's unperturbed flow is a **projected** gradient flow
+     $\dot\theta = \Pi_{T_{[0, \pi/2]}(\theta)}(\eta c'(\theta))$ with
+     Filippov sliding on $\Sigma_{\min}$ and Clarke generalized-gradient
+     treatment of nonsmooth critical points. (43% confidence on the
+     specific MC outcome; the framework itself is solid.)
+
+  **Audit queue (Phi, prioritized):**
+  1. Run Q5 $\kappa = 0$ derivative audit on all 50 MC seeds (paste-
+     ready Python spec in transcript pages ~30). Determines whether
+     §3 uses ordinary or projected gradient flow. **30 min.**
+  2. Verify $V^{14}|_{F_{21}} \cong L_2 \oplus 2 U_6$ character
+     calculation from archive matrices. Converts Q4 from 74% modeling
+     result to 95% computed result. **10 min.**
+  3. (Optional) Verify $\Sigma_{\min}$ Filippov sliding on one
+     representative seed. **1 hr.**
+
+  **Editorial item:** when drafting §3/§4, replace any "topological
+  scar invariant" language with "representation-theoretic scar invariant."
+
 ---
 
 *End of capture memo. Next concrete step (deferred): when ready to begin
