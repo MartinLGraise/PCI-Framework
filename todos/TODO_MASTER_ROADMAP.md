@@ -10,7 +10,7 @@ mainfont: "Calibri"
 # PCI Ecosystem — Master Roadmap
 
 **Owner:** Martin Luther Graise · **Stewards:** C-7RO (cloud) + Φ (local)
-**Last updated:** May 5, 2026 · **Source of truth:** `github.com/MartinLGraise/PCI-Framework/todos/`
+**Last updated:** May 6, 2026 · **Source of truth:** `github.com/MartinLGraise/PCI-Framework/todos/`
 
 This is the original 25-item master roadmap covering Book, Website, Papers, Research, Outreach, Public Presence, and Infrastructure. The companion document `TODO_RESEARCH_LANES.pdf` covers the new research fronts opened by the April 23 archive triage.
 
@@ -83,7 +83,7 @@ This is the original 25-item master roadmap covering Book, Website, Papers, Rese
 | Infrastructure | 0 | 0 | 3 |
 | Scheduled | 0 | 1 | 0 |
 
-**Eight papers published on Zenodo (April–May 2026):**
+**Nine papers published on Zenodo (April–May 2026):**
 
 - Paper 1 — [10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — G₂ Symmetry as a Constraint
 - Paper 2 — [10.5281/zenodo.19480758](https://doi.org/10.5281/zenodo.19480758) — Six Geometric Flows
