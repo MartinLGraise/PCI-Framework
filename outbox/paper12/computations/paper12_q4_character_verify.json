@@ -1,0 +1,51 @@
+{
+  "classes": [
+    "1a",
+    "7a",
+    "7b",
+    "3a",
+    "3b"
+  ],
+  "class_sizes": {
+    "1a": 1,
+    "7a": 3,
+    "7b": 3,
+    "3a": 7,
+    "3b": 7
+  },
+  "char_V14_computed": {
+    "1a": 14.0,
+    "7a": 0.0,
+    "7b": 0.0,
+    "3a": -1.0,
+    "3b": -1.0
+  },
+  "char_V14_predicted": {
+    "1a": 14,
+    "7a": 0,
+    "7b": 0,
+    "3a": -1,
+    "3b": -1
+  },
+  "all_class_match": true,
+  "inner_product_V14_V14": 10.0,
+  "inner_product_expected": 10,
+  "inner_product_match": true,
+  "multiplicities_raw": {
+    "trivial": 0.0,
+    "L_2": 2.0,
+    "U_6": 4.0
+  },
+  "multiplicities_interpreted": {
+    "trivial": 0.0,
+    "L_2": 1.0,
+    "U_6": 2.0
+  },
+  "multiplicities_expected": {
+    "trivial": 0,
+    "L_2": 1,
+    "U_6": 2
+  },
+  "multiplicities_match": true,
+  "verdict_confirmed": true
+}
