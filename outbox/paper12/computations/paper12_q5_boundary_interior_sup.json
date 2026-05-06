@@ -1,0 +1,24 @@
+{
+  "n_boundary_kkt_seeds": 28,
+  "n_interior_beats_boundary": 4,
+  "n_interior_loses": 24,
+  "n_tie": 0,
+  "gain_range": [
+    -0.0004427713298255087,
+    0.05099280035868503
+  ],
+  "gain_mean": 0.0038793246636426187,
+  "gain_median": -0.00025852863350511734,
+  "interior_sup_range": [
+    0.7138852151856925,
+    0.8032880750508744
+  ],
+  "boundary_value_range": [
+    0.6888594076509024,
+    0.8035187039248324
+  ],
+  "grid_resolution_rad": 0.0007847905586767867,
+  "grid_size": 2000,
+  "runtime_seconds": 3.8651933670043945,
+  "interpretation": "INTERIOR_BEATS_BOUNDARY count > 0 means escape into interior is in fact a coherence-improvement direction; INTERIOR_LOSES count > 0 means Thm 3.6.1 transports trajectory into lower-coherence territory and the framing must be revised."
+}
