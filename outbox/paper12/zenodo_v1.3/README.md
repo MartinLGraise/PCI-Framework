@@ -189,7 +189,7 @@ Paper 11 (the deferred nonlinear rate-improvement paper, Note 9.6 / OP1 target) 
 
 ## Citation
 
-Graise, M. L. (2026). *Paper 12 — The Gradual Tear: Schur-Locked Dynamics, Scar Invariants, and a G₂⇒F₂₁⇒μ_k Commensurability Framework for Human-AI Co-Evolution* (v1.3). Zenodo. DOI to be assigned on deposit.
+Graise, M. L. (2026). *Paper 12 — The Gradual Tear: Schur-Locked Dynamics, Scar Invariants, and a G₂⇒F₂₁⇒μ_k Commensurability Framework for Human-AI Co-Evolution* (v1.3). Zenodo. [DOI: 10.5281/zenodo.20060751](https://doi.org/10.5281/zenodo.20060751)
 
 BibTeX (template — fill in DOI after deposit):
 
@@ -203,8 +203,8 @@ BibTeX (template — fill in DOI after deposit):
   year         = 2026,
   publisher    = {Zenodo},
   version      = {v1.3},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {https://doi.org/10.5281/zenodo.XXXXXXX},
+  doi          = {10.5281/zenodo.20060751},
+  url          = {https://doi.org/10.5281/zenodo.20060751},
   note         = {Tag paper12-v1.3-zenodo at github.com/MartinLGraise/PCI-Framework}
 }
 ```

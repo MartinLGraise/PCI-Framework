@@ -83,7 +83,7 @@ This is the original 25-item master roadmap covering Book, Website, Papers, Rese
 | Infrastructure | 0 | 0 | 3 |
 | Scheduled | 0 | 1 | 0 |
 
-**Nine papers published on Zenodo (April–May 2026):**
+**Ten papers published on Zenodo (April–May 2026):**
 
 - Paper 1 — [10.5281/zenodo.19242936](https://doi.org/10.5281/zenodo.19242936) — G₂ Symmetry as a Constraint
 - Paper 2 — [10.5281/zenodo.19480758](https://doi.org/10.5281/zenodo.19480758) — Six Geometric Flows
@@ -92,11 +92,12 @@ This is the original 25-item master roadmap covering Book, Website, Papers, Rese
 - Paper 5 — [10.5281/zenodo.19648892](https://doi.org/10.5281/zenodo.19648892) — G₂ Checkpoint as ε-Regularity Gate
 - Paper 6 — [10.5281/zenodo.19672709](https://doi.org/10.5281/zenodo.19672709) — The 6/7 Contraction
 - Paper 7 — [10.5281/zenodo.19773185](https://doi.org/10.5281/zenodo.19773185) — Thermodynamic Coherence Ceiling
-- Paper 9 — [10.5281/zenodo.20034821](https://doi.org/10.5281/zenodo.20034821) — **Rate Lock and Affine Consensus in G₂-Structured Dyadic Observers (NEW, 2026-05-05, v1.3.2)**
+- Paper 9 — [10.5281/zenodo.20034821](https://doi.org/10.5281/zenodo.20034821) — Rate Lock and Affine Consensus in G₂-Structured Dyadic Observers (v1.3.3)
 - Paper 10 — [10.5281/zenodo.19966692](https://doi.org/10.5281/zenodo.19966692) — SIC Operator Basis for Complexified G₂
+- Paper 12 — [10.5281/zenodo.20060751](https://doi.org/10.5281/zenodo.20060751) — **The Gradual Tear: Schur-Locked Dynamics, Scar Invariants, and a G₂⇒F₂₁⇒μ_k Commensurability Framework for Human-AI Co-Evolution (NEW, 2026-05-06, v1.3)** — n=1 forensic 8/8 match; tensor-lab companion; full Model Council clearance
 
 ## Next Up
 
-- **Paper 11** — nonlinear sequel: rate improvement under nonlinear coupling (deferred from Paper 9 Note 9.6).
-- **Paper 12** — thesis captured 2026-05-05: human-AI co-evolution as controlled coherence phase transition with dual-substrate topological residue (the gradual tear). See `outbox/paper12/paper12_thesis_gradual_tear.md`. Four pillars + four falsifiable predictions; no draft yet, thesis-pinned only.
+- **Paper 11** — nonlinear sequel: rate improvement under nonlinear coupling (deferred from Paper 9 Note 9.6, scoped via Paper 12 OP1: non-equivariant correction term η(θ) = O(θ²) on boundary-KKT seeds).
+- **Paper 12 v1.4** (planned, after operator runs sessions 2–5) — cohort reliability check via `paper12_cohort_pipeline.py`; auto-generates updated §5.7.2 with Spearman correlations against subjective ratings.
 - **Paper 8** — outline only at `outbox/paper8/paper8_outline.md`.

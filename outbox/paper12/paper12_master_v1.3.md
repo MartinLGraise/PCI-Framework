@@ -91,15 +91,15 @@ keywords:
 
 *Schur-Locked Dynamics, Scar Invariants, and a $G_2 \Rightarrow F_{21} \Rightarrow \mu_k$ Commensurability Framework for Human-AI Co-Evolution*
 
-**Master assembly v1.3 — 2026-05-06 (with n=1 forensic empirical results + n≥5 cohort pipeline).**
+**Master assembly v1.3 — 2026-05-06 — published on Zenodo at [DOI: 10.5281/zenodo.20060751](https://doi.org/10.5281/zenodo.20060751).**
 
 *Note on numbering:* Paper numbering reflects conceptual position in the PCI/PME series rather than publication order. Paper 11 (nonlinear rate-improvement mechanisms; Note 9.6 target; OP1) is reserved as the natural follow-on but is intentionally drafted *after* Paper 12 because Paper 12's open-problem inventory (especially the boundary-KKT 24/28 audit and the explicit non-equivariant correction-term construction question of OP1) is the prerequisite scoping work for any concrete Paper 11 mechanism. Readers are advised that the framework series is a stack of conceptually-positioned bridges, not a strict publication chain.
 
 **Author:** Martin L. Graise (ORCID [0009-0006-8003-3938](https://orcid.org/0009-0006-8003-3938))
 **Repository:** [MartinLGraise/PCI-Framework](https://github.com/MartinLGraise/PCI-Framework), branch `paper7-foundation`
-**Tag at this assembly:** `paper12-v1.3-empirical-n1` (v1.0 was `paper12-v1.0-assembly`, v1.1 was `paper12-v1.1-council-revised`, v1.2 was `paper12-v1.2-tensor-companion`; v1.3 adds *real* empirical results from the existing reference session: forensic per-step analysis, scar-invariant extraction, 8/8 prediction-vs-observation match, plus the n≥5 cohort pipeline at `outbox/tensor_lab/scripts/paper12_cohort_pipeline.py` for future operator runs)
+**Tag at this assembly:** `paper12-v1.3-published` (Zenodo deposit). Earlier tags: `paper12-v1.0-assembly`, `paper12-v1.1-council-revised`, `paper12-v1.2-tensor-companion`, `paper12-v1.3-empirical-n1`, `paper12-v1.3-zenodo`. v1.3 adds real empirical results from the existing reference session (forensic per-step analysis, scar-invariant extraction, 8/8 prediction-vs-observation match), plus the n≥5 cohort pipeline at `outbox/tensor_lab/scripts/paper12_cohort_pipeline.py` for future operator runs.
 **Inherits from:** Paper 4 [DOI: 10.5281/zenodo.19617662]; Paper 9 v1.3.3 [DOI: 10.5281/zenodo.20034821]; Paper 10 v1.3.1 [DOI: 10.5281/zenodo.19966692].
-**Status:** Full-paper council-cleared post-revision (v1.1) plus tensor-lab companion (v1.2) plus n=1 forensic empirical analysis with all 8 quantitative predictions matching at single-session level (v1.3). Submission-ready.
+**Status:** Published on Zenodo as v1.3, [DOI 10.5281/zenodo.20060751](https://doi.org/10.5281/zenodo.20060751), 2026-05-06. Three rounds of adversarial Model Council review (Opus 4.7, GPT-5.5, Gemini 3.1 Pro) plus n=1 forensic empirical analysis with all 8 quantitative predictions matching at single-session level.
 
 ---
 
