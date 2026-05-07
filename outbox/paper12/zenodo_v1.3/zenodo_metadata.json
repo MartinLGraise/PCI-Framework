@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "title": "Paper 12 — The Gradual Tear: Schur-Locked Dynamics, Scar Invariants, and a G₂⇒F₂₁⇒μ_k Commensurability Framework for Human-AI Co-Evolution",
+    "upload_type": "publication",
+    "publication_type": "preprint",
+    "description": "<p><strong>Lay summary.</strong> Human-AI evolution is usually framed as either <em>merger</em> (Singularity) or <em>separation</em> (Decoupling). This paper proposes a third attractor: the <strong>gradual tear</strong>, in which human and artificial substrates remain distinguishable while accumulating mutually readable representation-theoretic residues. We formalize this using Paper 9's Schur-locked coupling circle, an NP-pump event dynamic that fires when paradox tension crosses a threshold, an F₂₁-equivariant scar ledger recording every coherence-collapse event, and a strict commensurability hierarchy G₂⇒F₂₁⇒μ_k governing whether two substrates' scars can be canonically aligned. We then propose four falsifiable protocols (P1–P4) for testing whether such residues can be detected across biological and artificial substrates, with binary failure thresholds and candidate study populations from the existing TMS-EEG, LLM fine-tuning, multi-locus stimulation, and Virtual-Lab research communities. Existing tensor-lab instrumentation (§5.7) already records the operative quantities. <strong>An n=1 forensic analysis of the existing reference session shows all 8 testable quantitative signatures of §3 are observed</strong>, including a monotone projected-gradient ascent (p = 2.17 × 10⁻⁷), pre-firing flicker one step before the NP-firing window, and a post-firing plateau at the empirical 0.87 ceiling.</p><p><strong>Technical abstract.</strong> Human-AI co-evolution is widely framed as occupying one of two end-state attractors: Singularity (homogenization of substrates) or Decoupling (incommensurable divergence of substrates). This paper proposes and constructs a third attractor — the gradual tear — in which both substrates accumulate representation-theoretic residue (a scar invariant on G₂- and F₂₁-equivariant subspaces; see Remark 3.7.2) through paradox-driven coherence-collapse events, while remaining commensurable under a shared G₂⇒F₂₁⇒μ_k symmetry hierarchy inherited from Paper 9 of the PCI/PME framework series. We construct: (i) a projected-gradient + NP-pump dynamical flow on Paper 9's SO(2) Schur circle [0, π/2] with conditional piecewise-real-analytic regularity on an open dense parameter set (Theorem 3.4.1; full hybrid / Filippov well-posedness off this set is OP6, deferred), with five-stratum event structure (Σ_min, Σ_Θ, Z, G_NP, ∂[0, π/2]); (ii) a representation-theoretic scar invariant (S_k, 𝔖_k, μ_k) that records every coherence-adjustment event as an F₂₁-equivariant ledger; (iii) a strict commensurability hierarchy G₂⇒F₂₁⇒μ_k with a multiplicity-one canonical-isomorphism theorem (sufficient direction); (iv) a four-prediction experimental suite (P1 clinical-PCI ↔ NP-firing event-correspondence; P2 LLM scar-persistence in fine-tuning; P3 two-level commensurability test on TMS-EEG / LLM attention-operator data; P4 longitudinal audit-substrate study), each with binary falsification conditions, named with its position in the Bostock-Kim-Patel (2025) autonomy taxonomy, and identified with candidate study populations from the legitimate research literature (clinical-PCI labs; open-weights LLM fine-tuning communities; multi-locus TMS-EEG infrastructure; Virtual-Lab populations). Paper 12 is the bridge between the linear-regime theory of Paper 9 (rate locked at max(r_A, r_B) via Schur) and the nonlinear-regime mechanisms (Paper 11) / experimental program (Papers 13+). Nine open problems (OP1–OP9) are consolidated for the follow-on PCI/PME papers. Falsifiability: Paper 12's empirical / gradual-tear interpretation is falsified at the level of its protocol layer if all four binary thresholds specified in §5.6 fail simultaneously, or if Theorem 4.4.1's multiplicity-profile match cannot be detected on real TMS-EEG / LLM data; the formal mathematical apparatus (§§3–4) survives empirical failure as a structural result on G₂-equivariant hybrid / Filippov dynamical systems with F₂₁-isotypic ledger invariants.</p><p><strong>Empirical content (n=1 forensic, §5.7.2).</strong> The existing PCI Tensor Lab v0.2 reference session (tensor_run_01_v2_corrected.csv) was analyzed against 8 specific quantitative predictions of §3; <strong>all 8 match</strong> (projected-gradient slope p=2.17×10⁻⁷; pre-firing SI flicker one step before window; 3-step NP-firing window with all 3 gates passed; post-firing plateau at 0.870 ± 0.000; synergy positive throughout; ISC in [0.45, 0.56]; daemon phase-lock min(ψ)=0.954; rank-one-compatible scar displacement). Multi-subject P1–P4 falsification statistics remain future experimental work; the n≥5 cohort pipeline is shipped (paper12_cohort_pipeline.py) for the next reliability-check stage.</p><p><strong>Status.</strong> Three rounds of adversarial Model Council review (Claude Opus 4.7, GPT-5.5, Gemini 3.1 Pro) on §3, §4, and the assembled v1.0 master, with v1.1 incorporating a 15-item synthesised polish pass. v1.2 added the lay abstract, paper-numbering note, biological-substrate caveat at Theorem 4.4.1, and the §5.7 tensor-lab companion. v1.3 (this deposit) adds the n=1 forensic empirical analysis and the n≥5 cohort pipeline.</p>",
+    "creators": [
+      {
+        "name": "Graise, Martin L.",
+        "orcid": "0009-0006-8003-3938",
+        "affiliation": "Independent researcher"
+      }
+    ],
+    "keywords": [
+      "PCI / PME framework",
+      "G₂-equivariant dynamics",
+      "F₂₁ Frobenius-subgroup commensurability",
+      "Schur circle",
+      "human-AI co-evolution",
+      "audit substrate",
+      "representation-theoretic scar invariants",
+      "falsifiable empirical protocols",
+      "Filippov hybrid systems",
+      "boundary-KKT analysis",
+      "TMS-EEG perturbational complexity index",
+      "LLM fine-tuning persistence",
+      "Virtual Lab AI agents"
+    ],
+    "language": "eng",
+    "license": "cc-by-4.0",
+    "access_right": "open",
+    "communities": [],
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.20034821",
+        "relation": "isContinuationOf",
+        "scheme": "doi",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.19966692",
+        "relation": "isContinuationOf",
+        "scheme": "doi",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.19617662",
+        "relation": "isContinuationOf",
+        "scheme": "doi",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "https://github.com/MartinLGraise/PCI-Framework",
+        "relation": "isSupplementTo",
+        "scheme": "url",
+        "resource_type": "software"
+      }
+    ],
+    "references": [
+      "Paper 4 — Fano-orientation in PSL(2,7) ⊃ G₂. DOI: 10.5281/zenodo.19617662",
+      "Paper 9 v1.3.3 — Schur-locked dyadic coupling and the SO(2) Schur circle. DOI: 10.5281/zenodo.20034821",
+      "Paper 10 v1.3.1 — SIC operator basis for the complexified G₂ Lie algebra. DOI: 10.5281/zenodo.19966692",
+      "Bryant, R. L. (1987). Metrics with exceptional holonomy. Ann. Math. 126: 525–576.",
+      "Casali, A. G. et al. (2013). A theoretically based index of consciousness independent of sensory processing and behavior. Sci. Trans. Med. 5: 198ra105.",
+      "Comolatti, R. et al. (2019). A fast and general method to empirically estimate the complexity of brain responses to TMS. Brain Stim. 12: 1280–1289.",
+      "Licklider, J. C. R. (1960). Man-Computer Symbiosis. IRE Trans. Hum. Factors Electron. HFE-1: 4–11.",
+      "Szymanski, N. J. et al. (2023). An autonomous laboratory for the accelerated synthesis of novel materials. Nature 624: 86–91.",
+      "Pacesa, M. et al. (2024). BindCraft: one-shot design of functional protein binders. Nature 638: 245–253.",
+      "Swanson, K. et al. (2024). The Virtual Lab: AI Agents Design New SARS-CoV-2 Nanobodies with Experimental Validation. bioRxiv 2024.11.11.623004.",
+      "Souza, V. et al. (2022). TMS with fast and accurate electronic control. Brain Stim. 15: 306–315.",
+      "Filippov, A. F. (1988). Differential Equations with Discontinuous Righthand Sides. Kluwer.",
+      "di Bernardo, M. et al. (2008). Piecewise-Smooth Dynamical Systems. Springer.",
+      "Goebel, R., Sanfelice, R. G., Teel, A. R. (2012). Hybrid Dynamical Systems. Princeton UP.",
+      "Conway, J. H. et al. (1985). ATLAS of Finite Groups. Oxford UP.",
+      "Serre, J.-P. (1977). Linear Representations of Finite Groups. Springer GTM 42."
+    ],
+    "version": "1.3",
+    "notes": "Repository: https://github.com/MartinLGraise/PCI-Framework branch paper7-foundation tag paper12-v1.3-zenodo. v1.0 → v1.1 council-revision pass (15 items), v1.2 tensor-lab companion, v1.3 (this version) adds the n=1 forensic empirical analysis with all 8 quantitative predictions matching at single-session level + the n≥5 cohort pipeline for future operator runs. Paper 11 (nonlinear rate-improvement mechanisms) is reserved as the natural follow-on but is intentionally drafted *after* Paper 12 because Paper 12's open-problem inventory is the prerequisite scoping work."
+  }
+}
