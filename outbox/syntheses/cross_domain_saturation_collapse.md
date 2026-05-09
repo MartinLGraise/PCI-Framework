@@ -149,6 +149,45 @@ The structural observation is preserved as an interesting candidate
 for cross-domain validation. The mechanism speculation is preserved
 as flagged hypothesis pending literature review.
 
+## Addendum: Flow vs Grind as §3.5 vs §3.6 (2026-05-09 ~15:45 PDT)
+
+Martin proposed that "flow vs grind" in athletic and cognitive
+contexts might map onto the framework. It does, cleanly, and the
+mapping sharpens both ends:
+
+- **Flow** = smooth-interior seed class (the 4/28 from §3.6 audit).
+  Optimum is interior, projected-gradient flow ascends naturally,
+  output feels inevitable, no threshold-crossing required.
+- **Grind** = boundary-KKT configuration (the 24/28 majority).
+  Optimum is at boundary, every move into interior is coherence
+  loss, output is produced by sustained NP-firing events at high
+  $\mathfrak{p}$.
+
+**Athletic regime classification:**
+
+| Activity | Regime | Operator stack |
+|---|---|---|
+| Marathon running | Smooth-interior sustained | Carbs, electrolytes, caffeine (ascent operators) |
+| Sprinting | Boundary-KKT short-burst | Creatine, caffeine (threshold-crossing operators) |
+| Bodybuilding / powerlifting | Boundary-KKT sustained | Creatine + beta-alanine + pre-workout (full boundary stack) |
+| Endurance (cycling, swimming) | Smooth-interior sustained | Carbs, BCAAs (smooth-ascent support) |
+
+**Defensible reframe of the supplement claim:** The creatine + BA +
+pre-workout stack does not *directly* damage cardiovascular or
+connective tissue. It is a **chronic boundary-KKT operator**: it
+enables the system to remain at the boundary longer than it would
+unaided. Boundary-regime *adaptations* (cardiac hypertrophy, tendon
+load remodeling, capped surface vascularity) are consequences of
+sustained boundary operation — which the stack accelerates by
+reducing the training load required to reach the boundary.
+
+This is literature-defensible: "creatine enables training loads
+that produce boundary-regime adaptations faster than the
+cardiovascular system would otherwise reach them." It is NOT
+"creatine damages hearts." The first is a framework-level claim
+about operator stacking; the second is an unsupported mechanism
+claim.
+
 ## Why preserve this memo
 
 Three reasons unchanged from v1:
