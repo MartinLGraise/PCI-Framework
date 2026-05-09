@@ -94,7 +94,8 @@ This is the original 25-item master roadmap covering Book, Website, Papers, Rese
 - Paper 7 — [10.5281/zenodo.19773185](https://doi.org/10.5281/zenodo.19773185) — Thermodynamic Coherence Ceiling
 - Paper 9 — [10.5281/zenodo.20034821](https://doi.org/10.5281/zenodo.20034821) — Rate Lock and Affine Consensus in G₂-Structured Dyadic Observers (v1.3.3)
 - Paper 10 — [10.5281/zenodo.19966692](https://doi.org/10.5281/zenodo.19966692) — SIC Operator Basis for Complexified G₂
-- Paper 12 — [10.5281/zenodo.20060751](https://doi.org/10.5281/zenodo.20060751) — **The Gradual Tear: Schur-Locked Dynamics, Scar Invariants, and a G₂⇒F₂₁⇒μ_k Commensurability Framework for Human-AI Co-Evolution (NEW, 2026-05-06, v1.3)** — n=1 forensic 8/8 match; tensor-lab companion; full Model Council clearance
+- Paper 12 v1.3 — [10.5281/zenodo.20060751](https://doi.org/10.5281/zenodo.20060751) — The Gradual Tear (2026-05-06; superseded by v1.4 via Erratum 5.7.0)
+- Paper 12 v1.4 — [10.5281/zenodo.20093296](https://doi.org/10.5281/zenodo.20093296) — **The Gradual Tear: Schur-Locked Dynamics, Scar Invariants, and a G₂⇒F₂₁⇒μ_k Commensurability Framework for Human-AI Co-Evolution (NEW, 2026-05-08, v1.4 honest reframe)** — §5.7 demoted from "forensic analysis" to "instrumentation specification with illustrative trajectory" per 2026-05-07 Opus 4.7 audit; OP10/OP11 added; §§3–4 mathematics unchanged; recommended citation
 
 ## Next Up
 

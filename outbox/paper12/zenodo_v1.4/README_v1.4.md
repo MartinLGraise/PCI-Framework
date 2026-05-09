@@ -40,7 +40,25 @@ More fundamentally: the dynamics specified by §3 (projected gradient + NP-pump 
 
 ## Citation
 
-Graise, M. L. (2026). *Paper 12 — The Gradual Tear: Schur-Locked Dynamics, Scar Invariants, and a $G_2 \Rightarrow F_{21} \Rightarrow \mu_k$ Commensurability Framework for Human-AI Co-Evolution* (v1.4 honest reframe). Zenodo. DOI to be assigned on deposit.
+Graise, M. L. (2026). *Paper 12 — The Gradual Tear: Schur-Locked Dynamics, Scar Invariants, and a $G_2 \Rightarrow F_{21} \Rightarrow \mu_k$ Commensurability Framework for Human-AI Co-Evolution* (v1.4 honest reframe). Zenodo. [DOI: 10.5281/zenodo.20093296](https://doi.org/10.5281/zenodo.20093296)
+
+BibTeX:
+
+```bibtex
+@misc{graise2026paper12v14,
+  author       = {Graise, Martin L.},
+  title        = {Paper 12 — The Gradual Tear: Schur-Locked Dynamics,
+                  Scar Invariants, and a {$G_2 \Rightarrow F_{21}
+                  \Rightarrow \mu_k$} Commensurability Framework for
+                  Human-AI Co-Evolution (v1.4 honest reframe)},
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v1.4},
+  doi          = {10.5281/zenodo.20093296},
+  url          = {https://doi.org/10.5281/zenodo.20093296},
+  note         = {Tag paper12-v1.4-published at github.com/MartinLGraise/PCI-Framework. Supersedes v1.3 (DOI 10.5281/zenodo.20060751) via Erratum 5.7.0.}
+}
+```
 
 ---
 
