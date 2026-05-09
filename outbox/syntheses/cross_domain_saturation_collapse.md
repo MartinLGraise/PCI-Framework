@@ -172,21 +172,41 @@ mapping sharpens both ends:
 | Bodybuilding / powerlifting | Boundary-KKT sustained | Creatine + beta-alanine + pre-workout (full boundary stack) |
 | Endurance (cycling, swimming) | Smooth-interior sustained | Carbs, BCAAs (smooth-ascent support) |
 
-**Defensible reframe of the supplement claim:** The creatine + BA +
-pre-workout stack does not *directly* damage cardiovascular or
-connective tissue. It is a **chronic boundary-KKT operator**: it
-enables the system to remain at the boundary longer than it would
-unaided. Boundary-regime *adaptations* (cardiac hypertrophy, tendon
-load remodeling, capped surface vascularity) are consequences of
-sustained boundary operation — which the stack accelerates by
-reducing the training load required to reach the boundary.
+**Defensible reframe — endogenous vs operator-sustained boundary
+operation:** The framework needs to distinguish two structurally
+different ways a system reaches §3.6:
 
-This is literature-defensible: "creatine enables training loads
-that produce boundary-regime adaptations faster than the
-cardiovascular system would otherwise reach them." It is NOT
-"creatine damages hearts." The first is a framework-level claim
-about operator stacking; the second is an unsupported mechanism
-claim.
+1. **Endogenous boundary operation** (exercise alone). The system is
+   bounded by intact physiological feedback: PCr depletion forces
+   intensity reduction, intracellular pH drops force a buffer pause,
+   sympathetic drive winds down post-effort. Boundary visits are
+   transient — the system is mostly smooth-interior with brief
+   boundary excursions. Adaptations are flow-shaped: e.g. the
+   classical "athlete's heart" (eccentric LVH from endurance,
+   concentric hypertrophy from heavy resistance) is *healthy adaptive
+   remodeling* from this regime. The boundary is touched, not held.
+
+2. **Operator-sustained boundary operation** (stack-driven). Caffeine
+   bypasses the natural sympathetic-drive cutoff. Creatine bypasses
+   the natural PCr-depletion cutoff. Beta-alanine bypasses the
+   natural pH-buffering cutoff. The rate-limiters that would have
+   *forced* a return to smooth-interior are pharmacologically
+   silenced. The system is held at the boundary instead of touching
+   and retreating. The clinical signature of this regime — the
+   palpitations, ectopy, the "stim heart" arrhythmia variants — is
+   not a feature of athlete's heart proper. It is the residue of
+   chronic boundary residence with feedback bypassed.
+
+This is the literature-defensible claim: **healthy athlete's heart
+is the endogenous case; the palpitation/arrhythmia phenotype is the
+operator-sustained case.** The stack does not damage tissue
+directly. It removes the natural cutoffs that would have bounded
+residence time at §3.6, and *that* — chronic residence without
+recovery — is what produces the clinical signature.
+
+The framework distinction: §3.6 visits are healthy. §3.6 residence
+without §3.5 recovery is the pathological case. Operator stacks
+shift the system from the first regime to the second.
 
 ## Why preserve this memo
 
