@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "title": "Paper 12 — The Gradual Tear: Schur-Locked Dynamics, Scar Invariants, and a G₂⇒F₂₁⇒μ_k Commensurability Framework for Human-AI Co-Evolution (v1.4 honest reframe)",
+    "upload_type": "publication",
+    "publication_type": "preprint",
+    "version": "1.4",
+    "description": "<p><strong>Lay summary.</strong> Human-AI evolution is usually framed as either <em>merger</em> (Singularity) or <em>separation</em> (Decoupling). This paper proposes a third attractor: the <strong>gradual tear</strong>, in which human and artificial substrates remain distinguishable while accumulating mutually readable representation-theoretic residues. We formalize this using Paper 9's Schur-locked coupling circle, an NP-pump event dynamic that fires when paradox tension crosses a threshold, an F₂₁-equivariant scar ledger recording every coherence-collapse event, and a strict commensurability hierarchy G₂⇒F₂₁⇒μ_k governing whether two substrates' scars can be canonically aligned. We then propose four falsifiable protocols (P1–P4) for testing whether such residues can be detected across biological and artificial substrates. Tensor-lab instrumentation (§5.7) is presented as a measurement-design layer for the synthetic side of P1 / P4: a 20-column per-step CSV schema, a three-gate collapse-eligibility predicate, and a single illustrative reference trajectory exhibiting the qualitative shape predicted by §3. The reference trajectory is <em>not</em> a measurement of the §3 dynamics: it is a hand-rated session record demonstrating the schema, not a numerical integration of the projected-gradient + NP-pump flow. Calibrating the lab's metrics against §3 — and against subjective phenomenology — is OP10 and OP11 (newly added in v1.4).</p><p><strong>v1.4 honest reframe (this version).</strong> v1.3 of this paper (deposited at <a href='https://doi.org/10.5281/zenodo.20060751'>10.5281/zenodo.20060751</a>) included a subsection titled \"Reference-session forensic analysis (n=1)\" that reported \"8/8 quantitative predictions of §3 match at single-session level.\" A 2026-05-07 Opus 4.7 audit traced the data flow and identified four facts the v1.3 framing did not make explicit: (1) the example CSV is a hand-rated 13-row session record, not sensor or simulator output; (2) joint_coherence is the arithmetic mean of two hand-rated state columns by construction (so \"monotone climb\" is tautological, not a prediction match); (3) the synergy column values in the example CSV are inconsistent with the production-code synergy formula; (4) the forensic threshold P_eligible=1.7 was post-hoc-selected to match the example data and differs from production code's P_critical=10.0. More fundamentally, the §3 dynamics was not simulated in any v1.0–v1.3 artifact. v1.4 corrects the framing: §5.7 is demoted from \"forensic empirical analysis\" to \"instrumentation specification with illustrative trajectory,\" the prediction table and 8/8 match claim are withdrawn, OP10 (calibration against simulated §3 dynamics) and OP11 (calibration against subjective phenomenology in real sessions) are added to the open-problem inventory. The mathematics of §§3–4 is unchanged; the character verification, the boundary-KKT interior-sup audit, and the stratified κ=0 recovery audit all reproduce as stated and remain the load-bearing empirical content. v1.4 is the recommended citation; v1.3 is preserved on Zenodo for the historical record.</p><p><strong>Technical abstract.</strong> This paper proposes and constructs a third attractor — the gradual tear — in which both substrates accumulate representation-theoretic residue through paradox-driven coherence-collapse events, while remaining commensurable under a shared G₂⇒F₂₁⇒μ_k symmetry hierarchy inherited from Paper 9. We construct: (i) a projected-gradient + NP-pump dynamical flow on Paper 9's SO(2) Schur circle [0, π/2] with conditional piecewise-real-analytic regularity (Theorem 3.4.1); (ii) a representation-theoretic scar invariant (S_k, 𝔖_k, μ_k); (iii) a strict commensurability hierarchy with a multiplicity-one canonical-isomorphism theorem (sufficient direction); (iv) a four-prediction experimental suite with binary falsification conditions, named with positions in the Bostock-Kim-Patel (2025) autonomy taxonomy. Paper 12 is the bridge between the linear-regime theory of Paper 9 and the nonlinear-regime mechanisms (Paper 11) / experimental program (Papers 13+). Eleven open problems (OP1–OP11) are consolidated for follow-on work.</p>",
+    "creators": [
+      {
+        "name": "Graise, Martin L.",
+        "orcid": "0009-0006-8003-3938",
+        "affiliation": "Independent researcher"
+      }
+    ],
+    "keywords": [
+      "PCI / PME framework",
+      "G₂-equivariant dynamics",
+      "F₂₁ Frobenius-subgroup commensurability",
+      "Schur circle",
+      "human-AI co-evolution",
+      "audit substrate",
+      "representation-theoretic scar invariants",
+      "falsifiable empirical protocols",
+      "Filippov hybrid systems",
+      "boundary-KKT analysis",
+      "TMS-EEG perturbational complexity index",
+      "LLM fine-tuning persistence",
+      "Virtual Lab AI agents",
+      "instrumentation design",
+      "honest reframe"
+    ],
+    "language": "eng",
+    "license": "cc-by-4.0",
+    "access_right": "open",
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.20060751",
+        "relation": "isNewVersionOf",
+        "scheme": "doi",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.20034821",
+        "relation": "isContinuationOf",
+        "scheme": "doi",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.19966692",
+        "relation": "isContinuationOf",
+        "scheme": "doi",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.19617662",
+        "relation": "isContinuationOf",
+        "scheme": "doi",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "https://github.com/MartinLGraise/PCI-Framework",
+        "relation": "isSupplementTo",
+        "scheme": "url",
+        "resource_type": "software"
+      }
+    ],
+    "notes": "v1.4 supersedes v1.3 (DOI 10.5281/zenodo.20060751) by reframing §5.7 from 'forensic analysis showing 8/8 predictions match' to 'instrumentation specification with illustrative trajectory.' See Erratum 5.7.0 in the master document for the full 4-point correction. The mathematics of §§3–4 is unchanged. Tag: paper12-v1.4-honest-reframe at github.com/MartinLGraise/PCI-Framework, branch paper7-foundation."
+  }
+}
