@@ -208,6 +208,58 @@ The framework distinction: §3.6 visits are healthy. §3.6 residence
 without §3.5 recovery is the pathological case. Operator stacks
 shift the system from the first regime to the second.
 
+## Literature backing (added 2026-05-09 after Lane 2 return)
+
+The stack-induced cardiac claim is no longer framework-only
+speculation. Pharmacology has a mature parallel literature
+describing exactly this mechanism class.
+
+**Vauquelin rebinding work and Sykes micro-pharmacokinetic studies**
+(reviewed in Copeland residence-time successor literature). Drugs
+can remain pharmacologically effective not because one binding event
+lasts a long time, but because many short binding events occur in
+rapid succession after local dissociation. In confined or membrane-
+rich microenvironments, local ligand concentration remains high,
+encouraging rebinding to the same or neighboring receptors. The
+effective blockade persistence becomes a function of kon, diffusion,
+partitioning, receptor density, and geometry as much as of koff.
+*This is the mechanism we are invoking for the chronic stim-stack
+cardiac case:* sustained local high concentration in cardiac tissue
+produces effective §3.6 residence-by-revisits even though individual
+koff at β-adrenergic receptors is fast. The arrhythmia phenotype is
+pharmacological residence-by-rebinding without endogenous return-
+path enforcement — the *visit-dominated regime forced into residence-
+dominated behavior* by sustained local concentration.
+
+**Bosma et al. 2017 (*Front Pharmacol*) H1 antihistamine data**
+provides the cleanest receptor-level demonstration in the literature
+that occupancy temporal pattern beats occupancy magnitude as a
+predictor of efficacy. Spearman ρ for receptor-recovery time vs koff
+is −1.0; vs equilibrium affinity only −0.6. Olopatadine is *less*
+affine than doxepin yet much more functionally persistent. This is
+not the cardiac case directly, but it establishes that the "temporal
+pattern, not magnitude" framing is the consensus pharmacology
+position, not framework speculation.
+
+**Casarosa et al. 2009 (*JPET*) M3 LAMA bronchodilation** is the
+clearest endogenous-vs-operator-sustained analog in respiratory
+pharmacology: tiotropium / aclidinium / glycopyrrolate have similar
+M3 affinity (pA2 10.4, 9.6, 9.7) but dissociation half-lives of 27 h,
+10.7 h, 6.1 h, and 24 h bronchoprotection of 35%, 21%, 0%. Functional
+persistence tracks koff, not affinity — i.e., what happens at the
+tissue level depends on the temporal pattern of receptor occupancy,
+not the snapshot magnitude.
+
+These three lines of evidence together convert the cardiac claim
+from framework-speculation to literature-grounded mechanism. The
+specific path: stack-driven sustained sympathetic / PCr / pH state
+→ sustained local concentration in cardiac microenvironments →
+residence-by-rebinding pharmacology → chronic §3.6 occupancy without
+§3.5 recovery → boundary-shaped remodeling. Each step has a
+literature analog. The framework's contribution is connecting them
+as one residence-pattern principle that holds across receptor
+binding and tissue-level operator stacking.
+
 ## Why preserve this memo
 
 Three reasons unchanged from v1:
@@ -232,3 +284,15 @@ One reason added:
 - `outbox/paper12/computations/paper12_q5_boundary_kkt_interior_sup.py`
 - Martin L. Graise, personal observation (gym-goer N=1, 2025-2026 cycle)
 - `outbox/syntheses/framework_is_experiment.md` (audit-window discipline applied here)
+- `outbox/syntheses/lane2_residence_time_pharmacology/` (Copeland
+  residence-time literature survey, ChatGPT Pro Deep Research run
+  2026-05-09)
+- Bosma et al. 2017, *Front Pharmacol*. H1 antihistamine kinetics.
+  https://www.frontiersin.org/articles/10.3389/fphar.2017.00667
+- Casarosa et al. 2009, *JPET*. M3 LAMA bronchodilation.
+  https://pubmed.ncbi.nlm.nih.gov/19498041/
+- Tummino & Copeland 2008, *Biochemistry*. Open-vs-closed-system
+  framing; τ = 1/koff.
+  https://josephgroup.ucsd.edu/Protocols/Protocols%20PDF/copeland2008biochemistry%20binding.pdf
+- Vauquelin & Charlton 2010, *Br J Pharmacol*, on micro-PK rebinding
+  (cited via Copeland successor literature).
