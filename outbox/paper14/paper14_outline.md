@@ -11,17 +11,22 @@
   pharmacology anchor)
 - `outbox/syntheses/lane3_proteostasis_residence_time/` (both Claude
   temporal + ChatGPT Pro spatial proteostasis surveys)
+- `outbox/syntheses/lane4_pharmacology_to_psychedelics_bridge/`
+  (keystone bridge: end-to-end mechanism chain from molecular
+  residence time to network-state transition restoration; killer
+  antagonist-termination experiment proposal)
 - `outbox/syntheses/flow_grind_synthesis.md` (cross-domain synthesis)
 - `outbox/syntheses/cross_domain_saturation_collapse.md` (exercise/
   cardiac)
 - Paper 12 v1.4, §3.5 / §3.6 boundary-KKT result (substrate-side
   demonstration)
 
-**Four-lane convergent validation:** All four Deep Research lanes
+**Five-lane convergent validation:** All five Deep Research lanes
 returned with the same structural finding — the principle is
 partially anticipated in every surveyed field but never unified as
-a cross-domain claim. This is the strongest possible setup for the
-unification paper.
+a cross-domain claim. Lane 4 provides the keystone bridge with an
+explicit five-link mechanism chain and the cleanest one-sentence
+statement of the framework's claim found in any lane.
 
 ## Working title
 
@@ -42,6 +47,29 @@ temporal-and-spatial residence pattern of states whose transient
 sampling is the design intent — produced by failure of the
 domain-specific machinery that would have enforced return to
 functional control — not the identity of the states themselves.
+
+## Lane 4 single-sentence framing (usable in abstract)
+
+From Lane 4, page 11 — directly quotable:
+
+> "Copeland pharmacology teaches that efficacy can depend on how
+> long a target remains occupied through biologically relevant
+> intervals; psychedelic systems neuroscience increasingly teaches
+> that therapy can depend on how easily the brain moves between
+> recurrent states, not on whether it visits some wholly
+> unprecedented region-defined state."
+
+And the cross-lane statement of the principle (Lane 4 page 1):
+
+> "Temporal visitation statistics outperform static magnitude
+> summaries."
+
+Framework defensibility boundary (Lane 4 page 1, verbatim):
+
+> "Analytically defensible, provided it is stated as a multiscale
+> inference rather than as an already-proven mechanism."
+
+Paper 14 must state the claim in exactly these terms.
 
 ## Operational definition (Lane 1 disciplined)
 
@@ -277,22 +305,72 @@ operator stack converts visits into residence by silencing the
 return-path enforcement (PCr depletion cutoff, pH cutoff,
 sympathetic-drive cutoff).
 
-**8.5 Depression / large-scale brain networks (Lane 1, with
+**8.5 Depression / large-scale brain networks (Lanes 1 + 4 with
 careful framing).** The principle holds as **return-to-task-set**
-failure, NOT as static DMN hyperconnectivity. What is consistent in
-depression is maladaptive persistence of self-referential modes /
-impaired suppression or switching under demand (Hamilton, Marchetti,
-Bartova, Kaiser, Alonso). Wise / REST-meta-MDD found DMN instability
-or *reduced* within-DMN FC, complicating naive hyperstability
-claims. Paper 14 must use return-to-task-set language.
+failure, NOT as static DMN hyperconnectivity. What is consistent
+in depression is maladaptive persistence of self-referential modes
+/ impaired suppression or switching under demand (Hamilton,
+Marchetti, Bartova, Kaiser, Alonso). Wise / REST-meta-MDD found
+DMN instability or *reduced* within-DMN FC, complicating naive
+hyperstability claims. Paper 14 must use return-to-task-set
+language.
+
+**8.5.1 Psychedelic restoration of transitions (Lane 4).** This
+is where the framework's molecular-to-phenomenological bridge
+lands. Lane 4 provides an end-to-end (not yet proven, but
+literature-supported) five-link chain: drug concentration(t) →
+bound receptor fraction(t) → residence pattern → downstream
+signaling timing → network-level gain and coupling → state-space
+geometry (dwell times, barriers, transition probabilities) →
+phenomenology and therapeutic outcome.
+
+The explicit-restoration cluster of citations (load-bearing for
+this subsection):
+
+- Carhart-Harris & Friston 2019 REBUS (theoretical anchor; psychedelics
+  relax overly precise high-level priors)
+- Doss et al. 2021 (psilocybin in MDD increased cognitive flexibility
+  4+ weeks; ACC–PCC dynamic FC increase)
+- Singleton et al. 2022 (LSD/psilocybin lowered control energy for
+  state transitions; cleanest paper for transition-barrier framing)
+- Daws et al. 2022 (decreased modularity / increased global
+  integration after psilocybin therapy in depression)
+- Nardou et al. 2023 (mouse: psychedelics reopened critical period;
+  metaplastic restoration of oxytocin LTD)
+- Vohryzek et al. 2024 (whole-brain modeling explicitly identifying
+  regions for depressive-to-healthy transition)
+- Deco et al. 2024 (psilocybin and escitalopram rebalance brain
+  dynamics differently; depression as disrupted hierarchical
+  orchestration)
+- Siegel et al. 2024 (longitudinal precision fMRI; persistent
+  reduction in anterior hippocampus–DMN connectivity)
+
+Precursor papers (cite but don't lean on for therapeutic-restoration
+claim): Carhart-Harris 2014 entropic brain; Tagliazucchi 2014 wider
+repertoire; Lord 2019 metastable exploration; Luppi 2021 LSD
+integration-segregation.
+
+**Critical three-level dissociation caveat (Ort 2023):**
+spontaneous state-sequence diversity, perturbational/causal
+complexity (PCI), and long-term plastic reopening are *not* the
+same observable. Ort 2023: psilocybin increased spontaneous chaotic
+activity but PCI did NOT increase. Paper 14 must specify which of
+the three levels its claims target. Best synthesis: psychedelics
+acutely change spontaneous state diversity (Level 1), probably
+change plasticity substrate (Level 3, Nardou), but do NOT
+necessarily change PCI (Level 2) in the same way.
 
 **8.6 PCI phenomenology.** §3.5 smooth-interior / §3.6 boundary-KKT
 residence (Paper 12 v1.4) for tear topology. Phenomenologically:
-flow = brief §3.6 touches with intact return; rumination / depression
-/ stuck thought-loops = §3.6 residence without §3.5 recovery. The
-phenomenological substrate connects directly to §8.5 (large-scale
-brain networks): subjective rumination IS network-dynamical return-
-path failure measured introspectively.
+flow = brief §3.6 touches with intact return; rumination /
+depression / stuck thought-loops = §3.6 residence without §3.5
+recovery. The phenomenological substrate connects directly to §8.5
+(large-scale brain networks): subjective rumination IS network-
+dynamical return-path failure measured introspectively. Lane 4
+establishes that psychedelics restore transitions between locked
+states by reducing network barrier heights — i.e., they restore
+the §3.5 ↔ §3.6 transition machinery at the network-dynamical
+level.
 
 The residence-pathology principle is substrate-independent: wherever
 a dynamical system has both regimes available to it plus return-path
@@ -354,11 +432,14 @@ report:
 Without these four, residence-vs-visit attribution fails. This is
 the framework's portable methodology spec.
 
-### §11 Cross-domain experimental agenda (from Lane 1)
+### §11 Cross-domain experimental agenda (Lanes 1 and 4)
 
-The Lane 1 survey provided eight concrete experiments that operate
-as the framework's empirical program. These are not Paper 14's own
-proposals; they are the program Paper 14 frames the field toward.
+Lanes 1 and 4 together provide thirteen concrete experiments that
+operate as the framework's empirical program. These are not Paper
+14's own proposals; they are the program Paper 14 frames the field
+toward.
+
+**From Lane 1 (cross-substrate recovery kinetics):**
 
 1. **Cross-domain perturbation-recovery battery.** Common recovery
    time constant τ across substrates: aggregate clearance after
@@ -371,8 +452,8 @@ proposals; they are the program Paper 14 frames the field toward.
 3. **Proteostasis–phosphoregulation coupling assays.** Test whether
    return-path machinery is partly **interoperable** across
    molecular substrates (does PP2A or GSK3β restoration accelerate
-   aggregate clearance?). This is the strongest possible cross-
-   substrate convergence test.
+   aggregate clearance?). Strongest possible cross-substrate
+   convergence test.
 4. **Dominant-eigenvalue modeling of recovery.** Fit perturbation-
    response curves to linearized dynamical models. Disease signature:
    smaller-magnitude restoring eigenvalues; intervention signature:
@@ -395,8 +476,43 @@ proposals; they are the program Paper 14 frames the field toward.
    tumors, DMN-instability cohorts. Robust theory specifies
    exceptions up front.
 
-These eight together provide a fundable multi-year experimental
-program. Paper 14 §11 frames them as the next-step research agenda.
+**From Lane 4 (pharmacology-to-psychedelics bridge):**
+
+9. **Matched-exposure varied-koff 5-HT2A agonist panel.** Rodents
+   or NHPs with matched peak occupancy / AUC but varied
+   dissociation kinetics; measure widefield calcium, EEG complexity,
+   dynamic FC, transition rates. Direct analog of lapatinib /
+   A2A / V2R designs imported into psychedelic neuroscience.
+10. **Antagonist-termination experiment.** Use 5-HT2A antagonist
+    with well-characterized kinetics to terminate ongoing
+    psychedelic state. If neural-state transition rates collapse on
+    the antagonist's occupancy timeline rather than bulk plasma
+    concentration → strong cross-scale demonstration that temporal
+    occupancy pattern matters more than magnitude. **Killer
+    experiment: doesn't require new technology, just well-
+    characterized kinetics on existing compounds.**
+11. **Clinical occupancy-to-dynamics PK/PD model.** Psilocybin
+    depression trial jointly modeling plasma psilocin, PET receptor
+    occupancy, fMRI modularity, control-energy estimates,
+    cognitive flexibility outcomes. Leading hypothesis: longer
+    effective receptor engagement predicts greater post-acute
+    reduction in modular trapping.
+12. **Spontaneous vs perturbational dissociation study.** Same
+    protocol with resting EEG/fMRI and TMS-EEG. Test whether longer
+    receptor engagement increases spontaneous state diversity
+    without changing PCI, or whether separable kinetic regime also
+    changes perturbational complexity. Operationalizes Ort 2023
+    caveat.
+13. **Baseline rigidity as moderator.** Stratify by pre-drug
+    dynamical rigidity (high modularity, low flexibility, deep
+    modeled attractors, strong DMN trapping). Restoration account
+    predicts larger effects in most-locked brains — mirroring how
+    residence-time benefits are most visible when biological timing
+    makes dwell consequential.
+
+These thirteen together provide a fundable multi-year experimental
+program spanning four substrates. Paper 14 §11 frames them as the
+next-step research agenda.
 
 ### §12 Implications
 
