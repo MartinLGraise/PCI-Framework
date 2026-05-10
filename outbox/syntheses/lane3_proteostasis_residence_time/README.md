@@ -106,7 +106,89 @@ insight per se.
 
 ## Key cited Tier-1 anchors with DOIs
 
-**Condensate silo (closest prior art):**
+**Two-axis statements (closest combined prior art — ChatGPT survey):**
+- Pytel & Fromm Longo 2025, *Am J Pathol*,
+  doi:10.1016/j.ajpath.2025.07.011 (proteostasis network governs
+  "timing, location, and stoichiometry" — names two of three axes)
+- Bertolotti 2018, *Curr Opin Neurobiol*,
+  doi:10.1016/j.conb.2018.03.004 (subcellular location of protein
+  deposits)
+- Kumar & Lapierre 2021, *Biophys Rev*,
+  doi:10.1007/s12551-021-00890-x (dynamic protein partitioning)
+- Giandomenico et al. 2022, *Trends Neurosci*,
+  doi:10.1016/j.tins.2021.08.002 (compartment-specific neuronal
+  proteostasis)
+
+**Disease-class spatial-residence anchors (ChatGPT survey):**
+
+*Amyloid — endocytic itinerary:*
+- Koo & Squazzo 1994, doi:10.1016/S0021-9258(17)32449-3
+- Gouras et al. 2000, PMID 10623648 (intraneuronal Aβ42)
+- Das et al. 2013, PMID 23931995 (APP/BACE1 acidic-microdomain
+  convergence)
+- Roselli et al. 2023, doi:10.1007/s10571-023-01374-0
+- Del Prete et al. 2017, PMID 27911326 (MAM/mitochondrial APP)
+
+*Prion — topology and GPI anchoring (cleanest causal-localization
+literature in all of neurodegeneration):*
+- Hegde et al. 1998, PMID 9452375 (transmembrane PrP → disease)
+- Chesebro et al. 2005, PMID 15933194 (anchorless PrP → amyloid
+  without scrapie)
+- Solomon et al. 2011, doi:10.1074/jbc.M110.214973 (mutant PrP
+  toxicity requires plasma-membrane localization)
+- Fehlinger et al. 2017, doi:10.1038/s41598-017-07260-2 (prion
+  strain endocytic-route specificity)
+- Gatdula et al. 2026, doi:10.1371/journal.ppat.1013911 (membrane-
+  anchored PrP^Sc → synaptotoxicity)
+
+*Tauopathy — multi-compartment mislocalization:*
+- Ittner et al. 2010, doi:10.1016/j.cell.2010.06.036 (dendritic tau
+  mediates Aβ toxicity)
+- Hoover et al. 2010, PMID 21172610 (tau mislocalization to
+  dendritic spines causes synaptic dysfunction)
+- Ash et al. 2021, doi:10.1073/pnas.2014188118 (TIA1 potentiates
+  tau phase separation)
+- Lester et al. 2021, PMID 33848474 (tau aggregates as RNA-protein
+  assemblies mislocalizing nuclear speckle components)
+- Yuan et al. 2026, doi:10.1007/s00401-026-02979-7 (oligomeric tau
+  → nuclear lamina invagination)
+
+*PolyQ — NLS/NES targeting (cleanest class-wide localization
+proof in neurodegeneration):*
+- Saudou et al. 1998, PMID 9778247 (mutant huntingtin acts in the
+  nucleus)
+- Klement et al. 1998, PMID 9778246 (ataxin-1 nuclear localization
+  required)
+- Montie et al. 2009, PMID 19279159 (cytoplasmic retention of
+  polyQ-AR ameliorates SBMA via autophagy)
+- Simões et al. 2012, doi:10.1093/brain/aws177 (calpain inhibition
+  prevents ataxin-3 nuclear localization)
+- Yablonska et al. 2025, PMID 39779371 (N17 phosphorylation
+  regulates mutant huntingtin mitochondrial targeting)
+- Villavicencio Gonzalez & Zoghbi 2026, doi:10.1084/jem.20241336
+  (recent class-level synthesis)
+
+**ChatGPT proposed canonical statement (verbatim, p. 10):**
+
+> "In proteinopathies, pathology is determined not only by which
+> protein misfolds, but by where that protein resides and how long
+> it dwells there: compartmental residence selects the local
+> interactome, biophysical regime, and proteostasis machinery that
+> convert the same precursor or conformer into a tolerated, cleared,
+> propagating, or toxic species. Proteostasis pathways are therefore
+> disease-modifying chiefly by controlling protein residence —
+> routing proteins toward compartments that favor folding,
+> sequestration, or clearance and away from compartments that license
+> aberrant cleavage, templating, signaling, organelle damage, or
+> spread."
+
+This is a candidate-statement Paper 14 can build on. It already
+combines spatial ("where that protein resides") and temporal ("how
+long it dwells there") residence into a single sentence. Paper 14's
+novelty is the formal observable + the cross-domain extension to
+non-proteostasis substrates (pharmacology, fitness, phenomenology).
+
+**Condensate silo (closest temporal-axis prior art — Claude survey):**
 - Patel et al. 2015, *Cell*, doi:10.1016/j.cell.2015.07.047
   ("aberrant phase transitions lie at the heart of ALS")
 - Wolozin & Ivanov 2019, *Nat Rev Neurosci*,

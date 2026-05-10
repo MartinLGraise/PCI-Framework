@@ -133,16 +133,72 @@ it sits on existing literature, and it is more ambitious because
 cross-domain unification is a bigger claim than domain-specific
 principle invention.
 
-## Lane 3 return: proteostasis silos
+## Lane 3 return: two parallel proteostasis surveys
 
-Proteostasis Deep Research came back with a clean adversarial
-survey. Headline finding: **the principle is partially anticipated
-in four silos but never unified, and the formal observable doesn't
-exist anywhere.** This is the strongest possible Paper 14 setup
-because it is honest about prior art while still leaving real
+Lane 3 was run on both Claude and ChatGPT Pro in parallel. The two
+models interpreted "residence" along orthogonal axes, and their
+returns are complementary rather than redundant.
+
+- **Claude's read — temporal residence.** *How long* a protein dwells
+  in a conformational state. Surveyed condensate aging, IDR temporal
+  availability, chaperone QC cycles, amyloid kinetic stability,
+  frustration theory. Found partial anticipation in four silos; no
+  unifying claim; formal observable missing.
+- **ChatGPT Pro's read — spatial residence.** *Where* a protein lives
+  in the cell — compartmental localization, trafficking itinerary,
+  topology. Surveyed disease-class causal-localization experiments.
+  Found Tier-1 anchors at Bertolotti 2018, Kumar & Lapierre 2021,
+  Giandomenico 2022, and Pytel & Fromm Longo 2025 (proteostasis
+  governs "timing, location, and stoichiometry"). No unifying
+  cross-class residence-pathology law, but very strong per-class
+  causal-localization literatures (especially prion and polyQ).
+
+**The most important finding from running both:** Pytel & Fromm
+Longo 2025 names *two* of the three residence axes verbatim —
+**timing** (temporal dwell) and **location** (spatial compartment).
+This is the closest existing two-axis statement. The gap across
+both surveys is the same: a unified formal observable combining
+both axes with design-intent bounds, applied as a cross-class
+disease principle.
+
+This is the strongest possible Paper 14 setup. Both prior-art
+surveys are honest about what exists; both confirm that the two-
+axis cross-class unification plus formal observable is genuine
 contribution space.
 
-What exists silo by silo (proteostasis):
+## The two-axis residence concept
+
+Residence as the framework uses it is not one variable. It is two,
+which is why single-axis reviews of the proteostasis literature
+keep finding "partial anticipation":
+
+1. **Temporal residence τ_R(s):** dwell time in a conformational
+   state s, measured as residence-time on a Markov state model of
+   native dynamics. Pathology = τ_R(s_pathological) escaping its
+   design-intent bounds.
+2. **Spatial residence π_c:** occupancy probability in compartment c,
+   measured as trafficking itinerary through subcellular structures.
+   Pathology = π_c(c_pathological) escaping its design-intent bounds.
+
+The joint observable is R(s, c) = τ_R(s) × π_c. Pathology corresponds
+to R escaping its design-intent bounds in *either* axis, with the
+same structural signature: residence where transits were design
+intent.
+
+This explains why the literature fragments the way it does:
+
+- Condensate / IDR / amyloid-kinetic / frustration silos hold down
+  the temporal axis (Claude's survey).
+- Prion-topology / polyQ-NLS/NES / tau-mislocalization / amyloid-
+  endocytic silos hold down the spatial axis (ChatGPT's survey).
+- Proteostasis-network-definition silos (Balch 2008, Pytel & Fromm
+  Longo 2025) straddle both axes but do not produce a disease
+  principle.
+- No paper unifies the two axes with a formal observable.
+
+## Per-silo findings (from both reports)
+
+**Temporal axis (Claude survey):**
 
 - **Condensate / stress-granule silo (HIGH closeness, Tier 1
   within domain).** Patel/Hyman/Alberti 2015 ("aberrant phase
@@ -152,106 +208,195 @@ What exists silo by silo (proteostasis):
   2019 (experimental decoupling: chronic SG assembly intrinsically
   cytotoxic). Mittag & Pappu 2022 PSCP framework formalizes
   timescale decoupling. Hughes/Eisenberg 2018 LARKS-vs-zippers is
-  residence-vs-visit at the atomic structural level. **The
-  condensate field has independently formulated almost the same
-  thesis — but only as a description of condensate aging, not as
-  a unifying disease principle.**
+  residence-vs-visit at the atomic structural level.
 
-- **IDR availability silo (Tier 1, but at protein-abundance level).**
-  Babu et al. 2011 verbatim: IDPs must be "available in appropriate
-  amounts and not present longer than needed." Cleanest temporal-
-  occupancy framing in IDP biology. Limitation: framed at
-  abundance, not conformational state.
+- **IDR availability silo (Tier 1, abundance-level).** Babu et al.
+  2011 verbatim: IDPs must be "available in appropriate amounts
+  and not present longer than needed."
 
-- **QC / chaperone silo (MEDIUM closeness, Tier 1 for one
-  subsystem).** Granulostasis (Alberti et al. 2017) is the only
-  explicitly named non-residence enforcement subsystem. The full
-  HSR/UPR/ISR + HSP70/HSP90 + UPS + autophagy machinery operates
-  this way without ever being named as such. FoldEco (Powers,
-  Powers & Gierasch 2012) is the most rigorous existing rate-
-  equation treatment of the proteostasis network.
+- **QC / chaperone silo (MEDIUM, Tier 1 for granulostasis).**
+  Alberti et al. 2017 "granulostasis." Full HSR/UPR/ISR + HSP70/
+  HSP90 + UPS + autophagy machinery is operationally residence-
+  time enforcement but unnamed as such. FoldEco (Powers, Powers &
+  Gierasch 2012) is the most rigorous existing rate-equation
+  treatment of the proteostasis network.
 
-- **Kinetic stability silo (implicit, opposite directionality).**
-  Kelly tafamidis (2012), Knowles-Vendruscolo-Dobson "protein
-  metastasis" / "supersaturation" (2014). Native = kinetically
-  metastable visit; amyloid = thermodynamic residence. **Important
-  asymmetry:** Kelly's framing extends *native* residence; the
-  framework's thesis is symmetric — pathology is ANY residence-
-  where-transit-intended.
+- **Kinetic stability silo (implicit, asymmetric).** Kelly
+  tafamidis (2012) extends *native* residence; Knowles-Vendruscolo-
+  Dobson "protein metastasis" (2014) has native = kinetic visit,
+  amyloid = thermodynamic residence. Framework's thesis is
+  symmetric: pathology is ANY residence-where-transit-intended.
 
-- **Adjacent (gatekeeper residues, Wolynes/Ferreiro frustration,
-  active-matter dissipative condensates).** Each touches the
-  principle from a different angle but never names it as such.
-  Notably, "frustration without escape" is explicitly NOT in the
-  frustration-theory literature.
+- **Adjacent:** Rousseau/Schymkowitz gatekeeper residues (entry-
+  prevention), Wolynes/Ferreiro frustration (state-shaped not
+  residence-shaped), Jülicher/Weber active-matter dissipative
+  condensates (physics, not disease principle). "Frustration
+  without escape" is explicitly NOT in the literature.
 
-## Updated cross-domain table (now with proteostasis)
+**Spatial axis (ChatGPT Pro survey):**
 
-| Domain | Flow / healthy regime | Grind / pathological regime |
+- **Two-axis proto-statements (closest existing prior art).** Pytel
+  & Fromm Longo 2025 — proteostasis network governs "timing,
+  location, and stoichiometry" (names two axes). Bertolotti 2018 —
+  "importance of the subcellular location of protein deposits."
+  Kumar & Lapierre 2021 — "dynamic protein partitioning across
+  different subcellular structures." Giandomenico 2022 —
+  "proteostatic control in axons and dendrites in a decentralized
+  fashion." Balch 2008 — founding proteostasis-network paper.
+  Strongest precursors but none states the cross-class residence-
+  determines-pathology rule explicitly.
+
+- **Amyloid causal-localization (STRONG for processing; moderate-
+  strong for destination).** Koo & Squazzo 1994 APP endocytic
+  pathway; Das 2013 APP/BACE1 acidic-microdomain convergence;
+  Roselli 2023 iPSC-neuron early-endosome APP/BACE1 colocalization;
+  Gouras 2000 intraneuronal Aβ42; Del Prete 2017 MAM APP. Two-step
+  residence model: *processing residence* in endosomes governs Aβ
+  production; *destination residence* in neurons/mitochondria/MAMs
+  modulates toxicity.
+
+- **Prion topology / membrane residence (VERY STRONG — cleanest
+  causal-localization literature in all of neurodegeneration).**
+  Hegde 1998 transmembrane PrP → disease; Chesebro 2005 anchorless
+  PrP → amyloid without scrapie (dissociates deposition from
+  toxicity); Solomon 2011 mutant PrP requires surface localization
+  for toxicity; Fehlinger 2017 prion strains use different endocytic
+  routes; Gatdula 2026 membrane-anchored PrP^Sc is proximate
+  synaptotoxicity trigger.
+
+- **Tauopathy mislocalization (VERY STRONG — convergent multi-
+  compartment evidence).** Ittner 2010 dendritic tau mediates Aβ
+  toxicity; Hoover 2010 tau spine mislocalization → synaptic
+  dysfunction; Ash 2021 / Jiang 2019 TIA1-tau condensate toxicity;
+  Lester 2021 tau → nuclear speckle mislocalization; Yuan 2026 tau
+  oligomers → nuclear lamina invagination. Three modes: somato-
+  dendritic/postsynaptic, RNP/phase-separated, nuclear — each
+  produces different toxic mechanisms.
+
+- **PolyQ localization (VERY STRONG — arguably clearest class-wide
+  localization proof).** Saudou 1998 mutant Htt acts in nucleus;
+  Peters 1999 NES decreases/NLS increases Htt toxicity directly;
+  Klement 1998 ataxin-1 nuclear localization necessary; Bichelmeier
+  2007 ataxin-3 nuclear localization required in vivo; Montie 2009
+  cytoplasmic retention of polyQ-AR ameliorates SBMA; Yablonska
+  2025 N17 phosphorylation regulates mutant Htt mitochondrial
+  targeting.
+
+**Three mechanistic rules recur across all four spatial-axis
+classes (from ChatGPT synthesis):** residence sets (1) the local
+physicochemical regime (acidic endosomes, ER topology, condensate
+chemistry, mitochondrial interface), (2) the accessible interactome
+and signaling space (Fyn, prion signaling, chromatin, MAM
+homeostasis), and (3) the operative proteostasis node (ERAD,
+endolysosomal sorting, cytosolic/nuclear chaperone-proteasome,
+selective autophagy, organelle PQC).
+
+## Updated cross-domain table (two-axis)
+
+| Domain / axis | Flow / healthy regime | Grind / pathological regime |
 |---|---|---|
-| Framework (Paper 12 v1.4) | §3.5 smooth-interior (4/28) | §3.6 boundary-KKT residence (24/28) |
-| Exercise physiology | Endogenous boundary operation: visits with intact feedback | Operator-sustained residence: pharmacological feedback bypass |
-| Pharmacology (Copeland) | Visit-dominated regime: many short binding events | Residence-dominated regime: few long binding events |
-| Proteostasis (condensates) | Transient liquid-like compartments (FUS droplets, dynamic SGs) | Persistent fibrillar / aged condensates (chronic SGs, FUS-to-aggregate) |
-| Proteostasis (IDR) | IDPs available in appropriate amounts / dwell | IDPs present longer than needed (Babu) |
+| Framework (Paper 12 v1.4) — temporal | §3.5 smooth-interior (4/28) | §3.6 boundary-KKT residence (24/28) |
+| Exercise physiology — temporal | Endogenous boundary operation: visits with intact feedback | Operator-sustained residence: pharmacological feedback bypass |
+| Pharmacology (Copeland) — temporal | Visit-dominated regime: many short binding events | Residence-dominated regime: few long binding events |
+| Proteostasis (condensates) — temporal | Transient liquid-like compartments | Persistent fibrillar / aged condensates (Patel, Wolozin, Zhang) |
+| Proteostasis (IDR) — temporal | IDPs available in appropriate amounts/dwell | IDPs present longer than needed (Babu 2011) |
+| Proteostasis (amyloid kinetic) — temporal | Soluble functional native (metastable visit) | Thermodynamic ground state (insoluble residence) |
+| Proteostasis (amyloid) — spatial | APP plasma-membrane → surface processing | APP early-endosome residence → β-cleavage (Das, Roselli) |
+| Proteostasis (prion) — spatial | PrP GPI-anchored on surface, physiological signaling | Transmembrane PrP; cytosolic PrP; membrane-anchored PrP^Sc (Hegde, Ma, Gatdula) |
+| Proteostasis (tau) — spatial | Axonal tau, physiological microtubule function | Dendritic/spine/condensate/nuclear tau (Ittner, Hoover, Ash, Lester) |
+| Proteostasis (polyQ) — spatial | Cytoplasmic mutant Htt or AR | Nuclear mutant Htt / AR / ataxin (Saudou, Peters, Klement, Montie) |
 | Proteostasis (chaperone QC) | Active turnover via HSP70/90, UPS, autophagy | QC failure → client-residence accumulation |
-| Proteostasis (amyloid kinetic) | Soluble functional native (metastable visit) | Thermodynamic ground state (insoluble residence) |
 | Phenomenology / PCI | Flow / brief §3.6 touches | Rumination / depression / locked thought-loop residence |
 
-Five coordinate instances of the same principle. The unification
-claim becomes Paper 14's contribution, not the residence-pathology
-insight per se.
+Twelve coordinate instances of the same principle, across two axes.
+The unification claim becomes Paper 14's contribution, not the
+residence-pathology insight per se.
 
-## Paper 14 contribution — sharpened
+## Paper 14 contribution — sharpened (two-axis)
 
-Lane 3 forces the framing to be precise. Paper 14 owns:
+The two parallel Lane 3 returns make the contribution sharper, not
+diffuser. Paper 14 owns:
 
-1. **The unifying principle statement** — explicitly cite Patel
-   2015 and Babu 2011 in the first three paragraphs as the
-   strongest existing Tier-1 anchors; argue they are coordinate
-   instances of one principle that has not been articulated.
+1. **The unifying two-axis principle statement.** Open by quoting
+   four Tier-1 anchors: Patel 2015 (temporal, condensate), Babu
+   2011 (temporal, IDR abundance), Pytel & Fromm Longo 2025
+   (combined, "timing + location + stoichiometry"), Bertolotti 2018
+   (spatial, subcellular location). Argue they are axis-specific
+   and silo-bound instances of one two-axis principle.
 
-2. **The formal observable τ_R(s)** — residence-time metric on a
-   Markov state model of native dynamics, defined such that
-   pathology corresponds to τ_R(s_pathological) → ∞ for states
-   whose design intent is bounded τ_R. This is what Paper 14
-   genuinely owns. MSM machinery exists (Pande, Noé, Husic; Löhr
-   2021; Tancredi 2024) but has never been deployed as a disease-
-   classification axis.
+2. **The formal two-axis observable R(s, c) = τ_R(s) × π_c.**
+   Temporal residence τ_R(s) on MSM native dynamics × spatial
+   residence π_c on compartmental occupancy. Pathology = R escaping
+   its design-intent bounds in either axis, with s and c possibly
+   unchanged. This is genuinely novel. MSM machinery exists for
+   τ_R (Löhr 2021, Tancredi 2024); compartmental-occupancy
+   machinery exists for π_c (single-cell trafficking, live-cell
+   imaging); no one has combined them as one disease-observable.
 
 3. **The symmetric formulation of kinetic stabilization** — not
    just "stabilize native to extend visit" (Kelly) but also
    "destabilize pathological state to abolish residence." Both as
    residence-time interventions in one rate-equation framework.
+   Extend to spatial: "route protein toward protective compartment"
+   vs "route protein away from pathological compartment."
 
 4. **The QC reframing** — HSP70 ATP-cycling, HSP90 client-dwell,
-   UPS turnover, autophagy clearance, granulostasis, HSR/UPR/ISR
-   as one class: non-residence enforcement machinery with a common
-   observable (residence half-life of pathological-state-shaped
-   substrates).
+   UPS turnover, autophagy clearance, granulostasis, HSR/UPR/ISR,
+   PLUS compartmental trafficking machinery (ERAD, endolysosomal
+   sorting, NLS/NES systems, nuclear pore complex) as one class:
+   non-residence enforcement machinery. Temporal machinery prevents
+   dwell overshoot in conformational state; spatial machinery
+   prevents dwell overshoot in compartment. Same class.
 
 5. **The frustration-without-escape extension.** Wolynes/Ferreiro
-   frustration theory is state-shaped (which interactions are
-   frustrated); Paper 14 extends to residence-shaped (how long the
-   frustrated state persists). Pre-empt the objection by extending
-   it explicitly. Send courtesy preprint to Ferreiro / Wolynes.
+   frustration theory is state-shaped; Paper 14 extends to
+   residence-shaped on both axes. Pre-empt the objection explicitly.
+   Send courtesy preprint to Ferreiro / Wolynes.
 
-## Four canonical disease cases for Paper 14 §3
+6. **The cross-domain extension (§7).** Pharmacology (Copeland
+   visits-vs-residence), exercise physiology (endogenous vs
+   operator-sustained), PCI phenomenology (flow vs rumination) as
+   non-proteostasis substrates that instantiate the same two-axis
+   residence-pathology principle. This is what distinguishes the
+   framework's claim from any paper that could come out of a single
+   proteostasis silo: the residence-pathology principle is
+   substrate-independent.
 
-From the Lane 3 recommendation — one per track:
+## Four canonical disease cases for Paper 14 §3 (two-axis)
 
-- **FUS in stress granules** (Track 3 condensates — strongest
-  validation; cite Patel 2015, Wolozin & Ivanov 2019, Zhang 2019)
-- **Huntingtin exon 1 in polyQ** (Track 4 amyloid kinetics; cite
-  Wolynes/Schafer/Zheng aggregation funnel)
-- **HSP70/HSP90 client-dwell failure in chaperonopathy or
-  α₁-antitrypsin Z** (Track 2 QC evasion)
-- **Tau or α-synuclein conformational ensemble** (Track 1 IDR
-  conformational dwell)
+The four recommended cases now span both axes:
 
-Add §6 with the cross-domain extensions: Copeland pharmacology +
+- **FUS in stress granules** — cleanest *temporal*-axis case (Patel
+  2015, Wolozin & Ivanov 2019, Zhang 2019). Same conformational
+  state, dwell time changes meaning.
+
+- **PrP topology / GPI anchoring / surface residence** — cleanest
+  *spatial*-axis causal-localization case in all of neurodegeneration
+  (Hegde 1998, Chesebro 2005, Solomon 2011, Gatdula 2026). Direct
+  experimental manipulation of spatial residence changes phenotype.
+
+- **Huntingtin nuclear vs mitochondrial residence** — *both*-axis
+  case demonstrating that the framework's two-axis observable is
+  needed (Saudou 1998, Peters 1999 nuclear; Yablonska 2025
+  mitochondrial). Same mutant protein, different compartments,
+  different toxic mechanisms — temporal metastability AND spatial
+  routing both matter.
+
+- **Tau multi-compartment mislocalization** — *both*-axis case with
+  temporal condensate component (Ash 2021, Jiang 2019 TIA1-tau) and
+  spatial mislocalization component (Ittner 2010 dendritic; Hoover
+  2010 spine; Lester 2021 nuclear speckle; Yuan 2026 nuclear lamina).
+  Different residences produce different pathologies in the same
+  protein.
+
+This four-case set is stronger than the original (Claude-only) four
+because it demonstrates that the two-axis observable is *necessary*
+— single-axis observables cannot distinguish nuclear polyQ from
+mitochondrial polyQ or dendritic tau from condensate tau.
+
+Add §7 with the cross-domain extensions: Copeland pharmacology +
 fitness physiology + PCI phenomenology as further coordinate
-instances.
+instances in non-proteostasis substrates.
 
 ## Risk register from Lane 3
 
