@@ -15,38 +15,79 @@
   (keystone bridge: end-to-end mechanism chain from molecular
   residence time to network-state transition restoration; killer
   antagonist-termination experiment proposal)
+- `outbox/syntheses/lane5_canalization_adversarial/` (**decisive
+  adversarial check**: canalization Carhart-Harris-Chandaria-Friston
+  2023 has already published the brain-level cross-disorder
+  residence-pathology claim. Paper 14 must adopt Option (c) framing
+  — concede canalization as prior art and claim only cross-
+  substrate extension + individual-level R(s,c) observable + transit-
+  restoration refinement)
 - `outbox/syntheses/flow_grind_synthesis.md` (cross-domain synthesis)
 - `outbox/syntheses/cross_domain_saturation_collapse.md` (exercise/
   cardiac)
 - Paper 12 v1.4, §3.5 / §3.6 boundary-KKT result (substrate-side
   demonstration)
 
-**Five-lane convergent validation:** All five Deep Research lanes
-returned with the same structural finding — the principle is
-partially anticipated in every surveyed field but never unified as
-a cross-domain claim. Lane 4 provides the keystone bridge with an
-explicit five-link mechanism chain and the cleanest one-sentence
-statement of the framework's claim found in any lane.
+**Six-lane convergent validation:** All six Deep Research lanes
+returned with the same structural finding for cross-substrate
+claims. Lane 5 — critically — returned that the **brain-level**
+version of the cross-disorder claim is *closed* by Carhart-Harris-
+Chandaria-Friston 2023 ("Canalization and plasticity in
+psychopathology," *Neuropharmacology* 226:109398, 73 Scopus
+citations as of May 2026). Paper 14 cannot claim first articulation
+of the cross-disorder unification. The contribution narrows but
+remains real:
 
-## Working title
+1. Cross-substrate residence-pathology unification (brain +
+   proteostasis + pharmacology + immune/autonomic) — GENUINELY OPEN.
+   Confirmed unbridged: Wolynes/Vendruscolo protein-aggregation +
+   canalization-psychopathology are unconnected. Friston-Levin-
+   Pezzulo FEP extensions exist but do not deploy canalization/
+   dwell-time formalism uniformly.
+2. Individual-level R(s,c) observable validated against psychedelic
+   treatment outcome — GENUINELY OPEN. Group-level closed by
+   Vohryzek 2024.
+3. Transit-restoration vs state-production refinement — subtly
+   novel; canalization-as-stated leans toward TEMP producing a
+   transient new state, not pure transit restoration.
+4. PTSD as threat-attractor dwell-time pathology — sub-niche where
+   no paper formalizes (literature uses fear-extinction / memory-
+   reconsolidation framing).
 
-"Residence Where Transits Were Design Intent: A Two-Axis Formal
-Observable for Cross-Class Pathology"
+Paper 14 is still draftable but must rewrite its novelty claim.
 
-Alternate: "The Visits-Versus-Residence Principle Across
-Proteostasis, Pharmacology, Exercise Physiology, and Phenomenology"
+## Working title (updated post-Lane 5)
 
-Alternate (Lane 1 framing): "Perturbation-Recovery Failure as a
-Multiscale Principle of Pathology: Unifying Proteostasis, Autonomic,
-Network-Dynamical, and Phospho-Regulatory Substrates"
+Paper 14 must NOT use any title that implies first articulation of
+the cross-disorder claim. Canalization owns that.
 
-## One-sentence thesis
+Proposed (post-Lane 5):
+"Cross-Substrate Residence-Pathology: Extending Canalization Beyond
+the Brain via an Individual-Level Two-Axis Observable"
 
-Pathology in any system with both regimes available to it is the
-temporal-and-spatial residence pattern of states whose transient
-sampling is the design intent — produced by failure of the
-domain-specific machinery that would have enforced return to
-functional control — not the identity of the states themselves.
+Alternate: "From Canalization to Cross-Substrate: A Formal
+Individual-Level Residence-Time Observable Linking Proteostasis,
+Receptor Pharmacology, and Psychiatric Attractor Dynamics"
+
+Alternate (more conservative): "Residence-Pathology Beyond the
+Brain: Cross-Substrate Extension of Canalization to Proteostasis
+and Pharmacology"
+
+## One-sentence thesis (post-Lane 5 revised)
+
+The canalization principle (residence-as-pathology in deep attractor
+wells) extends beyond the brain to proteostasis, receptor
+pharmacology, and autonomic substrates as a single cross-substrate
+isomorphism, captured by an individual-level two-axis residence-
+time observable R(s, c) = τ_R(s) × π_c.
+
+**What is NOT being claimed:** That residence-as-pathology is novel
+at the brain level (closed by Carhart-Harris-Chandaria-Friston
+2023). That psychedelic landscape flattening is novel (closed by
+Singleton 2022 + REBUS 2019). That dwell-time observables are novel
+(closed by Lord 2019). That de-localization of pathology from
+region to landscape geometry is novel (closed by canalization 2023
++ Deep CANALs 2024).
 
 ## Lane 4 single-sentence framing (usable in abstract)
 
@@ -71,6 +112,26 @@ Framework defensibility boundary (Lane 4 page 1, verbatim):
 
 Paper 14 must state the claim in exactly these terms.
 
+## Lane 5 honest contribution statement (load-bearing for §8.5.1)
+
+Verbatim from Lane 5 report — use as-is in the paper:
+
+> "We concede canalization (Carhart-Harris, Chandaria, Friston et
+> al. 2023) as the brain-level prior art for the cross-disorder
+> residence-pathology claim. Paper 14 contributes (i) the explicit
+> cross-substrate extension of residence-pathology to proteostasis
+> (Lane 3) and pharmacology (Lane 2), unified with brain dynamics
+> (Lane 4) at the level of formalism rather than analogy; (ii) the
+> formal individual-level observable R(s, c) = τ_R(s) × π_c, where
+> τ_R is single-subject residence time fit per state and π_c is
+> precision-context, predictive of therapeutic response; (iii) a
+> sharpened distinction between transit-restoration and state-
+> production that is implicit but not explicit in canalization;
+> and (iv) the cross-substrate isomorphism (residence-as-pathology
+> in proteostasis + residence-as-pathology in psychiatric attractors
+> + Copeland-style residence-time pharmacology dwell times) which
+> has no precedent in the cited literature."
+
 ## Operational definition (Lane 1 disciplined)
 
 Return-path machinery = mechanisms that **restore functional
@@ -82,35 +143,55 @@ healthy or malignant attractor depending on network context).
 
 ## Structure
 
-### §1 Introduction: prior art across four lanes and the unification gap
+### §1 Introduction: prior art across six lanes and the residual contribution gap
 
-Open by quoting Tier-1 statements from each of the four surveyed
-lanes:
+Open by quoting Tier-1 statements from across the six surveyed
+lanes — with canalization (Lane 5) cited explicitly in the first
+three paragraphs as the brain-level prior art:
 
-1. **Patel et al. 2015 (temporal, condensate):** "aberrant phase
+**Brain-level prior art (must be cited up front, post-Lane 5):**
+
+1. **Carhart-Harris, Chandaria, Friston et al. 2023 (canalization,
+   Tier 1, brain-level cross-disorder):** "cognitive and behavioral
+   phenotypes that are regarded as psychopathological, are canalized
+   features of mind, brain, or behavior that have come to dominate
+   an individual's psychological state space."
+2. **Juliani, Safron, Kanai 2024 (Deep CANALs, Tier 1, refinement):**
+   Type-A inference vs Type-B synaptic-weight landscape
+   pathologies.
+3. **Carhart-Harris & Friston 2019 (REBUS, Tier 1, theoretical
+   umbrella):** psychiatric pathology as overweighted-prior
+   residence.
+
+**Cross-substrate prior art (each silo-bound):**
+
+4. **Patel et al. 2015 (temporal, condensate):** "aberrant phase
    transitions within liquid-like compartments lie at the heart of
    ALS"
-2. **Babu et al. 2011 (temporal, IDR abundance):** IDPs must be
+5. **Babu et al. 2011 (temporal, IDR abundance):** IDPs must be
    "available in appropriate amounts and not present longer than
    needed"
-3. **Pytel & Fromm Longo 2025 (two-axis, definitional):**
+6. **Pytel & Fromm Longo 2025 (two-axis, definitional):**
    proteostasis network governs "timing, location, and stoichiometry"
-4. **Bertolotti 2018 (spatial):** "importance of the subcellular
+7. **Bertolotti 2018 (spatial):** "importance of the subcellular
    location of protein deposits in neurodegenerative diseases"
-5. **Tummino & Copeland 2008 (pharmacology):** open-system
+8. **Tummino & Copeland 2008 (pharmacology):** open-system
    pharmacology — "residence time τ = 1/koff is the decision
    variable, not equilibrium affinity"
-6. **van Nes & Scheffer 2007 (engineering resilience):** "slow
+9. **van Nes & Scheffer 2007 (engineering resilience):** "slow
    recovery from perturbations as a generic indicator of a nearby
    catastrophic shift"
-7. **McEwen 1998 (allostasis):** "stability through change" — the
-   warning that return paths need not return to one scalar baseline
+10. **McEwen 1998 (allostasis):** "stability through change"
 
-Argue these are axis-specific, substrate-specific, and silo-bound
-instances of one cross-substrate principle. Acknowledge prior art
-explicitly. Identify the gap: **no cross-substrate unifying
-statement, no formal two-axis observable, no empirical convergence
-program across substrates.**
+Argue: each is a substrate-bound or axis-specific instance of one
+cross-substrate principle. Canalization (1) and Deep CANALs (2) are
+the most ambitious prior art for the **brain** substrate. The gap
+that remains, post-canalization: **no paper unifies across
+substrates; no paper provides an individual-level R(s,c) observable
+predictive of treatment outcome.** Paper 14 contributes the cross-
+substrate isomorphism + the individual-level observable + a
+sharpened transit-restoration refinement — and concedes the brain-
+level cross-disorder claim to canalization.
 
 ### §2 The two-axis formal observable
 
@@ -315,14 +396,39 @@ DMN instability or *reduced* within-DMN FC, complicating naive
 hyperstability claims. Paper 14 must use return-to-task-set
 language.
 
-**8.5.1 Psychedelic restoration of transitions (Lane 4).** This
-is where the framework's molecular-to-phenomenological bridge
-lands. Lane 4 provides an end-to-end (not yet proven, but
-literature-supported) five-link chain: drug concentration(t) →
-bound receptor fraction(t) → residence pattern → downstream
-signaling timing → network-level gain and coupling → state-space
-geometry (dwell times, barriers, transition probabilities) →
-phenomenology and therapeutic outcome.
+**8.5.1 Psychedelic restoration of transitions (Lanes 4 + 5,
+post-canalization).**
+
+**Adopt Option (c) framing verbatim** (from Lane 5 report):
+concede canalization (Carhart-Harris-Chandaria-Friston 2023) as the
+brain-level prior art for the cross-disorder residence-pathology
+claim. Paper 14 contributes only:
+(i) cross-substrate extension to proteostasis + pharmacology +
+    autonomic + immune
+(ii) individual-level R(s,c) observable predictive of treatment
+     outcome (group-level closed by Vohryzek 2024)
+(iii) sharpened transit-restoration vs state-production refinement
+(iv) cross-substrate isomorphism with no precedent
+
+Lane 4 provides an end-to-end (not yet proven, but literature-
+supported) five-link chain: drug concentration(t) → bound receptor
+fraction(t) → residence pattern → downstream signaling timing →
+network-level gain and coupling → state-space geometry (dwell
+times, barriers, transition probabilities) → phenomenology and
+therapeutic outcome. This chain is what gives the cross-substrate
+claim its mechanistic plausibility.
+
+**Subtle thesis correction (Lane 5):** Canalization-as-stated leans
+toward TEMP producing a transient new high-entropy state en route
+to landscape recalibration — closer to "produce a new state to
+enable transit" than to "pure restoration of existing transits."
+Paper 14's stricter restoration thesis is a refinement worth making
+explicit, but it is a refinement, not a paradigm shift. Better
+phrasing: "Psychedelics work by flattening landscape geometry.
+Whether this occurs via transient state-production (canalization
+TEMP interpretation) or via direct transit-restoration (framework
+refinement) is a resolvable empirical question; both mechanisms
+are residence-pathology interventions at the τ_R level."
 
 The explicit-restoration cluster of citations (load-bearing for
 this subsection):
@@ -350,15 +456,23 @@ claim): Carhart-Harris 2014 entropic brain; Tagliazucchi 2014 wider
 repertoire; Lord 2019 metastable exploration; Luppi 2021 LSD
 integration-segregation.
 
-**Critical three-level dissociation caveat (Ort 2023):**
-spontaneous state-sequence diversity, perturbational/causal
-complexity (PCI), and long-term plastic reopening are *not* the
-same observable. Ort 2023: psilocybin increased spontaneous chaotic
-activity but PCI did NOT increase. Paper 14 must specify which of
-the three levels its claims target. Best synthesis: psychedelics
-acutely change spontaneous state diversity (Level 1), probably
-change plasticity substrate (Level 3, Nardou), but do NOT
-necessarily change PCI (Level 2) in the same way.
+**Critical three-level dissociation caveat (Ort 2023 + Casali 2013
++ Sarasso 2015, Lane 5 strengthened):** spontaneous state-sequence
+diversity, perturbational/causal complexity (PCI), and long-term
+plastic reopening are *not* the same observable. Casali 2013 +
+Sarasso 2015 established this dissociation at the consciousness-
+research level: PCI is a transition-evoked-causal-spread metric
+("how rich is the response when forced to transition?"); spontaneous
+LZc asks "how diverse is the trajectory at rest?" A locked-
+attractor state can have low PCI (poor transition response) and
+intermediate LZc (busy local dynamics). Ort 2023 confirms the
+dissociation under psilocybin: spontaneous chaos increases without
+PCI increase. Paper 14 must specify which of the three levels its
+claims target. Best synthesis: psychedelics acutely change
+spontaneous state diversity (Level 1), probably change plasticity
+substrate (Level 3, Nardou), but do NOT necessarily change PCI
+(Level 2) in the same way. Cite Casali 2013 + Sarasso 2015
+explicitly to avoid looking like reinvention.
 
 **8.6 PCI phenomenology.** §3.5 smooth-interior / §3.6 boundary-KKT
 residence (Paper 12 v1.4) for tear topology. Phenomenologically:
