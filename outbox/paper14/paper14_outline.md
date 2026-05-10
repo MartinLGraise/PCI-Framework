@@ -3,33 +3,61 @@
 **Status:** Draft outline, ready for v1 drafting.
 **Date seeded:** 2026-05-09
 **Inputs:**
-- `outbox/syntheses/lane2_residence_time_pharmacology/` (Copeland anchor)
-- `outbox/syntheses/lane3_proteostasis_residence_time/` (both Claude temporal + ChatGPT Pro spatial surveys)
+- `outbox/syntheses/lane1_return_path_machinery/` (return-path
+  machinery across proteostasis / cancer / autonomic / depression —
+  closest umbrella concepts: engineering resilience, allostasis,
+  critical slowing down, loss of complexity)
+- `outbox/syntheses/lane2_residence_time_pharmacology/` (Copeland
+  pharmacology anchor)
+- `outbox/syntheses/lane3_proteostasis_residence_time/` (both Claude
+  temporal + ChatGPT Pro spatial proteostasis surveys)
 - `outbox/syntheses/flow_grind_synthesis.md` (cross-domain synthesis)
-- `outbox/syntheses/cross_domain_saturation_collapse.md` (exercise/cardiac)
-- Paper 12 v1.4, §3.5 / §3.6 boundary-KKT result (substrate-side demonstration)
+- `outbox/syntheses/cross_domain_saturation_collapse.md` (exercise/
+  cardiac)
+- Paper 12 v1.4, §3.5 / §3.6 boundary-KKT result (substrate-side
+  demonstration)
+
+**Four-lane convergent validation:** All four Deep Research lanes
+returned with the same structural finding — the principle is
+partially anticipated in every surveyed field but never unified as
+a cross-domain claim. This is the strongest possible setup for the
+unification paper.
 
 ## Working title
 
 "Residence Where Transits Were Design Intent: A Two-Axis Formal
 Observable for Cross-Class Pathology"
 
-Alternate: "The Visits-Versus-Residence Principle Across Proteostasis,
-Pharmacology, Exercise Physiology, and Phenomenology"
+Alternate: "The Visits-Versus-Residence Principle Across
+Proteostasis, Pharmacology, Exercise Physiology, and Phenomenology"
+
+Alternate (Lane 1 framing): "Perturbation-Recovery Failure as a
+Multiscale Principle of Pathology: Unifying Proteostasis, Autonomic,
+Network-Dynamical, and Phospho-Regulatory Substrates"
 
 ## One-sentence thesis
 
 Pathology in any system with both regimes available to it is the
 temporal-and-spatial residence pattern of states whose transient
-sampling is the design intent, not the identity of the states
-themselves.
+sampling is the design intent — produced by failure of the
+domain-specific machinery that would have enforced return to
+functional control — not the identity of the states themselves.
+
+## Operational definition (Lane 1 disciplined)
+
+Return-path machinery = mechanisms that **restore functional
+controllability after perturbation**, not mechanisms that always
+return a scalar variable to one invariant value (allostasis caveat).
+The definition must be **functional and circuit-specific**, not
+baseline-essentialist (GSK3β caveat: same regulator can stabilize
+healthy or malignant attractor depending on network context).
 
 ## Structure
 
-### §1 Introduction: four Tier-1 anchors and the unification gap
+### §1 Introduction: prior art across four lanes and the unification gap
 
-Open by quoting four existing Tier-1 statements that cover the
-principle axis-by-axis but have never been unified:
+Open by quoting Tier-1 statements from each of the four surveyed
+lanes:
 
 1. **Patel et al. 2015 (temporal, condensate):** "aberrant phase
    transitions within liquid-like compartments lie at the heart of
@@ -41,10 +69,20 @@ principle axis-by-axis but have never been unified:
    proteostasis network governs "timing, location, and stoichiometry"
 4. **Bertolotti 2018 (spatial):** "importance of the subcellular
    location of protein deposits in neurodegenerative diseases"
+5. **Tummino & Copeland 2008 (pharmacology):** open-system
+   pharmacology — "residence time τ = 1/koff is the decision
+   variable, not equilibrium affinity"
+6. **van Nes & Scheffer 2007 (engineering resilience):** "slow
+   recovery from perturbations as a generic indicator of a nearby
+   catastrophic shift"
+7. **McEwen 1998 (allostasis):** "stability through change" — the
+   warning that return paths need not return to one scalar baseline
 
-Argue that these are axis-specific and silo-bound instances of one
-two-axis principle. Acknowledge the prior art explicitly. Identify
-the gap: no cross-class unifying statement, no formal observable.
+Argue these are axis-specific, substrate-specific, and silo-bound
+instances of one cross-substrate principle. Acknowledge prior art
+explicitly. Identify the gap: **no cross-substrate unifying
+statement, no formal two-axis observable, no empirical convergence
+program across substrates.**
 
 ### §2 The two-axis formal observable
 
@@ -141,20 +179,54 @@ ANY residence-where-transit-intended, so therapeutic targets include
 All three are residence-time / residence-compartment interventions
 in one rate-equation framework.
 
-### §6 QC machinery reframed as non-residence enforcement
+### §6 Return-path machinery as a multiscale class
 
-The proteostasis field treats HSP70 ATP-cycling, HSP90 client-dwell,
-UPS turnover, autophagy clearance, granulostasis, HSR/UPR/ISR as a
-heterogeneous toolkit. Paper 14 reframes them as a single class:
-non-residence enforcement machinery with a common observable
-(residence half-life of pathological-state-shaped substrates).
+**This is the Lane 1 contribution and the heart of the cross-domain
+generalization.** The proteostasis field treats HSP70 ATP-cycling,
+HSP90 client-dwell, UPS turnover, autophagy clearance, granulostasis,
+HSR/UPR/ISR as a heterogeneous toolkit. Paper 14 reframes them as
+one class plus three more substrate-distinct classes:
 
-Extend this to spatial machinery: ERAD, endolysosomal sorting,
-NLS/NES systems, nuclear pore complex, mitochondrial import control.
-Same class: non-residence enforcement on the spatial axis.
+- **Proteostatic return-path machinery:** chaperones, UPS, autophagy,
+  HSR/UPR/ISR, granulostasis, plus ERAD / endolysosomal / NLS-NES /
+  nuclear pore / mitochondrial import (spatial-axis return-path
+  machinery from Lane 3 ChatGPT survey).
+- **Phospho-regulatory return-path machinery:** PP2A and other
+  serine/threonine phosphatases as dephosphorylation resetters; APC/
+  Axin/GSK3β destruction-complex logic for substrate degradation
+  reset; ubiquitin ligases as phospho-state turnover machinery.
+- **Autonomic return-path machinery:** vagal brake, baroreflex,
+  parasympathetic re-engagement after sympathetic challenge.
+- **Network-dynamical return-path machinery:** salience network and
+  central executive network mediating switching back to task-positive
+  modes; task-induced deactivation of DMN; effective connectivity
+  CEN→DMN.
 
-Granulostasis (Alberti et al. 2017) is currently the only named
-instance. Paper 14 names the full class.
+**Common observable across substrates:** recovery time constant τ,
+relaxation rate, dominant eigenvalue, dwell-time persistence,
+aggregate clearance flux, baroreflex gain, phospho-state settling
+time, default-mode dwell time. The mathematical language already
+exists — Paper 14's contribution is naming these as one observable
+class and showing the principle holds across substrates.
+
+**Critical framework discipline (Lane 1 GSK3β caveat).** Return-path
+framing must be **circuit-specific**, not universal. The same
+regulator can stabilize a healthy or pathological attractor
+depending on network context. Active GSK3β supports Wnt/β-catenin
+turnover but also NF-κB / mitosis / survival in other contexts;
+active PP2A is tumor-suppressive but DT-061 / iHAP1 mechanism is
+contested (PP2A-independent toxicity in some assays). The framework
+specifies that pathology is failure of the *circuit-specific*
+return-path operator, not loss of any one molecular activity in
+isolation.
+
+**Allostasis caveat (Lane 1 McEwen).** A return path may mean return
+to a *functional control manifold* rather than to one invariant
+scalar baseline. Healthy systems sometimes adapt their operating
+point (post-psychedelic DMN connectivity changes, athlete's heart
+eccentric LVH, creatine boundary regime adaptation). The framework
+defines return-path failure as inability to restore *functional
+controllability*, not inability to return to one prior value.
 
 ### §7 Frustration-without-escape extension
 
@@ -169,26 +241,58 @@ literature (verified by Lane 3 adversarial survey). Extending the
 framework cleanly claims this. Send courtesy preprint to Ferreiro
 and Wolynes; their response calibrates the novelty claim.
 
-### §8 Cross-domain extension — the substrate-independence claim
+### §8 Cross-substrate extensions — the substrate-independence claim
 
 This is what distinguishes the framework's unification from any
-unification paper that could come out of a single proteostasis silo.
+unification paper that could come out of a single substrate. The
+residence-pathology principle holds in every substrate where (a)
+both regimes are available, (b) explicit return-path machinery
+exists, and (c) recovery kinetics can be measured.
 
-**8.1 Pharmacology.** Copeland residence-time paradigm at receptors
-(Tummino & Copeland 2008; Bosma 2017 H1; Casarosa 2009 M3 LAMA;
-Vauquelin rebinding work). The visits-vs-residence distinction is
-already explicitly named in pharmacology; drug-receptor kinetics is
-the same principle on a different substrate.
+**8.1 Pharmacology (Lane 2).** Copeland residence-time paradigm at
+receptors (Tummino & Copeland 2008; Bosma 2017 H1; Casarosa 2009 M3
+LAMA; Vauquelin rebinding work). The visits-vs-residence distinction
+is already explicitly named in pharmacology.
 
-**8.2 Exercise physiology.** Endogenous boundary operation (visits
+**8.2 Cancer phospho-regulation (Lane 1).** PP2A as dephosphorylation
+reset operator; APC/Axin/GSK3β destruction-complex logic. Pathology
+as reset failure: phospho-state cannot relax. Therapeutic strategy:
+restore the resetter (SET antagonism, PP2A activators, AKT/ERK
+inhibition) — with explicit acknowledgment of the GSK3β circuit-
+specificity caveat.
+
+**8.3 Autonomic physiology (Lane 1).** Vagal brake / baroreflex /
+parasympathetic re-engagement as return-path machinery. Reduced HRV
+predicts mortality (Framingham); slower cardiac vagal recovery after
+stress predicts poorer resilience (Souza et al.). HRV biofeedback /
+tVNS as recovery-architecture interventions, not just symptom
+relief. Most mature measurement infrastructure of all four
+substrates (RMSSD, HF-HRV, cBRS).
+
+**8.4 Exercise physiology.** Endogenous boundary operation (visits
 with intact feedback → healthy athlete's heart) vs operator-sustained
 boundary operation (pharmacological feedback bypass → arrhythmia
-phenotype). See `cross_domain_saturation_collapse.md`.
+phenotype). See `cross_domain_saturation_collapse.md`. The
+operator stack converts visits into residence by silencing the
+return-path enforcement (PCr depletion cutoff, pH cutoff,
+sympathetic-drive cutoff).
 
-**8.3 PCI phenomenology.** §3.5 smooth-interior / §3.6 boundary-
-KKT residence (Paper 12 v1.4) for tear topology. Phenomenologically:
-flow = brief §3.6 touches; rumination / depression = §3.6 residence
-without §3.5 recovery.
+**8.5 Depression / large-scale brain networks (Lane 1, with
+careful framing).** The principle holds as **return-to-task-set**
+failure, NOT as static DMN hyperconnectivity. What is consistent in
+depression is maladaptive persistence of self-referential modes /
+impaired suppression or switching under demand (Hamilton, Marchetti,
+Bartova, Kaiser, Alonso). Wise / REST-meta-MDD found DMN instability
+or *reduced* within-DMN FC, complicating naive hyperstability
+claims. Paper 14 must use return-to-task-set language.
+
+**8.6 PCI phenomenology.** §3.5 smooth-interior / §3.6 boundary-KKT
+residence (Paper 12 v1.4) for tear topology. Phenomenologically:
+flow = brief §3.6 touches with intact return; rumination / depression
+/ stuck thought-loops = §3.6 residence without §3.5 recovery. The
+phenomenological substrate connects directly to §8.5 (large-scale
+brain networks): subjective rumination IS network-dynamical return-
+path failure measured introspectively.
 
 The residence-pathology principle is substrate-independent: wherever
 a dynamical system has both regimes available to it plus return-path
@@ -197,6 +301,20 @@ visiting where it shouldn't.
 
 ### §9 Differentiation from adjacent literature
 
+- **van Nes & Scheffer 2007 / engineering resilience** — closest
+  single-word umbrella, but applied to attractor dynamics generally,
+  not as cross-substrate disease principle. Framework adopts the
+  recovery-rate / dominant-eigenvalue language and extends across
+  substrates.
+- **McEwen allostasis** — "stability through change" critical
+  caveat; framework explicitly adopts to avoid baseline-
+  essentialism.
+- **van de Leemput 2014 critical slowing down in depression** —
+  shows the recovery-kinetics signature in one domain; framework
+  generalizes the signature class.
+- **Lipsitz-Goldberger loss of complexity** — framework can
+  incorporate as a complementary residence-pattern signature
+  (reduced multiscale variability).
 - **Knowles-Vendruscolo-Dobson protein metastasis** — their framing
   is native = kinetic visit, amyloid = thermodynamic residence.
   Framework thesis is more general: the *same* state can be
@@ -213,6 +331,12 @@ visiting where it shouldn't.
 - **Jülicher/Weber active-matter** — physics of non-equilibrium
   dynamic-state maintenance, not a disease principle; framework
   claims the biological/clinical generalization.
+- **Carhart-Harris REBUS** — unified model of psychedelic action,
+  not direct proof that depression is residence-pathology.
+  Framework cites with explicit caveat that therapeutic loosening
+  is not reducible to one-direction static DMN decrease (psilocybin
+  imaging shows complex post-treatment changes including increased
+  DMN connectivity in some analyses).
 
 ### §10 Audit-design template (adapted from Copeland four-point)
 
@@ -230,16 +354,66 @@ report:
 Without these four, residence-vs-visit attribution fails. This is
 the framework's portable methodology spec.
 
-### §11 Implications
+### §11 Cross-domain experimental agenda (from Lane 1)
+
+The Lane 1 survey provided eight concrete experiments that operate
+as the framework's empirical program. These are not Paper 14's own
+proposals; they are the program Paper 14 frames the field toward.
+
+1. **Cross-domain perturbation-recovery battery.** Common recovery
+   time constant τ across substrates: aggregate clearance after
+   proteotoxic pulse; HRV/cBRS recovery after stress; DMN
+   deactivation and return-to-task; phosphoproteomic settling
+   after growth-factor pulse. Test whether slower τ co-segregates
+   within individuals or disease classes.
+2. **Multimodal HRV + fMRI in depression.** Test cross-scale
+   coupling between vagal recovery and DMN dwell time directly.
+3. **Proteostasis–phosphoregulation coupling assays.** Test whether
+   return-path machinery is partly **interoperable** across
+   molecular substrates (does PP2A or GSK3β restoration accelerate
+   aggregate clearance?). This is the strongest possible cross-
+   substrate convergence test.
+4. **Dominant-eigenvalue modeling of recovery.** Fit perturbation-
+   response curves to linearized dynamical models. Disease signature:
+   smaller-magnitude restoring eigenvalues; intervention signature:
+   restored eigenvalue magnitudes.
+5. **Longitudinal early-warning designs.** Recurrent depression,
+   prodromal PD/ALS, premalignant organoids — test whether
+   increasing autocorrelation / longer dwell / slower recovery
+   precede overt transition. Pushes framework from post hoc
+   explanation to prospective prediction.
+6. **Return-path composite index.** Standardized latent variable
+   from relaxation rate, recovery slope, dwell-time exit rate,
+   complexity. Test against static-burden measures. "How fast you
+   come back" > "how abnormal you were at one snapshot."
+7. **Intervention-convergence analysis.** Compare HRV biofeedback,
+   antidepressant DMN normalization, HSR amplification, PP2A
+   activation — do they share dynamical signatures (reduced dwell
+   time, reduced autocorrelation, faster settling)?
+8. **Boundary-condition experiments.** Test where the framework
+   fails: adaptive allostatic set-point shifts, GSK3β-dependent
+   tumors, DMN-instability cohorts. Robust theory specifies
+   exceptions up front.
+
+These eight together provide a fundable multi-year experimental
+program. Paper 14 §11 frames them as the next-step research agenda.
+
+### §12 Implications
 
 - **For therapeutics:** restore return-path machinery; abolish
-  pathological residence on either axis.
-- **For diagnostics:** measure \( R(s, c) \) before structural
-  aggregation markers (which are downstream).
-- **For disease classification:** group proteinopathies by their
-  residence-axis signature rather than by aggregate morphology.
+  pathological residence on either axis. Translational caution
+  (Lane 1 ORARIALS-01 negative trial): identifying the principle
+  correctly does not guarantee any specific intervention based on
+  it will work — target engagement, timing, leverage all matter
+  independently.
+- **For diagnostics:** measure \( R(s, c) \) and recovery time
+  constants before structural aggregation markers (which are
+  downstream).
+- **For disease classification:** group disorders by their residence-
+  axis signature plus return-path-machinery failure profile rather
+  than by aggregate morphology or single-time-point biomarker.
 
-### §12 Non-goals
+### §13 Non-goals
 
 This is not a medical-advice claim. The framework observes
 structure; clinical work remains the domain of clinical literature.
