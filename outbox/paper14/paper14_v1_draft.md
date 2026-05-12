@@ -26,16 +26,7 @@ is a single explicit measurable coupling-first observable and
 structural realization that integrates these substrate-level
 relational ontologies into one empirically tractable formalism,
 with a downstream pathology grammar. This paper contributes that
-formal-operational composition. We introduce an individual-level
-two-axis residence-time observable R(s,c) = τ_R(s) × π_c, combining
-temporal dwell in a state s with spatial / compartmental occupancy
-probability π_c. Pathology corresponds to R escaping design-intent
-bounds in either axis, with s and c possibly unchanged. We
-demonstrate the formalism across six substrates: receptor
-pharmacology, proteostasis (with both temporal condensate-aging and
-spatial compartmental-mislocalization cases), autonomic physiology,
-large-scale brain network dynamics, intersubjective conversational
-coupling, and public-epistemic attractor formation. Four canonical
+formal-operational composition. We introduce an individual-level two-axis residence-time observable R(s, c) = τ_R(s) × π_c, combining temporal dwell in a state s with spatial / compartmental occupancy probability π_c. Pathology corresponds to R escaping substrate-specific functional residence bounds in either axis, with s and c possibly unchanged. The accumulation observable R is reported paired with the exit-rate variable λ_exit(s, c) = 1/τ_R(s, c), which captures the return-path-machinery capacity that pathological residence indicates has failed; a normalized form \(\tilde{R}(s, c)\) and a log-residence deviation Δ_R(s, c) make the formalism substrate-portable. We demonstrate the formalism across eight substrates: receptor pharmacology, proteostasis (with both temporal condensate-aging and spatial compartmental-mislocalization cases), cancer phospho-regulation, autonomic physiology, exercise physiology, large-scale brain network dynamics, memory phenomenology and public-epistemic attractor dynamics in information ecosystems, and recursive AI/data training loops. Four canonical
 disease cases (FUS in stress granules, PrP topology, Huntingtin
 nuclear-versus-mitochondrial residence, tau multi-compartment
 mislocalization) demonstrate that the two-axis observable is
@@ -143,13 +134,7 @@ instance of the framework's principle. We do not claim the
 G₂ / octonion mathematical-physics interpretation of the
 observable, which we defer to a companion paper (Graise, in
 preparation) because the required derivation work belongs in a
-separate treatment. What we do claim is the explicit integration:
-the formal observable, the substrate-uniform symptom grammar, and
-the cross-substrate demonstration that a single formalism can
-describe coupling-failure pathology across domains as different as
-receptor binding, protein aggregation, conversational coupling,
-recursive generative-model training, and attractor dynamics in
-public information ecosystems.
+separate treatment. What we do claim is the explicit integration: the formal observable (with its exit-rate and normalized cross-substrate forms), the substrate-uniform symptom grammar, and the cross-substrate demonstration that a single formalism can describe coupling-failure pathology across domains as different as receptor binding, protein aggregation, brain-network dynamics, memory phenomenology, public-epistemic attractor formation, and recursive generative-model training.
 
 This claim is narrower than some formulations of the framework's
 thesis might suggest. It is also stronger for being narrower. Six
@@ -209,21 +194,49 @@ where:
   2022) and in network neuroscience through regional-occupancy
   metrics (Kaiser et al. 2016; Vidaurre et al. 2017).
 
-**Design-intent bounds** for both τ_R and π_c are substrate-
-specific functional ranges established by evolved or engineered
-return-path machinery. A state has a design-intent τ_R if the
-system's normal function requires dwell in s within some range
-[τ_min, τ_max]; a compartment has a design-intent π_c if the
-system's normal function requires occupancy probability within
-[π_min, π_max]. These bounds are not universal constants;
-they are determined by the specific return-path machinery operating
-in the substrate of interest.
+**Functional residence bounds** for both τ_R and π_c are substrate-specific ranges established by evolved or engineered return-path machinery. A state has a functional τ_R if the system's normal operation requires dwell in s within some range [τ_min, τ_max]; a compartment has a functional π_c if the system's normal operation requires occupancy probability within [π_min, π_max]. These bounds are not universal constants; they are determined by the specific return-path machinery operating in the substrate of interest. We use "functional residence bounds" as the formal term and "design intent" informally where the engineered/evolved-purpose framing is clarifying; the two phrasings refer to the same quantity.
 
-**Pathology** corresponds to R(s, c) escaping its design-intent
-bounds in *either* axis, with *s* and *c* possibly unchanged. This
-is the critical feature: pathology is not a wrong state or a wrong
-compartment, but a deviation in residence pattern for states and
-compartments that are entirely normal in other contexts.
+**Pathology** corresponds to R(s, c) escaping its functional residence bounds in *either* axis, with *s* and *c* possibly unchanged. This is the critical feature: pathology is not a wrong state or a wrong compartment, but a deviation in residence pattern for states and compartments that are entirely normal in other contexts.
+
+### 2.1.1 Return-path machinery and the exit-rate variable
+
+The two-axis residence observable measures what *accumulates*. The framework's central claim is that pathological residence accumulates because the *return-path machinery* that should restore the system to functional residence has failed. The accumulation variable R(s,c) and the restoration-capacity variable are formally distinct and should be reported as a coupled pair.
+
+For each state s and compartment c we define the **exit rate**:
+
+\[ \lambda_{\mathrm{exit}}(s, c) = \frac{1}{\tau_R(s, c)} \]
+
+or equivalently the **return rate constant** k_return(s, c) = 1/τ_R(s, c). At the molecular substrate, λ_exit corresponds directly to the off-rate k_off familiar from the Copeland residence-time pharmacology (Tummino & Copeland 2008): drugs with low k_off have long target-residence and high R(s, c) on the target-bound state; the slow off-rate *is* the residence-pathology when target-bound state is pathological, or the residence-protection when target-bound state is therapeutic. At the brain-network substrate, λ_exit corresponds to the inverse mean dwell time on a metastable state (Vidaurre, Smith & Woolrich 2017); slow exit from a depression-associated metastable state *is* the network-level residence-pathology. At the autonomic substrate, λ_exit corresponds to the inverse recovery time constant after stressor withdrawal (engineering-resilience formalism, van Nes & Scheffer 2007); slow vagal return after cold-pressor *is* the autonomic-substrate residence-pathology.
+
+The formal residence-pathology principle, stated symmetrically:
+
+- **Residence burden** — the quantity that accumulates: R(s, c) = τ_R(s) × π_c
+- **Return-path capacity** — the quantity that restores: λ_exit(s, c) = 1/τ_R(s, c) on the residence-axis; analogous return-rate constants on the compartmental axis (rate of probability flux out of c)
+- **Pathology condition** — burden exceeds functional bounds because return capacity has failed: R(s, c) > R_max(s, c) where R_max is the substrate-specific functional ceiling implied by intact return-path machinery
+
+This decomposition is what §6 (return-path-machinery typology) elaborates substrate-by-substrate. The four return-path machinery classes identified in §6 — proteostatic, phospho-regulatory, autonomic, network-dynamical — are the substrate-specific instances of the λ_exit-restoration function. Disease at any of these substrates can be read as λ_exit falling below the functional threshold needed to maintain R(s, c) within bounds.
+
+### 2.1.2 Normalized two-axis observable for cross-substrate comparison
+
+Because τ_R has units of time (seconds for receptor binding, milliseconds for stress-granule dynamics, seconds for brain-network metastable states, minutes for autonomic recovery, days for cancer phospho-regulatory resetting, years for cognitive-aging trajectories) and π_c is dimensionless, R(s, c) is substrate-specific in scale and cannot be compared directly across substrates without normalization to the substrate's own functional baseline.
+
+We define the **normalized two-axis residence**:
+
+\[ \tilde{R}(s, c) = \frac{\tau_R(s)}{\tau_0(s)} \cdot \frac{\pi_c}{\pi_0(c)} \]
+
+where τ_0(s) and π_0(c) are the substrate-specific functional-baseline values — the dwell time and compartmental occupancy that an intact return-path machinery would maintain. Both axes of \(\tilde{R}\) are dimensionless; \(\tilde{R} = 1\) corresponds to baseline operation; \(\tilde{R} > 1\) corresponds to residence beyond the functional ceiling on the relevant axis; \(\tilde{R} < 1\) corresponds to residence below the functional floor.
+
+The **log-residence deviation**:
+
+\[ \Delta_R(s, c) = \log \frac{\tau_R(s)}{\tau_0(s)} + \log \frac{\pi_c}{\pi_0(c)} \]
+
+decomposes the residence pathology into separable temporal and spatial contributions on a symmetric scale, with sign indicating direction (positive = over-residence; negative = under-residence). The pathology condition becomes:
+
+\[ |\Delta_R(s, c)| > \epsilon \]
+
+where ε is a substrate-specific threshold determined empirically from the dynamic range over which the return-path machinery maintains residence within functional bounds. The threshold ε is the substrate's *resilience budget*: small ε indicates a substrate where small deviations are tolerated and large ε indicates a substrate that tolerates wide swings before pathology.
+
+This normalization makes R(s, c) substrate-portable. Recovery time constants, dwell-time persistence indices, compartmental segregation indices, and other substrate-specific empirical quantities all map onto components of \(\tilde{R}\) and \(\Delta_R\). The cross-substrate predictions of §11 (Experiments 1, 4, 6) are formally stated as predictions about correlations across substrates in \(\Delta_R\) and λ_exit measured per subject. The audit-design template (§10) requires reporting baseline τ_0 and π_0 explicitly so that \(\tilde{R}\) is computable from published data.
 
 ### 2.2 Why two axes are necessary
 
