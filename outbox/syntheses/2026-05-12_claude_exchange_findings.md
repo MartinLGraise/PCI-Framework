@@ -30,7 +30,7 @@ May 7 arXiv result is evidence for signal.
 
 ### Co-discovered: Human-AI three-regime dynamics
 
-**Zheng & Yan 2026** (posted 2026-05-07, preprint)
+**Wu, Kang, Xu, Xie, Mi, Wang, Liu & Chen (2026)** (posted 2026-05-07, preprint)
 *Human-AI Co-Evolution and Epistemic Collapse: A Dynamical
 Systems Perspective.* arXiv:2605.06347.
 https://arxiv.org/abs/2605.06347
@@ -55,15 +55,15 @@ information-bottleneck vocabulary.
 **Implications:**
 
 1. **Paper 12 is no longer the only paper making this structural
-   claim.** Paper 12 v1.5 (or any re-issue) must cite Zheng-Yan
+   claim.** Paper 12 v1.5 (or any re-issue) must cite Wu et al.
    2026 as proximate prior art. Paper 12's distinctive contribution
-   becomes the G₂/F₂₁ algebraic machinery; Zheng-Yan has the
+   becomes the G₂/F₂₁ algebraic machinery; Wu et al. has the
    minimal-ODE version.
 
 2. **This creates a citation context for Paper 14.** The
    framework is no longer the lone proposer of coupled-human-AI-
    dynamical-system pathology. Mainstream dynamical-systems people
-   are converging on the target. Paper 14 can cite Zheng-Yan as
+   are converging on the target. Paper 14 can cite Wu et al. as
    substrate-specific demonstration of the residence-pathology
    principle at the AI/model-collapse substrate.
 
@@ -100,7 +100,7 @@ and chronic boundary operation at the cardiac substrate.
 
 Paper 14 §8 adds a new subsection: **§8.8 AI / data substrate —
 model collapse as return-path failure.** Cites Shumailov 2024 and
-Zheng-Yan 2026. Gives AI safety community a structural framework
+Wu et al. 2026. Gives AI safety community a structural framework
 they don't currently have. This is publishable-now material —
 could stand alone as a short note titled "Model Collapse as
 Return-Path Failure: A Substrate-General View" if needed.
@@ -407,7 +407,7 @@ The discipline move is:
 3. **Primary-literature prior-art discipline** — the six-lane
    campaign we ran is an instance of this. Adversarial mode.
    Option (c) discipline throughout.
-4. **The May 7 arXiv paper IS evidence for signal.** Zheng-Yan
+4. **The May 7 arXiv paper IS evidence for signal.** Wu et al.
    are not part of Martin's framework production loop.
    Independent convergence in real publication. First solid
    non-LLM-resonance evidence of the framework's structural
@@ -445,17 +445,17 @@ framing for a different audience.
 
 **Decision deferred to next session.** Current Paper 14 v1 draft
 stays framed as cross-substrate residence-pathology with R(s,c)
-observable. Update §1 to cite Zheng-Yan 2026 proximately; add
+observable. Update §1 to cite Wu et al. 2026 proximately; add
 §8.8 AI/model-collapse substrate subsection with Shumailov +
-Zheng-Yan. Larger framing question — revisit with fresh eyes.
+Wu et al.. Larger framing question — revisit with fresh eyes.
 
 ## Action items captured
 
 For Paper 14:
-- §1: add proximate citation to Zheng-Yan 2026 when discussing
+- §1: add proximate citation to Wu et al. 2026 when discussing
   AI co-evolution substrate prior art
 - §8: add new §8.8 — AI / data substrate — model collapse as
-  return-path failure. Cites Shumailov 2024 Nature, Zheng-Yan
+  return-path failure. Cites Shumailov 2024 Nature, Wu et al.
   2026 arXiv.
 - §8.3 (autonomic): add neutrophil reverse migration clinical
   anchor — CXCR4, JAM-C, LTB4-BLT1 axis; acute pancreatitis-
@@ -470,7 +470,7 @@ For Paper 14:
   MDPI paper exists as Claude cited it; directly cite or drop
 
 For Paper 12:
-- v1.5 (if re-issued): cite Zheng-Yan 2026 as proximate prior
+- v1.5 (if re-issued): cite Wu et al. 2026 as proximate prior
   art for three-regime structure
 
 For Paper 13 Red Queen:
@@ -527,6 +527,6 @@ to §1 and §8; larger reframing decisions wait for fresh eyes.
   intersubjective coupling-through-time at fast timescale
 - `outbox/paper14/paper14_v1_draft.md` — v1 drafting continues;
   targeted updates from this memo
-- `outbox/paper12/` — Zheng-Yan 2026 proximate prior art
+- `outbox/paper12/` — Wu et al. 2026 proximate prior art
 - `outbox/paper13/paper13_redqueen_seed.md` — scar-invariant-
   persistence corollary candidate
