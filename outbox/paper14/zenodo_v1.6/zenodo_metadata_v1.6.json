@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "title": "Paper 14 — Residence Where Transits Were Design Intent: A Cross-Substrate Formalism for Coupling-Failure Pathology",
+    "upload_type": "publication",
+    "publication_type": "preprint",
+    "version": "1.6",
+    "description": "<p><strong>Plain-language summary.</strong> Many biological, cognitive, and artificial systems enter transient states that are normal when briefly sampled but pathological when residence persists. This paper introduces a measurable two-axis observable for residence pathology, demonstrates it across eight substrates from receptor pharmacology to recursive AI training loops, and proposes a thirteen-experiment falsification program.</p><p><strong>Technical abstract.</strong> We introduce a two-axis residence-time observable R(s, c) = τ_R(s) × π_c, combining temporal dwell τ_R in state s with compartmental occupancy probability π_c, paired with an exit-rate variable λ_exit(s, c) = 1/τ_R(s, c) that captures the return-path-machinery capacity. Pathology corresponds to R escaping substrate-specific functional residence bounds on either axis, with s and c possibly unchanged; a normalized form Δ_R(s, c) = log(τ_R/τ_0) + log(π_c/π_0) makes the observable substrate-portable. Four canonical disease cases (FUS in stress granules, PrP topology, Huntingtin nuclear-versus-mitochondrial residence, tau multi-compartment mislocalization) establish that two axes are empirically necessary: single-axis observables collapse clinically relevant distinctions. We demonstrate the formalism across eight substrates spanning receptor pharmacology, proteostasis, cancer phospho-regulation, autonomic physiology, exercise physiology, large-scale brain network dynamics, memory phenomenology and public-epistemic information ecosystems, and recursive AI/data training loops. We position the contribution as the formal-operational composition of relation-first prior art (Rovelli, French &amp; Ladyman, Maturana &amp; Varela, Friston, Carhart-Harris-Chandaria-Friston, Whitehead, Simondon, Copeland) into one empirically tractable formalism with a substrate-uniform return-path-failure pathology grammar, not as a first articulation of relation-first ontology at any single substrate. A cross-substrate experimental program of thirteen experiments with binary falsification conditions, organized into recovery-kinetics and pharmacology-to-psychedelics-bridge clusters, is proposed; five are designated for OSF pre-registration.</p><p><strong>Five figures included.</strong> (1) Two-axis residence observable phase diagram with four canonical disease cases. (2) Cross-substrate residence-pathology grammar matrix (eight substrates × six descriptors). (3) Return-path machinery typology (four substrate-specific instances of λ_exit). (4) Symmetric kinetic-stabilization strategies (five strategies A–E). (5) Cross-domain experimental agenda (thirteen experiments by cluster, tractability tier, and dependency).</p><p><strong>Status.</strong> v1.6 draft, prepared for courtesy preprint circulation to Tier A reviewers (canalization theorists, relational-quantum-mechanics, biology-of-relation, structural realism) two weeks before journal submission. Cell Systems is the primary target; NRN and PLOS Computational Biology are desk-reject fallbacks. A companion paper (Paper 15) on G₂ / octonion mathematical-physics interpretation of the observable is deferred to a separate treatment with three explicit derivation deliverables.</p><p><strong>Relationship to the PCI Framework series.</strong> Paper 14 of the series. Builds on Paper 9 (Schur-locked coupling dynamics), Paper 12 (gradual-tear human-AI co-evolution; DOI 10.5281/zenodo.20093296), and the framework's broader cross-substrate program. Paper 14 stands without companion Paper 15; the residence-pathology formalism is empirical and operational rather than metaphysical, and reads naturally as a Cell Systems / TICS / NRN / PLOS-Comp-Bio-format contribution to the cross-scale-systems-biology literature.</p>",
+    "creators": [
+      {
+        "name": "Graise, Martin L.",
+        "orcid": "0009-0006-8003-3938",
+        "affiliation": "Independent researcher"
+      }
+    ],
+    "keywords": [
+      "PCI / PME framework",
+      "residence-pathology",
+      "return-path machinery",
+      "two-axis residence-time observable",
+      "cross-substrate formalism",
+      "coupling-failure pathology",
+      "kinetic stabilization",
+      "Copeland residence-time pharmacology",
+      "canalization theory",
+      "protein metastasis",
+      "FUS stress granules",
+      "PrP topology",
+      "Huntingtin nuclear-mitochondrial residence",
+      "tau multi-compartment mislocalization",
+      "default-mode network dynamics",
+      "vagal brake / HRV recovery",
+      "PP2A / GSK3β phospho-regulation",
+      "anabolic-androgenic steroid cardiomyopathy",
+      "model collapse",
+      "human-AI co-evolution",
+      "memory reconsolidation",
+      "Page-Wootters mechanism",
+      "echo chambers / misinformation",
+      "frustration without escape",
+      "audit-design template",
+      "OSF pre-registration",
+      "falsifiable experimental program"
+    ],
+    "language": "eng",
+    "license": "cc-by-4.0",
+    "access_right": "open",
+    "related_identifiers": [
+      {
+        "identifier": "10.5281/zenodo.20093296",
+        "relation": "isContinuationOf",
+        "scheme": "doi",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.20060751",
+        "relation": "isContinuationOf",
+        "scheme": "doi",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.20034821",
+        "relation": "isContinuationOf",
+        "scheme": "doi",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.19966692",
+        "relation": "isContinuationOf",
+        "scheme": "doi",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.19617662",
+        "relation": "isContinuationOf",
+        "scheme": "doi",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "https://github.com/MartinLGraise/PCI-Framework",
+        "relation": "isSupplementTo",
+        "scheme": "url",
+        "resource_type": "software"
+      }
+    ],
+    "notes": "First deposit of Paper 14 — a new concept-DOI for the residence-pathology cross-substrate formalism. v1.6 is the draft circulated for courtesy preprint to Tier A reviewers two weeks before journal submission. Repository at github.com/MartinLGraise/PCI-Framework, branch paper7-foundation, tag paper14-v1.6-preprint. Paper 14 stands without companion Paper 15 (G₂ / octonion mathematical-physics derivation, in preparation). The reference list is consolidating; full references for in-text citations are available on request via the GitHub repository."
+  }
+}
