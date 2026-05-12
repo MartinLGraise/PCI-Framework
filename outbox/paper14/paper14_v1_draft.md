@@ -1584,76 +1584,147 @@ uniformity that those vocabularies collectively describe.
 
 ## 9. Differentiation from Adjacent Literature
 
-[To be drafted. See the outline in
-`outbox/paper14/paper14_outline.md` for full roster. Key
-differentiations: Knowles-Vendruscolo-Dobson protein metastasis;
-Kelly kinetic stabilization; Pytel & Fromm Longo 2025; Wolynes-
-Ferreiro frustration; Jülicher-Weber active-matter; Carhart-Harris
-REBUS; Rovelli RQM; French-Ladyman OSR; Barad agential realism
-(apparatus-specific observable machinery, not substrate-general);
-Maturana-Varela autopoiesis; Friston FEP (methodological not
-ontological); Rosen relational biology; Thompson Mind in Life;
-Whitehead (actual-occasions-as-units retained); Simondon
-(individuation theory; formalization incomplete); engineering
-resilience (van Nes & Scheffer); critical slowing down (van de
-Leemput); loss of complexity (Lipsitz-Goldberger); canalization.]
+This section states, for each adjacent body of work, what it claims, what we concede to it, and what remains specific to the present paper. The goal is to preempt the most plausible reading that this paper is restating something already published.
+
+### 9.1 Protein-biophysics lineage
+
+**Knowles, Vendruscolo & Dobson (2014, 2017) — protein metastasis.** The phrase "protein metastasis" already names spreading of conformational pathology across cellular compartments and across cells. We concede the metaphor and the proteostatic instance. The Knowles-Vendruscolo-Dobson program does not generalize across substrates and does not propose a two-axis residence-time observable; it operates within the protein-aggregation field. Our contribution is the substrate-general formal observable and the symmetric formulation of kinetic stabilization (§5).
+
+**Kelly (1996) and the kinetic-stabilization literature.** Kelly's foundational work on transthyretin stabilization established that extending the dwell time of the native fold (strategy A in §5) is a tractable therapeutic strategy. Tafamidis is the canonical clinical realization. We retain Kelly's framing as one of five symmetric residence-control strategies and explicitly cite it as prior art for strategy A. Strategies B through E (destabilize pathological dwell; reroute away from pathological compartment; reroute toward protective compartment; restore return-path machinery) are formulated symmetrically with strategy A; the symmetric formulation as a complete strategy set is the framework's incremental contribution at the molecular substrate.
+
+**Pytel, Fromm & Longo (2025) and the Wolynes-Ferreiro frustration program (Parra, Komives, Wolynes & Ferreiro 2025 review).** Frustration theory characterizes which interactions in a folded protein are energetically frustrated. The Pytel-Fromm-Longo 2025 work and the Parra-Komives-Wolynes-Ferreiro review extend the frustration vocabulary to disordered regions and condensate biology. Frustration as published is state-shaped (which interactions are frustrated); the framework's extension to *frustration without escape* is residence-shaped (how long the frustrated state persists). We claim this extension as a specific contribution and propose courtesy preprint to Ferreiro and Wolynes prior to journal submission per the framework's preprint-circulation strategy.
+
+**Jülicher, Weber and the active-matter / biomolecular-condensate program.** Active-matter theory and the biomolecular-condensate field (Hyman, Brangwynne, and collaborators) provide the physical-chemistry vocabulary for liquid-liquid phase separation, condensate aging, and gel transition. We treat this as prior art for the FUS-stress-granule case (§3.1) and adopt its vocabulary. The framework does not contribute new condensate physics; it contributes the cross-class residence-pathology grammar that subsumes condensate pathology as one instance.
+
+### 9.2 Psychiatric / brain-network lineage
+
+**Carhart-Harris REBUS and canalization (Carhart-Harris & Friston 2019; Carhart-Harris, Chandaria, Erritzoe, Gazzaley, Girn, Kringelbach, Kuypers, Leech, McCulloch, Moliner, Olsen, Robbins, Robertson, Rolls, Sahakian, Schartner, Searle, Singh, Stamets, Timmermann, Tagliazucchi, Trickett, Tyls, Watts, Whalley, Williams & Nutt 2023).** The canalization-theory program established that residence-in-deepened-attractor-canals organizes a wide range of psychiatric disorders, and that psychedelic interventions act by transiently flattening the energy landscape to enable transitions out of pathological canals. This is the closest published prior art to our cross-substrate claim, and it closes the brain-level case completely. We do not claim cross-disorder residence-pathology at the brain level. We claim formal-operational composition of the brain-level case with substrate-distinct cases (molecular, autonomic, cardiac, pharmacological, AI/data) under a single observable.
+
+**Default-mode-network hyperstability literature (Hamilton et al. 2011; Sheline et al. 2009, 2010; Wise et al. 2017; Kaiser et al. 2016; Alonso et al. 2022).** The empirical DMN literature supports maladaptive persistence and impaired switching under demand, not naive static hyperconnectivity. We adopt the careful framing (§8.5): residence in DMN-dominant states with impaired return-to-task-set, not static hyperstability.
+
+### 9.3 Pharmacology lineage
+
+**Copeland residence-time paradigm (Tummino & Copeland 2008; Copeland 2016).** The drug-target residence-time literature is the most mature published instance of residence-pathology thinking. We adopt its vocabulary explicitly, cite the Bosma et al. 2017 H1 antihistamine data and Casarosa et al. 2009 M3 LAMA data as the empirically strongest cases for residence-time dominance over equilibrium affinity, and propose that the four-point audit-design template (§10) is a substrate-general adaptation of Copeland's pharmacological audit-design. The pharmacological case is conceded as the canonical published precedent; our contribution is generalization beyond drug-target to substrate-neutral coupling.
+
+### 9.4 Process-relational philosophy and relational ontology
+
+**Rovelli relational quantum mechanics (RQM; Rovelli 1996, 2018, 2021).** RQM proposes that quantum-mechanical properties are inherently relational, defined only with respect to an observer-system pair. At the conceptual level, this is the closest physics-foundations prior art for a coupling-first observable in a fundamental-physics substrate. We concede the relational ontology at the quantum-foundations level. The framework's two-axis residence-time observable R(s,c) does not require RQM; the framework's claim is empirical and operational rather than interpretational.
+
+**French and Ladyman ontic structural realism (OSR; Ladyman 1998; French 2014).** OSR holds that the fundamental ontology of physics is relations rather than relata. We concede OSR as the closest published prior art for substrate-neutral relational ontology at the level of philosophy of physics. The framework does not depend on OSR but is structurally compatible with it.
+
+**Barad agential realism (Barad 2007).** Agential realism specifies that observables are constituted by apparatus-specific intra-action between phenomenon and measurement-arrangement. This is *apparatus-specific* observable machinery; our framework is *substrate-general* observable machinery. The two programs are compatible at the level of methodology — both reject substance-first ontology — but they answer different questions. Agential realism specifies how an observable comes into being; the present framework specifies what observable is operationally measurable across substrates.
+
+**Whitehead process philosophy (Whitehead 1929; Stengers 2011).** Whitehead's process metaphysics is the canonical philosophical precedent for relation-and-occasion as the fundamental ontological category. Lane CP-1 returned a modular-preemption verdict: process philosophy preempts the *conceptual* foundation of coupling-first ontology, but the formal-operational layer (a measurable cross-substrate observable with substrate-distinct realizations) remains open. We retain Whitehead's actual-occasions-as-units as a philosophical influence and cite explicitly; we do not claim first articulation of process-relational ontology.
+
+**Simondon individuation theory (Simondon 1958/2020).** Simondon's program treats individuation as the primary ontological act and substantive individuals as derivative. The formalization of Simondon's framework is incomplete in the published literature; we cite it as a philosophical companion and do not depend on its formal completion.
+
+### 9.5 Biological / cognitive-science lineage
+
+**Maturana and Varela autopoiesis (Maturana & Varela 1980; Varela, Thompson & Rosch 1991; Thompson 2007 *Mind in Life*).** Autopoiesis specifies that the living is constituted by self-producing relational networks of components. Thompson's *Mind in Life* extends the program to phenomenology and consciousness. Lane CP-3 returned: this lineage closes the *biological* substrate's coupling-first ontology completely. We do not claim novelty in biological coupling-first ontology. Our contribution is the formal-operational integration across biological and non-biological substrates.
+
+**Friston free-energy principle (FEP; Friston 2010, 2019).** FEP is a methodological framework for inferring belief-update dynamics from observable behavior, with active-inference extending it to action selection. Lane CP-3 verdict: FEP stops at methodological / inferential. It does not assert that the substrate of living systems is coupling rather than substance; it assumes a system-environment partition and computes belief dynamics over it. The framework is compatible with FEP but does not depend on it; we do not claim FEP-style derivation of the residence-pathology principle from variational arguments.
+
+**Rosen relational biology (Rosen 1991, 2000).** Rosen's framework distinguishes organisms as relational (M,R)-systems rather than mechanistic. We concede the conceptual primacy of relational biology for the biological substrate and treat it as part of the closed biological case.
+
+**Damasio (1999) autobiographical-self architecture; Tononi-Edelman dynamic-core / IIT.** These provide vocabulary for self and consciousness at the cognitive substrate. The framework is compatible with both and does not claim to displace either. The R(s,c) observable could in principle be measured against IIT-style integration indices in future empirical work.
+
+### 9.6 Engineering and dynamical-systems lineage
+
+**Engineering resilience and critical slowing down (van Nes & Scheffer 2007; Scheffer et al. 2009; van de Leemput et al. 2014).** The dynamical-systems literature on resilience and critical slowing down provides the mathematical vocabulary for recovery time constants near bifurcations. We adopt this vocabulary explicitly for the common observable of return-path-machinery (§6.2) — recovery time constant τ, dominant eigenvalue, dwell-time persistence. The framework's contribution is naming this vocabulary as the substrate-general language for return-path quality, not the vocabulary itself.
+
+**Lipsitz and Goldberger loss-of-complexity hypothesis (1992).** Loss-of-complexity proposes that aging and disease entail loss of physiological complexity. This is conceptually adjacent to return-path-machinery failure; we cite as compatible prior art. The two-axis residence-time observable refines the loss-of-complexity claim by distinguishing residence-axis pathology (dwell-time persistence) from transition-axis pathology (variety / entropy of transitions).
+
+**Page-Wootters mechanism (Page & Wootters 1983; recent 2024-2025 extensions to gravitational time dilation).** The Page-Wootters mechanism derives time-as-coupling between a clock subsystem and a system-of-interest within a global timeless quantum state. We cite Page-Wootters as orthodox physics-foundations prior art for the claim that time is coupling-derived rather than backdrop, supporting the memory-as-dimensional-tether subsection (§8.6.1). This is referenced for theoretical context only; the empirical observable R(s,c) does not require Page-Wootters.
+
+### 9.7 The specific contribution restated
+
+Given the above concessions: this paper's contribution is not the relational ontology at any single substrate, not the residence-time concept at any single substrate, not cross-disorder residence-pathology at the brain level, and not the recovery-time-constant vocabulary. The contribution is the substrate-general two-axis observable R(s, c) = τ_R(s) × π_c together with the symmetric kinetic-stabilization formulation (§5), the return-path-machinery typology (§6), the frustration-without-escape extension (§7), and the demonstration that one observable plus one symptom-grammar resolves residence-pathology across at least nine independently developed substrate vocabularies (§8). This is what is meant by *formal-operational composition*: not new substrate physics at any one level, but the explicit measurable composition rule across levels that prior programs developed in isolation.
 
 ## 10. Audit-Design Template
 
-[To be drafted. Adapted from Copeland four-point audit design:
-(1) Full two-axis occupancy quartet (state populations, dwell
-times, compartmental occupancy probabilities, transition rates);
-(2) Paired with a washout-sensitive functional assay (recovery
-after stressor/agent/local-context withdrawal); (3) In vivo /
-in-tissue persistence after acute trigger removal; (4) Local
-temporal and spatial modifiers (concentration, PTM, cofactor
-availability, membrane context, compartmental micro-environment).
-Substrate-general version: full kinetic quartet at the appropriate
-level + washout-sensitive assay + in situ persistence + local
-micro-context.]
+This section adapts the Copeland four-point pharmacological audit-design (Tummino & Copeland 2008; Copeland 2016) to a substrate-general residence-pathology audit-design. The intent is that any empirical claim about residence-pathology at any substrate should be required to report, in publication, on each of the four points below at the appropriate substrate-specific level.
+
+### 10.1 The four required reports
+
+**(1) Full two-axis occupancy quartet.** For each system under study, report (a) state populations — the probability mass at each operationally distinguished state s; (b) dwell times — the residence time τ_R(s) at each state, ideally as a distribution rather than a point estimate; (c) compartmental occupancy probabilities — π_c for each compartment c; (d) transition rates — the rate matrix governing transitions between (s, c) pairs. At the molecular substrate this is the kinetic quartet (state populations, conformational dwell times, compartmental fractions, on/off rate constants). At the brain-network substrate this is the dynamics-of-state-sequences quartet (state populations of metastable networks, dwell times in each metastable network, region-occupancy probabilities, transition probabilities between states). At the AI/data substrate this is the distribution quartet (output-distribution mass at each mode, dwell times in each mode under iterated inference, compartmental segregation of training-data populations, transition rates between modes under prompting perturbation).
+
+**(2) Washout-sensitive functional assay.** Pair the occupancy quartet with a functional readout that responds to withdrawal of the active perturbation. At the pharmacological substrate this is the receptor-recovery time constant after drug washout. At the cardiac substrate this is HRV recovery after stressor withdrawal. At the proteostatic substrate this is the persistence of stress-granule disassembly after stressor removal. At the brain-network substrate this is the return-to-task-set time constant after cognitive load. The principle: residence-pathology is not detectable by equilibrium readout alone; it requires a withdrawal-recovery measurement.
+
+**(3) In vivo / in-tissue persistence after acute trigger removal.** Demonstrate that the residence pattern persists in the native context after the proximate trigger is removed. This is what distinguishes pathological residence (system remains in the abnormal compartment after the stressor / agent / context that produced it is gone) from healthy transient response (system returns to baseline as soon as the trigger is removed). The temporal scale of "persists" depends on the substrate but must be specified.
+
+**(4) Local temporal and spatial modifiers.** Report on the local context that modifies residence behavior: concentration, post-translational modifications, cofactor availability, membrane environment, micro-compartmental context, network-state, hormonal state, autonomic baseline, data-distribution conditioning. Residence-pathology is substrate-specific and context-sensitive; an audit that reports residence times without reporting modifiers cannot be cross-substrate compared.
+
+### 10.2 Substrate-general version
+
+For any new substrate proposed to exhibit residence-pathology under the framework's grammar, the audit-design template requires: full kinetic quartet at the appropriate level (states, dwells, compartmental occupancies, transition rates) + washout-sensitive assay (functional readout after withdrawal of active perturbation) + in situ persistence (native-context residence after proximate-trigger removal) + local micro-context (modifiers of residence behavior). When all four are reported, the system is admissible for cross-substrate comparison under R(s, c). When any are missing, the claim of residence-pathology at that substrate is provisional.
+
+### 10.3 Standards adoption
+
+We propose this template as a publication standard for residence-pathology claims, parallel to how pharmacological residence-time work has matured toward standardized reporting (Copeland audit-design, Bosma et al. 2017 audit-design as exemplary). The standardization is what makes cross-substrate composition empirically tractable rather than metaphorical.
 
 ## 11. Cross-Domain Experimental Agenda
 
-[To be drafted. Thirteen experiments organized as:]
+Thirteen experiments are proposed below, organized into two clusters: cross-substrate recovery-kinetics experiments (eight; from Lane 1) and pharmacology-to-psychedelics bridge experiments (five; from Lane 4). Each experiment is designed to falsify a specific component of the framework. All are tractable with current technology except where noted.
 
-**From Lane 1 (cross-substrate recovery kinetics):**
+### 11.1 Cross-substrate recovery-kinetics cluster
 
-1. Cross-domain perturbation-recovery battery
-2. Multimodal HRV + fMRI in depression
-3. Proteostasis-phosphoregulation coupling assays
-4. Dominant-eigenvalue modeling of recovery
-5. Longitudinal early-warning designs
-6. Return-path composite index
-7. Intervention-convergence analysis
-8. Boundary-condition experiments
+**Experiment 1: Cross-domain perturbation-recovery battery.** Recruit a single cohort and measure recovery time constants τ across at least four substrates per subject: (a) cardiac — HRV recovery after standardized cold-pressor or orthostatic stressor; (b) proteostatic — peripheral-blood stress-granule disassembly kinetics after sodium-arsenite challenge in isolated PBMCs; (c) brain-network — fMRI return-to-task-set after working-memory load; (d) phospho-regulatory — GSK3β/PP2A phospho-substrate settling time after lithium washout in lymphoblast lines. The prediction: within-subject τ across substrates will be positively correlated (subjects with slower return on one substrate will have slower return on others) at r > 0.4. Falsification: substrate-specific τ are independent (r < 0.2 across all pairs). Power calculation suggests n = 80 for adequate cross-correlation estimation.
 
-**From Lane 4 (pharmacology-to-psychedelics bridge):**
+**Experiment 2: Multimodal HRV + fMRI in depression.** In a depressed cohort (n = 60) versus controls (n = 60), measure (a) resting HRV plus HRV recovery from cold-pressor; (b) fMRI dwell-time distributions for default-mode-network metastable states plus return-to-task-set time after working-memory load. Prediction: depression severity correlates with HRV recovery τ and with DMN return-to-task-set τ *separately and additively*, and these two measures jointly predict treatment response better than either alone. Falsification: only one or neither correlates with severity / response.
 
-9. Matched-exposure varied-k_off 5-HT_2A agonist panel
-10. Antagonist-termination experiment (killer experiment —
-    doesn't require new technology)
-11. Clinical occupancy-to-dynamics PK/PD model in psilocybin
-    depression trial
-12. Spontaneous-versus-perturbational dissociation study
-13. Baseline-rigidity-as-moderator design
+**Experiment 3: Proteostasis-phosphoregulation coupling assays.** In a tractable cell-line model (HEK293 or iPSC-derived neurons), induce proteostatic stress (sodium arsenite) and measure phospho-substrate kinetics for known PP2A and GSK3β substrates in parallel with stress-granule formation / disassembly. Prediction: phospho-regulatory return-path failure (slowed phospho-substrate resetting after stressor washout) co-occurs with proteostatic return-path failure (slowed granule disassembly), with shared dominant eigenvalue across the two substrates. Falsification: the two return-path failures are statistically independent.
+
+**Experiment 4: Dominant-eigenvalue modeling of recovery.** For each substrate in Experiment 1, fit a low-dimensional dynamical-systems model (linearized around baseline) to perturbation-recovery time-courses; extract the dominant eigenvalue. Prediction: within-subject dominant eigenvalues are correlated across substrates at the same level as the bulk recovery time constants in Experiment 1, supporting the claim that recovery quality is governed by a substrate-specific instance of a substrate-general principle. Falsification: dominant eigenvalues are statistically independent of bulk τ within substrate.
+
+**Experiment 5: Longitudinal early-warning designs.** Recruit a high-risk cohort for a defined transition (e.g., subjects with first-episode major depression for relapse prediction, n = 200, two-year follow-up). At baseline and quarterly, measure substrate-specific recovery τ across at least three substrates. Prediction: rising τ across substrates over time predicts the transition (relapse) with longer lead-time than any single-substrate measure. Falsification: cross-substrate composite does not improve over single-substrate prediction.
+
+**Experiment 6: Return-path composite index.** Develop and validate a composite index combining standardized HRV recovery, fMRI dwell-time persistence, and a peripheral-blood proteostatic recovery readout. Prediction: the composite outperforms each component in differentiating clinical groups (depression, anxiety, post-stroke depression, frontotemporal dementia) from controls, with effect-size improvement ≥ 0.3 in Cohen's d over the best single component. Falsification: composite does not outperform best single component.
+
+**Experiment 7: Intervention-convergence analysis.** Subjects with confirmed slow recovery on the composite index (Experiment 6) are randomized to four interventions: (a) HRV biofeedback / tVNS; (b) cognitive training targeting return-to-task-set; (c) low-dose lithium (phospho-regulatory return-path); (d) waitlist control. Prediction: all three active interventions improve the composite index at six-week post-randomization, with the substrate-specific intervention improving its target substrate most but with measurable cross-substrate transfer in all three. Falsification: each intervention is purely substrate-specific with no cross-substrate transfer.
+
+**Experiment 8: Boundary-condition experiments.** Identify clinical populations where return-path machinery is intact but residence-pathology occurs through an alternative mechanism (e.g., genetic FUS mutations producing granule pathology without altered recovery machinery; pure-OCD with intact DMN switching but residence-dominated symptom phenomenology). Prediction: R(s, c) measurements in these populations show pathological residence on one axis with intact recovery time constants on the other, falsifying any simple "return-path-failure-only" reading of the framework. This is a self-falsification experiment: it tests whether the two-axis observable correctly identifies residence-pathology that does not reduce to return-path failure.
+
+### 11.2 Pharmacology-to-psychedelics bridge cluster
+
+**Experiment 9: Matched-exposure varied-k_off 5-HT_2A agonist panel.** Develop or identify a panel of 5-HT_2A agonists with matched receptor occupancy time-courses but varied k_off (residence time at the receptor). Prediction: subjective and neuroimaging readouts of the canalization-flattening effect scale with k_off-derived residence time rather than peak occupancy. Falsification: equal-occupancy agonists with different k_off produce equivalent canalization-flattening readouts.
+
+**Experiment 10: Antagonist-termination experiment (killer experiment).** This experiment requires no new technology and directly tests the residence-pathology reading of psychedelic action. Administer psilocybin under standard dosing; at a pre-specified time-point during the experience (e.g., t = 90 min), randomize subjects to placebo or ketanserin (5-HT_2A antagonist with fast on-rate). Prediction: ketanserin truncates the receptor-residence pattern and produces measurable shortening of the post-acute neural-dynamic effects in proportion to the duration of residence interruption. Falsification: ketanserin terminates the acute experience but post-acute neural-dynamic effects are unaffected, indicating that residence-on-target is not the relevant variable.
+
+**Experiment 11: Clinical occupancy-to-dynamics PK/PD model in psilocybin depression trial.** Within an active psilocybin-for-depression trial, develop a PK/PD model linking serum psilocin time-course to receptor occupancy time-course to neural-dynamic readouts (HMM dwell times, return-to-task-set τ) to clinical response. Prediction: the residence-time-derived predictor (integral of occupancy over time) outperforms the peak-occupancy predictor and the dose-only predictor in explaining clinical response variance. Falsification: residence-time predictor does not add explanatory value over peak occupancy.
+
+**Experiment 12: Spontaneous-versus-perturbational dissociation study.** Simultaneously measure spontaneous-state-sequence complexity (HMM-derived metrics from resting-state fMRI), perturbational complexity (PCI from TMS-EEG; Casali et al. 2013; Sarasso et al. 2015), and long-term plastic-reopening markers (Ort 2023 paradigm) in a psychedelic-intervention cohort. Prediction: these three readouts dissociate — they correlate within each subject at r < 0.5 across the three pairs — supporting the framework's claim that residence-pathology and return-path-machinery operate on distinct measurable channels rather than reducing to a single complexity readout. Falsification: the three readouts correlate at r > 0.8 (collapsing to one measure).
+
+**Experiment 13: Baseline-rigidity-as-moderator design.** Pre-stratify a psychedelic-intervention cohort by baseline rigidity of state-sequence dynamics (HMM dwell-time persistence, fMRI return-to-task-set, HRV recovery τ). Prediction: subjects with greater baseline rigidity show larger absolute improvements in both the residence readout and clinical response, supporting the framework's prediction that the residence-pathology dimension explains heterogeneity of response. Falsification: baseline rigidity does not moderate response.
+
+### 11.3 Tractability summary
+
+Experiments 1, 3, 4, 8, 10, 12, 13 are tractable with current technology in mid-sized academic-cohort designs (n = 60-200). Experiments 2, 5, 6, 7, 11 require larger cohorts or multi-site coordination but do not require new instrumentation. Experiment 9 requires medicinal-chemistry pre-work to develop or identify the matched-exposure varied-k_off panel and is therefore the most tractability-bounded of the agenda.
 
 ## 12. Implications
 
-[To be drafted briefly.]
+### 12.1 Therapeutics
 
-**Therapeutics.** Restore return-path machinery; abolish
-pathological residence on either axis. Translational caution:
-identifying the principle correctly does not guarantee any
-specific intervention based on it will work — target engagement,
-timing, and leverage all matter independently (arimoclomol ORARIALS-
-01 phase 3 negative as warning case).
+The framework reframes therapeutic intent across substrates as residence-control rather than as substance-control. Restore return-path machinery wherever it has failed; abolish pathological residence on either the state-axis or the compartment-axis. The five symmetric strategies (§5) — extending native dwell, destabilizing pathological dwell, rerouting away from pathological compartment, rerouting toward protective compartment, restoring return-path machinery — organize the design space for any specific intervention.
 
-**Diagnostics.** Measure R(s, c) and recovery time constants
-before structural aggregation markers (which are downstream).
+The most important translational caution must be stated explicitly: identifying the principle correctly does not guarantee that any specific intervention based on it will work. Target engagement, timing, leverage, and substrate-specific physiology all matter independently. The arimoclomol ORARIALS-01 phase 3 trial in ALS is a warning case: a residence-targeting intervention with strong mechanistic rationale failed at phase 3 despite passing earlier trials, and the failure cannot be read as falsifying the residence-pathology framework, only as demonstrating that mechanistic correctness is necessary-but-not-sufficient for clinical efficacy. This warning generalizes — the framework predicts where to look, not what to do.
 
-**Disease classification.** Group disorders by their residence-
-axis signature plus return-path-machinery failure profile rather
-than by aggregate morphology or single-time-point biomarker.
+Intervention-convergence (Experiment 7) provides the empirical handle: if substrate-specific interventions converge on the cross-substrate composite readout, the residence-pathology principle is corroborated even when any single intervention fails. The principle does not stand or fall on the success of any one drug, biofeedback protocol, or stimulation paradigm; it stands or falls on whether residence-pathology measurements track clinical course and intervention response in the predicted way.
+
+### 12.2 Diagnostics
+
+Measure R(s, c) and recovery time constants before structural aggregation markers, which are downstream. The framework predicts that residence-pathology readouts will outperform structural markers at early and pre-symptomatic stages of disease. This has direct application to neurodegenerative disease, where structural markers (plaques, tangles, aggregates) are by the time of detection already late-stage manifestations of years-to-decades of upstream residence-pathology. The same logic applies to depression (early-warning before relapse; Experiment 5), to autonomic / cardiac disease (HRV degradation as years-earlier warning of cardiovascular event; conceded from Framingham), and to cognitive aging (return-path-machinery composite as years-earlier warning of clinical decline).
+
+The Substrate-General Audit-Design Template (§10) gives the publication standard for residence-pathology diagnostic claims, intended to mature this clinical use-case in the same way Copeland's pharmacological audit-design matured pharmacology.
+
+### 12.3 Disease classification
+
+Group disorders by their residence-axis signature plus return-path-machinery failure profile rather than by aggregate morphology or single-time-point biomarker. Concretely: a single subject with depression, family history of cardiovascular disease, and elevated proteostatic stress markers, all converging on slow recovery time constants across substrates, is more usefully classified as a pan-substrate-return-path-failure case than as comorbid-depression-plus-cardiovascular-risk-plus-proteostatic-pathology. The classification has therapeutic implications (multi-substrate intervention with convergent endpoint readouts) and prognostic implications (cross-substrate composite as integrated risk profile).
+
+This is a re-organization rather than a re-naming. The existing diagnostic categories continue to identify subgroups within the cross-substrate composite; the composite organizes the categories. Group-level diagnostic stratification by residence-axis signature provides the missing structural axis for explaining heterogeneity of intervention response and disease trajectory within named categories.
+
+### 12.4 Research methodology
+
+The framework predicts that cross-substrate experimental designs (Experiments 1, 6, 7) will produce more replicable, more powerful results than single-substrate designs, because cross-substrate composites integrate over substrate-specific noise and reflect the substrate-general residence-pathology dimension directly. If correct, this implies a research-methodology shift: multi-substrate cohorts measured across substrates per subject become the canonical experimental design, with single-substrate work used for mechanism-elucidation rather than for primary endpoints. This methodological shift is the framework's most consequential research-program-level implication.
 
 ## 13. Non-Goals
 
@@ -1689,40 +1760,19 @@ substrate-neutral terms.
 
 ## Drafting status and next steps
 
-**v1 progress as of 2026-05-12 01:xx PDT:**
+**v1 progress as of 2026-05-12 04:xx PDT:**
 
-- §1 Introduction: **DRAFTED** — 3 tight paragraphs establishing
-  prior art, identifying the gap, stating the contribution,
-  acknowledging non-goals and the deferred companion paper.
-- §2 Formal observable: **DRAFTED** — definition, two-axis
-  necessity argument, relation to existing formalisms, deferral
-  note for mathematical structural realization.
-- §§3-14: **OUTLINED** — structural scaffolding in place; each
-  section has a clear scope note and citation clusters ready for
-  prose. Continuation drafting in v1.1 sessions.
+All fourteen sections drafted in full first-draft prose. Abstract, §1 introduction, §2 formal observable, §3 four canonical disease cases, §4 cross-class unifying claim, §5 symmetric kinetic-stabilization formulation, §6 return-path-machinery typology, §7 frustration-without-escape, §8 cross-substrate extensions (eight substrates plus synthesis), §9 differentiation from adjacent literature, §10 audit-design template, §11 thirteen-experiment cross-domain agenda, §12 implications across therapeutics / diagnostics / classification / methodology, §13 non-goals, §14 deferred-companion-paper acknowledgment.
 
-**Remaining v1 work:**
-- §3 four canonical disease cases (highest priority after §1/§2;
-  core of the paper)
-- §4 cross-class unifying claim (short; follows from §3)
-- §§5-7 structural sections (rate-equation framing; drafting is
-  mechanical once the disease cases are in)
-- §8 cross-substrate extensions (longest section; seven substrate
-  subsections plus synthesis; this is where most prose still needs
-  writing)
-- §9 differentiation (list-based; mostly complete from outline)
-- §§10-14 short sections (audit design, experimental agenda,
-  implications, non-goals, deferred paper ack)
+**Remaining work toward v1 final:**
 
-**Target for v1 completion:** Two more focused drafting sessions
-of ~4 hours each should bring §3-§8 to complete first-draft prose.
-§§9-14 can be drafted in one follow-up session.
+- Internal review pass for citation completeness and tightness
+- Reference list consolidation — every cited work in the running text needs a complete reference entry at submission time
+- Substrate-specific terminology audit (consistency of "residence-pathology", "return-path machinery", "coupling-failure")
+- Section-length rebalancing (§8 may be too long; §4 may be too short)
+- Figure plan: candidate figures include the two-axis observable schematic, the four-case occupancy quartet visualization, the cross-substrate residence-pathology grammar table, the return-path machinery typology table, and the experimental-agenda dependency graph
+- Companion-paper plan: Paper 15 (G₂ / octonion mathematical-physics) outlined separately in `outbox/syntheses/lane_cp5_octonion_coupling/` with three deliverable burden specified in §14 above
 
-**Total estimated remaining effort:** ~10-14 hours of focused
-drafting from this current state. Considerably less than the prior-
-art survey campaign that preceded it, because the scaffolding is
-dense and the citation work is done.
+**Review cycle:** v1 goes to courtesy-preprint Tier A (11 names) two weeks before submission; Tier B (7 names) one week before; revisions incorporated as v1.1; then journal submission. The differentiation section (§9) is structured to anticipate the most likely critic-readings before they arrive.
 
-**Review cycle:** v1 goes to courtesy-preprint Tier A (11 names)
-two weeks before submission; Tier B (7 names) one week before;
-revisions incorporated as v1.1; then journal submission.
+**Submission targets to evaluate:** *Trends in Cognitive Sciences*, *Nature Reviews Drug Discovery*, *Nature Reviews Neuroscience*, *Cell Systems*, *PLOS Computational Biology*. Trade-off between cross-substrate-scope journals (TICS, Cell Systems) and substrate-specific journals (NRDD for the pharmacological / proteostatic emphasis, NRN for the brain-network emphasis); decision to be made after internal-review pass.
