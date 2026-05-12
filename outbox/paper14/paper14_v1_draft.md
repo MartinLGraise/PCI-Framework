@@ -1326,54 +1326,13 @@ named molecular machinery.
 
 ### 8.4 Exercise physiology — endogenous versus operator-sustained boundary operation
 
-Exercise physiology provides a whole-organism instance of the
-residence-pathology principle with a specific distinction between
-healthy and pathological residence that the framework names
-precisely. Sustained high-intensity exercise places the organism
-at a physiological boundary — against VO2max, against glycogen
-depletion, against pH buffering limits, against thermoregulatory
-ceilings. This is boundary operation in the Paper 12 sense
-(§3.6 boundary-KKT residence).
+Exercise physiology provides a whole-organism instance of the residence-pathology principle with a specific distinction between healthy and pathological residence that the framework names precisely. Sustained high-intensity exercise places the organism at a physiological boundary against VO2max, glycogen depletion, pH buffering limits, and thermoregulatory ceilings (Joyner & Coyle 2008, *J Physiol* 586:35–44; Burnley & Jones 2018, *Eur J Appl Physiol* 118:1–12). The healthy case is *endogenous* boundary operation with intact return-path machinery: phosphocreatine depletion, rising H+ from glycolysis, sympathetic-drive exhaustion, and metaboreceptor afferent signaling cumulatively enforce return from the boundary to a recovery regime, after which glycogen replenishes, pH buffers restore, and parasympathetic tone re-engages (Coote 2010, *Exp Physiol* 95:431–440). The adaptations of athletic conditioning — improved mitochondrial density, expanded buffering capacity, enhanced vagal tone (HRV adaptations in trained athletes, Aubert, Seps & Beckers 2003, *Sports Med* 33:889–919) — are downstream of iterated visit-and-return, not of accumulated residence.
 
-The healthy case is *endogenous* boundary operation with intact
-return-path machinery. The athlete pushes against the ceiling; PCr
-depletion, rising H+ from glycolysis, and sympathetic-drive
-exhaustion cumulatively enforce return from the boundary to a
-recovery regime; glycogen replenishes, pH buffers restore,
-parasympathetic tone re-engages; the next training stimulus can
-then be applied to an adapted baseline. The adaptations of
-athletic conditioning — improved mitochondrial density, increased
-glycogen storage, expanded buffering capacity, enhanced vagal
-tone — are downstream of iterated visit-and-return.
+The pathological case is *operator-sustained* boundary operation in which pharmacological agents silence the return-path cutoffs. The empirical literature on supraphysiological-dose anabolic-androgenic steroid (AAS) use in strength athletes documents this pattern with particular clarity. Smit et al. (2021, *Frontiers in Reproductive Health*; the HAARLEM study) measured cardiac structure and function in amateur strength athletes before, during, and after a self-administered AAS cycle: left ventricular mass increased by 28.3 g (95% CI 14.2–42.4, p < 0.001), positively correlated with cumulative AAS dose, with impaired systolic and diastolic function during the operator-sustained period — and *all parameters returned to baseline at median 8-month recovery follow-up after AAS discontinuation*. The recent expert review (Liu, Wang & Zhang 2023, *Frontiers in Cardiovascular Medicine* 10:1233223) and the American College of Cardiology 2024 expert summary (Baggish et al. 2024) document the broader pattern: AAS-associated left ventricular hypertrophy with matrix collagen deposition and fibrosis, conferring elevated cardiomyopathy risk in chronic users. Parallel residence-pathology signatures appear in stimulant-cardiomyopathy case literature — amphetamine and methamphetamine cardiomyopathy with reduced LVEF that frequently recovers after cessation (Won et al. 2013, *Heart* 99:309–314; case reports including Patel et al. 2023, *Cureus* 15:e40719) — and in the ephedra/ephedrine adverse-event literature (Shekelle et al. 2003 Annals of Internal Medicine meta-analysis; American College of Cardiology summary 2003: 4 deaths, 5 myocardial infarctions, 11 cerebrovascular accidents, 4 seizures across reviewed adverse events, with approximately half occurring in users under 30 years of age).
 
-The pathological case is *operator-sustained* boundary operation
-in which pharmacological or behavioral operators silence the
-return-path cutoffs. Chronic stimulant use (caffeine,
-amphetamines, pre-workout stacks) silences the sympathetic-drive-
-exhaustion cutoff. Chronic exogenous ketosis or pH buffer loading
-silences the acidosis cutoff. Chronic over-caloric training under
-anabolic support silences the energy-depletion cutoff. The system
-continues at the boundary past the point where return would
-naturally occur; residence accumulates; maladaptive remodeling
-follows. The specific instance developed in the framework's
-technical archive (`cross_domain_saturation_collapse.md`) is
-athletic-performance stimulant stacking in powerlifters and
-combat-sports athletes, with cardiac remodeling and arrhythmia
-patterns as downstream consequences.
+The reversibility documented in the HAARLEM data is the framework's key residence-pathology signature: when the operator-sustained boundary residence ceases, the return-path machinery (in this case the endogenous androgen-receptor signaling restoration, anti-fibrotic remodeling, and vagal reactivation) reasserts, and the substrate-level pathology resolves. This is what distinguishes operator-sustained residence-pathology from substance-level structural damage — the structural changes are downstream of the residence pattern, not vice versa.
 
-The two axes of R(s, c) map onto this substrate cleanly. The
-temporal axis τ_R(s_boundary) captures how long the organism
-resides at the physiological ceiling before return-machinery
-reasserts. The spatial axis π_c captures which compartments
-(cardiac, skeletal-muscle, hepatic, neuroendocrine) are over-
-occupied by the boundary-regime metabolic state. Health is visits
-with intact return (τ_R bounded by endogenous cutoffs); pathology
-is operator-sustained residence (τ_R pharmacologically extended
-past those cutoffs). The framework's prescription at this
-substrate — respect the endogenous cutoffs, cultivate the return
-path, refuse operator-sustained boundary residence — is
-consistent with both standard sports-medicine periodization
-advice and with the framework's cross-substrate principle.
+The two axes of R(s, c) map onto this substrate cleanly. The temporal axis τ_R(s_boundary) captures how long the organism resides at the physiological ceiling before return-machinery reasserts (operationally: weeks-to-months of AAS-cycle duration, hours-to-days of acute stimulant exposure, training-volume-times-stimulant-dose for compound exposures). The spatial axis π_c captures which compartments (cardiac, skeletal-muscle, hepatic, neuroendocrine) are over-occupied by the boundary-regime metabolic state, measured by compartment-specific imaging and functional assays. Health is visits with intact return (τ_R bounded by endogenous cutoffs); pathology is operator-sustained residence (τ_R pharmacologically extended past those cutoffs). The framework's prescription at this substrate — respect the endogenous cutoffs, cultivate the return path, refuse operator-sustained boundary residence — is consistent with the standard sports-medicine periodization literature (Bompa & Buzzichelli 2018, *Periodization*) and with the framework's cross-substrate residence-pathology principle. The HAARLEM reversibility data is the most direct empirical confirmation of the framework's principle at the exercise substrate currently available.
 
 ### 8.5 Large-scale brain network dynamics — return-to-task-set
 
