@@ -1468,94 +1468,21 @@ framework claims residence-pathology at the dwell-time-and-
 transition-capacity level, and does not conflate this with rest-
 trajectory entropy.
 
-### 8.6 PCI phenomenology
+### 8.6 First-person and public-epistemic substrates
 
-The PCI (Perceptual-Coherence Intelligence) phenomenology
-substrate provides the first-person instance of the residence-
-pathology principle. Paper 12 v1.4 established the §3.5 smooth-
-interior / §3.6 boundary-KKT topology at the substrate-level
-demonstration. Flow states are characterized by brief §3.6
-touches with intact return to §3.5 interior; rumination,
-depression, and chronic stuck-thought-loops are characterized by
-§3.6 residence without §3.5 recovery. This is the
-phenomenological instance of the network-dynamical pathology
-described in §8.5.
+Two first-person-scale instances of the residence-pathology principle warrant treatment in this paper. A third instance (intersubjective coupling on the fastest conversational timescale) is reserved for a follow-on paper on embodied-PCI dynamics where empirical maturity (dual-EEG inter-brain phase-coupling literature) can support a primary-data presentation. Paper 12 v1.4 established the substrate-level demonstration of the residence-pathology pattern at the phenomenological level (the §3.5 smooth-interior / §3.6 boundary-KKT topology, with flow-states characterized by brief boundary touches and intact return to interior, contrasted with rumination and depression characterized by boundary-residence without recovery). The two subsections below add the memory-substrate instance, which is load-bearing for the framework, and the public-epistemic substrate, which extends the principle to information ecosystems.
 
-Three subsections expand the phenomenological treatment.
+**8.6.1 Memory as dimensional tether.** Memory retrieval is not playback from storage; it is *product-space coupling* between present coherence and past echo. The reconsolidation literature (Nader, Schafe & LeDoux 2000, *Nature* 406:722; Schiller et al. 2010; Agren et al. 2012) established experimentally that retrieved memories enter a labile state and must be re-stabilized by new protein synthesis, modified by the current state during retrieval. The constructive-memory tradition (Schacter, Addis & Buckner 2007; Barsalou 2008; earlier Bartlett 1932) consolidates the evidence that memory retrieval is simulation rather than playback. The false-memory paradigm (Loftus & Palmer 1974) is the structural proof: false memories are insertable by influencing retrieval conditions, which would be impossible if retrieval were factor-space playback. Predictive-processing accounts (Henson & Gagnepain 2010; Friston extensions) and Damasio's (1999) autobiographical-self architecture complete the picture: the self that persists through time is a continuously renewed coupling between present coherence and residual echo structure, not a stored entity.
 
-**8.6.1 Memory as dimensional tether.** Memory retrieval is not
-playback from storage; it is *product-space coupling* between
-present coherence and past echo. The reconsolidation literature
-(Nader, Schafe & LeDoux 2000, *Nature* 406:722; Schiller et al.
-2010; Agren et al. 2012) established experimentally that
-retrieved memories enter a labile state and must be re-stabilized
-by new protein synthesis, modified by the current state during
-retrieval. The constructive-memory tradition (Schacter, Addis &
-Buckner 2007; Barsalou 2008; earlier Bartlett 1932) consolidates
-the evidence that memory retrieval is simulation rather than
-playback. The false-memory paradigm (Loftus & Palmer 1974) is the
-structural proof: false memories are insertable by influencing
-retrieval conditions, which would be impossible if retrieval were
-factor-space playback. Predictive-processing accounts (Henson &
-Gagnepain 2010; Friston extensions) and Damasio's (1999)
-autobiographical-self architecture complete the picture: the self
-that persists through time is a continuously renewed coupling
-between present coherence and residual echo structure, not a
-stored entity.
+This treatment connects to orthodox foundations-of-physics work on time as a coupling-derived rather than backdrop phenomenon (Page & Wootters 1983, *Phys Rev D* 27:2885; recent extensions to gravitational time dilation and 3+1 spacetime emergence 2022–2025). The claim that time itself is relational appears in physics foundations and appears in the phenomenology of memory; the framework treats these as coordinate instances of the coupling-through-time principle.
 
-This treatment connects to orthodox foundations-of-physics work
-on time as a coupling-derived rather than backdrop phenomenon
-(Page & Wootters 1983, *Phys Rev D* 27:2885; recent extensions
-to gravitational time dilation and 3+1 spacetime emergence
-2022–2025). The claim that time itself is relational appears in
-physics foundations and appears in the phenomenology of memory;
-the framework treats these as coordinate instances of the
-coupling-through-time principle.
+Four memory-coupling pathology subtypes fit within the framework: grief (forced un-coupling where the coupling target has lost its other pole), nostalgia (over-coupling to a past axis with canalized retrieval valence), regret (anti-coupled coupling held against current-axis), and post-traumatic stress disorder (canalized retrieval coupling where each re-triggering instantiates the product-space of present-threat-detection and past-echo, deepening the canal with each retrieval). Each maps to the two-axis observable: τ_R(s) is dwell-time in the retrieval-coupled state s; π_c is the occupancy of the retrieval compartment c (present-axis grounded retrieval versus past-axis dominated retrieval). The reconsolidation-window therapeutic literature (Schiller et al. 2010 on fear-memory updating; Ecker et al. 2012 on coherence-therapy reconsolidation) operationalizes intervention as opening a brief window during which the coupling can be re-formed against an updated present coherence — strategy E of §5 (restoring return-path machinery) at the memory substrate.
 
-Four memory-coupling pathology subtypes fit within the framework:
-grief (forced un-coupling where the coupling target has lost its
-other pole), nostalgia (over-coupling to a past axis with
-canalized retrieval valence), regret (anti-coupled coupling held
-against current-axis), and post-traumatic stress disorder
-(canalized retrieval coupling where each re-triggering instantiates
-the product-space of present-threat-detection and past-echo,
-deepening the canal with each retrieval).
+**8.6.2 Public-epistemic substrate — information-ecosystem attractor dynamics.** The framework's principle extends to information-ecosystem substrates where the attractor-landscape geometry is shaped collectively rather than individually. Three well-studied empirical literatures provide the substrate's primary anchors. Vosoughi, Roy & Aral (2018, *Science* 359:1146-1151) demonstrated that false news spreads farther, faster, deeper, and more broadly than true news across all categories on Twitter, with the asymmetry strongest for political news; rumour cascades reach deeper retransmission generations and broader unique-user reach than verified content. Cinelli et al. (2020, 2021 PNAS) characterized the "echo-chamber effect" on social media as residence in cluster-segregated interaction patterns where user opinions and information sources reinforce one another, with platform-architecture differences modulating the strength of segregation. Bail et al. (2018, *PNAS* 115:9216-9221) showed that exposure to opposing political views on social media can *increase* polarization rather than reduce it, identifying the attractor's self-reinforcing dynamics under interventions that naïvely target the residence pattern.
 
-**8.6.2 Intersubjective negative pressure.** Conversational
-coupling provides the fastest-timescale instance of residence-
-pathology in the framework's archive. When a speaker stops
-mid-sentence without warning and holds the silence while staying
-engaged, both parties feel a pressure that accumulates with hold
-duration, is produced by withholding rather than action, and
-discharges through one of three channels (resumption, alternate-
-channel release such as laughter, or decoherence). The candidate
-formalization is P_NP(t) = ∫ f(τ_actual - τ_design) ds on a
-coupled coherence substrate. The dual-EEG experimental prediction
-is that inter-brain beta-phase coupling increases during held
-pauses — counter-intuitive, because silence is often framed as
-relaxation, but predicted by the framework because the
-prediction-machinery loading of both brains against a withheld
-continuation would manifest as intensified coupling. See the
-technical archive memo `negative_pressure_intersubjective.md` for
-the full treatment.
+The framework reads these as instances of public-epistemic residence-pathology under the two-axis observable. States s are interpretive frames; compartments c are information-source clusters. τ_R(s) is the dwell time on an interpretive frame before update under contradicting evidence; π_c is the occupancy probability of source-clusters segregated from contradicting evidence. Pathology is residence in interpretive frames that fail to update under base-rate-relevant evidence (Vosoughi et al. measure this as the cascade-depth advantage of false content), and residence in source-compartments insulated from update (Cinelli et al. measure this as echo-chamber segregation indices). Return-path machinery at this substrate is the set of institutional and cognitive structures that route attention from one source-cluster to another and that re-open closed interpretive frames against contradicting evidence (cross-cutting media consumption, deliberate exposure to source-diverse evidence, institutional fact-checking). When the return-path machinery fails — as the Bail et al. result demonstrates can happen even under nominal cross-exposure — the residence pattern is preserved or deepened.
 
-**8.6.3 Public-epistemic attractor formation.** The framework's
-principle extends to information-ecosystem substrates where the
-attractor-landscape geometry is shaped collectively rather than
-individually. Emergent canal-deepening in public information
-ecosystems — patterns where new events are recruited into a
-pre-existing interpretive attractor regardless of base rates —
-is the public-epistemic instance of residence-pathology. The
-recent "missing scientists" discourse cluster (2024–2026)
-provides a case study in emergent landscape deepening without
-explicit steering: each new death, regardless of actual cause, is
-pulled into the conspiracy-shaped attractor, deepening the canal
-and making future retrievals more likely. The framework's
-technical archive treats this substrate in detail; here we note
-only that the substrate is coherent with the residence-pathology
-principle and fits the two-axis observable (τ_R = dwell time on
-the interpretive frame; π_c = compartmental occupancy in the
-narrative-shape ecosystem).
+Financial-market panic dynamics provide a parallel empirical literature for the same residence-pathology pattern at a related substrate. The econophysics literature on volatility clustering and bubble-and-crash dynamics (Mantegna & Stanley 1999; Sornette 2003) characterizes residence-pathology in market-attention attractors with two decades of quantitative methodology that the two-axis observable inherits. We cite these as further empirical instances of the public-epistemic substrate's broader pattern.
 
 ### 8.7 AI / data substrate — model collapse as return-path failure
 
@@ -1569,8 +1496,7 @@ The framework's therapeutic prescription at this substrate — restore the retur
 
 ### 8.8 Synthesis across the extensions
 
-Nine substrate instances, one principle, one observable, one
-symptom grammar. At each substrate the residence-pathology
+Eight substrate instances — pharmacology, cancer phospho-regulation, autonomic physiology, exercise physiology, brain-network dynamics, memory phenomenology, public-epistemic information ecosystems, AI/data — one principle, one observable, one symptom grammar. At each substrate the residence-pathology
 structure applies: a system with two regimes, explicit return-
 path machinery, and measurable recovery kinetics can fail when
 pathological residence accumulates past design-intent bounds. The
@@ -1639,7 +1565,7 @@ This section states, for each adjacent body of work, what it claims, what we con
 
 ### 9.7 The specific contribution restated
 
-Given the above concessions: this paper's contribution is not the relational ontology at any single substrate, not the residence-time concept at any single substrate, not cross-disorder residence-pathology at the brain level, and not the recovery-time-constant vocabulary. The contribution is the substrate-general two-axis observable R(s, c) = τ_R(s) × π_c together with the symmetric kinetic-stabilization formulation (§5), the return-path-machinery typology (§6), the frustration-without-escape extension (§7), and the demonstration that one observable plus one symptom-grammar resolves residence-pathology across at least nine independently developed substrate vocabularies (§8). This is what is meant by *formal-operational composition*: not new substrate physics at any one level, but the explicit measurable composition rule across levels that prior programs developed in isolation.
+Given the above concessions: this paper's contribution is not the relational ontology at any single substrate, not the residence-time concept at any single substrate, not cross-disorder residence-pathology at the brain level, and not the recovery-time-constant vocabulary. The contribution is the substrate-general two-axis observable R(s, c) = τ_R(s) × π_c together with the symmetric kinetic-stabilization formulation (§5), the return-path-machinery typology (§6), the frustration-without-escape extension (§7), and the demonstration that one observable plus one symptom-grammar resolves residence-pathology across at least eight independently developed substrate vocabularies (§8). This is what is meant by *formal-operational composition*: not new substrate physics at any one level, but the explicit measurable composition rule across levels that prior programs developed in isolation.
 
 ## 10. Audit-Design Template
 
