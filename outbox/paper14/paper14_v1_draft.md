@@ -747,25 +747,396 @@ support individually.
 
 ## 5. Symmetric Formulation of Kinetic Stabilization
 
-[To be drafted. Kelly's tafamidis-kinetic-stabilization framework
-(Bulawa, Kelly et al. 2012) is asymmetric: stabilize the native
-state to extend its dwell. The framework proposed here is
-symmetric: pathology is any residence-where-transit-intended, so
-therapeutic targets include (a) destabilizing the pathological
-state to abolish its temporal residence (symmetric inverse of
-Kelly); (b) routing a protein toward a protective compartment to
-abolish spatial residence in a pathological compartment; (c)
-restoring the return-path machinery that would have bounded
-residence endogenously. All three are residence-time / residence-
-compartment interventions in one rate-equation framework.
-Differentiation from Knowles-Vendruscolo-Dobson "protein metastasis"
-(2014), whose framing has native as kinetic visit and amyloid as
-thermodynamic residence as different states; the framework's thesis
-is more general.]
+The cleanest existing therapeutic strategy in the proteostasis
+literature is **kinetic stabilization**, developed by Kelly and
+colleagues for transthyretin amyloidosis. Bulawa, Kelly et al.
+(2012, *PNAS* 109:9629, doi:10.1073/pnas.1121005109) introduced
+tafamidis, a small molecule that binds the transthyretin tetramer
+at its T4-binding sites and stabilizes the native tetrameric
+state, slowing its dissociation into monomers that would otherwise
+misfold and aggregate. The therapeutic mechanism is to *extend
+the dwell time of the native state*: increase τ_R(s_native) so
+that the equilibrium populates s_native rather than the
+pathological aggregation pathway. Tafamidis has been approved for
+clinical use in multiple transthyretin amyloid syndromes and is
+the paradigmatic kinetic-stabilization drug.
+
+Kelly's formulation is *asymmetric*. The therapeutic move is to
+increase residence in the native state; the pathological state is
+implicitly treated as the absence of native residence rather than
+as a residence-bearing object in its own right. This asymmetry is
+appropriate to the transthyretin biology, where the native tetramer
+and the misfolded monomer are clearly different states with
+clearly different dwell-time targets. But the framework's two-
+axis observable suggests that kinetic stabilization is one
+special case of a more general therapeutic family.
+
+### 5.1 The symmetric formulation
+
+If pathology is residence pattern rather than state identity, then
+therapeutic strategies that alter the residence pattern can
+operate in any of three directions, each of which targets a
+different term in R(s, c) = τ_R(s) × π_c:
+
+**Strategy A — Extend native temporal residence (Kelly).**
+Stabilize τ_R(s_native). Tafamidis is the canonical example. The
+therapeutic target is the native conformational state, and the
+intervention increases its dwell time so the equilibrium favors
+function.
+
+**Strategy B — Destabilize pathological temporal residence
+(symmetric inverse of Kelly).** Reduce τ_R(s_pathological).
+Interventions in this class include conformation-selective
+degraders, immunotherapies targeting pathological conformations
+(such as the antibodies developed against amyloid-β and tau
+oligomeric species), and pharmacological chaperones that
+destabilize aggregation-prone intermediates. The therapeutic
+logic is symmetric to Strategy A: rather than holding the system
+in the functional state, reduce the dwell time in the pathological
+state so the system returns to function more rapidly.
+
+**Strategy C — Route protein away from pathological spatial
+residence.** Reduce π_c(c_pathological). Examples include NES-
+tagged constructs that exclude mutant huntingtin from the nucleus
+(Peters et al. 1999 directly demonstrates this in cell models;
+the principle extends to NES-conjugated bifunctional degraders in
+development); GPI-modification approaches that alter prion
+subcellular localization (theoretical, following Chesebro 2005);
+compartment-selective autophagy inducers that preferentially
+clear protein from one compartment while sparing function in
+another. The therapeutic logic is on the spatial axis rather than
+the temporal axis: the state may persist, but its residence in
+the pathological compartment is abolished or reduced.
+
+**Strategy D — Route protein toward protective spatial residence.**
+Increase π_c(c_protective). The symmetric inverse of Strategy C
+on the spatial axis. Examples include enhanced lysosomal targeting
+in diseases where lysosomal residence permits clearance, or
+selective autophagy-receptor engineering that directs pathological
+conformations to autophagosomal compartments.
+
+**Strategy E — Restore return-path machinery.** Increase the
+endogenous rate at which the system transitions from pathological
+residence back to functional residence, on either axis. Examples
+include HSR/UPR amplification (the arimoclomol class, with
+translational caveats discussed below), chaperone-protein gene
+therapy, autophagy enhancers, and immunomodulatory approaches that
+restore granulostasis or PQC system function. The therapeutic
+logic targets the recovery machinery itself rather than any
+particular state or compartment; the framework predicts this will
+be the most durably effective strategy class but also the hardest
+to engineer, since the machinery operates at multiple scales
+simultaneously.
+
+### 5.2 Differentiation from Knowles-Vendruscolo-Dobson
+
+The most adjacent existing framework is Knowles, Vendruscolo and
+Dobson's *protein metastasis* (Knowles, Vendruscolo & Dobson
+2014, *Nat Rev Mol Cell Biol* 15:384, doi:10.1038/nrm3810). In
+their formulation, the native state is a kinetically metastable
+basin, and the amyloid state is the thermodynamic ground state;
+proteins live functionally in the metastable basin and
+occasionally cross the barrier into the pathological basin, with
+proteostasis machinery returning them. The framework presented
+here differs in three ways.
+
+First, Knowles-Vendruscolo-Dobson treats the native and
+pathological basins as different states. The framework here
+allows that the *same* state can be functional or pathological
+depending on its residence pattern: this is what §3.1 (FUS in
+SGs) and §3.4 (tau in different compartments) demonstrate. The
+FUS in a healthy transient SG and the FUS in a chronic
+pathological SG are not different states; they are the same
+state with different τ_R.
+
+Second, the protein-metastasis framework is implicitly
+asymmetric (native is metastable visit, amyloid is thermodynamic
+residence; the therapeutic strategy is to deepen the metastable
+basin against the pathological one). The framework here is
+symmetric: residence-pathology can be alleviated by extending
+functional residence, abolishing pathological residence, or
+restoring the transit machinery, in any combination.
+
+Third, protein metastasis is substrate-specific (it is a theory
+about proteins). The framework here predicts the same structural
+principle in receptor pharmacology, autonomic regulation, brain-
+network dynamics, and AI/data substrates (see §8). Protein
+metastasis is one instance of the principle the framework names.
+
+### 5.3 Translational caution
+
+The framework's prediction that return-path-machinery restoration
+is the most durable therapeutic strategy is *consistent with*,
+but not *guaranteed by*, the principle. A central translational
+caution is the arimoclomol case: arimoclomol is a heat-shock-
+response amplifier with substantial preclinical data supporting
+proteostasis enhancement, and it has been developed as a candidate
+disease-modifying therapy for amyotrophic lateral sclerosis.
+The ORARIALS-01 phase 3 trial (results reported 2024) was
+negative on its primary endpoint despite the mechanistic
+rationale. The framework treats this as a *cautionary instance*
+rather than a refutation: identifying the principle correctly
+does not guarantee that any specific intervention based on it
+will work, because target engagement, timing, dose, leverage, and
+patient stratification all matter independently. The principle
+says where to look. Whether a given molecule, dose, or schedule
+finds the right point in the residence-pattern landscape is an
+empirical question that the principle does not answer by itself.
 
 ## 6. Return-Path Machinery as a Multiscale Class
 
-[To be drafted. The proteostasis field treats HSP70 ATP-cycling,
+The proteostasis literature has independently developed an
+extensive vocabulary for what we are calling *return-path
+machinery*: HSP70 ATP-dependent client cycling, HSP90 client-
+dwell modulation, ubiquitin-proteasome system (UPS) clearance,
+selective and bulk autophagy, granulostasis (HSPB8-BAG3-HSP70
+for stress-granule disassembly), the heat-shock response (HSR),
+unfolded protein response (UPR), integrated stress response
+(ISR), endoplasmic-reticulum-associated degradation (ERAD),
+endolysosomal sorting, NLS/NES-mediated nucleocytoplasmic
+transport machinery, nuclear pore complex regulation, and
+organelle-specific quality-control systems including mitochondrial
+and peroxisomal PQC. These have historically been treated as a
+heterogeneous toolkit — each with its own substrate specificity,
+its own regulatory logic, its own community of investigators.
+
+We propose that this toolkit, plus three further substrate-specific
+classes, constitutes a single observable category: **non-residence
+enforcement machinery,** characterized by a common observable
+(recovery time constant τ_recovery, or equivalently the dominant
+relaxation rate of the system's return from perturbation) and a
+shared structural role (preventing pathological residence on
+either axis of R(s, c)).
+
+### 6.1 Four substrate-specific machinery classes
+
+**Class 1: Proteostatic return-path machinery.** The proteostasis
+literature listed above. The unit of operation is the protein, and
+the machinery enforces transit between conformational states and
+between subcellular compartments. Failure produces aggregation-
+pathology (Strategy A-E from §5 target this machinery either
+symmetrically or asymmetrically).
+
+**Class 2: Phospho-regulatory return-path machinery.** Protein
+phosphatase 2A (PP2A) and other serine/threonine phosphatases
+function as dephosphorylation resetters that return signaling
+proteins from activated to baseline states; the APC/Axin/GSK3β
+destruction-complex logic enforces protein turnover via phospho-
+dependent ubiquitination; the broader class of E3 ligases acts
+as substrate-turnover machinery. Failure of this class produces
+oncogenic-signaling residence (CIP2A inhibition of PP2A in
+leukemia, for instance, or persistent AKT/MAPK activation in
+tumors).
+
+**Class 3: Autonomic return-path machinery.** The vagal brake and
+baroreflex re-engagement after sympathetic challenge are the
+best-characterized autonomic return mechanisms. The cardiac
+vagal response after acute stress (Souza et al. 2007, Framingham
+Heart Study HRV data) provides a clean observable: reduced HRV
+predicts mortality, and the temporal pattern of vagal recovery
+after a stressor is the direct individual-level recovery-time-
+constant analog at this substrate.
+
+**Class 4: Network-dynamical return-path machinery.** The
+salience network and central executive network mediate switching
+from internal-mode states back to task-positive cognition; task-
+induced deactivation of the default-mode network is the
+observable signature of this return; effective connectivity from
+CEN to DMN under cognitive demand is the directional indicator.
+Failure of this class produces return-to-task-set failure, which
+is what the canalization-of-psychopathology literature names at
+the brain substrate (Carhart-Harris, Chandaria, Friston et al.
+2023).
+
+### 6.2 The common observable
+
+Across all four classes, the same family of observables applies:
+
+- recovery time constant τ_recovery,
+- relaxation rate α = 1/τ_recovery,
+- dominant restoring eigenvalue Re(λ_max) of the linearized
+  return dynamics,
+- dwell-time persistence on the pathological-residence side,
+- substrate-specific instantiations: aggregate clearance flux,
+  baroreflex gain, phospho-state settling time, default-mode
+  dwell time.
+
+This vocabulary is already developed in the engineering-resilience
+and critical-slowing-down literatures (van Nes & Scheffer 2007,
+*Am Nat* 169:738, doi:10.1086/516845; van de Leemput et al. 2014,
+*PNAS* 111:87, doi:10.1073/pnas.1312114110) and in the loss-of-
+complexity framework (Lipsitz & Goldberger 1992, *JAMA* 267:1806).
+These sources establish the mathematical machinery; the
+framework's contribution is *cross-substrate uniformity* — the
+same observable, measured at substrate-appropriate timescales,
+applied to all four machinery classes.
+
+### 6.3 Circuit-specificity discipline
+
+A central discipline of the framework is that return-path framing
+must be **circuit-specific**, not universal. The same regulator
+plays the return-path role in one circuit and the pathological-
+residence-enforcement role in another. GSK3β is the standard
+example: in the Wnt/β-catenin pathway, GSK3β phosphorylates
+β-catenin for degradation, enforcing transit out of the pathological-
+residence state; in the NF-κB / mitosis / survival pathway, GSK3β
+supports oncogenic signaling. PP2A is similarly context-dependent;
+the DT-061 and iHAP1 small-molecule PP2A activators have shown
+mechanism-disputed effects (some reported activity is PP2A-
+independent in subsequent assays).
+
+The framework therefore specifies that pathology is failure of
+the *circuit-specific* return-path operator, not loss of any one
+molecular activity in isolation. A therapeutic strategy that
+restores PP2A activity in a tumor where PP2A acts as return-path
+machinery (CIP2A-positive leukemias, for instance) is a
+residence-restoration intervention; the same molecule used in a
+context where PP2A plays a different role could be ineffective
+or counterproductive. Circuit-level diagnosis precedes machinery-
+restoration therapy.
+
+### 6.4 Allostasis caveat
+
+A second discipline is the *allostatic* caveat (McEwen 1998,
+*Ann NY Acad Sci* 840:33,
+doi:10.1111/j.1749-6632.1998.tb09546.x). Return-path machinery
+does not always return a scalar variable to one invariant
+baseline; healthy systems often shift operating points adaptively.
+The framework defines return-path failure as inability to restore
+*functional controllability* rather than as deviation from a
+specific prior value. A system that adaptively shifts its set-
+point in response to chronic input change is functioning, not
+failing, as long as it can still return to operational range
+after further perturbation. Pathology is the loss of the
+restoration capacity, not the shifted set-point.
+
+This caveat matters operationally because the framework's
+recovery-time-constant observable can in principle be measured
+relative to baseline or relative to a moving target. The
+appropriate referent is the moving target — the current
+functional control manifold — not a fixed historical baseline.
+This is consistent with the FEP / active-inference treatment of
+self-organization (Friston, Levin, Sengupta & Pezzulo 2015,
+doi:10.1098/rsif.2014.1383; Ramstead, Badcock & Friston 2018,
+doi:10.1016/j.plrev.2017.09.001), which the framework treats as
+formal scaffolding for the recovery-kinetics observable even
+though, as discussed in §1, the FEP literature stops short of
+the explicit ontological move the framework makes.
+
+## 7. Frustration Without Escape
+
+Wolynes and Ferreiro have developed an extensive theory of *local
+frustration* in protein folding (Ferreiro et al. 2007, *Proc Natl
+Acad Sci USA* 104:19819; the recent 2025 review Parra, Komives,
+Wolynes & Ferreiro provides a current summary). The framework's
+central observation is that *frustrated* interactions are local
+energetic conflicts that the protein cannot fully satisfy by
+folding into its native state; rather than being defects, these
+frustrated regions are functionally important because they are
+often the sites of conformational flexibility, ligand binding,
+allosteric regulation, and protein-protein interaction interfaces.
+
+Frustration theory is *state-shaped*. It describes which
+interactions are frustrated in a given conformational state, with
+the metric of frustration computed from local energetic conflicts
+between residues. The theory is formally developed and has clinical
+relevance: disease-associated mutations frequently occur at
+frustrated sites, and the patterns of frustration distinguish
+functional ensembles from pathological ones.
+
+### 7.1 Extension to residence-shaped frustration
+
+The framework proposes a complementary extension: *frustration
+without escape*. Frustration theory describes the existence of
+local energetic conflict in a state; the framework's extension
+describes how long the system *resides* in the frustrated
+configuration before the conflict is resolved.
+
+In the healthy regime, a protein visits frustrated configurations
+transiently as part of normal function (catalysis, allosteric
+response, binding-partner exchange). The frustrated configuration
+is a transit state with bounded τ_R. The return-path machinery
+(chaperones, allosteric communication, conformational flexibility)
+resolves the frustration on functional timescales.
+
+In the pathological regime, frustration without escape:
+
+- the system visits the same frustrated configurations, but
+  τ_R(s_frustrated) escapes its design-intent bounds;
+- the return-path machinery that would have resolved the
+  frustration is impaired or absent;
+- the prolonged residence in the frustrated state allows
+  alternative pathways to populate (oligomerization, aberrant
+  protein-protein interactions, allosteric capture by
+  pathological partners).
+
+The pathology is not the frustration itself — frustration is
+physiological. The pathology is the failure to escape it.
+
+### 7.2 Position relative to the published frustration literature
+
+"Frustration without escape" as an explicit framework concept is
+not found in the published frustration theory literature at the
+time of writing. We do not claim that Wolynes-Ferreiro
+collaborators are unaware that frustration must be resolved on
+functional timescales — this is implicit in the theory's
+functional framing. What is not made explicit is the
+residence-time treatment of frustration as a separate analytical
+level: an "escape rate from frustration" or "frustration-dwell-
+time distribution" as a measurable quantity that distinguishes
+healthy from pathological proteins beyond the static frustration
+metric.
+
+The framework's extension is therefore a refinement of
+frustration theory rather than a competitor. We propose that
+frustration-dwell-time profiles are diagnostic for residence-
+pathology in the proteostasis substrate, and that the same
+structural principle (transit-state residence becoming pathological
+residence) operates across the cross-substrate cases discussed in
+§8. Pre-submission, we will circulate a courtesy preprint to the
+Wolynes and Ferreiro laboratories so that the relationship between
+frustration theory and the framework's extension can be calibrated
+by the principal authors of the underlying theory.
+
+### 7.3 Why this matters for the framework
+
+Frustration without escape is the framework's most precise
+statement of the residence-pathology principle at the proteostasis
+substrate, because it gives an exact mechanistic content to
+"residence past design intent." The design intent is the
+functional transit time across the frustrated configuration; the
+pathological extension is the integrated residence in the same
+configuration. The metric is concrete: dwell time on frustrated
+residues, measured by molecular-dynamics simulations or by
+experimental approaches such as hydrogen-deuterium exchange.
+Where existing frustration theory characterizes the static map of
+local conflicts in a protein, the framework's extension provides
+the dynamical observable that distinguishes healthy from
+pathological dynamics on that map.
+
+## 8. Cross-Substrate Extensions
+
+[DRAFT CONTINUATION NOTE: The old scaffolding for sections 6 and
+7 remains below in this file and should be cleaned up in a later
+editing pass. Sections 6 and 7 above are the current v1 prose;
+the material below starting with the old section 6 scaffolding is
+superseded and should be deleted before submission. Section 8.7
+prose for AI/data substrate was drafted in the 30e3681 commit and
+appears further down in the file. This drafting session continues
+with the other section 8 subsections.]
+
+### 8.1 Pharmacology (Copeland lineage) — placeholder, drafted elsewhere
+
+[Drafting continues from here in the next session. Sections 8.1–8.6
+have scaffolding further down the file; 8.7 AI/data is drafted in
+full prose; section 8.8 synthesis is short. Restructuring into
+clean v1.1 order is a post-v1-complete editorial task.]
+
+## [LEGACY SCAFFOLDING BELOW — DO NOT USE, SUPERSEDED BY §§5–7 ABOVE]
+
+## 6. Return-Path Machinery as a Multiscale Class
+
+[OLD SCAFFOLDING — superseded by §6 above. The proteostasis field treats HSP70 ATP-cycling,
 HSP90 client-dwell, UPS turnover, autophagy clearance,
 granulostasis (Alberti et al. 2017), HSR/UPR/ISR, ERAD,
 endolysosomal sorting, NLS/NES systems, and nuclear pore complex
