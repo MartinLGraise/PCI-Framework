@@ -109,23 +109,21 @@ The G₂ / octonion mathematical-physics interpretation of R(s, c) is deferred t
 
 ## Citation
 
-Graise, M. L. (2026). *Paper 14 — Residence Where Transits Were Design Intent: A Cross-Substrate Formalism for Coupling-Failure Pathology* (v1.6 preprint). Zenodo. DOI: [to be assigned after deposit].
+Graise, M. L. (2026). *Paper 14 — Residence Where Transits Were Design Intent: A Cross-Substrate Formalism for Coupling-Failure Pathology* (v1.6 preprint). Zenodo. [https://doi.org/10.5281/zenodo.20145811](https://doi.org/10.5281/zenodo.20145811)
 
-Once the deposit is published, replace `[to be assigned after deposit]` with the live DOI.
-
-BibTeX (template — fill in DOI after publish):
+BibTeX:
 
 ```bibtex
 @misc{graise2026paper14v16,
   author       = {Graise, Martin L.},
-  title        = {Paper 14 \\u2014 Residence Where Transits Were Design Intent:
+  title        = {Paper 14 --- Residence Where Transits Were Design Intent:
                   A Cross-Substrate Formalism for Coupling-Failure Pathology
                   (v1.6 preprint)},
   year         = 2026,
   publisher    = {Zenodo},
   version      = {v1.6},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {https://doi.org/10.5281/zenodo.XXXXXXX},
+  doi          = {10.5281/zenodo.20145811},
+  url          = {https://doi.org/10.5281/zenodo.20145811},
   note         = {Tag paper14-v1.6-preprint at github.com/MartinLGraise/PCI-Framework. Cross-substrate residence-pathology formalism; PCI Framework series.}
 }
 ```
@@ -155,11 +153,11 @@ Zenodo will mint a new concept-DOI plus a v1.6 version DOI. Note both for the ci
 
 ## Post-publish GitHub steps
 
-1. Replace `XXXXXXX` placeholder in `README_v1.6.md` citation block and BibTeX with the live DOI.
+1. Live DOI: **[10.5281/zenodo.20145811](https://doi.org/10.5281/zenodo.20145811)** — back-filled into citation block and BibTeX above on 2026-05-12.
 2. Tag the commit:
 
 ```bash
-git tag -a paper14-v1.6-preprint -m "Paper 14 v1.6 first Zenodo deposit, DOI 10.5281/zenodo.XXXXXXX"
+git tag -a paper14-v1.6-preprint -m "Paper 14 v1.6 first Zenodo deposit, DOI 10.5281/zenodo.20145811"
 git push origin paper14-v1.6-preprint
 ```
 

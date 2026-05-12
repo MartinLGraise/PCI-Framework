@@ -36,7 +36,7 @@ sending.
 > ORCID: 0009-0006-8003-3938
 > margraise1000@icloud.com
 > Repository: github.com/MartinLGraise/PCI-Framework
-> Most recent published paper (Paper 12 v1.4): https://doi.org/10.5281/zenodo.20093296
+> Most recent published papers:<br/>Paper 12 v1.4 — https://doi.org/10.5281/zenodo.20093296<br/>Paper 14 v1.6 — https://doi.org/10.5281/zenodo.20145811
 
 ---
 
@@ -71,7 +71,7 @@ positions the contribution as cross-substrate composition.
 > - The "killer experiment" proposed at §11.2 Experiment 10 (ketanserin-truncation during psilocybin to test residence-on-target as the relevant variable). This experiment requires no new technology and is designed to falsify the residence-pathology reading of psychedelic action; I would value your assessment of whether it is well-posed in the current trial-design landscape.
 > - Whether the proposed §10 Audit-Design Template (substrate-general adaptation of Copeland's four-point design) would be useful as a publication standard for residence-pathology claims in the psychedelics-clinical-trial literature, where Experiment 11 (clinical occupancy-to-dynamics PK/PD model) is the most direct application.
 >
-> Attached is the v1.5 draft as PDF. Repository at github.com/MartinLGraise/PCI-Framework. The framework is part of an independent research series (PCI Framework, most recent published paper Paper 12 v1.4 at https://doi.org/10.5281/zenodo.20093296); Paper 14 is being prepared for Cell Systems with NRN and PLOS Computational Biology as desk-reject fallbacks.
+> Attached is the v1.5 draft as PDF. Repository at github.com/MartinLGraise/PCI-Framework. The framework is part of an independent research series (PCI Framework, most recent published papers Paper 12 v1.4 (https://doi.org/10.5281/zenodo.20093296) and Paper 14 v1.6 (https://doi.org/10.5281/zenodo.20145811)); Paper 14 is being prepared for Cell Systems with NRN and PLOS Computational Biology as desk-reject fallbacks.
 >
 > I am sharing this as courtesy before public posting on Zenodo and journal submission, so you can object to the framing, correct misattribution, or decline citation if you prefer.
 >
@@ -115,7 +115,7 @@ contribution as operational rather than interpretational.
 > - Whether the Page-Wootters citation at §8.6.1 is correctly applied — the framework reads time-as-coupling as a coordinate instance shared by physics foundations and memory phenomenology, but I am cautious about overreading the Page-Wootters mechanism beyond its quantum-foundations context.
 > - Whether the planned Paper 15 (G₂ / octonion mathematical-physics derivation, deferred from Paper 14) is a research direction you would find well-posed for the relational interpretation, or whether you would view it as a substrate where RQM-style operational primacy precludes a further algebraic structural realization.
 >
-> Attached is the v1.5 draft as PDF. Repository at github.com/MartinLGraise/PCI-Framework. The framework is part of an independent research series (PCI Framework, most recent published paper Paper 12 v1.4 at https://doi.org/10.5281/zenodo.20093296).
+> Attached is the v1.5 draft as PDF. Repository at github.com/MartinLGraise/PCI-Framework. The framework is part of an independent research series (PCI Framework, most recent published papers Paper 12 v1.4 (https://doi.org/10.5281/zenodo.20093296) and Paper 14 v1.6 (https://doi.org/10.5281/zenodo.20145811)).
 >
 > I am sharing this as courtesy before public posting on Zenodo and journal submission, so you can object to the framing, correct misattribution, or decline citation if you prefer.
 >
@@ -159,7 +159,7 @@ parallel rather than competitive.
 > - Whether the proposed §10 audit-design template (substrate-general adaptation of pharmacology's Copeland framework) would be useful for the diverse-intelligence research program where readout-standardization across substrates is methodologically central.
 > - Any closure threats to the framework's cross-substrate composition claim that I have not surfaced from the diverse-intelligence literature directly.
 >
-> Attached is the v1.5 draft as PDF. Repository at github.com/MartinLGraise/PCI-Framework. The framework is part of an independent research series (PCI Framework, most recent published paper Paper 12 v1.4 at https://doi.org/10.5281/zenodo.20093296).
+> Attached is the v1.5 draft as PDF. Repository at github.com/MartinLGraise/PCI-Framework. The framework is part of an independent research series (PCI Framework, most recent published papers Paper 12 v1.4 (https://doi.org/10.5281/zenodo.20093296) and Paper 14 v1.6 (https://doi.org/10.5281/zenodo.20145811)).
 >
 > I am sharing this as courtesy before public posting on Zenodo and journal submission, so you can object to framing, correct misattribution, or decline citation.
 >
