@@ -316,8 +316,20 @@ the other axis carries the pathological signal. The other two
 cannot be described with a single axis at all: the same protein
 in the same organism produces qualitatively different diseases
 depending on both its conformational dwell and its compartmental
-occupancy. Demonstrating the joint necessity of the two axes is
-the empirical core of this paper.
+occupancy. Demonstrating the joint necessity of the two axes is the empirical core of this paper.
+
+The four cases are summarized in Table 1 before the detailed treatment of each, so that the structural argument is visible at a glance.
+
+**Table 1.** Four canonical disease cases mapped to the two-axis residence observable.
+
+| Case | Protein / system | Temporal axis (τ_R) | Spatial axis (π_c) | Why this case requires the noted axes |
+|---|---|---|---|---|
+| 3.1 | FUS in stress granules | **Necessary** | Less central | Persistent residence in granule state (granule "aging" to gel) is the proximal pathology; granule compartmental address is approximately constant |
+| 3.2 | PrP topology | Less central | **Necessary** | Pathological signal is membrane-topology / compartmental rerouting (±TM versus secreted versus GPI-anchored); state-level conformation alone is insufficient |
+| 3.3 | Huntingtin nuclear vs mitochondrial residence | **Necessary** | **Necessary** | Same mHtt protein produces qualitatively different pathology depending jointly on conformational dwell and compartmental occupancy; single-axis description collapses the distinction |
+| 3.4 | Tau multi-compartment mislocalization | **Necessary** | **Necessary** | Three distinct spatial regimes (axonal, somatodendritic, extracellular) each combined with RNP-condensate residence on the temporal axis; pathology grammar requires both axes simultaneously |
+
+The pure-axis cases (3.1, 3.2) establish that each axis carries independent empirical content: a one-axis observable would either fail to detect FUS pathology (if it tracked only π_c) or PrP pathology (if it tracked only τ_R). The both-axes cases (3.3, 3.4) establish that no one-axis observable suffices for the full clinical heterogeneity: the same protein produces distinct diseases under different combinations of dwell and occupancy that no single dimension can distinguish. The two-axis structure is therefore necessary rather than convenient. The remainder of §3 develops each case in detail.
 
 ### 3.1 FUS in stress granules — pure temporal-axis case
 
@@ -1639,6 +1651,30 @@ Thirteen experiments are proposed below, organized into two clusters: cross-subs
 ### 11.3 Tractability summary
 
 Experiments 1, 3, 4, 8, 10, 12, 13 are tractable with current technology in mid-sized academic-cohort designs (n = 60-200). Experiments 2, 5, 6, 7, 11 require larger cohorts or multi-site coordination but do not require new instrumentation. Experiment 9 requires medicinal-chemistry pre-work to develop or identify the matched-exposure varied-k_off panel and is therefore the most tractability-bounded of the agenda.
+
+### 11.4 Sample-size justifications
+
+Sample-size targets specified above derive from standard power-analytic considerations applied to the framework's primary effect-size predictions. The justifications below are summary; full power-analysis worksheets accompanying any pre-registration of each experiment will be deposited alongside the registration.
+
+**Experiment 1 (n = 80).** The cross-substrate correlation prediction is r > 0.4 (Pearson) on each pairwise comparison among at least four substrate-specific recovery time constants. With n = 80, a single pairwise correlation has 80% power to detect r = 0.4 at α = 0.05 two-sided. The four-substrate design produces six pairwise correlations; under the multiple-comparison correction appropriate for this exploratory design (Benjamini-Hochberg, q = 0.05), n = 80 remains adequate for the *pattern* prediction that the majority of pairwise correlations exceed r = 0.4 with the average across pairs significantly different from zero. The cross-correlation matrix structure is the primary test, not any individual pair.
+
+**Experiment 2 (n = 60 + 60).** The depression-versus-control comparison on HRV recovery τ typically shows Cohen's d in the 0.5–0.7 range (per published HRV-and-depression meta-analyses); on DMN return-to-task-set τ typical effect sizes are d = 0.4–0.6. With n = 60 per group, two-sided independent-samples t-tests have 80% power to detect d ≥ 0.52 at α = 0.05. The additivity-of-predictors hypothesis is the primary test (incremental R² from adding the second predictor) and requires the same total sample for adequate power under typical multimodal-prediction effect sizes.
+
+**Experiment 5 (n = 200, two-year longitudinal).** For relapse-prediction at 24 months in first-episode major depression with ~40% expected relapse rate (concordant with FE-MDD longitudinal literature), n = 200 yields ~80 events. Cox regression with a single composite-index predictor (cross-substrate τ-composite) requires roughly 10–20 events per predictor for stable estimation; n = 200 supports a composite predictor plus 3–4 covariate adjustments. Comparison of cross-substrate composite to single-substrate predictors uses nested-Cox c-index improvement with non-parametric bootstrap, for which n = 200 has been shown sufficient in cardiovascular-risk-composite literature.
+
+**Experiment 6 (n = 50 per clinical group, four groups + controls).** The Cohen's d ≥ 0.3 effect-size improvement target requires n ≈ 50 per group for 80% power at α = 0.05 two-sided when comparing the composite-index group-separation against the best single-substrate component using paired comparisons within subjects. The four-clinical-group design (depression, anxiety, post-stroke depression, frontotemporal dementia) supports both omnibus and pairwise differentiation tests.
+
+**Experiment 7 (n = 30–40 per arm, four arms).** The intervention-convergence prediction is that all three active arms improve the cross-substrate composite at six weeks post-randomization, with effect-size pattern of substrate-targeted > cross-substrate-transfer > none in waitlist. With n = 35 per arm (total n = 140), 80% power exists to detect d = 0.6 within-arm pre-post improvement at α = 0.05; cross-arm pattern tests via mixed-effects regression are powered for the predicted ordinal pattern under realistic effect-size assumptions.
+
+**Experiment 11 (PK/PD model within active trial).** Sample size is bounded by the host trial; the PK/PD secondary-analysis design typically requires n ≥ 30 with serial sampling for stable parameter estimation, achievable within current psilocybin-for-depression trials. The residence-time-derived predictor's incremental explanatory value over peak-occupancy predictor is the primary test, evaluated by likelihood-ratio in the nested PK/PD model.
+
+Experiments 3, 4, 8, 9, 10, 12, 13 have their sample-size targets governed by substrate-specific or assay-specific considerations rather than by cohort-level effect-size detection; the host design (cell-line replicates, animal-model n, single-arm psychedelic-cohort n) determines the achievable power, and pre-registration worksheets will specify these per experiment at the time of registration.
+
+### 11.5 Pre-registration commitment
+
+Experiments 2, 5, 6, 7, and 11 will be pre-registered on the Open Science Framework (OSF) prior to data collection. Pre-registration will specify primary and secondary endpoints, planned analyses, sample-size justifications including the worksheets summarized in §11.4, planned subgroup analyses, and the falsification conditions stated in each experiment's main-text description. Experiments 1, 3, 4, 8, 10, 12, and 13 will be pre-registered when their substrate-specific designs are finalized in collaboration with appropriate domain laboratories; for the cell-line and TMS-EEG experiments, this means at the point of laboratory-specific protocol agreement rather than at the design-level proposal stage of this paper. Experiment 9 cannot be pre-registered at the cross-design level until the matched-exposure varied-k_off agonist panel exists; medicinal-chemistry pre-work is the rate-limiting step.
+
+The pre-registration commitment is part of the framework's broader audit-design discipline (§10): residence-pathology claims should be evaluated against pre-specified falsification conditions rather than against post-hoc reframing. The experimental agenda is offered as a falsification program, not as confirmation theater.
 
 ## 12. Implications
 
