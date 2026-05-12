@@ -1116,21 +1116,474 @@ pathological dynamics on that map.
 
 ## 8. Cross-Substrate Extensions
 
-[DRAFT CONTINUATION NOTE: The old scaffolding for sections 6 and
-7 remains below in this file and should be cleaned up in a later
-editing pass. Sections 6 and 7 above are the current v1 prose;
-the material below starting with the old section 6 scaffolding is
-superseded and should be deleted before submission. Section 8.7
-prose for AI/data substrate was drafted in the 30e3681 commit and
-appears further down in the file. This drafting session continues
-with the other section 8 subsections.]
+The framework's central claim is that residence-pathology is a
+substrate-general principle: where the four canonical disease
+cases in §3 sit within the proteostasis substrate, the same
+two-axis observable R(s, c) = τ_R(s) × π_c and the same return-
+path-machinery structure apply wherever a system has (a) both
+regimes available, (b) explicit return-path machinery, and (c)
+measurable recovery kinetics. This section demonstrates the claim
+across seven further substrates, each of which has independently
+developed its own residence-pattern vocabulary without, to our
+knowledge, being united under a single formalism.
 
-### 8.1 Pharmacology (Copeland lineage) — placeholder, drafted elsewhere
+The substrates are presented in order of decreasing biological
+scale: receptor pharmacology at the molecular scale (§8.1),
+cancer phospho-regulation at the cellular-signaling scale (§8.2),
+autonomic physiology at the organ-system scale (§8.3), exercise
+physiology at the whole-organism scale (§8.4), large-scale brain
+network dynamics (§8.5) with its psychedelic-restoration subcase
+(§8.5.1), PCI phenomenology at the first-person scale (§8.6), and
+the AI/data substrate at the human-technology coupling scale
+(§8.7). Each subsection follows a common structure: identify the
+substrate's residence-pattern observable, identify its return-
+path machinery, cite substrate-level prior art for the principle
+(which is often extensive but not cross-substrate), and note the
+specific way in which the framework's two-axis formalism extends
+what the substrate literature already possesses.
 
-[Drafting continues from here in the next session. Sections 8.1–8.6
-have scaffolding further down the file; 8.7 AI/data is drafted in
-full prose; section 8.8 synthesis is short. Restructuring into
-clean v1.1 order is a post-v1-complete editorial task.]
+### 8.1 Pharmacology — the Copeland residence-time paradigm
+
+Drug-receptor binding kinetics provides the cleanest single
+substrate for the residence-pathology principle because the
+visits-versus-residence distinction is already explicit in the
+literature. Tummino & Copeland (2008, *Biochemistry* 47:5481,
+doi:10.1021/bi8002023) established the framework of *residence
+time* τ = 1/k_off as the decision variable in drug discovery,
+rather than equilibrium affinity K_d. In an open system (such as
+the body, where drug concentration fluctuates with absorption,
+distribution, metabolism, and excretion), what matters for
+efficacy is how long the drug stays bound when free drug
+concentrations fall below dissociation levels, not how tightly it
+binds at equilibrium.
+
+Bosma et al. (2017, *Front Pharmacol* 8:667,
+doi:10.3389/fphar.2017.00667) demonstrated this at H1 histamine
+receptors using a series of clinically used antihistamines. Their
+data show Spearman ρ = -1.0 between receptor-recovery time and
+k_off (perfect rank correlation with residence time), but only
+ρ = -0.6 between receptor-recovery time and equilibrium affinity.
+The framework reads this as direct experimental demonstration
+that τ_R(s_bound) is the dominant observable on the pharmacology
+substrate, with the spatial axis π_c approximately constant
+(receptor compartment). Casarosa et al. (2009, *JPET* 330:660) and
+Sykes et al. (2017, *Nat Commun* 8:763) extend the demonstration
+to muscarinic M3 and dopamine D2 receptors respectively.
+
+Vauquelin's rebinding work (Vauquelin & Van Liefde 2005; Vauquelin
+2016) adds a second axis: for some drugs, micro-pharmacokinetic
+rebinding (re-association after dissociation within a diffusion-
+limited local neighborhood) matters as much as or more than the
+intrinsic off-rate. This introduces a spatial-residence component
+to receptor pharmacology — occupancy probability in the tissue
+compartment where rebinding is efficient — which maps directly
+onto the framework's π_c axis.
+
+Return-path machinery on this substrate is receptor desensitization,
+internalization, and recycling, which enforces that receptor
+occupancy returns to baseline on physiological timescales.
+Pathology on this substrate is prolonged receptor engagement past
+design-intent bounds — either by drugs with pathologically long
+residence times, by receptors with impaired desensitization, or
+by persistent agonist exposure that overwhelms recovery capacity.
+
+The pharmacology literature thus already has the visits-versus-
+residence distinction explicit, with residence-time observable,
+rebinding-mediated spatial contribution, and return-path machinery
+all named. What it does not have is the cross-substrate
+unification: the claim that the same formalism applies to protein
+aggregation, autonomic regulation, or brain-network dynamics. The
+framework's contribution at this substrate is citation and
+uniformity rather than novelty.
+
+### 8.2 Cancer phospho-regulation
+
+Cancer signaling provides a cellular-scale demonstration of the
+residence-pathology principle with well-characterized return-path
+machinery. Oncogenic signaling frequently involves *persistent
+phosphorylation* of substrates whose normal function requires
+transient phospho-activation followed by rapid dephosphorylation.
+The return-path machinery is the protein-phosphatase system,
+principally protein phosphatase 2A (PP2A), which acts as the
+dephosphorylation resetter for many oncogenic kinase substrates
+including Akt, MAPKs, c-Myc, and β-catenin.
+
+PP2A is frequently inactivated in cancer, not by loss of
+expression but by *endogenous inhibitors* — CIP2A and SET — that
+bind the PP2A holoenzyme and sequester it from its substrates.
+CIP2A overexpression is observed in a majority of solid tumors
+and hematologic malignancies; its inhibition of PP2A produces
+persistent c-Myc, AKT, and ERK phosphorylation, locking the
+cancer cell in proliferative-signaling residence. SET similarly
+sequesters PP2A in leukemias. The therapeutic strategy of SET
+antagonism (with molecules such as OP449) or SMAP-class small-
+molecule activators of PP2A (SMAPs) aims to restore the
+dephosphorylation return path.
+
+An orthogonal machinery node is the APC/Axin/GSK3β destruction
+complex, which phosphorylates β-catenin to mark it for ubiquitin-
+mediated degradation. In Wnt-dependent cancers (colon cancer in
+particular), APC mutations destroy the destruction complex and
+prevent β-catenin return to baseline; β-catenin residences in
+the nuclear-signaling state and drives oncogenic transcription.
+
+The framework reads both pathologies as return-path-machinery
+failure at the phospho-regulatory substrate: PP2A inhibition
+reduces the dephosphorylation rate for multiple kinase substrates;
+APC loss reduces the degradation rate for β-catenin. The
+resulting pathology is persistent residence in phosphorylated /
+stabilized states that were designed to be transient.
+
+Circuit-specificity discipline applies strictly here. PP2A is a
+return-path operator in most oncogenic contexts, making its
+restoration anti-proliferative; but PP2A loss in other contexts
+has been associated with different pathologies, and the DT-061
+and iHAP1 small-molecule activators have shown mechanism-disputed
+activity (some reported effects are PP2A-independent in
+subsequent assays). GSK3β provides the clearest contextual
+reversal: in Wnt/β-catenin signaling GSK3β enforces transit out
+of pathological residence, while in NF-κB / mitosis / survival
+signaling GSK3β supports persistent activation. The framework
+predicts that therapeutic targeting must be circuit-matched to
+the return-path role in the patient's specific cancer.
+
+### 8.3 Autonomic physiology — the vagal brake
+
+Autonomic regulation of heart rate and blood pressure provides
+the best-characterized organ-system-scale instance of the return-
+path-machinery principle. The cardiovascular system is constantly
+perturbed by behavior, stress, exercise, postural change, and
+environmental demands; the vagal brake and baroreflex machinery
+enforces return to baseline on seconds-to-minutes timescales.
+Heart rate variability (HRV), particularly its high-frequency
+component that reflects parasympathetic (vagal) tone, is the
+direct individual-level recovery-time-constant analog for this
+substrate.
+
+Framingham Heart Study data (Tsuji et al. 1996, *Circulation*
+94:2850) established that reduced HRV predicts all-cause and
+cardiac mortality in population cohorts. The temporal pattern of
+vagal recovery after acute stress (Souza et al. 2007; many later
+replications) provides a clean experimental handle: subjects
+perform a stressful task, heart rate elevates, and the time
+constant of recovery to baseline is a measurable property that
+varies across individuals and across health states. Slower
+recovery predicts worse outcomes across multiple cardiovascular
+and metabolic endpoints.
+
+The framework reads this directly. The pathological regime is
+prolonged sympathetic-drive residence without adequate
+parasympathetic return. The return-path machinery is the vagal
+brake and baroreflex. The observable is the recovery time constant
+of cardiac autonomic tone after perturbation. Interventions that
+augment the return path — HRV biofeedback, vagal-nerve stimulation
+(VNS), controlled breathing practices, cold exposure — produce
+measurable improvements in the recovery observable and downstream
+clinical outcomes.
+
+A clinical anchor for the cross-substrate claim comes from
+neutrophil immunology. CXCR4 is a chemokine receptor that mediates
+reverse-migration return of activated neutrophils from inflamed
+tissue back to bone marrow for clean apoptosis. JAM-C regulates
+neutrophil reverse transendothelial migration; the LTB4-BLT1 axis
+controls directional swarming. Healthy inflammation resolution
+requires return-path machinery operating cleanly; in acute
+pancreatitis-associated lung injury, reduced JAM-C expression
+enables neutrophils to leak back into the circulation in
+pathological patterns that spread inflammation to distal organs.
+A 2022 *Nature Reviews Immunology* analysis frames reverse
+neutrophil migration as a "double-edged sword" — resolution when
+return is clean, pathology when return is corrupted. This is the
+framework's boundary-KKT structure (Paper 12) translated directly
+to immune cells, with real disease, real mortality data, and
+named molecular machinery.
+
+### 8.4 Exercise physiology — endogenous versus operator-sustained boundary operation
+
+Exercise physiology provides a whole-organism instance of the
+residence-pathology principle with a specific distinction between
+healthy and pathological residence that the framework names
+precisely. Sustained high-intensity exercise places the organism
+at a physiological boundary — against VO2max, against glycogen
+depletion, against pH buffering limits, against thermoregulatory
+ceilings. This is boundary operation in the Paper 12 sense
+(§3.6 boundary-KKT residence).
+
+The healthy case is *endogenous* boundary operation with intact
+return-path machinery. The athlete pushes against the ceiling; PCr
+depletion, rising H+ from glycolysis, and sympathetic-drive
+exhaustion cumulatively enforce return from the boundary to a
+recovery regime; glycogen replenishes, pH buffers restore,
+parasympathetic tone re-engages; the next training stimulus can
+then be applied to an adapted baseline. The adaptations of
+athletic conditioning — improved mitochondrial density, increased
+glycogen storage, expanded buffering capacity, enhanced vagal
+tone — are downstream of iterated visit-and-return.
+
+The pathological case is *operator-sustained* boundary operation
+in which pharmacological or behavioral operators silence the
+return-path cutoffs. Chronic stimulant use (caffeine,
+amphetamines, pre-workout stacks) silences the sympathetic-drive-
+exhaustion cutoff. Chronic exogenous ketosis or pH buffer loading
+silences the acidosis cutoff. Chronic over-caloric training under
+anabolic support silences the energy-depletion cutoff. The system
+continues at the boundary past the point where return would
+naturally occur; residence accumulates; maladaptive remodeling
+follows. The specific instance developed in the framework's
+technical archive (`cross_domain_saturation_collapse.md`) is
+athletic-performance stimulant stacking in powerlifters and
+combat-sports athletes, with cardiac remodeling and arrhythmia
+patterns as downstream consequences.
+
+The two axes of R(s, c) map onto this substrate cleanly. The
+temporal axis τ_R(s_boundary) captures how long the organism
+resides at the physiological ceiling before return-machinery
+reasserts. The spatial axis π_c captures which compartments
+(cardiac, skeletal-muscle, hepatic, neuroendocrine) are over-
+occupied by the boundary-regime metabolic state. Health is visits
+with intact return (τ_R bounded by endogenous cutoffs); pathology
+is operator-sustained residence (τ_R pharmacologically extended
+past those cutoffs). The framework's prescription at this
+substrate — respect the endogenous cutoffs, cultivate the return
+path, refuse operator-sustained boundary residence — is
+consistent with both standard sports-medicine periodization
+advice and with the framework's cross-substrate principle.
+
+### 8.5 Large-scale brain network dynamics — return-to-task-set
+
+Human psychopathology has developed the most explicit cross-
+disorder residence-pathology framing of any substrate outside
+proteostasis. Carhart-Harris, Chandaria, Friston et al. (2023,
+*Neuropharmacology* 226:109398,
+doi:10.1016/j.neuropharm.2022.109398) introduced the *canalization*
+framework, in which "cognitive and behavioral phenotypes that are
+regarded as psychopathological are canalized features of mind,
+brain, or behavior that have come to dominate an individual's
+psychological state space." They explicitly cross-apply this to
+depression, obsessive-compulsive disorder, addiction, post-
+traumatic stress disorder, eating disorders, psychosis, and
+somatoform conditions. Juliani, Safron & Kanai (2024, *Neurosci
+Conscious* niae005, doi:10.1093/nc/niae005) refine the framework
+into *Deep CANALs*, distinguishing Type-A inference-level
+canalization from Type-B synaptic-weight landscape canalization.
+
+Canalization is direct brain-substrate prior art for the
+framework's residence-pathology principle, and we cite it
+proximately (see §1). The framework extends canalization in
+three ways at this substrate.
+
+First, we propose an **individual-level formal observable**
+R(s, c) = τ_R(s) × π_c predictive of treatment outcome at the
+per-subject level. The closest existing observables are group-
+level: Singleton et al. (2022, *Nat Commun* 13:5812,
+doi:10.1038/s41467-022-33578-1) develops receptor-informed
+network control theory at the cross-individual correlation level;
+Vohryzek et al. (2024, *Brain Commun* 6:fcae049,
+doi:10.1093/braincomms/fcae049) fits group-averaged Hopf models
+for psilocybin responders and non-responders. Vidaurre's HMM
+Fisher kernel (Vidaurre, Smith & Woolrich 2017,
+doi:10.1073/pnas.1705120114) is individual-level for cognitive
+traits but has not been applied to psychedelic treatment outcome.
+R(s, c) with subject-specific dwell-time τ_R and compartmental
+(network-state) occupancy π_c fits as individual-level predictor.
+
+Second, we sharpen the framing from **static DMN hyperconnectivity**
+to **return-to-task-set failure**. The depression literature does
+not actually support the simplified claim that depression is
+static default-mode-network hyperconnectivity; Wise et al. (2017)
+found DMN instability in depression rather than hyperstability;
+the REST-meta-MDD consortium found mixed and sometimes *reduced*
+within-DMN functional connectivity in recurrent MDD. What is
+consistent across the literature is *impaired suppression of DMN
+under task demand*, *prolonged dwell in internally-oriented
+network states*, and *reduced switching to task-positive network
+configurations*. This is return-path failure at the network-
+dynamical substrate: the observable is the time constant of
+transition from DMN-dominant to task-positive-dominant state
+following a cognitive demand cue, and pathology is prolonged
+τ_R(s_DMN) past design-intent bounds.
+
+Third, we integrate the Paper 12 v1.4 substrate-side demonstration
+of §3.5 smooth-interior and §3.6 boundary-KKT residence topology
+as the formal model of the canalization claim. This is discussed
+further in §8.6 (PCI phenomenology).
+
+#### 8.5.1 Psychedelic restoration of transitions
+
+Psychedelic therapy provides a specific instance of return-path-
+machinery restoration at the network-dynamical substrate. The
+framework reads the therapeutic mechanism as the one-sentence
+claim from the pharmacology-to-psychedelics synthesis (Lane 4 of
+the framework's prior-art surveys): "Copeland pharmacology teaches
+that efficacy can depend on how long a target remains occupied
+through biologically relevant intervals; psychedelic systems
+neuroscience increasingly teaches that therapy can depend on how
+easily the brain moves between recurrent states, not on whether
+it visits some wholly unprecedented region-defined state."
+
+Lane 4 documented a five-link mechanism chain from 5-HT2A
+receptor occupancy (molecular scale) to phenomenology
+(first-person scale), with established literature at each link:
+drug concentration → bound receptor fraction → residence pattern
+→ downstream signaling timing → network-level gain and coupling
+→ state-space geometry (dwell times, transition barriers,
+hierarchy flattening) → phenomenology and therapeutic outcome.
+
+The explicit-restoration cluster of citations is load-bearing:
+Doss et al. (2021, psilocybin in MDD increased cognitive
+flexibility four-plus weeks post-treatment with increased ACC-PCC
+dynamic FC); Singleton et al. (2022) control-energy lowering for
+state transitions under LSD and psilocybin; Daws et al. (2022,
+psilocybin decreased modularity and increased global integration);
+Nardou et al. (2023, mouse: psychedelics reopened social-reward-
+learning critical period with oxytocin-LTD metaplastic
+restoration); Vohryzek et al. (2024, whole-brain modeling
+identifying regions mediating depressive-to-healthy transitions);
+Deco et al. (2024, psilocybin and escitalopram rebalance brain
+dynamics via different mechanisms); Siegel et al. (2024,
+longitudinal precision fMRI showing persistent reduction in
+anterior-hippocampus to DMN connectivity). Precursor papers
+(Carhart-Harris 2014 entropic brain; Tagliazucchi 2014 wider
+repertoire; Lord 2019 metastable exploration; Luppi 2021 LSD
+integration-segregation) establish the landscape-diversity claim
+but do not themselves establish explicit restoration.
+
+A critical three-level dissociation caveat attends this
+subsection. Ort et al. (2023) showed that psilocybin increases
+spontaneous state-sequence diversity without increasing
+perturbational complexity (PCI); Casali et al. (2013) and
+Sarasso et al. (2015) established that spontaneous LZc and PCI
+measure different things at the consciousness-research level
+(spontaneous LZc asks "how diverse is the trajectory at rest?",
+PCI asks "how rich is the response when forced to transition?").
+These are not the same observable. Paper 14 specifies that
+residence-pathology framing targets the dwell-time observable,
+which is most closely related to Casali-PCI "transition capacity"
+than to spontaneous LZc "rest diversity." Psychedelics acutely
+change spontaneous state diversity (Level 1), probably change
+plasticity substrate (Level 3, Nardou), but do not necessarily
+change perturbational complexity in the same way (Level 2). The
+framework claims residence-pathology at the dwell-time-and-
+transition-capacity level, and does not conflate this with rest-
+trajectory entropy.
+
+### 8.6 PCI phenomenology
+
+The PCI (Perceptual-Coherence Intelligence) phenomenology
+substrate provides the first-person instance of the residence-
+pathology principle. Paper 12 v1.4 established the §3.5 smooth-
+interior / §3.6 boundary-KKT topology at the substrate-level
+demonstration. Flow states are characterized by brief §3.6
+touches with intact return to §3.5 interior; rumination,
+depression, and chronic stuck-thought-loops are characterized by
+§3.6 residence without §3.5 recovery. This is the
+phenomenological instance of the network-dynamical pathology
+described in §8.5.
+
+Three subsections expand the phenomenological treatment.
+
+**8.6.1 Memory as dimensional tether.** Memory retrieval is not
+playback from storage; it is *product-space coupling* between
+present coherence and past echo. The reconsolidation literature
+(Nader, Schafe & LeDoux 2000, *Nature* 406:722; Schiller et al.
+2010; Agren et al. 2012) established experimentally that
+retrieved memories enter a labile state and must be re-stabilized
+by new protein synthesis, modified by the current state during
+retrieval. The constructive-memory tradition (Schacter, Addis &
+Buckner 2007; Barsalou 2008; earlier Bartlett 1932) consolidates
+the evidence that memory retrieval is simulation rather than
+playback. The false-memory paradigm (Loftus & Palmer 1974) is the
+structural proof: false memories are insertable by influencing
+retrieval conditions, which would be impossible if retrieval were
+factor-space playback. Predictive-processing accounts (Henson &
+Gagnepain 2010; Friston extensions) and Damasio's (1999)
+autobiographical-self architecture complete the picture: the self
+that persists through time is a continuously renewed coupling
+between present coherence and residual echo structure, not a
+stored entity.
+
+This treatment connects to orthodox foundations-of-physics work
+on time as a coupling-derived rather than backdrop phenomenon
+(Page & Wootters 1983, *Phys Rev D* 27:2885; recent extensions
+to gravitational time dilation and 3+1 spacetime emergence
+2022–2025). The claim that time itself is relational appears in
+physics foundations and appears in the phenomenology of memory;
+the framework treats these as coordinate instances of the
+coupling-through-time principle.
+
+Four memory-coupling pathology subtypes fit within the framework:
+grief (forced un-coupling where the coupling target has lost its
+other pole), nostalgia (over-coupling to a past axis with
+canalized retrieval valence), regret (anti-coupled coupling held
+against current-axis), and post-traumatic stress disorder
+(canalized retrieval coupling where each re-triggering instantiates
+the product-space of present-threat-detection and past-echo,
+deepening the canal with each retrieval).
+
+**8.6.2 Intersubjective negative pressure.** Conversational
+coupling provides the fastest-timescale instance of residence-
+pathology in the framework's archive. When a speaker stops
+mid-sentence without warning and holds the silence while staying
+engaged, both parties feel a pressure that accumulates with hold
+duration, is produced by withholding rather than action, and
+discharges through one of three channels (resumption, alternate-
+channel release such as laughter, or decoherence). The candidate
+formalization is P_NP(t) = ∫ f(τ_actual - τ_design) ds on a
+coupled coherence substrate. The dual-EEG experimental prediction
+is that inter-brain beta-phase coupling increases during held
+pauses — counter-intuitive, because silence is often framed as
+relaxation, but predicted by the framework because the
+prediction-machinery loading of both brains against a withheld
+continuation would manifest as intensified coupling. See the
+technical archive memo `negative_pressure_intersubjective.md` for
+the full treatment.
+
+**8.6.3 Public-epistemic attractor formation.** The framework's
+principle extends to information-ecosystem substrates where the
+attractor-landscape geometry is shaped collectively rather than
+individually. Emergent canal-deepening in public information
+ecosystems — patterns where new events are recruited into a
+pre-existing interpretive attractor regardless of base rates —
+is the public-epistemic instance of residence-pathology. The
+recent "missing scientists" discourse cluster (2024–2026)
+provides a case study in emergent landscape deepening without
+explicit steering: each new death, regardless of actual cause, is
+pulled into the conspiracy-shaped attractor, deepening the canal
+and making future retrievals more likely. The framework's
+technical archive treats this substrate in detail; here we note
+only that the substrate is coherent with the residence-pathology
+principle and fits the two-axis observable (τ_R = dwell time on
+the interpretive frame; π_c = compartmental occupancy in the
+narrative-shape ecosystem).
+
+### 8.7 AI / data substrate — model collapse as return-path failure
+
+[This subsection was drafted in the 30e3681 commit. Its prose
+follows below in the file under the existing heading "8.7 AI and
+data substrate — model collapse as return-path failure"; see
+there for full content.]
+
+### 8.8 Synthesis across the extensions
+
+Nine substrate instances, one principle, one observable, one
+symptom grammar. At each substrate the residence-pathology
+structure applies: a system with two regimes, explicit return-
+path machinery, and measurable recovery kinetics can fail when
+pathological residence accumulates past design-intent bounds. The
+two-axis observable R(s, c) = τ_R(s) × π_c captures the
+measurable signal; the return-path-machinery typology (§6)
+captures the mechanism of restoration; the frustration-without-
+escape extension (§7) captures the most precise formal statement
+at the proteostatic substrate. The cross-substrate claim is not
+metaphor. Each substrate has its own independently developed
+vocabulary for residence patterns; the framework names the
+uniformity that those vocabularies collectively describe.
+
+[LEGACY SCAFFOLDING BELOW — to be cleaned up before v1 submission.
+The old scaffolding duplicated after §7 is the material that
+preceded this drafting pass; sections 8.1–8.6 and 8.8 above
+supersede it. Section 8.7 prose from 30e3681 should be moved
+into its proper position when cleanup happens.]
 
 ## [LEGACY SCAFFOLDING BELOW — DO NOT USE, SUPERSEDED BY §§5–7 ABOVE]
 
