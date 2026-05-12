@@ -11,31 +11,7 @@ and courtesy-preprint circulation per the three-tier schedule in
 
 ## Abstract
 
-Relation-first ontology has been independently established at
-multiple substrates: in fundamental physics through relational
-quantum mechanics (Rovelli 1996) and ontic structural realism
-(French & Ladyman 2003); in biology through autopoiesis (Maturana
-& Varela 1980), relational biology (Rosen 1991), closure-of-
-constraints (Mossio & Montévil 2015), and active inference
-(Friston 2010, Friston et al. 2015-2025); at the brain-substrate
-level for cross-disorder psychopathology through canalization
-theory (Carhart-Harris, Chandaria, Friston et al. 2023); and
-philosophically through process metaphysics (Whitehead 1929) and
-individuation theory (Simondon 1958). What has not been established
-is a single explicit measurable coupling-first observable and
-structural realization that integrates these substrate-level
-relational ontologies into one empirically tractable formalism,
-with a downstream pathology grammar. This paper contributes that
-formal-operational composition. We introduce an individual-level two-axis residence-time observable R(s, c) = τ_R(s) × π_c, combining temporal dwell in a state s with spatial / compartmental occupancy probability π_c. Pathology corresponds to R escaping substrate-specific functional residence bounds in either axis, with s and c possibly unchanged. The accumulation observable R is reported paired with the exit-rate variable λ_exit(s, c) = 1/τ_R(s, c), which captures the return-path-machinery capacity that pathological residence indicates has failed; a normalized form \(\tilde{R}(s, c)\) and a log-residence deviation Δ_R(s, c) make the formalism substrate-portable. We demonstrate the formalism across eight substrates: receptor pharmacology, proteostasis (with both temporal condensate-aging and spatial compartmental-mislocalization cases), cancer phospho-regulation, autonomic physiology, exercise physiology, large-scale brain network dynamics, memory phenomenology and public-epistemic attractor dynamics in information ecosystems, and recursive AI/data training loops. Four canonical
-disease cases (FUS in stress granules, PrP topology, Huntingtin
-nuclear-versus-mitochondrial residence, tau multi-compartment
-mislocalization) demonstrate that the two-axis observable is
-necessary rather than optional: single-axis observables cannot
-distinguish them. We propose a cross-substrate experimental program
-of thirteen experiments with a common recovery-time-constant
-observable. We offer the framework as explicit integration of
-modular prior art rather than as first articulation of any
-substrate-level claim.
+Many biological, cognitive, and artificial systems enter transient states that are normal when briefly sampled but pathological when residence persists. We introduce a two-axis residence-time observable R(s, c) = τ_R(s) × π_c, combining temporal dwell τ_R in state s with compartmental occupancy probability π_c, paired with an exit-rate variable λ_exit(s, c) = 1/τ_R(s, c) that captures the return-path-machinery capacity. Pathology corresponds to R escaping substrate-specific functional residence bounds on either axis, with s and c possibly unchanged; a normalized form Δ_R(s, c) = log(τ_R/τ_0) + log(π_c/π_0) makes the observable substrate-portable. Four canonical disease cases (FUS in stress granules, PrP topology, Huntingtin nuclear-versus-mitochondrial residence, tau multi-compartment mislocalization) establish that two axes are empirically necessary: single-axis observables collapse clinically relevant distinctions. We demonstrate the formalism across eight substrates spanning receptor pharmacology, proteostasis, cancer phospho-regulation, autonomic physiology, exercise physiology, large-scale brain network dynamics, memory phenomenology and public-epistemic information ecosystems, and recursive AI/data training loops. We position the contribution as the formal-operational composition of relation-first prior art (Rovelli, French & Ladyman, Maturana & Varela, Friston, Carhart-Harris-Chandaria-Friston, Whitehead, Simondon, Copeland) into one empirically tractable formalism with a substrate-uniform return-path-failure pathology grammar, not as a first articulation of relation-first ontology at any single substrate. A cross-substrate experimental program of thirteen experiments with binary falsification conditions, organized into recovery-kinetics and pharmacology-to-psychedelics-bridge clusters, is proposed; five are designated for OSF pre-registration.
 
 ## 1. Introduction
 
