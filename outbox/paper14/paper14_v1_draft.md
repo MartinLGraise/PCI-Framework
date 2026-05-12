@@ -318,7 +318,7 @@ in the same organism produces qualitatively different diseases
 depending on both its conformational dwell and its compartmental
 occupancy. Demonstrating the joint necessity of the two axes is the empirical core of this paper.
 
-The four cases are summarized in Table 1 before the detailed treatment of each, so that the structural argument is visible at a glance.
+The four cases are summarized in Table 1 before the detailed treatment of each, so that the structural argument is visible at a glance. Figure 1 plots the same four cases in the two-axis observable plane, showing how each case escapes the functional residence bounds along its own characteristic axis.
 
 **Table 1.** Four canonical disease cases mapped to the two-axis residence observable.
 
@@ -771,6 +771,8 @@ program of diagnostic, prognostic, and therapeutic work across
 substrates that the current substrate-specific literatures cannot
 support individually.
 
+*See Figure 4 for the visual summary of the five symmetric strategies introduced below.*
+
 ## 5. Symmetric Formulation of Kinetic Stabilization
 
 The cleanest existing therapeutic strategy in the proteostasis
@@ -908,6 +910,8 @@ patient stratification all matter independently. The principle
 says where to look. Whether a given molecule, dose, or schedule
 finds the right point in the residence-pattern landscape is an
 empirical question that the principle does not answer by itself.
+
+*See Figure 3 for the four-panel typology of return-path machinery classes elaborated below, with their shared exit-rate observable λ_exit = 1/τ_R(s,c).*
 
 ## 6. Return-Path Machinery as a Multiscale Class
 
@@ -1480,6 +1484,8 @@ The framework's therapeutic prescription at this substrate — restore the retur
 
 ### 8.8 Synthesis across the extensions
 
+*Figure 2 presents the cross-substrate grammar in a single matrix: eight substrates, six columns (state, compartment, τ_R observable, π_c observable, return-path machinery, canonical pathology), one principle.*
+
 Eight substrate instances — pharmacology, cancer phospho-regulation, autonomic physiology, exercise physiology, brain-network dynamics, memory phenomenology, public-epistemic information ecosystems, AI/data — one principle, one observable, one symptom grammar. At each substrate the residence-pathology
 structure applies: a system with two regimes, explicit return-
 path machinery, and measurable recovery kinetics can fail when
@@ -1574,6 +1580,8 @@ For any new substrate proposed to exhibit residence-pathology under the framewor
 We propose this template as a publication standard for residence-pathology claims, parallel to how pharmacological residence-time work has matured toward standardized reporting (Copeland audit-design, Bosma et al. 2017 audit-design as exemplary). The standardization is what makes cross-substrate composition empirically tractable rather than metaphorical.
 
 ## 11. Cross-Domain Experimental Agenda
+
+*Figure 5 organizes the thirteen experiments below by cluster, tractability tier, and dependency.*
 
 Thirteen experiments are proposed below, organized into two clusters: cross-substrate recovery-kinetics experiments (eight; from Lane 1) and pharmacology-to-psychedelics bridge experiments (five; from Lane 4). Each experiment is designed to falsify a specific component of the framework. All are tractable with current technology except where noted.
 
