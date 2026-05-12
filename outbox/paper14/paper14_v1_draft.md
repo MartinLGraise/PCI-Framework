@@ -292,59 +292,458 @@ substrate-neutral terms.
 
 ## 3. Four Canonical Disease Cases
 
+We present four canonical disease cases from the proteostasis
+literature. Each case is independently well-characterized in its
+own field; what the framework contributes is the observation that
+the two-axis observable R(s, c) = τ_R(s) × π_c is *necessary*
+rather than optional to describe them. Two of the four cases are
+"pure" in the sense that one axis is approximately constant and
+the other axis carries the pathological signal. The other two
+cannot be described with a single axis at all: the same protein
+in the same organism produces qualitatively different diseases
+depending on both its conformational dwell and its compartmental
+occupancy. Demonstrating the joint necessity of the two axes is
+the empirical core of this paper.
+
 ### 3.1 FUS in stress granules — pure temporal-axis case
 
-[To be drafted in v1 continuation. Covers Patel et al. 2015
-demonstration of aberrant phase transitions in ALS; Wolozin &
-Ivanov 2019 chronic persistent stress granules; Zhang et al. 2019
-optogenetic decoupling showing chronic SG assembly is intrinsically
-cytotoxic. The FUS conformational state is unchanged; only τ_R
-changes. π_c is approximately constant (the SG compartment).]
+Stress granules (SGs) are membraneless condensates that form in
+response to cellular stress, containing mRNA, RNA-binding proteins,
+and translation initiation factors. Under physiological conditions
+they assemble rapidly, sequester translationally stalled mRNAs
+during stress, and disassemble upon stress resolution, typically
+on minute-to-hour timescales. The RNA-binding protein FUS (fused
+in sarcoma) partitions reversibly between the nucleoplasm and
+stress granules as part of its normal function in transcription
+regulation and DNA damage response.
 
-### 3.2 PrP topology and GPI anchoring — pure spatial-axis case
+Patel et al. (2015, *Cell* 162:1066, doi:10.1016/j.cell.2015.07.047)
+established that ALS-associated mutations in FUS drive an aberrant
+phase transition from liquid-like droplets to fibrillar aggregates
+over time. Wild-type FUS forms dynamic droplets that exchange
+rapidly with the surrounding cytoplasm; mutant FUS forms droplets
+that progressively lose dynamic exchange and mature into persistent
+fibrillar assemblies. Critically, the conformational state of FUS
+in its liquid-like and fibrillar phases differs in dwell time
+rather than in its position within the cell: FUS is still in the
+SG compartment in both cases. What changes is τ_R.
 
-[To be drafted. Covers Hegde et al. 1998 transmembrane PrP →
-disease; Chesebro et al. 2005 anchorless PrP → amyloid without
-scrapie (dissociates deposition from toxicity — the cleanest
-single experiment in neurodegeneration); Solomon et al. 2011
-mutant PrP requires plasma-membrane localization for toxicity;
-Gatdula et al. 2026 membrane-anchored PrP^Sc. Same sequence;
-different π_c; different disease. τ_R approximately constant.]
+Wolozin and Ivanov (2019, *Nat Rev Neurosci* 20:649,
+doi:10.1038/s41583-019-0222-5) consolidated the evidence that
+"stress granules should be transient; in neurodegeneration they
+become chronic persistent." Vanderweyde et al. (2012,
+*J Neurosci* 32:8270, doi:10.1523/JNEUROSCI.1592-12.2012) had
+already established that transient SG formation is necessary for
+cellular function, while hyperactive or prolonged SG formation
+leads to persistent SGs that nucleate pathological aggregation of
+tau, FUS, TDP-43, and other proteins.
+
+The most direct experimental demonstration of the framework's
+claim is Zhang et al. (2019, *eLife* 8:e39578,
+doi:10.7554/eLife.39578), which used optogenetic tools to
+independently control whether SGs formed and how long they
+persisted, in the absence of any cellular stressor. By decoupling
+SG assembly from its normal upstream triggers, the authors showed
+that chronic or chronic-intermittent SG assembly is *intrinsically*
+cytotoxic — meaning the pathology arises from the temporal
+residence pattern of the condensate itself, not from the stress
+that would normally trigger it. The SG substrate is unchanged. FUS
+and the other SG constituents are in their normal compartment.
+Only τ_R is pathological.
+
+For the framework's observable: in this case R(s, c) = τ_R(s_SG)
+× π_c(SG-compartment) reduces approximately to τ_R alone, because
+π_c is held constant by the biology. Pathology corresponds to
+τ_R(s_SG) escaping its design-intent bounds — dwell time in the
+SG state persisting well past the timescale at which normal
+stress resolution would have disassembled the condensate.
+Recovery-path machinery at this substrate is the granulostasis
+system described by Alberti et al. (2017, *Front Mol Neurosci*
+10:84, doi:10.3389/fnmol.2017.00084) — the HSPB8-BAG3-HSP70 axis
+that enforces SG disassembly and is the only explicitly named
+non-residence enforcement subsystem in the proteostasis
+literature. Paper 14 §6 argues that the full proteostasis
+machinery (HSR/UPR/ISR, chaperone cycles, UPS, autophagy) should
+be understood as the broader class of which granulostasis is one
+explicit instance.
+
+This is the cleanest *temporal*-axis case in the proteostasis
+literature. Pytel & Fromm Longo (2025) state that proteostasis
+governs "timing, location, and stoichiometry." The FUS-in-SG case
+isolates timing, holding location approximately constant.
+
+### 3.2 PrP topology and membrane anchoring — pure spatial-axis case
+
+The prion protein PrP is a glycosylphosphatidylinositol (GPI)
+anchored cell-surface protein with multiple alternative topologies
+that are normally suppressed. The PrP^C native form is attached to
+the outer leaflet of the plasma membrane via its GPI anchor, with
+its polypeptide chain facing the extracellular space. Under
+mutation or stress, alternative topologies become populated:
+^Ntm PrP (N-terminus in the cytosol, C-terminus extracellular),
+^Ctm PrP (C-terminus in cytosol), cytosolic PrP (no membrane
+association), and the scrapie form PrP^Sc which may remain
+anchored or become released.
+
+The spatial-axis case has the cleanest causal-localization
+experiments in all of neurodegeneration. Hegde et al. (1998,
+*Science* 279:827, PMID 9452375) showed that mutations shifting
+PrP to the transmembrane ^Ctm topology produce disease even when
+the protein's conformational state is otherwise unremarkable. The
+pathology is spatial: the same peptide chain, differently
+positioned with respect to the membrane, produces different
+phenotypes.
+
+Chesebro et al. (2005, *Science* 308:1435, PMID 15933194) ran the
+single most decisive experiment in the field: they generated
+transgenic mice expressing PrP with no GPI anchor (anchorless PrP,
+which cannot attach to the plasma membrane). After infection with
+prion strains, these mice accumulated large amounts of PrP^Sc
+amyloid deposits — substantially more than controls — but did not
+develop classical scrapie disease. **The deposition and the
+toxicity dissociated completely.** Anchorless PrP that would be
+pathogenic in the membrane-resident configuration was
+non-pathogenic (though still amyloidogenic) when its spatial
+residence was forced away from the plasma membrane. This is the
+canonical demonstration that *location, not presence,* is the
+disease-determining variable.
+
+Subsequent work refined the specificity of the claim. Solomon et
+al. (2011, *J Biol Chem* 286:14724,
+doi:10.1074/jbc.M110.214973) established that mutant PrP toxicity
+requires plasma-membrane localization: redirecting mutant PrP
+away from the plasma membrane abolished its toxicity. Fehlinger
+et al. (2017, *Sci Rep* 7:7756,
+doi:10.1038/s41598-017-07260-2) showed that different prion
+strains use different endocytic routing, and Gatdula et al.
+(2026, *PLOS Pathogens* 22:e1013911,
+doi:10.1371/journal.ppat.1013911) demonstrated that membrane-
+anchored PrP^Sc is the proximate trigger of synaptotoxicity,
+rather than PrP^Sc released into the extracellular space. Across
+these studies, the consistent principle is that PrP pathology is
+a function of spatial residence: which compartment, with what
+orientation, and with what membrane association.
+
+For the framework's observable: in this case R(s, c) = τ_R(s) ×
+π_c(compartment) reduces approximately to π_c alone, because τ_R
+is held approximately constant (PrP folding kinetics are not the
+variable of interest across the topology studies). Pathology
+corresponds to π_c escaping its design-intent bounds — occupancy
+shifted from "GPI-anchored on outer plasma-membrane leaflet" to
+any of several alternative configurations (transmembrane,
+cytosolic, non-anchored amyloid in tissue).
+
+This is the cleanest *spatial*-axis case. The Chesebro 2005
+experiment is a lighthouse for the framework's claim because it
+directly proves that deposition of even large amounts of
+pathological material is insufficient for disease; what is
+required is residence in the pathogenic compartment. Single-axis
+temporal observables would treat anchored and anchorless PrP^Sc
+as "the same state with the same dwell time" and would predict
+the same pathology. The experimental result is that they produce
+qualitatively different outcomes. The two-axis observable
+predicts this.
 
 ### 3.3 Huntingtin nuclear versus mitochondrial residence — both-axes case
 
-[To be drafted. Covers Saudou et al. 1998 nuclear huntingtin →
-apoptosis; Peters et al. 1999 adding NES decreases / adding NLS
-increases huntingtin toxicity (direct compartmental-residence
-manipulation); Yablonska et al. 2025 N17 phosphorylation regulates
-mutant Htt mitochondrial targeting. Same mutant protein; different
-compartments; different toxic mechanisms; temporal metastability
-also varies; single-axis observables cannot distinguish nuclear
-from mitochondrial pathology.]
+Huntington's disease (HD) is caused by an expanded CAG repeat in
+the huntingtin gene (*HTT*), producing mutant huntingtin (mHtt)
+protein with a polyglutamine tract longer than ~35 residues. The
+same mutant protein — same sequence, same conformational ensemble
+at the molecular level — produces two partially independent
+toxic phenotypes that cannot be described by a single axis of
+the framework's observable.
+
+The nuclear-residence axis. Saudou et al. (1998, *Cell* 95:55,
+PMID 9778247) showed that mutant huntingtin induces apoptosis in
+cultured neurons, and that this toxicity depends on nuclear
+localization. Peters et al. (1999, *Mol Cell Neurosci* 14:121,
+PMID 10532806) extended this by appending heterologous nuclear
+localization signals (NLS) or nuclear export signals (NES) to
+mHtt in cultured cells. Adding an NLS, which drives mHtt into
+the nucleus, *increased* toxicity. Adding an NES, which excludes
+mHtt from the nucleus, *decreased* toxicity. This was direct
+causal-localization manipulation: the same protein, made to reside
+in different compartments, produced different disease severity.
+The finding has been replicated in multiple in vivo systems;
+it is a settled result.
+
+The mitochondrial-residence axis. More recent work (Yablonska
+et al. 2025, PMID 39779371; and earlier literature on mHtt-
+mitochondrial interactions through the early 2020s) has
+established that mutant huntingtin also associates with the
+mitochondrial outer membrane and interferes with mitochondrial
+dynamics, respiratory function, and apoptosis signaling. Yablonska
+et al. specifically showed that N17-domain phosphorylation
+regulates whether mHtt targets mitochondria, and that reducing
+mitochondrial mHtt residence ameliorates toxic phenotypes
+independent of changes to nuclear residence. This is a second,
+partially independent spatial-residence axis of pathology.
+
+The temporal-residence axis is also non-trivial. The polyglutamine
+tract drives a slow conformational aggregation pathway with
+oligomeric intermediates, protofibrils, and mature fibrils. Which
+kinetic species dominates, and how long it dwells, varies with
+CAG-repeat length, cellular context, and chaperone engagement.
+The Wolynes-school aggregation-funnel literature (Thirumalai,
+Schuler, Wetzel, and successors) has characterized this dwell-
+time landscape extensively. The phenotypic consequences of
+different dwell-time regimes are active research.
+
+**This is a both-axes case.** Single-axis observables cannot
+distinguish nuclear mHtt pathology from mitochondrial mHtt
+pathology, even though the experimental literature has
+established they are partially independent. The same protein, the
+same aggregation kinetics, but different compartmental residence
+— different disease. The two-axis observable R(s, c) predicts and
+captures this: the *s* axis captures the conformational-kinetic
+contribution, and the *c* axis captures the nuclear-vs-
+mitochondrial contribution. Both are needed. A therapeutic
+strategy that abolishes nuclear mHtt residence (e.g., via NES-
+conjugated degraders) would address one axis; a strategy that
+abolishes mitochondrial mHtt residence (e.g., via N17-
+phosphorylation manipulation) would address the other. The
+framework predicts that maximum therapeutic effect requires both.
 
 ### 3.4 Tau multi-compartment mislocalization — both-axes case
 
-[To be drafted. Temporal component: Ash et al. 2021 / Jiang et al.
-2019 TIA1-tau condensate toxicity. Spatial component: Ittner et al.
-2010 dendritic tau mediates Aβ toxicity; Hoover et al. 2010 tau
-spine mislocalization → synaptic dysfunction; Lester et al. 2021
-tau → nuclear speckle mislocalization; Yuan et al. 2026 tau
-oligomers → nuclear lamina invagination. Three spatial residence
-regimes, each producing distinct toxic mechanisms in the same
-protein.]
+The microtubule-associated protein tau is normally an axonal
+protein that stabilizes microtubules in neurons. In tauopathies
+(Alzheimer's disease, frontotemporal dementia, progressive
+supranuclear palsy, and others), tau undergoes multiple pathological
+transformations: hyperphosphorylation, conformational changes,
+oligomerization, fibrillization, and — critically for the framework
+— mislocalization from axons to at least three distinct
+alternative compartments, each associated with different toxic
+phenotypes. This is the most complex of the four cases and most
+clearly requires the joint two-axis observable.
+
+The dendritic spine axis. Ittner et al. (2010, *Cell* 142:387,
+doi:10.1016/j.cell.2010.06.036) demonstrated that tau mediates
+amyloid-β toxicity specifically through its mislocalization to
+dendritic spines, where it facilitates postsynaptic signaling
+dysregulation via Fyn kinase. Tau-knockout mice are protected
+from Aβ-induced toxicity, and the protective effect is rescued by
+re-expression of tau but not by re-expression of a tau mutant that
+cannot access dendritic spines. Hoover et al. (2010, *Neuron*
+68:1067, PMID 21172610) showed that tau mislocalization to
+dendritic spines directly causes synaptic dysfunction, and that
+this mislocalization precedes overt tau aggregation. The
+pathology is spatial: tau in the axon is functional; tau in the
+dendritic spine compartment is pathogenic.
+
+The RNP / condensate axis. Ash et al. (2021, *PNAS* 118:
+e2014188118, doi:10.1073/pnas.2014188118) and Jiang et al.
+(2019, *Acta Neuropathol Commun* 7:72) established that tau
+participates in liquid-liquid phase separation together with
+TIA-1 and other stress-granule-associated proteins, and that this
+condensate formation potentiates tau aggregation. The RNP-tau
+condensate is a qualitatively different compartment from both
+axonal and dendritic-spine tau, with distinct assembly dynamics
+and distinct toxic mechanisms. At this compartment, temporal
+residence (how long tau remains in the condensate before it
+either disassembles back to soluble tau or matures into fibrils)
+is the dominant variable.
+
+The nuclear axis. Lester et al. (2021, *Neuron* 109:1675, PMID
+33848474) showed that tau aggregates mislocalize nuclear speckle
+components and disrupt nuclear pore complex function. More
+recently, Yuan et al. (2026, *Acta Neuropathol* 147:113,
+doi:10.1007/s00401-026-02979-7) demonstrated that oligomeric tau
+produces nuclear lamina invagination, disrupting nuclear
+architecture. This is a third qualitatively distinct spatial
+residence regime for tau, with yet another set of toxic
+mechanisms.
+
+**Tau therefore produces at least three qualitatively distinct
+toxic phenotypes corresponding to three different compartmental
+residence regimes, plus a fourth temporal-residence contribution
+from RNP-condensate dynamics.** No single-axis observable can
+capture this. A purely temporal observable — treating tau as a
+conformational ensemble with some dwell-time distribution —
+collapses dendritic-spine, RNP-condensate, and nuclear tau into
+one pooled measurement and cannot distinguish their therapeutic
+implications. A purely spatial observable — treating tau as a
+compartment-occupancy measurement — misses the RNP-condensate
+temporal-dwell contribution entirely, because the RNP condensate
+is a transient assembly whose pathology depends on residence
+time, not just occupancy probability.
+
+The two-axis observable R(s, c) handles this case directly. Each
+of the three spatial regimes contributes a distinct π_c(c_i)
+term (c_dendritic, c_RNP, c_nuclear), and the RNP-condensate
+regime contributes a temporal term τ_R(s_condensate) that is
+pathology-critical independent of which compartment is occupied.
+The framework's therapeutic prediction is circuit-specific: an
+intervention that reduces dendritic-spine tau will not help with
+nuclear-envelope pathology, and vice versa; maximum therapeutic
+efficacy in a given patient requires matching the intervention
+to the patient's dominant residence-regime signature. This is
+consistent with clinical heterogeneity across tauopathies and
+suggests a diagnostic stratification strategy based on
+residence-regime profiling rather than on total tau burden.
+
+### 3.5 Summary: two axes, four cases, one framework
+
+The four cases jointly demonstrate what the framework's two-axis
+observable captures that single-axis approaches miss:
+
+| Case | τ_R contribution | π_c contribution | Single-axis sufficient? |
+|---|---|---|---|
+| 3.1 FUS in stress granules | Dominant (dwell past disassembly) | Constant (SG compartment) | Yes, temporal-only |
+| 3.2 PrP topology | Constant | Dominant (membrane-anchor configuration) | Yes, spatial-only |
+| 3.3 mHtt nuclear vs mitochondrial | Variable (aggregation kinetics) | Partitioned (nucleus vs mitochondria) | **No** |
+| 3.4 Tau multi-compartment | Variable (RNP-condensate dynamics) | Partitioned (dendritic, RNP, nuclear) | **No** |
+
+Cases 3.1 and 3.2 are "pure" in the sense that one axis is
+approximately held constant by the biology, which allows
+single-axis observables to describe them. Cases 3.3 and 3.4 have
+both axes actively contributing, and single-axis observables
+*necessarily* collapse distinctions that the experimental
+literature has established are real and therapeutically
+relevant. R(s, c) = τ_R(s) × π_c is the minimal formalism that
+covers all four.
+
+The cross-class observation that emerges from these cases, which
+we develop in the next section, is that the same two-axis
+residence-pathology structure recurs across at least the
+proteostatic substrate, with the expectation that it generalizes
+to substrates where relation-first ontology has been independently
+established (see §8 for the cross-substrate demonstration).
 
 ## 4. The Cross-Class Unifying Claim
 
-[To be drafted. All four canonical cases instantiate the same
-two-axis residence-pathology principle. Three mechanistic rules
-recur across the four spatial-axis classes (from the Lane 3
-ChatGPT Pro synthesis, generalizable beyond proteostasis):
-residence sets the local physicochemical regime; residence sets
-the accessible interactome and signaling space; residence selects
-the operative quality-control / return-path-machinery node. The
-cross-class claim is that these three rules, together with the
-two-axis observable, generate a substrate-uniform residence-
-pathology grammar.]
+The four canonical cases in §3 cover four distinct disease
+classes: condensate-pathology (FUS in stress granules), prion-
+class topology pathology (PrP), polyglutamine expansion disorder
+(huntingtin), and tauopathy. These classes have historically been
+studied separately, with their own conferences, their own model
+systems, their own therapeutic-target lists, and their own
+communities of investigators. The observation we develop in this
+section is that all four are coordinate instances of one
+structural principle: pathology in each case is the residence
+pattern of states and compartments whose transient occupancy was
+the biological design intent, rather than the identity of the
+states or compartments themselves.
+
+### 4.1 Three mechanistic rules recur
+
+Reading the spatial-residence cases across all four disease
+classes, three mechanistic rules recur, each of which has
+established primary literature in its own subfield and which
+together constitute the principle the framework names. These
+rules are descriptive observations, not novel claims; we name
+them here to make explicit that they recur across the four
+classes.
+
+**Rule 1 — Residence sets the local physicochemical regime.**
+Acidic endosomes drive amyloid-precursor-protein β-cleavage
+differently from neutral cytoplasm (Das et al. 2013); ER topology
+gates which PrP topomers can form (Hegde et al. 1998); RNP-
+condensate chemistry potentiates tau oligomerization (Ash et al.
+2021); the mitochondrial outer-membrane environment supports
+different mHtt toxic interactions than the nucleus (Yablonska et
+al. 2025). The protein's residence determines what physicochemistry
+is acting on it, and that physicochemistry shapes which states
+are populated and which interactions are accessible.
+
+**Rule 2 — Residence sets the accessible interactome and signaling
+space.** Postsynaptic tau accesses Fyn kinase signaling that
+axonal tau cannot (Ittner et al. 2010); surface PrP accesses prion-
+specific neurotoxic signaling pathways that cytosolic or anchorless
+PrP cannot (Solomon et al. 2011); nuclear huntingtin accesses
+chromatin and transcription factors that cytoplasmic huntingtin
+cannot (Saudou et al. 1998; Peters et al. 1999); stress granule-
+resident proteins access translation-regulation machinery that
+soluble nuclear or cytoplasmic versions of the same proteins do
+not. The protein's residence determines what other molecular
+partners it can engage, and that interactome shapes which
+signaling consequences are possible.
+
+**Rule 3 — Residence selects the operative quality-control or
+return-path-machinery node.** ER-resident misfolded proteins are
+subject to ER-associated degradation (ERAD); endolysosomal
+proteins are subject to endolysosomal sorting and degradation;
+cytosolic and nuclear proteins are subject to the cytosolic-
+nuclear chaperone-proteasome system and selective autophagy;
+organelle-resident proteins are subject to organelle-specific
+proteostasis (mitochondrial PQC, peroxisomal PQC, and so on);
+SG-resident proteins are subject to granulostasis (Alberti et
+al. 2017). The protein's compartmental residence determines which
+proteostasis network is responsible for clearing or refolding it,
+and failure of that network is what converts transient residence
+into persistent pathological residence.
+
+### 4.2 The unifying claim
+
+These three rules, taken together with the two-axis observable
+R(s, c) = τ_R(s) × π_c, support the framework's central claim:
+
+**Pathology in any system with both regimes available to it is
+the temporal-and-spatial residence pattern of states whose
+transient sampling was the design intent, produced by failure of
+the return-path machinery that would have enforced return to
+functional control, not the identity of the states themselves.**
+
+Three points warrant emphasis.
+
+First, this is a claim about residence patterns rather than about
+states per se. In each of the four cases in §3, the pathological
+state is also visited by healthy systems: FUS forms transient SG
+droplets normally; PrP populates alternative topologies as part
+of normal quality-control surveillance; huntingtin shuttles to
+the nucleus and engages mitochondria as part of normal function;
+tau visits dendritic compartments at low frequency under normal
+conditions. Pathology emerges not when these states are visited
+but when residence in them escapes design-intent bounds.
+
+Second, this is a claim about return-path machinery rather than
+about the pathological state itself. The framework predicts that
+therapeutic strategies targeting the *state* will be partially
+effective (because reducing the rate of pathological-state
+formation reduces the integrated residence-time accumulation) but
+that therapeutic strategies restoring the *return-path machinery*
+will be more durably effective (because they re-enable the
+physiological mechanism that converts residence into transit).
+This is testable; we propose it as Experiment 7 in §11.
+
+Third, this is a claim about substrate-general principle rather
+than about proteostasis specifically. The four cases in §3 are
+drawn from proteostasis because the proteostasis literature has
+the most complete causal-localization experiments; but the
+framework predicts the same residence-pathology structure in
+any substrate where (a) both regimes are available to the system,
+(b) explicit return-path machinery exists, and (c) recovery
+kinetics can be measured. §8 demonstrates this for receptor
+pharmacology, cancer phospho-regulation, autonomic physiology,
+exercise physiology, large-scale brain network dynamics,
+intersubjective coupling, phenomenology, and recursive AI/data
+dynamics.
+
+### 4.3 What this is not
+
+The unifying claim is structurally narrow even though it spans
+multiple substrates. We are not claiming that all disease is
+residence pathology. There are pathologies of state-identity (a
+protein that is genuinely absent because of a null mutation; a
+receptor that has been deleted; an irreversible structural
+damage); these are not residence pathologies, and the framework
+makes no claim about them. We are not claiming that the
+residence-pathology principle predicts which specific intervention
+will work in any specific patient (clinical heterogeneity makes
+this a complex stratification problem, not a single-formula
+problem). And we are not claiming that the principle reduces
+to a single biological mechanism (the principle is substrate-
+uniform but its molecular implementations are circuit-specific
+in the sense discussed in §6).
+
+What we are claiming is that an empirically tractable two-axis
+observable, a substrate-uniform residence-pathology grammar, and
+a cross-substrate demonstration of the principle have not been
+assembled together before, and that doing so opens an integrated
+program of diagnostic, prognostic, and therapeutic work across
+substrates that the current substrate-specific literatures cannot
+support individually.
 
 ## 5. Symmetric Formulation of Kinetic Stabilization
 
