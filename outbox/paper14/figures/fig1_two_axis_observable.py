@@ -55,18 +55,18 @@ ax.text(healthy_pt[0] + 0.015, healthy_pt[1], "Healthy\noperation",
 # Pathological cases - separated so labels don't overlap
 cases = [
     # (tau_R, pi_c, label, color, marker_size, label_x, label_y, ha, va)
-    # FUS: pure temporal (right side, below center)
-    (0.88, 0.40, r"3.1 FUS" "\n" r"(stress granules)" "\n" r"→ escapes $\tau_R$",
-     "#C62828", 140, 0.86, 0.18, "center", "top"),
-    # PrP: pure spatial (left side, above center)
-    (0.38, 0.88, r"3.2 PrP" "\n" r"(topology)" "\n" r"→ escapes $\pi_c$",
-     "#1565C0", 140, 0.15, 0.88, "left", "center"),
-    # mHtt: both, plotted slightly right-of-corner so label can go left
-    (0.90, 0.78, "3.3 mHtt\n(nuclear vs mito)\n→ escapes both axes",
-     "#6A1B9A", 140, 0.62, 0.71, "center", "top"),
-    # tau: both, plotted slightly above-of-corner so label can go right
-    (0.74, 0.93, "3.4 tau\n(multi-compartment)\n→ escapes both axes",
-     "#E65100", 140, 0.62, 0.97, "center", "center"),
+    # FUS: pure temporal (right side, lower-right) — darker red for contrast
+    (0.90, 0.40, r"3.1 FUS" "\n" r"(stress granules)" "\n" r"→ escapes $\tau_R$",
+     "#9C1414", 150, 0.90, 0.15, "center", "top"),
+    # PrP: pure spatial (upper-left)
+    (0.38, 0.92, r"3.2 PrP" "\n" r"(topology)" "\n" r"→ escapes $\pi_c$",
+     "#0D47A1", 150, 0.15, 0.92, "left", "center"),
+    # mHtt: both — placed mid-right with label below-left
+    (0.92, 0.72, "3.3 mHtt\n(nuclear vs\nmitochondrial)\n→ both axes",
+     "#4A148C", 150, 0.94, 0.55, "right", "top"),
+    # tau: both — placed upper-right with label above-left
+    (0.78, 0.95, "3.4 tau\n(multi-compartment)\n→ both axes",
+     "#BF360C", 150, 0.65, 0.97, "right", "center"),
 ]
 
 for tau, pi, label, color, size, lbl_x, lbl_y, ha, va in cases:
@@ -93,13 +93,11 @@ ax.set_xticks([0, 0.25, 0.5, 0.75, 1.0])
 ax.set_yticks([0, 0.25, 0.5, 0.75, 1.0])
 ax.tick_params(labelsize=10)
 
-# Quadrant labels at corners
-ax.text(0.04, 0.96, "Spatial-axis\npathology", fontsize=9, color="#1565C0",
-        style="italic", va="top")
-ax.text(0.96, 0.04, "Temporal-axis\npathology", fontsize=9, color="#C62828",
-        style="italic", ha="right", va="bottom")
-ax.text(0.96, 0.96, "Both-axes\npathology", fontsize=9, color="#6A1B9A",
-        style="italic", ha="right", va="top")
+# Quadrant guide lines (subtle) showing the structural division: the functional box plus
+# the three pathology directions. Quadrant identity is conveyed by case-marker color
+# rather than separate labels (avoids label/marker collisions).
+ax.axvline(x=(tau_min + tau_max) / 2 + 0.10, ymin=0, ymax=1, color="#888",
+           lw=0.5, alpha=0.0)  # invisible — reserved for future grid extension
 
 # Title
 ax.set_title(
