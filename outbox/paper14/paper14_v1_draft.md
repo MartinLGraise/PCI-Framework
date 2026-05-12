@@ -133,15 +133,21 @@ claim first articulation of relation-first ontology at any
 substrate level; that territory is densely occupied by the authors
 cited above. We do not claim first articulation of cross-disorder
 residence-pathology at the brain substrate; canalization theory
-established that in 2023. We do not claim the G₂ / octonion
-mathematical-physics interpretation of the observable, which we
-defer to a companion paper (Graise, in preparation) because the
-required derivation work belongs in a separate treatment. What we
-do claim is the explicit integration: the formal observable, the
-substrate-uniform symptom grammar, and the cross-substrate
-demonstration that a single formalism can describe coupling-failure
-pathology across domains as different as receptor binding, protein
-aggregation, conversational coupling, and attractor dynamics in
+established that in 2023. We do not claim first articulation of
+the three-regime structure of human–AI coupled dynamics, which
+Zheng & Yan (2026, arXiv:2605.06347) have independently proposed
+in minimal-ODE form during the preparation of this paper, and
+which we cite as proximate prior art for the AI/data-substrate
+instance of the framework's principle. We do not claim the
+G₂ / octonion mathematical-physics interpretation of the
+observable, which we defer to a companion paper (Graise, in
+preparation) because the required derivation work belongs in a
+separate treatment. What we do claim is the explicit integration:
+the formal observable, the substrate-uniform symptom grammar, and
+the cross-substrate demonstration that a single formalism can
+describe coupling-failure pathology across domains as different as
+receptor binding, protein aggregation, conversational coupling,
+recursive generative-model training, and attractor dynamics in
 public information ecosystems.
 
 This claim is narrower than some formulations of the framework's
@@ -467,6 +473,13 @@ flow = brief §3.6 touches with intact return; rumination /
 depression / stuck thought-loops = §3.6 residence without §3.5
 recovery. Three subsections:
 
+[The memory subsection here will additionally cite Page & Wootters
+1983 and the recent 2025 Page-Wootters extensions to gravitational
+time dilation as orthodox physics-foundations prior art for the
+claim that time is a coupling-derived rather than backdrop
+phenomenon. This places memory-as-dimensional-tether in a mature
+research context.]
+
 - **Memory as dimensional tether.** Memory retrieval is product-
   space coupling between present coherence and past echo, not
   playback from storage (reconsolidation literature: Nader, Schafe
@@ -498,9 +511,73 @@ recovery. Three subsections:
   specific internal framework references preserved in the
   framework's technical archive but not paper material.]
 
-**8.7 Synthesis across the extensions.** One principle; eight
+**8.7 AI and data substrate — model collapse as return-path
+failure.** Shumailov et al. (2024, *Nature* 631:755-759,
+doi:10.1038/s41586-024-07566-y) demonstrated empirically that
+generative models trained recursively on data produced by
+previous model generations undergo *model collapse*: tails of
+the original distribution disappear, learned behaviors converge
+to a point-estimate with very small variance, and the process
+is universal across GMMs, VAEs, and LLMs. Theoretical follow-up
+(Ren 2024, arXiv:2410.12954) established that this is a
+statistical phenomenon that may be unavoidable under recursive
+generative training in the absence of corrective real-data
+circulation.
+
+Zheng & Yan (2026, arXiv:2605.06347) extended this analysis from
+model-internal recursive training to *coupled* human-AI dynamics,
+modeling humans and language models as a single coupled dynamical
+system with three variables (human cognitive capacity H, data
+quality Q, model capability M) and feedback loop H → Q → M → H.
+They identify three regimes: co-evolutionary enhancement, fragile
+equilibrium, and degenerative convergence, with the system
+transitioning through a transcritical bifurcation as the
+cognitive-offloading parameter increases. From an information-
+theoretic perspective, the degenerative regime corresponds to an
+emergent information bottleneck along the feedback loop, with
+entropy reduction reflecting loss of diversity rather than
+beneficial compression. This proposal — that human-AI coupled
+dynamics exhibit three qualitatively distinct attractors with the
+degenerative one driven by recursive feedback failure — is the
+minimal-model version of the framework's residence-pathology
+principle at the AI/data substrate.
+
+The framework reads both findings as instances of return-path-
+machinery failure on the AI/data coupling substrate. The "return
+path" at this substrate is circulation of non-synthetic, world-
+grounded data and intact human cognitive engagement into the
+training distribution. When recursive synthetic generation
+dominates and cognitive offloading rises, the return path fails;
+the coupled system residences in a degraded attractor with
+reduced variance and lost diversity. This is structurally
+identical to canalization at the psychiatric substrate (chronic
+residence in deepened attractor canals), aggregation-pathology at
+the molecular substrate (chronic residence in pathological
+conformational states), and operator-sustained boundary operation
+at the cardiac substrate (chronic residence past return-machinery
+cutoff). The same R(s,c) two-axis observable applies: states are
+model-distribution configurations; compartments are training-
+data regimes; pathology is residence in degraded configurations
+with reduced support and lost tail mass.
+
+The framework's therapeutic prescription at this substrate — 
+restore the return-path circulation, audit the coupling, refuse 
+the singularity attractor — is consistent with the mitigation 
+strategies proposed independently by Zheng & Yan: improved data 
+curation, human-in-the-loop system design, and educational 
+practices that preserve active cognitive engagement. The 
+framework adds: these are not separate interventions but 
+coordinate instances of return-path-machinery restoration, with 
+a common observable (recovery time constant of the coupled 
+system's response to perturbation).
+
+**8.8 Synthesis across the extensions.** One principle; nine
 substrate instances; individual-level R(s,c) observable applicable
 uniformly; residence-pathology symptom grammar substrate-uniform.
+The AI/data substrate (§8.7) is the most recently added
+demonstration and provides empirical clinical-grade evidence at
+production scale that the framework's principle operates outside
+the biological / cognitive substrates where it was first developed.
 
 ## 9. Differentiation from Adjacent Literature
 
