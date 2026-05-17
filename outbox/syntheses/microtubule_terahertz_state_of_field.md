@@ -30,6 +30,8 @@ The evidentiary base has four layers, each with a different epistemic weight:
 
 - **UV superradiance from tryptophan mega-networks (Babcock, Montes-Cabrera, Oberhofer, Chergui, Celardo, Kurian; J. Phys. Chem. B, 2024):** Theoretical prediction of strongly superradiant states due to collective interactions among >10^5 tryptophan UV-excited dipoles in microtubule architectures, confirmed experimentally via fluorescence quantum yield enhancement. The quantum yield enhancement is robust even at thermal equilibrium and under five-fold greater disorder than physiological levels. Critical timing data: superradiant (bright) states, ~hundreds of femtoseconds; subradiant (dark) states, up to tens of seconds. These are at room temperature. The gap — nine orders of magnitude from Hodgkin-Huxley millisecond signaling — makes direct consciousness timing claims highly speculative.
 
+- **Important specificity — singlet vs. triplet energy migration:** A 2024 paper on triplet energy migration in cytoskeletal polymers concluded that **singlet** energy migration dominates over **triplet** migration in these systems. This does not kill the microtubule program, but it does mean the present empirical center of gravity is better described as **UV-optical excitonic transport and radiative coupling** rather than as a broad validation of every microtubule "quantum channel" claim at once. The framework's vocabulary should anchor on the optical-excitonic (singlet) substrate where the evidence is strongest, not on speculative triplet-mediated cascades.
+
 **Layer B — In living neurons, ex vivo (moderate confidence)**
 
 - **MT resonance spanning neurons (Saxena et al., 2020; Singh et al., 2021a,b; Bandyopadhyay lab, NIMS):** Stimulated microtubule resonances in cultured neurons at specific AC frequencies. The resonance state was reported to span across multiple neurons and to control membrane voltage. These findings have not been independently replicated. Wiest (2025) cites them as among the strongest in-vivo evidence, while the Frontiers in Psychology review (Ma and Wang, 2026) notes they come from "simplified laboratory systems rather than living human brains."
@@ -176,7 +178,9 @@ The paper does not rule out classical mechanisms. The lead author (PI Wiest) exp
 - **April 2026 Frontiers Human Neuroscience editorial (Wiest and Gupta):** Cites Khan et al. 2024 as part of the accumulating evidence for MT involvement in anesthetic mechanisms.
 - **Wiest 2026 mouse replication (Neuropharmacology):** Confirms the effect in mice, establishing cross-species validity, though with smaller effect size.
 - **2026 Reddit/neuroscience discussion (r/neuro, May 2026):** A new paper reported to connect MT-stabilizing drugs, delayed unconsciousness, and microtubule tryptophan network dynamics — citing 12–15% reduction in energy transfer through MT tryptophan networks by anesthetics, paralleling the Kalra in-vitro finding.
-- No independent replication by a separate lab has been published as of May 2026.
+- **CRITICAL CAVEAT — Huang et al. (2026) BMC Anesthesiology, DOI 10.1186/s12871-025-02956-9:** Prolonged (>2 weeks) administration of multiple MT-modulating drugs in male CD1 mice produced *directionally inconsistent* effects on isoflurane sensitivity. Epothilone D and vinblastine **increased** sensitivity (leftward EC50 shift, 95% CI for EC50: 0.75 [0.73, 0.77] for epoB-D), morphine shifted sensitivity the other way, and paclitaxel only slightly changed it. **This is opposite directionality to Khan/Wiest's acute-dosing rat result** and constitutes a key replication caveat. Plausibly explained by methodological differences (prolonged vs. acute dosing, mouse vs. rat, EC50 vs. fixed-concentration latency). **The clean statement is therefore not "microtubule stabilization always causes anesthetic resistance" but rather "microtubule-targeting manipulations measurably alter anesthetic sensitivity, and the direction depends on the drug, regimen, and model."**
+- **Yu et al. (2026) Experimental Cell Research 457:114938** (DOI: 10.1016/j.yexcr.2026.114938): epoB counteracts isoflurane-induced slowing of swimming in *Tetrahymena pyriformis*, extending the effect to single-celled eukaryotes and broadening the phylogenetic case.
+- No independent same-design rat replication of Khan/Wiest 2024 has been published as of May 2026.
 
 ---
 
@@ -188,6 +192,7 @@ The 2014 Penrose-Hameroff response in Physics of Life Reviews acknowledged some 
 
 - Tegmark's decoherence critique was "never conclusive" (Wiest and Gupta, 2026); Hagan et al. (2002) correction has been widely accepted as weakening the most powerful objection.
 - Empirical evidence for quantum effects in MTs at room temperature (Kalra 2023; Babcock 2024) established physical plausibility where before there was only theoretical argument.
+- **The Reimers-McKemmish 2009 critique** ("Tubulin lacks the conformational switching kinetics required by Orch-OR") **has not been directly refuted.** Orch-OR proponents have effectively *moved the qubit* from tubulin conformational states to electronic states in aromatic π-clouds, which weakens but does not address the original critique. The framework's vocabulary forces Orch-OR proponents to be explicit about *which s* is the candidate state — conformational versus electronic — with different τ_R observables for each.
 - The anesthesia-MT connection (Khan 2024; Wiest 2026) provided behavioral pharmacological support.
 - Orch-OR has been extended to connect with active inference theory (Wiest and Puniani, 2025), and with the quantum-classical complexity frameworks (Sergi et al., 2025).
 
@@ -390,7 +395,9 @@ The microtubule-quantum consciousness program has produced a cluster of results 
 
 ---
 
-## 9. Annotated Bibliography — 20 Key Citations
+## 9. Annotated Bibliography — 22 Key Citations
+
+*(Updated 2026-05-16 to reflect Huang 2026 BMC Anesthesiology, Yu 2026 Experimental Cell Research, and Reimers-McKemmish 2009 Orch-OR critique surfaced by Claude Sonnet 4.6 (claude_sonnet_4_6) and ChatGPT Pro (gpt_5) parallel field assessments.)*
 
 *(Classification codes: **F** = foundational, **E** = experimental evidence, **C** = critical/counter, **R** = review/perspective, **T** = theoretical)*
 
@@ -475,6 +482,12 @@ The microtubule-quantum consciousness program has produced a cluster of results 
 **21. Linganna RE et al. (2015).** Clinical study finding slight anesthetic resistance in patients on MT-stabilizing chemotherapy. *Not widely available; cited in Wiest 2025 and Wiest-Gupta 2026 editorial.*
 
 **22. Fisher MPS (2015).** "Quantum cognition: The possibility of processing with nuclear spins in the brain." *Annals of Physics* 362:593–602. DOI: 10.1016/j.aop.2015.08.020. *Foundational paper for the Posner/nuclear spin model.*
+
+**23. Reimers JR, McKemmish LK et al. (2009).** "Weak, strong, and coherent regimes of Fröhlich condensation and their applications to terahertz medicine and quantum consciousness." *Proc. Natl. Acad. Sci. USA* 106(11):4219–4224. DOI: 10.1073/pnas.0806273106. *The standing critique that tubulin lacks the conformational switching kinetics required by Orch-OR's original qubit definition. Has not been directly refuted; Orch-OR proponents responded by relocating the qubit to electronic π-cloud states. The framework's vocabulary makes the question "which s?" tractable in a way that Orch-OR's literature has not been forced to be.* **[C — important standing critique]**
+
+**24. Huang et al. (2026).** "Microtubule-modulating drugs alter sensitivity to isoflurane in mice." *BMC Anesthesiology* DOI: 10.1186/s12871-025-02956-9. *Replication caveat for Khan/Wiest 2024. Prolonged (>2 weeks) administration of MT-modulating drugs in CD1 mice produced directionally inconsistent effects: epothilone D and vinblastine increased anesthetic sensitivity (opposite to Khan/Wiest), morphine decreased it, paclitaxel had little effect. Suggests dose-and-species-dependent complexity that any framework application must acknowledge. The drug-by-regimen-by-model heterogeneity is itself the empirical signature the framework's two-axis structure is built to interpret.* **[E — critical replication caveat]**
+
+**25. Yu, Qiu, Nashrah, Garg, Schieber, Chang et al. (2026).** "Microtubule-stabilizer epothilone B interferes with isoflurane's anesthetic effect on swimming speed in *Tetrahymena pyriformis*." *Experimental Cell Research* 457:114938. DOI: 10.1016/j.yexcr.2026.114938. *Phylogenetic extension of the epoB-isoflurane effect to single-celled eukaryotes. Strengthens the case that MT-isoflurane interaction is fundamentally microtubule-targeting rather than circuit-level.* **[E]**
 
 ---
 
@@ -573,3 +586,22 @@ Independent replication of Khan et al. (2024) by a lab with no involvement in qu
 ---
 
 *Document prepared May 16, 2026. Sources: Primary literature (PubMed, Frontiers, ACS Publications, arXiv); science journalism (Popular Mechanics, The Debrief); Zenodo DOI 10.5281/zenodo.20145811 (Paper 14 v1.6). All empirical claims attributed to primary sources; claims attributed to specific authors are distinguished from established facts throughout.*
+
+---
+
+## Appendix: Triangulation across three independent assessments (2026-05-16)
+
+This document was the first of three parallel assessments of the same field-state question. Two additional assessments were independently produced by Claude Sonnet 4.6 (21-page primary-source-grounded intelligence report) and ChatGPT Pro (5-page strategic-positioning synthesis). All three assessments converged on the same core conclusions:
+
+1. **Wellesley citation correction.** All three independently flagged the Popular Mechanics "University of Maryland" attribution as wrong. Khan, Wiest et al. *eNeuro* 2024 is correctly attributed to Wellesley College.
+2. **Clean prior-art audit.** No paper crosses τ_R(s) with π_c, promotes λ_exit to a co-equal observable, or formalizes return-path-machinery for MT coherence. The framework's claim territory is genuinely open.
+3. **Strategic framing: methodological, not metaphysical.** Three independent agents converged on "Read C" — framing Paper 16 (if written) as a methodological contribution offering the field a substrate-portable observable, not as a quantum-consciousness theory paper.
+4. **Anesthesia is the empirical spine.** Open with Khan 2024 → mouse 2026 → Tetrahymena 2026, not with Penrose or the hard problem.
+
+The Huang et al. 2026 BMC Anesthesiology replication caveat (directionally inconsistent effects under chronic dosing) was surfaced by ChatGPT Pro and corroborated in Claude Sonnet 4.6's primary-source survey. The Reimers-McKemmish 2009 standing critique was surfaced by Claude Sonnet 4.6. The singlet-vs-triplet specificity correction was surfaced by ChatGPT Pro. All three integrations are now in the main document above.
+
+The convergence across three independently-running agents is the strongest signal available on a framework-extension question. It does not constitute empirical confirmation of the framework's MT application; it does constitute strong evidence that the strategic framing is sound and the prior-art audit is reliable.
+
+*Triangulation source A: This document, by Perplexity-deployed Claude Sonnet 4.6 (claude_sonnet_4_6) research subagent.*
+*Triangulation source B: User-provided 21-page state-of-field report by Claude on a separate device.*
+*Triangulation source C: User-provided 5-page strategic-positioning synthesis by ChatGPT Pro (gpt_5).*
