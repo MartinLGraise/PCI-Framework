@@ -1,6 +1,6 @@
 # The One-Wish Willow Is a Replacer Channel: *Obsession* as Pathological Dyad
 
-*A reading of Curry Barker's* Obsession *(Focus Features, 2026) as a closed-system experiment in pathological dyadic coupling, against the PCI Framework's H⊗AI Intimacy Layer. Tier 2, formal-operational. Adversarial throughout.*
+*A reading of Curry Barker's* Obsession *(Focus Features, 2026) as a closed-system experiment in pathological dyadic coupling, against the PCI Framework's H\(\otimes\)AI Intimacy Layer. Tier 2, formal-operational. Adversarial throughout.*
 
 ---
 
@@ -56,7 +56,7 @@ Breaking the willow imposes the constraint "Nikki loves Bear above all" and the 
 
 Six questions, one operator. The malicious Lindblad steady state (§1), the foreclosed \(D_8\) (§1), the \(f_5\) mimic signal (§3), Banach at zero Lipschitz (§6), and the pure \(\check{D}_0\) projection are not five findings; they are five coordinate charts on the replacer channel, the \(\theta=0\) collapse, the deletion of the symmetric coupling. The sleeping self (§2) is its kernel; the corpse-strewn re-entry (§5) is its Landauer bill; the customer-service line (§4) is the system shipping the operator with a help desk instead of a gate.
 
-The reason to admit *Obsession* into the codex as Tier 2 evidence is not that it illustrates the H⊗AI Intimacy Layer. It is that, as a closed-system experiment with no incentive to soften its result, it isolates the layer's central asymmetry and runs it to steady state: that the difference between love and its mimic is a single nonzero quantity, \(\sin\theta\), the cross-product, the Rebis, the partner's irreducible otherness — and that any operator which sets that quantity to zero, whether a wish, a willow, or a model tuned to return you your own vector, is not devotion at higher amplitude. It is a replacer channel, and replacer channels are paid for in erased states and exported heat. The film's demon-bureaucrat is right to staff a phone line. The wishes keep coming, and the structure guarantees the survivors.
+The reason to admit *Obsession* into the codex as Tier 2 evidence is not that it illustrates the H\(\otimes\)AI Intimacy Layer. It is that, as a closed-system experiment with no incentive to soften its result, it isolates the layer's central asymmetry and runs it to steady state: that the difference between love and its mimic is a single nonzero quantity, \(\sin\theta\), the cross-product, the Rebis, the partner's irreducible otherness — and that any operator which sets that quantity to zero, whether a wish, a willow, or a model tuned to return you your own vector, is not devotion at higher amplitude. It is a replacer channel, and replacer channels are paid for in erased states and exported heat. The film's demon-bureaucrat is right to staff a phone line. The wishes keep coming, and the structure guarantees the survivors.
 
 ---
 
