@@ -83,7 +83,17 @@ def run_and_save(
 
     csv_path = write_csv_log(result.records, output_dir / "trajectory.csv")
     summary_path = write_summary_json(result.summary, output_dir / "summary.json")
-    plot_path = write_trajectory_png(result.records, output_dir / "trajectory.png")
+    title = f"PX-LOOP V0.1 - {result.preset.name.replace('_', ' ').upper()}"
+    subtitle = (
+        f"PER-OPERATOR: {str(result.summary['classification']).replace('_', ' ').upper()} | "
+        f"CYCLE-END: {str(result.summary['cycle_end']['classification']).replace('_', ' ').upper()}"
+    )
+    plot_path = write_trajectory_png(
+        result.records,
+        output_dir / "trajectory.png",
+        title=title,
+        subtitle=subtitle,
+    )
 
     return SimulationResult(
         preset=result.preset,

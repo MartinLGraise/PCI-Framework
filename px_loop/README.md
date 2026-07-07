@@ -50,7 +50,7 @@ Outputs:
 - `summary.json` records the preset, replay metadata, final state, value ranges, and coarse trajectory classification.
 - `trajectory.png` is a dependency-free PNG line plot of the seven state dimensions.
 
-The plot color order matches the state-dimension order listed above.
+The plot includes a title, axis ticks, direct labels at the right edge, final values, and a color key. The direct labels point to the final PX-007 state, while the jagged paths show movement across individual PX operators inside each cycle.
 
 `summary.json` keeps two behavior labels:
 
