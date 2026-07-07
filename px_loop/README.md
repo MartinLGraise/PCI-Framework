@@ -38,13 +38,39 @@ From the repo root:
 python3 -m px_loop --preset paradox_amplification --steps 160 --output-dir outbox/ai_coordination/px_loop_runs/2026-07-07_v0.1_demo
 ```
 
+Run with a temporary parameter overlay:
+
+```bash
+python3 -m px_loop --preset paradox_amplification --steps 160 --param reset_pressure=0.28 --output-dir outbox/ai_coordination/px_loop_runs/custom_reset_check
+```
+
 Outputs:
 
 - `trajectory.csv` records the full state after every PX step.
-- `summary.json` records the preset, final state, value ranges, and coarse trajectory classification.
+- `summary.json` records the preset, replay metadata, final state, value ranges, and coarse trajectory classification.
 - `trajectory.png` is a dependency-free PNG line plot of the seven state dimensions.
 
 The plot color order matches the state-dimension order listed above.
+
+`summary.json` keeps two behavior labels:
+
+- `classification`: legacy final-window label over per-operator records, useful for spotting within-cycle sawtooth.
+- `cycle_end.classification`: complete-loop behavior sampled at initial/PX-007 boundaries.
+
+## Sweep Batch
+
+Run the v0.1 parameter sweep batch:
+
+```bash
+python3 -m px_loop.sweep --steps 140 --output-dir outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps
+```
+
+The sweep writes one folder per case, plus:
+
+- `sweep_index.csv`
+- `sweep_index.json`
+
+Each case preserves the same PX operator semantics and varies only a small set of gains/couplings.
 
 ## Presets
 
@@ -62,11 +88,12 @@ python3 -m unittest discover -s tests
 ## Limitations
 
 - The operators are deliberately simple numeric approximations of the PX semantics.
-- The classifier is descriptive, not a mathematical proof of convergence or cyclicity.
+- The classifiers are descriptive, not mathematical proofs of convergence or cyclicity.
+- Per-operator plots can show sawtooth structure even when complete PX cycles are settling toward a fixed point.
 - Markov-chain, symbolic-recursion, observer-engine integration, notebooks, dashboards, and multi-agent simulations are left for later phases.
+- Parameter sweeps test sensitivity of heuristic coefficients; they do not validate the PX semantics as a theory.
 
 ## Next Steps
 
-- Compare `quiet_loop` and `paradox_amplification` runs over parameter sweeps.
 - Add a notebook only after the CLI and core module stay stable.
 - Decide whether this remains an isolated `px_loop/` module or becomes a preset layer attached to the broader PCI Observer Engine.

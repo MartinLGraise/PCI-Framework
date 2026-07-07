@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Sequence
 
-from .model import DIMENSIONS, PXState
+from .model import DIMENSIONS, PX_IDS, PXState
 from .observer import (
     PXRecord,
     summarize_records,
@@ -57,7 +57,17 @@ def run_simulation(preset: str | PXPreset = "quiet_loop", steps: int = 120) -> S
             state = apply_operator(state, operator, preset_object.parameters, cycle)
             records.append(_record(len(records), state, operator.name))
 
-    summary = summarize_records(records, preset_object.name)
+    summary = summarize_records(
+        records,
+        preset_object.name,
+        run_config={
+            "steps": steps,
+            "dimensions": list(DIMENSIONS),
+            "operators": list(PX_IDS),
+            "initial_state": dict(preset_object.initial_state.values),
+            "parameters": dict(preset_object.parameters),
+        },
+    )
     return SimulationResult(preset_object, records, summary, {})
 
 

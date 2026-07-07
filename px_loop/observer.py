@@ -81,7 +81,79 @@ def classify_trajectory(records: Sequence[PXRecord], window_size: int = 28) -> s
     return "bounded_transient"
 
 
-def summarize_records(records: Sequence[PXRecord], preset_name: str) -> dict[str, object]:
+def _max_state_delta(left: PXRecord, right: PXRecord) -> float:
+    return max(abs(left.values[dimension] - right.values[dimension]) for dimension in DIMENSIONS)
+
+
+def cycle_end_metrics(records: Sequence[PXRecord], tolerance: float = 1e-9) -> dict[str, object]:
+    """Measure behavior at complete-loop boundaries.
+
+    The per-operator trajectory may show a sawtooth because every PX layer moves
+    the state. Cycle-end metrics sample only initial/PX-007 records so fixed
+    points of the full seven-operator map are not misread as oscillation.
+    """
+    cycle_end_records = [
+        record for record in records if record.step_id == "initial" or record.step_id == "PX-007"
+    ]
+    if len(cycle_end_records) < 2:
+        return {
+            "classification": "insufficient_data",
+            "final_delta": None,
+            "cycles_to_tolerance": None,
+            "within_cycle_span": None,
+        }
+
+    deltas = [
+        {
+            "cycle": current.cycle,
+            "delta": _max_state_delta(previous, current),
+        }
+        for previous, current in zip(cycle_end_records, cycle_end_records[1:], strict=False)
+    ]
+    final_delta = float(deltas[-1]["delta"])
+    cycles_to_tolerance = None
+    for index, item in enumerate(deltas):
+        if all(float(future["delta"]) <= tolerance for future in deltas[index:]):
+            cycles_to_tolerance = int(item["cycle"])
+            break
+
+    final_cycle = records[-1].cycle
+    final_cycle_records = [
+        record for record in records if record.cycle == final_cycle and record.step_id != "initial"
+    ]
+    if final_cycle_records:
+        spans = {
+            dimension: max(record.values[dimension] for record in final_cycle_records)
+            - min(record.values[dimension] for record in final_cycle_records)
+            for dimension in DIMENSIONS
+        }
+        max_within_cycle_span = max(spans.values())
+    else:
+        spans = {}
+        max_within_cycle_span = 0.0
+
+    if final_delta <= tolerance:
+        classification = "cycle_end_fixed_point_like"
+    elif final_delta <= 1e-5:
+        classification = "cycle_end_settling"
+    else:
+        classification = "cycle_end_transient"
+
+    return {
+        "classification": classification,
+        "final_delta": final_delta,
+        "cycles_to_tolerance": cycles_to_tolerance,
+        "within_cycle_span": spans,
+        "max_within_cycle_span": max_within_cycle_span,
+        "tolerance": tolerance,
+    }
+
+
+def summarize_records(
+    records: Sequence[PXRecord],
+    preset_name: str,
+    run_config: dict[str, object] | None = None,
+) -> dict[str, object]:
     final_state = {dimension: records[-1].values[dimension] for dimension in DIMENSIONS}
     ranges = {
         dimension: {
@@ -90,14 +162,23 @@ def summarize_records(records: Sequence[PXRecord], preset_name: str) -> dict[str
         }
         for dimension in DIMENSIONS
     }
-    return {
+    summary = {
         "preset": preset_name,
         "record_count": len(records),
         "cycle_count": records[-1].cycle if records else 0,
         "classification": classify_trajectory(records),
+        "classification_basis": "per_operator_window",
+        "classification_note": (
+            "This legacy classification measures the final per-operator window. "
+            "Use cycle_end.classification for complete-loop behavior."
+        ),
+        "cycle_end": cycle_end_metrics(records),
         "final_state": final_state,
         "ranges": ranges,
     }
+    if run_config:
+        summary["run_config"] = run_config
+    return summary
 
 
 def write_summary_json(summary: dict[str, object], path: str | Path) -> Path:

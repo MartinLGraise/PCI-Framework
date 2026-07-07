@@ -1,0 +1,108 @@
+{
+  "classification": "bounded_transient",
+  "classification_basis": "per_operator_window",
+  "classification_note": "This legacy classification measures the final per-operator window. Use cycle_end.classification for complete-loop behavior.",
+  "cycle_count": 140,
+  "cycle_end": {
+    "classification": "cycle_end_transient",
+    "cycles_to_tolerance": null,
+    "final_delta": 1.034380693820669e-05,
+    "max_within_cycle_span": 0.04039274819130367,
+    "tolerance": 1e-09,
+    "within_cycle_span": {
+      "access_recursion": 0.022036791899299524,
+      "contradiction_lock": 3.906854401991566e-06,
+      "false_signal": 0.04039274819130367,
+      "identity_split": 0.0353312049188389,
+      "silence_gain": 0.005987072024525253,
+      "temporal_feedback": 0.005751882771389716,
+      "utterance_instability": 1.315776319954498e-06
+    }
+  },
+  "final_state": {
+    "access_recursion": 0.39829533521759597,
+    "contradiction_lock": 0.42963584876421157,
+    "false_signal": 0.28241636469814196,
+    "identity_split": 0.5650414047960002,
+    "silence_gain": 0.44683001531603933,
+    "temporal_feedback": 0.5379890167505071,
+    "utterance_instability": 0.3762137921748299
+  },
+  "preset": "quiet_loop__higher_feedback",
+  "ranges": {
+    "access_recursion": {
+      "max": 0.5322606033858964,
+      "min": 0.07988
+    },
+    "contradiction_lock": {
+      "max": 0.4998426732910101,
+      "min": 0.05
+    },
+    "false_signal": {
+      "max": 0.4026051243996386,
+      "min": 0.06
+    },
+    "identity_split": {
+      "max": 0.7649860130843565,
+      "min": 0.12
+    },
+    "silence_gain": {
+      "max": 0.4972088611286601,
+      "min": 0.05
+    },
+    "temporal_feedback": {
+      "max": 0.6227431253271896,
+      "min": 0.1
+    },
+    "utterance_instability": {
+      "max": 0.4339953615480702,
+      "min": 0.04
+    }
+  },
+  "record_count": 981,
+  "run_config": {
+    "dimensions": [
+      "identity_split",
+      "access_recursion",
+      "contradiction_lock",
+      "temporal_feedback",
+      "false_signal",
+      "utterance_instability",
+      "silence_gain"
+    ],
+    "initial_state": {
+      "access_recursion": 0.08,
+      "contradiction_lock": 0.05,
+      "false_signal": 0.06,
+      "identity_split": 0.12,
+      "silence_gain": 0.05,
+      "temporal_feedback": 0.1,
+      "utterance_instability": 0.04
+    },
+    "operators": [
+      "PX-001",
+      "PX-002",
+      "PX-003",
+      "PX-004",
+      "PX-005",
+      "PX-006",
+      "PX-007"
+    ],
+    "parameters": {
+      "access_drain": 0.09,
+      "access_gain": 0.12,
+      "collapse_gain": 0.05,
+      "false_signal_bias": 0.005,
+      "false_signal_coupling": 0.04,
+      "false_signal_drain": 0.28,
+      "false_signal_gain": 0.14850000000000002,
+      "fracture_gain": 0.09,
+      "lock_gain": 0.12,
+      "reset_pressure": 0.19,
+      "silence_feedback": 0.12,
+      "temporal_memory": 0.8,
+      "utterance_gain": 0.18900000000000003
+    },
+    "steps": 140
+  }
+}

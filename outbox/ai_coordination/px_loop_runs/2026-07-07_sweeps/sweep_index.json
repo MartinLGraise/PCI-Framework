@@ -1,0 +1,215 @@
+[
+  {
+    "base_preset": "quiet_loop",
+    "case": "quiet_loop__baseline",
+    "classification": "bounded_transient",
+    "csv_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/quiet_loop__baseline/trajectory.csv",
+    "cycle_count": 140,
+    "cycle_end_classification": "cycle_end_transient",
+    "cycle_end_final_delta": 1.7775596372449076e-05,
+    "description": "Unchanged quiet-loop baseline.",
+    "final_state": {
+      "access_recursion": 0.4074702329645013,
+      "contradiction_lock": 0.42999573461904633,
+      "false_signal": 0.26600274892963616,
+      "identity_split": 0.5737078485703551,
+      "silence_gain": 0.43266357896654367,
+      "temporal_feedback": 0.5425596755348407,
+      "utterance_instability": 0.3663814187643403
+    },
+    "max_within_cycle_span": 0.0366741384533637,
+    "parameter_updates": {},
+    "plot_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/quiet_loop__baseline/trajectory.png",
+    "record_count": 981,
+    "summary_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/quiet_loop__baseline/summary.json"
+  },
+  {
+    "base_preset": "quiet_loop",
+    "case": "quiet_loop__higher_reset",
+    "classification": "bounded_transient",
+    "csv_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/quiet_loop__higher_reset/trajectory.csv",
+    "cycle_count": 140,
+    "cycle_end_classification": "cycle_end_transient",
+    "cycle_end_final_delta": 1.1302630099407907e-05,
+    "description": "Raises reset and silence feedback to test stronger PX-007 damping.",
+    "final_state": {
+      "access_recursion": 0.3801454181226986,
+      "contradiction_lock": 0.39913364891049397,
+      "false_signal": 0.25934950446582955,
+      "identity_split": 0.5125002305338943,
+      "silence_gain": 0.39886932786066553,
+      "temporal_feedback": 0.49971411081456146,
+      "utterance_instability": 0.3455307718401182
+    },
+    "max_within_cycle_span": 0.04052391247323428,
+    "parameter_updates": {
+      "reset_pressure": 0.24700000000000003,
+      "silence_feedback": 0.144
+    },
+    "plot_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/quiet_loop__higher_reset/trajectory.png",
+    "record_count": 981,
+    "summary_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/quiet_loop__higher_reset/summary.json"
+  },
+  {
+    "base_preset": "quiet_loop",
+    "case": "quiet_loop__higher_feedback",
+    "classification": "bounded_transient",
+    "csv_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/quiet_loop__higher_feedback/trajectory.csv",
+    "cycle_count": 140,
+    "cycle_end_classification": "cycle_end_transient",
+    "cycle_end_final_delta": 1.034380693820669e-05,
+    "description": "Raises signal/utterance coupling to test PX-005/PX-006 sensitivity.",
+    "final_state": {
+      "access_recursion": 0.39829533521759597,
+      "contradiction_lock": 0.42963584876421157,
+      "false_signal": 0.28241636469814196,
+      "identity_split": 0.5650414047960002,
+      "silence_gain": 0.44683001531603933,
+      "temporal_feedback": 0.5379890167505071,
+      "utterance_instability": 0.3762137921748299
+    },
+    "max_within_cycle_span": 0.04039274819130367,
+    "parameter_updates": {
+      "collapse_gain": 0.05,
+      "false_signal_gain": 0.14850000000000002,
+      "utterance_gain": 0.18900000000000003
+    },
+    "plot_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/quiet_loop__higher_feedback/trajectory.png",
+    "record_count": 981,
+    "summary_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/quiet_loop__higher_feedback/summary.json"
+  },
+  {
+    "base_preset": "quiet_loop",
+    "case": "quiet_loop__damped_fracture",
+    "classification": "bounded_transient",
+    "csv_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/quiet_loop__damped_fracture/trajectory.csv",
+    "cycle_count": 140,
+    "cycle_end_classification": "cycle_end_transient",
+    "cycle_end_final_delta": 2.5072648981772083e-05,
+    "description": "Lowers fracture and false-signal gains to test settling behavior.",
+    "final_state": {
+      "access_recursion": 0.3935666029200037,
+      "contradiction_lock": 0.4066289017359487,
+      "false_signal": 0.24362764284412272,
+      "identity_split": 0.5461106561604532,
+      "silence_gain": 0.40545136221656425,
+      "temporal_feedback": 0.5152696378182041,
+      "utterance_instability": 0.3408336393381785
+    },
+    "max_within_cycle_span": 0.03120187895512591,
+    "parameter_updates": {
+      "false_signal_gain": 0.0825,
+      "fracture_gain": 0.063
+    },
+    "plot_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/quiet_loop__damped_fracture/trajectory.png",
+    "record_count": 981,
+    "summary_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/quiet_loop__damped_fracture/summary.json"
+  },
+  {
+    "base_preset": "paradox_amplification",
+    "case": "paradox_amplification__baseline",
+    "classification": "bounded_oscillation_or_amplification",
+    "csv_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/paradox_amplification__baseline/trajectory.csv",
+    "cycle_count": 140,
+    "cycle_end_classification": "cycle_end_settling",
+    "cycle_end_final_delta": 1.4986218932477868e-09,
+    "description": "Unchanged paradox-amplification baseline.",
+    "final_state": {
+      "access_recursion": 0.5283791181861,
+      "contradiction_lock": 0.5604601953391221,
+      "false_signal": 0.4557819245297901,
+      "identity_split": 0.6219633540940754,
+      "silence_gain": 0.6087047368757832,
+      "temporal_feedback": 0.6352069557690523,
+      "utterance_instability": 0.536162801269589
+    },
+    "max_within_cycle_span": 0.06454163080374009,
+    "parameter_updates": {},
+    "plot_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/paradox_amplification__baseline/trajectory.png",
+    "record_count": 981,
+    "summary_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/paradox_amplification__baseline/summary.json"
+  },
+  {
+    "base_preset": "paradox_amplification",
+    "case": "paradox_amplification__higher_reset",
+    "classification": "bounded_oscillation_or_amplification",
+    "csv_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/paradox_amplification__higher_reset/trajectory.csv",
+    "cycle_count": 140,
+    "cycle_end_classification": "cycle_end_fixed_point_like",
+    "cycle_end_final_delta": 7.749627606301601e-10,
+    "description": "Raises reset and silence feedback to test whether PX-007 suppresses oscillation.",
+    "final_state": {
+      "access_recursion": 0.5021775404094483,
+      "contradiction_lock": 0.53237563214219,
+      "false_signal": 0.4436133157992834,
+      "identity_split": 0.5686370125100767,
+      "silence_gain": 0.571632892923826,
+      "temporal_feedback": 0.6004483520198193,
+      "utterance_instability": 0.5134346741312357
+    },
+    "max_within_cycle_span": 0.0755406304606916,
+    "parameter_updates": {
+      "reset_pressure": 0.275,
+      "silence_feedback": 0.288
+    },
+    "plot_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/paradox_amplification__higher_reset/trajectory.png",
+    "record_count": 981,
+    "summary_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/paradox_amplification__higher_reset/summary.json"
+  },
+  {
+    "base_preset": "paradox_amplification",
+    "case": "paradox_amplification__higher_feedback",
+    "classification": "bounded_oscillation_or_amplification",
+    "csv_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/paradox_amplification__higher_feedback/trajectory.csv",
+    "cycle_count": 140,
+    "cycle_end_classification": "cycle_end_fixed_point_like",
+    "cycle_end_final_delta": 5.748127529514591e-10,
+    "description": "Raises PX-005/PX-006 gains to test instability and bounded amplification.",
+    "final_state": {
+      "access_recursion": 0.5206948659274679,
+      "contradiction_lock": 0.5579978906046337,
+      "false_signal": 0.46313419139483314,
+      "identity_split": 0.6144444948994189,
+      "silence_gain": 0.6223900869833296,
+      "temporal_feedback": 0.6304523885738681,
+      "utterance_instability": 0.5397815760979242
+    },
+    "max_within_cycle_span": 0.06503005547854401,
+    "parameter_updates": {
+      "collapse_gain": 0.15,
+      "false_signal_gain": 0.3,
+      "utterance_gain": 0.36
+    },
+    "plot_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/paradox_amplification__higher_feedback/trajectory.png",
+    "record_count": 981,
+    "summary_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/paradox_amplification__higher_feedback/summary.json"
+  },
+  {
+    "base_preset": "paradox_amplification",
+    "case": "paradox_amplification__damped_fracture",
+    "classification": "bounded_oscillation_or_amplification",
+    "csv_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/paradox_amplification__damped_fracture/trajectory.csv",
+    "cycle_count": 140,
+    "cycle_end_classification": "cycle_end_settling",
+    "cycle_end_final_delta": 2.974405499678312e-09,
+    "description": "Lowers fracture drive and raises reset pressure to test calmer trajectories.",
+    "final_state": {
+      "access_recursion": 0.49333749121792014,
+      "contradiction_lock": 0.519291359061183,
+      "false_signal": 0.4252520834851545,
+      "identity_split": 0.5673419216467963,
+      "silence_gain": 0.5680462340174715,
+      "temporal_feedback": 0.5883180518125215,
+      "utterance_instability": 0.49648849982655113
+    },
+    "max_within_cycle_span": 0.06536831179843161,
+    "parameter_updates": {
+      "false_signal_gain": 0.2125,
+      "fracture_gain": 0.1575,
+      "reset_pressure": 0.253
+    },
+    "plot_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/paradox_amplification__damped_fracture/trajectory.png",
+    "record_count": 981,
+    "summary_path": "outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/paradox_amplification__damped_fracture/summary.json"
+  }
+]
