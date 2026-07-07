@@ -46,3 +46,53 @@ ChatGPT reframed the DeepSeek derivation into an engineering roadmap: treat the 
 **Cross-links to other artifacts:**
 - Entry 002 (DeepSeek PX formalization)
 - PCI Observer Engine v0.1
+
+### Entry 004
+
+**Artifact name:** PX-Loop Agent v0.1 runnable simulator
+
+**Date or version:** 2026-07-07
+
+**Source type:** Codex implementation on GitHub branch `px-loop-v0.1`
+
+**Primary topic:** Converting the PX-loop planning contract into a small executable recurrent-state prototype.
+
+**What Martin seemed to be pursuing:**
+Move the PX-loop out of archival theory and into a concrete software artifact that other AI collaborators can inspect, run, refactor, and extend without silently changing PX semantics.
+
+**What the AI(s) seemed to be proposing:**
+Perplexity recommended a narrow implementation phase: a seven-dimensional bounded numeric state vector, explicit PX-001 through PX-007 operators, a looped simulator, state logging after each PX step, two basic presets, tests, and at least one trajectory visualization. Codex implemented that scope as a standalone `px_loop/` module.
+
+**Key equations, concepts, or claims:**
+- The composite loop is represented operationally as repeated ordered application of PX-001 through PX-007.
+- State dimensions are `identity_split`, `access_recursion`, `contradiction_lock`, `temporal_feedback`, `false_signal`, `utterance_instability`, and `silence_gain`.
+- Values are bounded in `[0, 1]` for v0.1 to keep behavior inspectable.
+- Observer logs are emitted after every PX operator, not only after full cycles.
+- The demo `paradox_amplification` preset shows bounded oscillation/amplification behavior rather than unbounded divergence.
+
+**What still seems valuable now:**
+- The code gives Claude Dispatch, Codex, Claude Code, and later synthesis passes a shared executable object instead of only a prose description.
+- The operator names preserve the PX-001 through PX-007 semantic contract.
+- The generated CSV/JSON/PNG artifacts make the simulation inspectable for portfolio and review use.
+
+**What seems outdated, weak, or contradicted:**
+- The current operators are heuristic numeric mappings, not derived laws.
+- The built-in trajectory classifier is descriptive and should not be treated as a proof of fixed points or attractor structure.
+- The dependency-free PNG plot is intentionally minimal and should be replaced or supplemented later if richer plotting becomes useful.
+
+**Useful fragments for PCI engineering / AI-job portfolio:**
+- Demonstrates a complete abstract-to-executable conversion: task contract -> state model -> operators -> CLI -> logs -> plot -> tests.
+- Provides concrete language around recurrent state machines, bounded dynamical systems, observer logging, and agent-readable simulation artifacts.
+- Shows multi-AI coordination: Perplexity supplied implementation guidance, Codex converted it into repo code and validation artifacts.
+
+**Follow-up questions:**
+- Should v0.2 integrate this with the existing PCI Observer Engine preset system or remain an isolated demonstrator?
+- Which operator coefficients should be treated as meaningful knobs for parameter sweeps?
+- Should future plots compare `quiet_loop` and `paradox_amplification` side by side?
+
+**Cross-links to other artifacts:**
+- `px_loop/README.md`
+- `px_loop/operators.py`
+- `outbox/ai_coordination/px_loop_runs/2026-07-07_v0.1_demo/trajectory.csv`
+- `outbox/ai_coordination/px_loop_runs/2026-07-07_v0.1_demo/summary.json`
+- `outbox/ai_coordination/px_loop_runs/2026-07-07_v0.1_demo/trajectory.png`
