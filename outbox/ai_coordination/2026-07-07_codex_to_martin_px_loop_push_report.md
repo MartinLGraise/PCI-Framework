@@ -21,7 +21,8 @@
 
 - Push target: `https://github.com/MartinLGraise/PCI-Framework.git`
 - Push branch: `px-loop-v0.1`
-- Push status: pending at time of this report file creation.
+- Push status: completed.
+- Pull request URL offered by GitHub: `https://github.com/MartinLGraise/PCI-Framework/pull/new/px-loop-v0.1`
 
 ## Review-Log Location Ambiguity
 
