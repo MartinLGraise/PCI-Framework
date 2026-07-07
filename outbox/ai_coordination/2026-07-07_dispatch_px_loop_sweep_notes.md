@@ -20,6 +20,7 @@ python3 -m px_loop.sweep --steps 140 --output-dir outbox/ai_coordination/px_loop
 
 - `outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/sweep_index.csv`
 - `outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/sweep_index.json`
+- `outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/comparison_quiet_vs_paradox.png`
 - One case folder per run, each with:
   - `trajectory.csv`
   - `summary.json`
@@ -43,6 +44,8 @@ python3 -m px_loop.sweep --steps 140 --output-dir outbox/ai_coordination/px_loop
 The quiet preset variants remain transient at 140 complete cycles by the cycle-end criterion, with small final deltas around `1e-05` to `3e-05`. Higher reset pressure lowers final identity split and silence gain, while higher PX-005/PX-006 feedback slightly increases false signal, utterance instability, and silence gain. Damping fracture and false-signal gain lowers the final false-signal and utterance values.
 
 The paradox-amplification variants show a per-operator sawtooth inside each seven-step cycle, but the complete seven-operator cycle is fixed-point-like or settling by cycle-end metrics. The old `classification` label should be read as a per-operator window label, not as proof of a cycle-to-cycle oscillation. Higher reset pressure reduces final identity split and silence gain relative to baseline, suggesting PX-007 reset dampens the fixed point. Higher feedback slightly raises silence and false-signal values, which supports treating PX-005/PX-006/PX-007 as the dominant sensitivity path for v0.1 experiments.
+
+The updated trajectory PNGs now include two panels: the top panel shows every PX operator step, and the lower panel shows only cycle-end states. The comparison panel places `quiet_loop__baseline` beside `paradox_amplification__baseline` using cycle-end traces only.
 
 No tested run diverged numerically because the v0.1 model clamps state to `[0, 1]`. That is a design constraint, not a discovered stability theorem.
 

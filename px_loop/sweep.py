@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Sequence
 
 from .presets import PXPreset, get_preset
+from .observer import write_comparison_png
 from .simulate import SimulationResult, run_and_save
 
 
@@ -167,7 +168,20 @@ def write_sweep_index(results: Sequence[SimulationResult], cases: Sequence[Sweep
         for row in rows:
             writer.writerow({key: row[key] for key in fieldnames})
 
-    return {"json": json_path, "csv": csv_path}
+    output_paths = {"json": json_path, "csv": csv_path}
+    result_by_name = {result.preset.name: result for result in results}
+    quiet = result_by_name.get("quiet_loop__baseline")
+    paradox = result_by_name.get("paradox_amplification__baseline")
+    if quiet and paradox:
+        output_paths["comparison"] = write_comparison_png(
+            quiet.records,
+            paradox.records,
+            output_dir / "comparison_quiet_vs_paradox.png",
+            left_title="quiet loop",
+            right_title="paradox amplification",
+        )
+
+    return output_paths
 
 
 def run_sweep(

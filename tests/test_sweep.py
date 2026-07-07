@@ -26,6 +26,29 @@ class PXSweepTests(unittest.TestCase):
             self.assertTrue((Path(tmpdir) / "quiet_loop__test" / "summary.json").exists())
             self.assertTrue((Path(tmpdir) / "quiet_loop__test" / "trajectory.png").exists())
 
+    def test_sweep_writes_quiet_vs_paradox_comparison_when_baselines_exist(self):
+        cases = (
+            SweepCase(
+                name="quiet_loop__baseline",
+                base_preset="quiet_loop",
+                description="quiet baseline",
+                parameter_updates={},
+            ),
+            SweepCase(
+                name="paradox_amplification__baseline",
+                base_preset="paradox_amplification",
+                description="paradox baseline",
+                parameter_updates={},
+            ),
+        )
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            _, index_paths = run_sweep(output_dir=tmpdir, steps=2, cases=cases)
+
+            comparison = Path(index_paths["comparison"])
+            self.assertTrue(comparison.exists())
+            self.assertGreater(comparison.stat().st_size, 1000)
+
 
 if __name__ == "__main__":
     unittest.main()

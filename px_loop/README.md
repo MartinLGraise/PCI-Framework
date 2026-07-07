@@ -50,7 +50,7 @@ Outputs:
 - `summary.json` records the preset, replay metadata, final state, value ranges, and coarse trajectory classification.
 - `trajectory.png` is a dependency-free PNG line plot of the seven state dimensions.
 
-The plot includes a title, axis ticks, direct labels at the right edge, final values, and a color key. The direct labels point to the final PX-007 state, while the jagged paths show movement across individual PX operators inside each cycle.
+The plot includes a title, axis ticks, direct labels at the right edge, final values, and a color key. The top panel shows every PX operator step, so it preserves the jagged within-cycle sawtooth. The lower panel shows only complete-cycle boundaries: the initial state and each PX-007 state.
 
 `summary.json` keeps two behavior labels:
 
@@ -69,8 +69,11 @@ The sweep writes one folder per case, plus:
 
 - `sweep_index.csv`
 - `sweep_index.json`
+- `comparison_quiet_vs_paradox.png`
 
 Each case preserves the same PX operator semantics and varies only a small set of gains/couplings.
+
+The comparison image places cycle-end traces for `quiet_loop` and `paradox_amplification` side by side so the preset difference is visible without per-operator sawtooth clutter.
 
 ## Presets
 

@@ -266,7 +266,11 @@ _FONT_5X7 = {
     "-": ("00000", "00000", "00000", "11111", "00000", "00000", "00000"),
     "_": ("00000", "00000", "00000", "00000", "00000", "00000", "11111"),
     ".": ("00000", "00000", "00000", "00000", "00000", "01100", "01100"),
+    ",": ("00000", "00000", "00000", "00000", "01100", "00100", "01000"),
     ":": ("00000", "01100", "01100", "00000", "01100", "01100", "00000"),
+    "(": ("00010", "00100", "01000", "01000", "01000", "00100", "00010"),
+    ")": ("01000", "00100", "00010", "00010", "00010", "00100", "01000"),
+    "+": ("00000", "00100", "00100", "11111", "00100", "00100", "00000"),
     "/": ("00001", "00010", "00100", "01000", "10000", "00000", "00000"),
     "|": ("00100", "00100", "00100", "00100", "00100", "00100", "00100"),
     ">": ("10000", "01000", "00100", "00010", "00100", "01000", "10000"),
@@ -347,85 +351,118 @@ def _display_label(value: str) -> str:
     return value.replace("_", " ").replace("  ", " ").upper()
 
 
-def write_trajectory_png(
-    records: Sequence[PXRecord],
-    path: str | Path,
-    width: int = 1200,
-    height: int = 720,
-    title: str = "PX-LOOP V0.1 TRAJECTORY",
-    subtitle: str | None = None,
-) -> Path:
-    """Write a dependency-free PNG line plot of all seven state dimensions."""
-    path = Path(path)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    pixels = bytearray([252] * (width * height * 3))
+COLORS: tuple[tuple[int, int, int], ...] = (
+    (31, 119, 180),
+    (214, 39, 40),
+    (44, 160, 44),
+    (148, 103, 189),
+    (255, 127, 14),
+    (23, 190, 207),
+    (127, 127, 127),
+)
 
-    margin_left = 92
-    margin_top = 92
-    margin_right = 330
-    margin_bottom = 126
-    plot_width = width - margin_left - margin_right
-    plot_height = height - margin_top - margin_bottom
 
+def _draw_panel_axes(
+    pixels: bytearray,
+    width: int,
+    height: int,
+    left: int,
+    top: int,
+    panel_width: int,
+    panel_height: int,
+    heading: str,
+    left_x_label: str,
+    right_x_label: str,
+) -> None:
     ink = (36, 42, 51)
     muted = (104, 112, 124)
     grid = (225, 228, 232)
     axis = (72, 78, 86)
 
-    _draw_text(pixels, width, height, title, margin_left, 24, ink, scale=2)
-    if subtitle:
-        _draw_text(pixels, width, height, subtitle, margin_left, 52, muted, scale=1)
-
-    _draw_text(pixels, width, height, "STATE VALUE", 12, margin_top - 20, muted, scale=1)
-    _draw_text(pixels, width, height, "OBSERVER STEP", margin_left, height - 40, muted, scale=1)
-
+    _draw_text(pixels, width, height, heading, left, top - 24, ink, scale=1)
     for fraction, label in ((0.0, "0.00"), (0.25, "0.25"), (0.5, "0.50"), (0.75, "0.75"), (1.0, "1.00")):
-        y = margin_top + int((1.0 - fraction) * plot_height)
-        _draw_line(pixels, width, height, (margin_left, y), (width - margin_right, y), grid)
+        y = top + int((1.0 - fraction) * panel_height)
+        _draw_line(pixels, width, height, (left, y), (left + panel_width, y), grid)
         _draw_text(
             pixels,
             width,
             height,
             label,
-            margin_left - _text_width(label, scale=1) - 10,
+            left - _text_width(label, scale=1) - 10,
             y - 3,
             muted,
             scale=1,
         )
+
+    _draw_line(pixels, width, height, (left, top), (left, top + panel_height), axis)
     _draw_line(
         pixels,
         width,
         height,
-        (margin_left, margin_top),
-        (margin_left, height - margin_bottom),
+        (left, top + panel_height),
+        (left + panel_width, top + panel_height),
         axis,
     )
-    _draw_line(
+    _draw_text(pixels, width, height, left_x_label, left - 2, top + panel_height + 14, muted, scale=1)
+    _draw_text(
         pixels,
         width,
         height,
-        (margin_left, height - margin_bottom),
-        (width - margin_right, height - margin_bottom),
-        axis,
+        right_x_label,
+        left + panel_width - _text_width(right_x_label, scale=1),
+        top + panel_height + 14,
+        muted,
+        scale=1,
     )
 
-    colors: tuple[tuple[int, int, int], ...] = (
-        (31, 119, 180),
-        (214, 39, 40),
-        (44, 160, 44),
-        (148, 103, 189),
-        (255, 127, 14),
-        (23, 190, 207),
-        (127, 127, 127),
-    )
 
+def _cycle_end_records(records: Sequence[PXRecord]) -> list[PXRecord]:
+    return [record for record in records if record.step_id == "initial" or record.step_id == "PX-007"]
+
+
+def _draw_cycle_markers(
+    pixels: bytearray,
+    width: int,
+    height: int,
+    records: Sequence[PXRecord],
+    left: int,
+    top: int,
+    panel_width: int,
+    panel_height: int,
+) -> None:
+    cycle_count = max(record.cycle for record in records) if records else 0
+    denominator = max(1, len(records) - 1)
+    if cycle_count <= 0:
+        return
+
+    cycle_interval = 1 if cycle_count <= 40 else 10
+    for cycle in range(cycle_interval, cycle_count + 1, cycle_interval):
+        index = cycle * 7
+        x = left + int(index * panel_width / denominator)
+        if x > left + panel_width:
+            continue
+        for y in range(top, top + panel_height, 8):
+            _set_pixel(pixels, width, height, x, y, (238, 240, 243))
+
+
+def _draw_series(
+    pixels: bytearray,
+    width: int,
+    height: int,
+    records: Sequence[PXRecord],
+    left: int,
+    top: int,
+    panel_width: int,
+    panel_height: int,
+) -> list[dict[str, object]]:
     denominator = max(1, len(records) - 1)
     final_points: list[dict[str, object]] = []
-    for dimension, color in zip(DIMENSIONS, colors, strict=True):
+
+    for dimension, color in zip(DIMENSIONS, COLORS, strict=True):
         points: list[tuple[int, int]] = []
         for index, record in enumerate(records):
-            x = margin_left + int(index * plot_width / denominator)
-            y = margin_top + int((1.0 - record.values[dimension]) * plot_height)
+            x = left + int(index * panel_width / denominator)
+            y = top + int((1.0 - record.values[dimension]) * panel_height)
             points.append((x, y))
 
         for start, end in zip(points, points[1:], strict=False):
@@ -441,36 +478,21 @@ def write_trajectory_png(
             }
         )
 
-    # Mark loop boundaries lightly so full PX cycles can be inspected without
-    # washing out long runs.
-    cycle_count = max(record.cycle for record in records) if records else 0
-    if cycle_count > 0:
-        cycle_interval = 1 if cycle_count <= 40 else 10
-        for cycle in range(cycle_interval, cycle_count + 1, cycle_interval):
-            index = cycle * 7
-            x = margin_left + int(index * plot_width / denominator)
-            if x >= width - margin_right:
-                continue
-            for y in range(margin_top, height - margin_bottom, 8):
-                _set_pixel(pixels, width, height, x, y, (238, 240, 243))
+    return final_points
 
-    final_step = str(records[-1].index if records else 0)
-    _draw_text(pixels, width, height, "0", margin_left - 2, height - margin_bottom + 14, muted, scale=1)
-    _draw_text(
-        pixels,
-        width,
-        height,
-        final_step,
-        width - margin_right - _text_width(final_step, scale=1),
-        height - margin_bottom + 14,
-        muted,
-        scale=1,
-    )
 
+def _draw_right_labels(
+    pixels: bytearray,
+    width: int,
+    height: int,
+    final_points: list[dict[str, object]],
+    label_x: int,
+    label_top: int,
+    label_bottom: int,
+) -> None:
+    ink = (36, 42, 51)
     final_points.sort(key=lambda item: int(item["target_y"]))
     min_gap = 25
-    label_top = margin_top + 4
-    label_bottom = height - margin_bottom - 18
     for item in final_points:
         item["label_y"] = max(label_top, int(item["target_y"]))
     for previous, current in zip(final_points, final_points[1:], strict=False):
@@ -480,7 +502,6 @@ def write_trajectory_png(
         for item in final_points:
             item["label_y"] = int(item["label_y"]) - overflow
 
-    label_x = width - margin_right + 24
     for item in final_points:
         color = item["color"]
         assert isinstance(color, tuple)
@@ -492,16 +513,185 @@ def write_trajectory_png(
         label = f"{_display_label(str(item['dimension']))} {float(item['value']):.3f}"
         _draw_text(pixels, width, height, label, label_x + 22, label_y, ink, scale=1)
 
-    legend_y = height - 86
-    legend_x = margin_left
-    _draw_text(pixels, width, height, "COLOR KEY", legend_x, legend_y - 18, muted, scale=1)
-    for index, (dimension, color) in enumerate(zip(DIMENSIONS, colors, strict=True)):
+
+def _draw_color_key(
+    pixels: bytearray,
+    width: int,
+    height: int,
+    left: int,
+    top: int,
+    column_width: int = 230,
+) -> None:
+    ink = (36, 42, 51)
+    muted = (104, 112, 124)
+    _draw_text(pixels, width, height, "COLOR KEY", left, top - 18, muted, scale=1)
+    for index, (dimension, color) in enumerate(zip(DIMENSIONS, COLORS, strict=True)):
         row = index // 4
         column = index % 4
-        x = legend_x + column * 230
-        y = legend_y + row * 24
+        x = left + column * column_width
+        y = top + row * 24
         _fill_rect(pixels, width, height, x, y + 1, 18, 10, color)
         _draw_text(pixels, width, height, _display_label(dimension), x + 26, y, ink, scale=1)
+
+
+def write_trajectory_png(
+    records: Sequence[PXRecord],
+    path: str | Path,
+    width: int = 1200,
+    height: int = 980,
+    title: str = "PX-LOOP V0.1 TRAJECTORY",
+    subtitle: str | None = None,
+) -> Path:
+    """Write a dependency-free PNG line plot of all seven state dimensions."""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    pixels = bytearray([252] * (width * height * 3))
+
+    panel_left = 92
+    panel_width = width - panel_left - 330
+    saw_top = 112
+    saw_height = 360
+    cycle_top = 565
+    cycle_height = 230
+
+    ink = (36, 42, 51)
+    muted = (104, 112, 124)
+
+    _draw_text(pixels, width, height, title, panel_left, 24, ink, scale=2)
+    if subtitle:
+        _draw_text(pixels, width, height, subtitle, panel_left, 52, muted, scale=1)
+
+    _draw_text(pixels, width, height, "STATE VALUE", 12, saw_top - 20, muted, scale=1)
+    _draw_panel_axes(
+        pixels,
+        width,
+        height,
+        panel_left,
+        saw_top,
+        panel_width,
+        saw_height,
+        "PER-OPERATOR SAWTOOTH (EVERY PX STEP)",
+        "0",
+        str(records[-1].index if records else 0),
+    )
+    _draw_cycle_markers(pixels, width, height, records, panel_left, saw_top, panel_width, saw_height)
+    saw_points = _draw_series(pixels, width, height, records, panel_left, saw_top, panel_width, saw_height)
+    _draw_right_labels(pixels, width, height, saw_points, width - 306, saw_top + 4, saw_top + saw_height - 18)
+
+    cycle_records = _cycle_end_records(records)
+    _draw_panel_axes(
+        pixels,
+        width,
+        height,
+        panel_left,
+        cycle_top,
+        panel_width,
+        cycle_height,
+        "CYCLE-END ONLY (INITIAL + PX-007 STATES)",
+        "CYCLE 0",
+        f"CYCLE {cycle_records[-1].cycle if cycle_records else 0}",
+    )
+    cycle_points = _draw_series(
+        pixels,
+        width,
+        height,
+        cycle_records,
+        panel_left,
+        cycle_top,
+        panel_width,
+        cycle_height,
+    )
+    _draw_right_labels(
+        pixels,
+        width,
+        height,
+        cycle_points,
+        width - 306,
+        cycle_top + 4,
+        cycle_top + cycle_height - 18,
+    )
+
+    _draw_text(pixels, width, height, "OBSERVER STEP", panel_left, saw_top + saw_height + 38, muted, scale=1)
+    _draw_text(pixels, width, height, "COMPLETE PX CYCLE", panel_left, cycle_top + cycle_height + 38, muted, scale=1)
+    _draw_color_key(pixels, width, height, panel_left, height - 86)
+
+    _write_rgb_png(path, width, height, pixels)
+    return path
+
+
+def write_comparison_png(
+    left_records: Sequence[PXRecord],
+    right_records: Sequence[PXRecord],
+    path: str | Path,
+    left_title: str = "QUIET LOOP",
+    right_title: str = "PARADOX AMPLIFICATION",
+    width: int = 1600,
+    height: int = 900,
+) -> Path:
+    """Write a side-by-side cycle-end comparison panel."""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    pixels = bytearray([252] * (width * height * 3))
+    ink = (36, 42, 51)
+    muted = (104, 112, 124)
+
+    _draw_text(pixels, width, height, "PX-LOOP V0.1 COMPARISON", 90, 26, ink, scale=2)
+    _draw_text(
+        pixels,
+        width,
+        height,
+        "CYCLE-END ONLY: QUIET LOOP VS PARADOX AMPLIFICATION",
+        90,
+        56,
+        muted,
+        scale=1,
+    )
+
+    panels = (
+        (90, 130, 500, 520, left_title, left_records),
+        (850, 130, 500, 520, right_title, right_records),
+    )
+    for left, top, panel_width, panel_height, panel_title, records in panels:
+        cycle_records = _cycle_end_records(records)
+        cycle_summary = cycle_end_metrics(records)
+        heading = (
+            f"{panel_title.upper()} | "
+            f"{str(cycle_summary['classification']).replace('_', ' ').upper()}"
+        )
+        _draw_panel_axes(
+            pixels,
+            width,
+            height,
+            left,
+            top,
+            panel_width,
+            panel_height,
+            heading,
+            "CYCLE 0",
+            f"CYCLE {cycle_records[-1].cycle if cycle_records else 0}",
+        )
+        final_points = _draw_series(
+            pixels,
+            width,
+            height,
+            cycle_records,
+            left,
+            top,
+            panel_width,
+            panel_height,
+        )
+        _draw_right_labels(
+            pixels,
+            width,
+            height,
+            final_points,
+            left + panel_width + 24,
+            top + 4,
+            top + panel_height - 18,
+        )
+
+    _draw_text(pixels, width, height, "COMPLETE PX CYCLE", 90, 694, muted, scale=1)
+    _draw_color_key(pixels, width, height, 90, 760, column_width=260)
 
     _write_rgb_png(path, width, height, pixels)
     return path

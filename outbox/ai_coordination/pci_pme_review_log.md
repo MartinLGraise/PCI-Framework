@@ -123,6 +123,8 @@ Perplexity recommended keeping the branch open for one short sweep/notes/cleanup
 - The branch now has more than one demo run and separates per-operator labels from complete-loop cycle-end behavior.
 - Sweep output folders provide CSV, JSON, and PNG artifacts for every case.
 - Summaries include replay metadata: steps, dimensions, operators, initial state, and parameters.
+- Updated trajectory images now show both per-operator sawtooth and cycle-end-only panels.
+- `comparison_quiet_vs_paradox.png` gives a side-by-side cycle-end comparison of the two primary presets.
 
 **What seems outdated, weak, or contradicted:**
 - Because all values are clamped to `[0, 1]`, boundedness is partly enforced by model design.
@@ -142,6 +144,7 @@ Perplexity recommended keeping the branch open for one short sweep/notes/cleanup
 **Cross-links to other artifacts:**
 - `px_loop/sweep.py`
 - `outbox/ai_coordination/2026-07-07_dispatch_px_loop_sweep_notes.md`
+- `outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/comparison_quiet_vs_paradox.png`
 - `outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/sweep_index.csv`
 - `outbox/ai_coordination/px_loop_runs/2026-07-07_sweeps/sweep_index.json`
 
