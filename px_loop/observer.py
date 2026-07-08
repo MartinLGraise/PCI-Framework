@@ -640,7 +640,7 @@ def write_comparison_png(
         pixels,
         width,
         height,
-        "CYCLE-END ONLY: QUIET LOOP VS PARADOX AMPLIFICATION",
+        "CYCLE-END ONLY THROUGH SAVED HORIZON; LABELS ARE HORIZON-SPECIFIC",
         90,
         56,
         muted,
@@ -654,9 +654,11 @@ def write_comparison_png(
     for left, top, panel_width, panel_height, panel_title, records in panels:
         cycle_records = _cycle_end_records(records)
         cycle_summary = cycle_end_metrics(records)
+        final_cycle = cycle_records[-1].cycle if cycle_records else 0
         heading = (
             f"{panel_title.upper()} | "
-            f"{str(cycle_summary['classification']).replace('_', ' ').upper()}"
+            f"{str(cycle_summary['classification']).replace('_', ' ').upper()} "
+            f"AT CYCLE {final_cycle}"
         )
         _draw_panel_axes(
             pixels,
@@ -668,7 +670,7 @@ def write_comparison_png(
             panel_height,
             heading,
             "CYCLE 0",
-            f"CYCLE {cycle_records[-1].cycle if cycle_records else 0}",
+            f"CYCLE {final_cycle}",
         )
         final_points = _draw_series(
             pixels,

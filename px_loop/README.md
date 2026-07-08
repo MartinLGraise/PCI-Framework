@@ -73,7 +73,7 @@ The sweep writes one folder per case, plus:
 
 Each case preserves the same PX operator semantics and varies only a small set of gains/couplings.
 
-The comparison image places cycle-end traces for `quiet_loop` and `paradox_amplification` side by side so the preset difference is visible without per-operator sawtooth clutter.
+The comparison image places cycle-end traces for `quiet_loop` and `paradox_amplification` side by side so the preset difference is visible without per-operator sawtooth clutter. Its cycle-end labels are horizon-specific: they describe behavior through the saved `--steps` value, not a proof of asymptotic behavior.
 
 ## Presets
 
